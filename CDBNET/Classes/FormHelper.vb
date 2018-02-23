@@ -10,12 +10,12 @@ Public Class FormHelper
   Private Shared mvNotifyForm As frmNotify
   Private Shared mvTaskStatusForm As frmTaskStatus
 
-  'Public Enum RunMailingResult
-  '  NoMailingRun
-  '  MailingRunSynchSuccess
-  '  MailingRunSynchFail
-  '  MailingRunAsych
-  'End Enum
+  Public Enum RunMailingResult
+    NoMailingRun
+    MailingRunSynchSuccess
+    MailingRunSynchFail
+    MailingRunAsych
+  End Enum
 
   Public Enum ProcessTaskScheduleType
     ptsNone
