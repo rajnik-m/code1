@@ -448,3 +448,7 @@ D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETCL.xml
 D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.xml
 D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.xml
 D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.xml
+D:\Gitexample\CDBNET\bin\Debug\CDBNET.exe.config
+D:\Gitexample\CDBNET\obj\Debug\CDBNET.exe
+D:\Gitexample\CDBNET\obj\Debug\CDBNET.xml
+D:\Gitexample\CDBNET\obj\Debug\CDBNET.pdb
