@@ -10,12 +10,12 @@ Public Class FormHelper
   Private Shared mvNotifyForm As frmNotify
   Private Shared mvTaskStatusForm As frmTaskStatus
 
-  Public Enum RunMailingResult
-    NoMailingRun
-    MailingRunSynchSuccess
-    MailingRunSynchFail
-    MailingRunAsych
-  End Enum
+  'Public Enum RunMailingResult
+  '  NoMailingRun
+  '  MailingRunSynchSuccess
+  '  MailingRunSynchFail
+  '  MailingRunAsych
+  'End Enum
 
   Public Enum ProcessTaskScheduleType
     ptsNone
@@ -789,11 +789,11 @@ Public Class FormHelper
           vParamList = FormHelper.ShowApplicationParameters(pTaskJobType, pDefaults)
           If vParamList IsNot Nothing AndAlso vParamList.Count > 0 Then
             Dim vMailsort As Boolean = False
-            If (pTaskJobType = CareServices.TaskJobTypes.tjtBallotPaperProduction And vParamList.Contains("Checkbox") AndAlso vParamList("Checkbox") = "Y") Or _
+            If (pTaskJobType = CareServices.TaskJobTypes.tjtBallotPaperProduction And vParamList.Contains("Checkbox") AndAlso vParamList("Checkbox") = "Y") Or
             (pTaskJobType = CareServices.TaskJobTypes.tjtRenewalsAndReminders And vParamList.Contains("Checkbox4") AndAlso vParamList("Checkbox4") = "Y") Then
               vMailsort = True
               If pTaskJobType = CareNetServices.TaskJobTypes.tjtRenewalsAndReminders Then
-                If (vParamList.Contains("ReportDestination") AndAlso vParamList("ReportDestination").ToString = "None") AndAlso _
+                If (vParamList.Contains("ReportDestination") AndAlso vParamList("ReportDestination").ToString = "None") AndAlso
                   (vParamList.Contains("ReportDestination3") AndAlso vParamList("ReportDestination3").ToString = "None") Then
                   'If neither Report Destination nor Gift Member Pack Destination is being saved then don't generate Mail Sort output
                   vMailsort = False
@@ -897,12 +897,12 @@ Public Class FormHelper
           ' Indicate that we are doing all CM mailing total
           vParamList("AllCMTotals") = "Y"
           vIsNetJob = True
-        Case CareServices.TaskJobTypes.tjtCheetahMailMetaData, CareServices.TaskJobTypes.tjtCheetahMailEventData, CareServices.TaskJobTypes.tjtEMailProcessor, _
+        Case CareServices.TaskJobTypes.tjtCheetahMailMetaData, CareServices.TaskJobTypes.tjtCheetahMailEventData, CareServices.TaskJobTypes.tjtEMailProcessor,
         CareServices.TaskJobTypes.tjtSetBoxesArrived, CareNetServices.TaskJobTypes.tjtIssueResources
           vIsNetJob = True
         Case CareServices.TaskJobTypes.tjtPrintBoxLabels, CareServices.TaskJobTypes.tjtShipDistributionBoxes
           vProcessNETJob = True
-        Case CareServices.TaskJobTypes.tjtGiftAidPotentialClaim, _
+        Case CareServices.TaskJobTypes.tjtGiftAidPotentialClaim,
           CareServices.TaskJobTypes.tjtGiftAidClaim, CareServices.TaskJobTypes.tjtGASPotentialClaim,
           CareServices.TaskJobTypes.tjtGASTaxClaim, CareServices.TaskJobTypes.tjtIrishGiftAidPotentialClaim,
           CareServices.TaskJobTypes.tjtIrishGiftAidTaxClaim, CareServices.TaskJobTypes.tjtRenewalsAndReminders,
@@ -910,7 +910,7 @@ Public Class FormHelper
           If pDefaults.ContainsKey("ShowTaskStatus") Then vParamList("ShowStatus") = pDefaults("ShowTaskStatus")
           If pDefaults.ContainsKey("DBUpgrade") Then vParamList("DBUpgrade") = pDefaults("DBUpgrade")
         Case CareNetServices.TaskJobTypes.tjtCreateJournalFiles
-          If vParamList("ReportDestination") = "Print" OrElse vParamList("ReportDestination") = "Preview" OrElse _
+          If vParamList("ReportDestination") = "Print" OrElse vParamList("ReportDestination") = "Preview" OrElse
              vParamList("ReportDestination2") = "Print" OrElse vParamList("ReportDestination2") = "Preview" Then
             pScheduleType = ProcessTaskScheduleType.ptsAlwaysRun
           End If
@@ -1034,11 +1034,11 @@ Public Class FormHelper
       Select Case pTaskJobType
         Case CareServices.TaskJobTypes.tjtRenewalsAndReminders, CareServices.TaskJobTypes.tjtDirectDebitRun, CareServices.TaskJobTypes.tjtBulkGiftAidUpdate, CareNetServices.TaskJobTypes.tjtIssueResources
           AddHandler vAppParameters.ProcessCountTask, AddressOf ProcessJob
-        Case CareServices.TaskJobTypes.tjtDirectDebitMailing, CareServices.TaskJobTypes.tjtStandingOrderMailing, _
-            CareServices.TaskJobTypes.tjtMemberMailing, CareServices.TaskJobTypes.tjtPayerMailing, _
-            CareServices.TaskJobTypes.tjtSubscriptionMailing, CareServices.TaskJobTypes.tjtSelectionManagerMailing, _
-            CareServices.TaskJobTypes.tjtMembCardMailing, CareServices.TaskJobTypes.tjtPayrollPledgeMailing, _
-            CareServices.TaskJobTypes.tjtMemberFulfilment, CareServices.TaskJobTypes.tjtStandingOrderCancellation, _
+        Case CareServices.TaskJobTypes.tjtDirectDebitMailing, CareServices.TaskJobTypes.tjtStandingOrderMailing,
+            CareServices.TaskJobTypes.tjtMemberMailing, CareServices.TaskJobTypes.tjtPayerMailing,
+            CareServices.TaskJobTypes.tjtSubscriptionMailing, CareServices.TaskJobTypes.tjtSelectionManagerMailing,
+            CareServices.TaskJobTypes.tjtMembCardMailing, CareServices.TaskJobTypes.tjtPayrollPledgeMailing,
+            CareServices.TaskJobTypes.tjtMemberFulfilment, CareServices.TaskJobTypes.tjtStandingOrderCancellation,
             CareServices.TaskJobTypes.tjtIrishGiftAidMailing, CareServices.TaskJobTypes.tjtSelectionTester
           AddHandler vAppParameters.ProcessMailingCriteria, AddressOf ProcessMailingCriteriaFromAppParam
       End Select
