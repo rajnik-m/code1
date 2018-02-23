@@ -1,0 +1,4051 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNXML
+</name>
+</assembly>
+<members>
+<member name="T:CARE.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CARE.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CARE.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:CARE.XMLAccess.ActionData.XMLActionDataSelectionTypes">
+ <summary>
+ The enumerations for Action Data Selection Types used by SelectActionData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.WorkstreamData.XMLDataSelectionTypes">
+ <summary>
+ The enumerations for Workstream Data Selection Types used by SelectWorkstreamData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.WorkstreamData.XMLDataSelectionTypes.WorkstreamData">
+ <summary>
+ Workstream data pages 
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.WorkstreamData.XMLDataSelectionTypes.WorkstreamDetails">
+ <summary>
+ Workstream Details
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.WorkstreamData.XMLDataSelectionTypes.WorkstreamExamBookingUnits">
+ <summary>
+ Workstream Exam Booking Units
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.WorkstreamData.XMLDataSelectionTypes.WorkstreamActions">
+ <summary>
+ Workstream Actions
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.WorkstreamData.XMLDataSelectionTypes.WorkstreamActionsFromTemplates">
+ <summary>
+ Worksteam Actions from templates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.WorkstreamData.XMLDataSelectionTypes.WorkstreamExamSchedules">
+ <summary>
+ Workstream Exam Schedule
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.WorkstreamData.XMLDataSelectionTypes.WorkstreamDocuments">
+ <summary>
+ Workstream Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.WorkstreamData.XMLDataSelectionTypes.WorkstreamCategories">
+ <summary>
+ Workstream Caregories
+ </summary>
+</member>
+<member name="T:CARE.XMLAccess.ExamData.XMLExamMaintenanceTypes">
+ <summary>
+ The enumerations for the Exam Maintenance Types used by GetExamMaintenanceControls and UpdateExamMaintenanceControls
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes">
+ <summary>
+ The enumerations for the Exam Data Selection Types used by SelectExamData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamHeaderInformation">
+ <summary>
+ Not available
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamBookingUnits">
+ <summary>
+ Exam Booking Units
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCandidateActivites">
+ <summary>
+ Exam Candidate Activites
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreAssessmentTypes">
+ <summary>
+ Exam Centre Assessment Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreContacts">
+ <summary>
+ Exam Centre Contacts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreUnits">
+ <summary>
+ Exam Centre Units
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreUnitSelection">
+ <summary>
+ Exam Centre Unit Selection
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentres">
+ <summary>
+ Exam Centres
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamExemptions">
+ <summary>
+ Exam Exemptions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamExemptionUnits">
+ <summary>
+ Exam Exemption Units
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamExemptionUnitSelection">
+ <summary>
+ Exam Exemption Unit Selection
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamPersonnel">
+ <summary>
+ Exam Personnel
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamPersonnelAssessmentTypes">
+ <summary>
+ Exam Personnel Assessment Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamPersonnelExpenses">
+ <summary>
+ Exam Personnel Expenses"
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamSchedule">
+ <summary>
+ Exam Schedule
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamSchedulePersonnel">
+ <summary>
+ Exam Schedule Personnel
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamSessionCentres">
+ <summary>
+ Exam Session Centres
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamSessionCentreSelection">
+ <summary>
+ Exam Session Centre Selection
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamSessions">
+ <summary>
+ Exam Sessions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamStudentEligibility">
+ <summary>
+ Exam Student Eligibility
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamStudentExemptionHistory">
+ <summary>
+ Exam Student Exemption History
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamStudentExemptions">
+ <summary>
+ Exam Student Exemptions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamStudentComponentResults">
+ <summary>
+ Exam Student Component Results
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamStudentHeader">
+ <summary>
+ Exam Student Header
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamStudentResults">
+ <summary>
+ Exam Student Results
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamStudentUnit">
+ <summary>
+ Exam Student Unit
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamStudentUnitHeader">
+ <summary>
+ Exam Student Unit Header
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitAssessmentTypes">
+ <summary>
+ Exam Unit Assessment Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitEligibilityChecks">
+ <summary>
+ Exam Unit Eligibility Checks
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitLinks">
+ <summary>
+ Exam Unit Links
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitGrades">
+ <summary>
+ Exam Unit Grades
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitPersonnel">
+ <summary>
+ Exam Unit Personnel
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitPrerequisites">
+ <summary>
+ Exam Unit Prerequisites
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitResources">
+ <summary>
+ Exam Unit Resources
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnits">
+ <summary>
+ Exam Units
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamStudentBookingUnits">
+ <summary>
+ Exam Student Booking Units
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamScheduleAllCentres">
+ <summary>
+ Exam Schedule All Centres
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamPersonnelMarkerInfo">
+ <summary>
+ Exam Personnel Marker Info
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitCandidates">
+ <summary>
+ Exam Unit Candidates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitMarkerAllocation">
+ <summary>
+ Exam Unit Marker Allocation
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitMarkerAllocationList">
+ <summary>
+ Exam Unit Marker Allocation List
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamMarkerList">
+ <summary>
+ Exam Marker List
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamMaintenanceButtons">
+ <summary>
+ Buttons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamMaintenanceCourses">
+ <summary>
+ Exam Courses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamMaintenanceCentres">
+ <summary>
+ Exam Centres
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamMaintenancePersonnel">
+ <summary>
+ Exam Personnel
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamMaintenanceSessions">
+ <summary>
+ Exam Sessions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamMaintenanceExemptions">
+ <summary>
+ Exam Exemptions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreActions">
+ <summary>
+ Exam Centre Actions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreActionLinks">
+ <summary>
+ Exam Centre Action Links
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreActionAnalysis">
+ <summary>
+ Exam Centre Action Analysis
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreHistory">
+ <summary>
+ Exam Centre History
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreCategories">
+ <summary>
+ Exam Centre Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitLinkCategories">
+ <summary>
+ Exm Unit Link Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreUnitLinkCategories">
+ <summary>
+ Exam Centre Unit Link Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamAccreditationHistory">
+ <summary>
+ Exam Accreditation History
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreUnitDetails">
+ <summary>
+ Exam Centre Unit Details
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitGradeHistory">
+ <summary>
+ Exam Unit Grade History
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreDocuments">
+ <summary>
+ Exam Centre Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitLinkDocuments">
+ <summary>
+ Exam Unit Link Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreUnitLinkDocuments">
+ <summary>
+ Exam Centre Unit Link Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitStudyModes">
+ <summary>
+ Exam Unit Study Modes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCentreUnitStudyModes">
+ <summary>
+ Exam Centre Unit Study Modes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamUnitCertRunTypes">
+ <summary>
+ Exam Unit Certificate Run Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCertReprintTypes">
+ <summary>
+ Exam Certificate Reprint Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.ExamData.XMLExamDataSelectionTypes.ExamCustomForm">
+ <summary>
+ Exam Custom Form
+ </summary>
+</member>
+<member name="T:CARE.XMLAccess.ExamData.ExamGradingMethod">
+ <summary>
+ The enumerations for Exam Grading Method
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.ExamData.GetChildUnitLinksFromList(CARE.Access.CDBEnvironment,System.String)">
+ <summary>
+ Removes all Parent Unit Links from a list and returns only the child items.  This is useful when you get given a Tree of selected items where all of a child's parents are also passed, but you only want the child records.
+ </summary>
+ <param name="pEnv">The environment that contains the database and user</param>
+ <param name="pExamUnitLinkCSV">The list of Exam Unit Links that have been selected from a Tree, from which you want to extract the child items</param>
+ <returns>List of Child Exam Unit Link Ids</returns>
+ <remarks>Please use sparingly, and preferably never in a loop as this method walks through the whole exam tree to filter out parents</remarks>
+</member>
+<member name="T:CARE.XMLAccess.DataImportAction">
+ <summary>
+ The enumerations for Data Import Action
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.ImportData.AppendTableToResultSet(System.String,System.String,System.String)">
+ <summary>
+ Appends the xml generated from a CDBDataTable to an existing ResultSet XML string
+ This is used to create a dataset that will contain multiple datatables
+ </summary>
+ <param name="pResultSet"></param>
+ <param name="pNewTableXML"></param>
+ <param name="pNewTableName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.ImportData.CreateDataTable(System.Reflection.PropertyInfo[])">
+ <summary>
+ Creates a empty datatable that has columns for the properties of the class
+ </summary>
+ <param name="pProperties"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.ImportData.FillData(System.Reflection.PropertyInfo[],System.Data.DataTable,System.Object)">
+ <summary>
+ Fill the datatable with values from the class
+ </summary>
+ <param name="pProperties"></param>
+ <param name="pDt"></param>
+ <param name="pObj"></param>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.FindData.XMLDataFinderTypes">
+ <summary>
+ The enumerations for the Data Finder Types used by GetFinderControls
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftContacts">
+ <summary>
+ Contact Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftOrganisations">
+ <summary>
+ Organisation Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftEvents">
+ <summary>
+ Event Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftMembers">
+ <summary>
+ Member Fider
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftProducts">
+ <summary>
+ Product Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftDuplicateContacts">
+ <summary>
+ Duplicate Contact Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftDuplicateOrganisations">
+ <summary>
+ Duplicate Organisation Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftDocuments">
+ <summary>
+ Document Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftExternalDocuments">
+ <summary>
+ External Document Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftPaymentPlans">
+ <summary>
+ Payment Plan Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftStandingOrders">
+ <summary>
+ Standing Order Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftDirectDebits">
+ <summary>
+ Direct Debits Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftCreditCardAuthorities">
+ <summary>
+ Credit Card Authorities Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftCovenants">
+ <summary>
+ Covenant Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftTransactions">
+ <summary>
+ Transaction Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftGiftAidDeclarations">
+ <summary>
+ Gift Aid Declarations Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftInvoiceCreditNotes">
+ <summary>
+ Invoice Credit Notes Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftLegacies">
+ <summary>
+ Legacies Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftPayrollGiving">
+ <summary>
+ Payroll Giving Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftPurchaseOrders">
+ <summary>
+ Purchase Order Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftActions">
+ <summary>
+ Actions Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftSelectionSets">
+ <summary>
+ Selection Sets Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftCampaigns">
+ <summary>
+ Campaigns Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftCampaignAppeals">
+ <summary>
+ Campaign Appeals Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftCampaignSegments">
+ <summary>
+ Campaign Segments Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftCampaignCollections">
+ <summary>
+ Campaign Collcecytions Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftPostTaxPayrollGiving">
+ <summary>
+ Post Tax Payroll Giving Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftInternalResources">
+ <summary>
+ Internal Resources Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftBatches">
+ <summary>
+ Batches Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftOpenBatches">
+ <summary>
+ Open Batched Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftEMailContacts">
+ <summary>
+ Duplicate EMail Contacts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftEMailOrganisations">
+ <summary>
+ Duplicate EMail Organisations
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftEventBookings">
+ <summary>
+ Event Bookings Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftCommunications">
+ <summary>
+ Contact Communications Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftUniservPhoneBook">
+ <summary>
+ Uniserv Phone Book
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftStandardDocuments">
+ <summary>
+ Standard Documents Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftAppealCollections">
+ <summary>
+ Appeal Collections Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftContactFundraisingEvents">
+ <summary>
+ Contact Fundraising Events
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftContactMailingDocuments">
+ <summary>
+ Contact Mailing Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftMailings">
+ <summary>
+ Mailings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftEventPersonnel">
+ <summary>
+ Event Personnel
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftTextSearch">
+ <summary>
+ Text Search
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftEventPersonnelAppointments">
+ <summary>
+ Event Personnel Appointments
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftFundraisingPaymentScheduleFinder">
+ <summary>
+ Fundraising Payment Schedule Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftQueryByExampleContacts">
+ <summary>
+ Query By Example Contacts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftQueryByExampleOrganisations">
+ <summary>
+ Query By Example Organisations
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftQueryByExampleEvents">
+ <summary>
+ Query By Example Events
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftMeetings">
+ <summary>
+ Meetings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftServiceProducts">
+ <summary>
+ Service Products
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftVenues">
+ <summary>
+ Venues
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftDuplicateContactRecords">
+ <summary>
+ Duplicate Contact Records
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftPostcodeProximity">
+ <summary>
+ Postcode Proximity
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftFundraisingRequestsFinder">
+ <summary>
+ Fundraising Request Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftExamScheduleFinder">
+ <summary>
+ Exam Schedule Finder
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftCPDCyclePeriodFinder">
+ <summary>CPD Cycle Period Finder</summary>
+</member>
+<member name="F:CARE.XMLAccess.FindData.XMLDataFinderTypes.xdftCPDPointFinder">
+ <summary>CPD Point Finder</summary>
+</member>
+<member name="T:CARE.XMLAccess.MarketingData.XMLCampaignDataSelectionTypes">
+ <summary>
+ The enumerations for the Campaign Data Selection Types used by SelectCampaignData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.EventData.XMLEventDataSelectionTypes">
+ <summary>
+ The enumerations for Event Data Selection Types used by SelectEventData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.EventData.RenumberEventCandidates(System.String)">
+ <summary>
+ Function to renumber Events Candidate
+ </summary>
+ <param name="pParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.EventData.RenumberSessionBookings(System.String)">
+ <summary>
+ Function to renumber session booking
+ </summary>
+ <param name="pParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.MailingData.ProcessMailingSelection(System.String)">
+ <summary>
+ ProcessMailing Selection method process the mailing selection data
+ </summary>
+ <param name="pParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes">
+ <summary>
+ The enumerations for Contact Data Selection Types used by SelectContactData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactInformation">
+ <summary>
+ Contact Information
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAddresses">
+ <summary>
+ Addresses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCategories">
+ <summary>
+ Contact Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSuppressions">
+ <summary>
+ Contact Supression
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPositions">
+ <summary>
+ Contact Position
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactProcessedTransactions">
+ <summary>
+ Contact Processed Transaction
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLinksTo">
+ <summary>
+ Links to other Contacts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLinksFrom">
+ <summary>
+ Links from other Contacts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactStatusHistory">
+ <summary>
+ Contact Status History
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEventBookings">
+ <summary>
+ Contact Event Bookings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEventDelegates">
+ <summary>
+ Contact Event Delegates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEventSessions">
+ <summary>
+ Contact Event Session
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEventRoomBookings">
+ <summary>
+ Contact Event Room Bookings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEventRoomsAllocated">
+ <summary>
+ Contact Event Rooms Allocated
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEventOrganiser">
+ <summary>
+ Contact Event Organiser
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEventPersonnel">
+ <summary>
+ Contact Event Personnel
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCommsNumbers">
+ <summary>
+ Contacts Communication Numbers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactDocuments">
+ <summary>
+ Contact Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactMailings">
+ <summary>
+ Contact Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExternalReferences">
+ <summary>
+ ContactExternalReferences
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactNotes">
+ <summary>
+ Contact Notes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAddressUsages">
+ <summary>
+ Contact Address Usages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactRoles">
+ <summary>
+ Contact Roles
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactJournals">
+ <summary>
+ Contact Journals
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAddressInformation">
+ <summary>
+ Contact Address Information
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactStickyNotes">
+ <summary>
+ ContactStickyNotes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactMemberships">
+ <summary>
+ ContactMemberships
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtUserContactInformation">
+ <summary>
+ UserContact Information
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactHPLinks">
+ <summary>
+ ContactHP Links
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactBankAccounts">
+ <summary>
+ Contact Banl Accounts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCreditCards">
+ <summary>
+ Contact Credit Cards
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCreditCardAuthorities">
+ <summary>
+ Contact Credit Card Authorities
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactStandingOrders">
+ <summary>
+ Contact StandingOrders
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactDirectDebits">
+ <summary>
+ Contact Direct Debits
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactUnProcessedTransactions">
+ <summary>
+ Contact UnProcessed Transactions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactBackOrders">
+ <summary>
+ Contact back Orders
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactDespatchNotes">
+ <summary>
+ Contact Despatch Notes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactXactionInMemoriamReceived">
+ <summary>
+ Contact In Memoriam Donations Received
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactXactionInMemoriamDonated">
+ <summary>
+ Contact In Memoriam Donations Made
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactXactionContributedTo">
+ <summary>
+ Contact Payments Paid in For
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactXactionPaidInBy">
+ <summary>
+ Contact Payments Paid In By
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactXactionSentOnBehalfOf">
+ <summary>
+ Contact Payments Sent On Behalf Of
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactXactionHandledBy">
+ <summary>
+ Contact Payments Handled By
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCovenants">
+ <summary>
+ Contact Payments Sent On Behalf Of
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPaymentPlans">
+ <summary>
+ Contact Payment Plans
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPurchaseOrders">
+ <summary>
+ Contact Purchase Orders
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPurchaseInvoices">
+ <summary>
+ Contact Purchase Invoices
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSubscriptions">
+ <summary>
+ Contact Subscriptions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactServiceBookings">
+ <summary>
+ Contact Service Bookings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactGiftAidDeclarations">
+ <summary>
+ Contact GiftAid Declarations
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSponsorshipUnClaimed">
+ <summary>
+ Contact Sponsorship UnClaimed
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSponsorshipClaimed">
+ <summary>
+ Contact Sponsorship Claimed
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactHeaderInformation">
+ <summary>
+ Contact Header Information
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactMembershipDetails">
+ <summary>
+ Contact Membership Details
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPledges">
+ <summary>
+ Contact Pre Tax Pledges
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAddressPositionAndOrganisation">
+ <summary>
+ Position and Organisation for a Contact Address
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactHeaderCommunications">
+ <summary>
+ Contact Header Communications
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactHeaderHighProfileCategories">
+ <summary>
+ Contact Header High Profile Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactHeaderDepartmentCategories">
+ <summary>
+ Contact Header Department Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCreditCustomers">
+ <summary>
+ Contact Credit Customers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactDBANotes">
+ <summary>
+ Contact DBA Notes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactHighProfileCategories">
+ <summary>
+ Contact High Profile Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactDepartmentCategories">
+ <summary>
+ Contact Department Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactHeaderHighProfileRelationships">
+ <summary>
+ Contact Header High Profile Relationships
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactActions">
+ <summary>
+ Contact Actions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactUserInformation">
+ <summary>
+ Contact User Information
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPreviousNames">
+ <summary>
+ Contact Previous Names
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEMailAddresses">
+ <summary>
+ Contact EMail Addresses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactNotifications">
+ <summary>
+ Contact Notifications
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCustomFormData">
+ <summary>
+ Contact CustomForm Data
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPostPGPledges">
+ <summary>
+ Contact Post Tax Pledges
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCancelledProvisionalTrans">
+ <summary>
+ Contact Cancelled Provisional Transactions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactDepartmentHistory">
+ <summary>
+ Contact Department History
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactMannedCollections">
+ <summary>
+ Contact Manned Collections for Contact
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactUnMannedCollections">
+ <summary>
+ Contact UnManned Collections for Contact
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactH2HCollections">
+ <summary>
+Contact H2H Collections for Contact
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCollectionPayments">
+ <summary>
+Collection Payments for Contact
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAppointments">
+ <summary>
+ Contact Appointments
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactOutstandingInvoices">
+ <summary>
+ Contact Outstanding Invoices
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCashInvoices">
+ <summary>
+ Contact Cash Invoices
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPositionActivities">
+ <summary>
+ Contact Position Activities
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSourceFromLastMailing">
+ <summary>
+ Contact Source From Last Mailing
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSalesLedgerItems">
+ <summary>
+ Contact Sales Ledger Items
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPhoneBookData">
+ <summary>
+ Contact Phone Book Data
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactScores">
+ <summary>
+ Contact Scores
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPerformances">
+ <summary>
+ Contact Performances
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCommunicationUsages">
+ <summary>
+ Contact Communication Usages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPictureDocuments">
+ <summary>
+ Contact Picture Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCommsAddresses">
+ <summary>
+ Contact Communication Addresses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactFundraising">
+ <summary>
+ Contact Fundraising
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAppropriateCertificates">
+ <summary>
+ Contact Appropriate Certificates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactFundraisingEvents">
+ <summary>
+ Contact Fundraising Events
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactDashboard">
+ <summary>
+ Contact Dashboard
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCPD">
+ <summary>
+ Contact CPD
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCPDDetails">
+ <summary>
+ Contatc CPD Details
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCPDPoints">
+ <summary>
+ Contact CPD Points
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCPDPointsWithoutCycle">
+ <summary>
+ Contact CPD Points without Cycle
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCPDCycles">
+ <summary>
+ Contact CPD Cycle
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLegacy">
+ <summary>
+ Contact Legacy
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLegacyBequests">
+ <summary>
+ Contact Legacy Bequests
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLegacyAssets">
+ <summary>
+ Contact Legacy Assets
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLegacyLinks">
+ <summary>
+ Contact Legacy Links
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLegacyTaxCertificates">
+ <summary>
+ Contact Legacy Tax Certificates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLegacyExpenses">
+ <summary>
+ Contact Legacy Expenses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLegacyActions">
+ <summary>
+ Contact Legacy Actions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactRegisteredUsers">
+ <summary>
+ Contact Registered Users
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEmailingsLinks">
+ <summary>
+ Contact Emailings Links
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCommsInformation">
+ <summary>
+ Contact Communication Information
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPositionLinks">
+ <summary>
+ Contact Position Links
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAlerts">
+ <summary>
+ Contact Alerts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactNetwork">
+ <summary>
+ Contact Network
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCommunicationHistory">
+ <summary>
+ Contact Communication History
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAddressAndUsages">
+ <summary>
+ Contact Address And Usages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtGeneralMailingSelectionSets">
+ <summary>
+ General Mailing Selection Sets
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactMeetings">
+ <summary>
+ Contact Meetings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtEntityAlerts">
+ <summary>
+ Contact Entity Alerts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSalesTransactions">
+ <summary>
+ Contact Sales Transactions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactDeliveryTransactions">
+ <summary>
+ Contact Delivery Transactions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCPDObjectives">
+ <summary>
+ Contact CPD Objectives
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCPDObjectivesEdit">
+ <summary>
+ Contact CPD Objectives Edit
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSurveys">
+ <summary>
+ Contact Surveys
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSurveyResponses">
+ <summary>
+ Contact Survey Responses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactSalesLedgerReceipts">
+ <summary>
+ Contact Sales Ledger Receipts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactEventBookingDelegates">
+ <summary>
+ Contact Event Booking Delegates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAppointmentDetails">
+ <summary>
+ Contact Appointment Details
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactLoans">
+ <summary>
+ Contact Loans
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtDirectoryUsage">
+ <summary>
+ Contact Directory Usage
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamSummary">
+ <summary>
+ Contact Exam Summary
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamSummaryItems">
+ <summary>
+ Contact Exam Summary Items
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamSummaryList">
+ <summary>
+ Contact Exam Summary List
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamDetails">
+ <summary>
+ Contact Exam Details
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamDetailItems">
+ <summary>
+ Contact Exam Detail Items
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamDetailList">
+ <summary>
+ Contact Exam Detail List
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamExemptions">
+ <summary>
+ ContactExamExemptions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAddressesAndPositions">
+ <summary>
+ Contact Addresses And Positions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtDuplicateOrganisationsForRegistration">
+ <summary>
+ DuplicateOrganisationsForRegistration
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAddressesWithUsages">
+ <summary>
+ Contact Addresses With Usages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCommsNumbersWithUsages">
+ <summary>
+ Contact Comms Numbers With Usages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPaymentPlanPayments">
+ <summary>
+ Contact Payment Plans
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAmendments">
+ <summary>
+ ContactAmendments
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactAmendmentDetails">
+ <summary>
+ Contact Amendment Details
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamCertificates">
+ <summary>
+ Contact Exam Certificates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamCertificateItems">
+ <summary>
+ Contact Exam Certificate Items
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactExamCertificateReprints">
+ <summary>
+ Contact Exam Certificate Reprints
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactFundraisingRequests">
+ <summary>
+ Contact Fundraising Requests
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactTokens">
+ <summary>
+ Contact Tokens
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCPDCycleDocuments">
+ <summary>Contact CPD Cycle Documents</summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactCPDPointDocuments">
+ <summary>Contact CPD Points Documents</summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactViewOrganisations">
+ <summary>Contact View Organisations</summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPositionActions">
+ <summary>Contact Position Actions</summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPositionDocuments">
+ <summary>Contact Position Documents</summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactPositionTimesheets">
+ <summary>Contact Position Timesheets</summary>
+</member>
+<member name="F:CARE.XMLAccess.SelectData.XMLContactDataSelectionTypes.xcdtContactFinanceAlerts">
+ <summary>Contact Finance Alerts</summary>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLDocumentDataSelectionTypes">
+ <summary>
+ The enumerations for Document Data Selection Types used by SelectDocumentData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLFundraisingDataSelectionTypes">
+ <summary>
+ The enumerations for Fundraising Request Data Selection Types used by SelectFundraisingRequestData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLFundraisingEventDataSelectionTypes">
+ <summary>
+ The enumerations for Fundraising Event Data Selection Types used by SelectFundraisingEventData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLMembershipDataSelectionTypes">
+ <summary>
+ The enumerations for Membership Data Selection Types used by SelectMembershipData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLPurchaseOrderDataSelectionTypes">
+ <summary>
+ The enumerations for Purchase Order Data Selection Types used by SelectPurchaseOrderData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLPurchaseInvoiceDataSelectionTypes">
+ <summary>
+ The enumerations for Purchase Invoice Data Selection Types used by SelectPurchaseInvoiceData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLFinancialProcessingDataSelectionTypes">
+ <summary>
+ The enumerations for Financial Processing Data Selection Types used by SelectFinancialProcessingData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLLegacyBequestDataSelectionTypes">
+ <summary>
+ The enumerations for Legacy Bequest Data Selection Types used by SelectLegacyBequestData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLAppointmentTypes">
+ <summary>
+ The enumerations for the Appointment Types used by SelectAppointmentData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.SelectData.XMLLoanDataSelectionTypes">
+ <summary>
+ The enumerations for Loan Data Selection Types used by SelectLoanData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.LookupData.XMLLookupDataTypes">
+ <summary>
+The enumerations for the Lookup Data Types used by GetLookupData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActivities">
+ <summary>
+ Activities
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActivityValues">
+ <summary>
+ Activity Values
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCancellationReasons">
+ <summary>
+ Cancellation Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCountries">
+ <summary>
+ Countries
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDevices">
+ <summary>
+ Devices
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventSubjects">
+ <summary>
+ Event Subjects
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventVenues">
+ <summary>
+ Event Venues
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRoles">
+ <summary>
+ Roles
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTitles">
+ <summary>
+ Titles
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSources">
+ <summary>
+ Sources
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStatuses">
+ <summary>
+ Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtOwnershipGroups">
+ <summary>
+ Ownership Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSuppressions">
+ <summary>
+ Suppressions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtHonorifics">
+ <summary>
+ Honorifics
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAddressUsages">
+ <summary>
+ AddressUsages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRelationships">
+ <summary>
+ Relationships
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDiallingCodes">
+ <summary>
+ Dialling Codes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSTDCodes">
+ <summary>
+ STD Codess
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDataSources">
+ <summary>
+ Data Sources
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDepartments">
+ <summary>
+ Departments
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtUsers">
+ <summary>
+ Users
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBranches">
+ <summary>
+ Branches
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTopics">
+ <summary>
+ Topics
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSubTopics">
+ <summary>
+ SubTopics
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDocumentClasses">
+ <summary>
+ Document Classes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDocumentTypes">
+ <summary>
+ Document Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMembershipTypes">
+ <summary>
+ Membership Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSalesGroups">
+ <summary>
+ Sales Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRates">
+ <summary>
+ Rates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBankAccounts">
+ <summary>
+ Bank Accounts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBACSAdviceReasons">
+ <summary>
+ BACS Advice Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBatchTypes">
+ <summary>
+ Batch Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPaymentMethods">
+ <summary>
+ Payment Methods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTransactionTypes">
+ <summary>
+ Transaction Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCovenantStatuses">
+ <summary>
+ Covenant Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCreditCardTypes">
+ <summary>
+ Credit CardT ypes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCompanies">
+ <summary>
+ Companies
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLegacyStatuses">
+ <summary>
+ Legacy Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPurchaseOrderTypes">
+ <summary>
+ Purchase Order Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPaymentPlanTypes">
+ <summary>
+ Payment Plan Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDeclarationTypes">
+ <summary>
+ Declaration Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDeclarationMethods">
+ <summary>
+ Declaration Methods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBACSAmendmentTypes">
+ <summary>
+ BACS Amendment Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtGAYEAgencies">
+ <summary>
+ GAYE Agencies
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSecondaryGroups">
+ <summary>
+ Secondary Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtProductCategories">
+ <summary>
+ Product Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDistributionCodes">
+ <summary>
+ Distribution Codes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMailings">
+ <summary>
+ Mailings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCreditCategories">
+ <summary>
+ Credit Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWarehouses">
+ <summary>
+ Warehouses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtProductWarehouses">
+ <summary>
+ Product Warehouses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventSkillLevels">
+ <summary>
+ Event Skill Levels
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventOrganisers">
+ <summary>
+ Event Organisers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventStatuses">
+ <summary>
+ Event Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDepartmentActivities">
+ <summary>
+ Department Activities
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDepartmentActivityValues">
+ <summary>
+ Department Activity Values
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactGroups">
+ <summary>
+ Contact Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtOrganisationGroups">
+ <summary>
+ Organisation Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactAndOrganisationGroups">
+ <summary>
+ Contact And Organisation Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtGroupAttributes">
+ <summary>
+ Group Attributes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDocumentDirections">
+ <summary>
+ Document Directions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDocumentLinkTypes">
+ <summary>
+ Document Link Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSexes">
+ <summary>
+ Sexes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActionPriorities">
+ <summary>
+ Action Priorities
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActionStatuses">
+ <summary>
+ Action Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStandardDocuments">
+ <summary>
+ Standard Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMailMergeHeaders">
+ <summary>
+ Mail Merge Headers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPositionFunctions">
+ <summary>
+ Position Functions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPositionSeniorities">
+ <summary>
+ Position Seniorities
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActionLinkTypes">
+ <summary>
+ Action Link Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventGroups">
+ <summary>
+ Event Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActionTemplates">
+ <summary>
+ Action Templates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDocumentStyles">
+ <summary>
+ Document Styles
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPackages">
+ <summary>
+ Packages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtConfigs">
+ <summary>
+ Configs
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPostPoints">
+ <summary>
+ Post Points
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPostPointRecipients">
+ <summary>
+ Post Point Recipients
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExplorerLinks">
+ <summary>
+ Explorer Links 
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtUserMenuAccess">
+ <summary>
+ User Menu Access
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSelectionPages">
+ <summary>
+ Selection Pages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtListManagerViews">
+ <summary>
+ List Manager Views
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCriteriaSets">
+ <summary>
+ Criteria Sets
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTraderApplications">
+ <summary>
+ Trader Applications
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPaymentFrequencies">
+ <summary>
+ Payment Frequencies
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtReasonsForDespatch">
+ <summary>
+ Reasons For Despatch
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDespatchMethods">
+ <summary>
+ Despatch Methods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRoomTypes">
+ <summary>
+ Room Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtProducts">
+ <summary>
+ Products
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStopCodes">
+ <summary>
+ Stop Codes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActivityGroups">
+ <summary>
+ Activity Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRelationshipGroups">
+ <summary>
+ Relationship Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActivityDataSheet">
+ <summary>
+ Activity DataSheet
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRelationshipDataSheet">
+ <summary>
+ Relationship DataSheet
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAppealBusinessTypes">
+ <summary>
+ Appeal Business Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCampaignPages">
+ <summary>
+ Campaign Pages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCampaignStatuses">
+ <summary>
+ Campaign Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMailingTypes">
+ <summary>
+ Mailing Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExpenditureGroups">
+ <summary>
+ Expenditure Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAppealCostCentres">
+ <summary>
+ Appeal Cost Centres
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentTypes">
+ <summary>
+ Segment Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtOutputGroups">
+ <summary>
+ Output Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtScores">
+ <summary>
+ Scores
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtIncentiveSchemes">
+ <summary>
+ Incentive Schemes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentMediaTypes">
+ <summary>
+ Segment Media Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentMediaNames">
+ <summary>
+ Segment Media Names
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentGeographics">
+ <summary>
+ Segment Geographics
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentAdPagePositions">
+ <summary>
+ Segment Ad Page Positions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentAdPublPositions">
+ <summary>
+ Segment Ad Publ Positions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentAdSizes">
+ <summary>
+ Segment Ad Sizes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentAdImages">
+ <summary>
+ Segment Ad Images
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentAdColours">
+ <summary>
+ Segment Ad Colours
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentLetterSizes">
+ <summary>
+ Segment Letter Sizes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentPhoneTypes">
+ <summary>
+ Segment Phone Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegmentCreatives">
+ <summary>
+ Segment Creatives
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMailJointsMethods">
+ <summary>
+ Mail Joints Methods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtReports">
+ <summary>
+ Reports
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtVATCategories">
+ <summary>
+ VATCategories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtControlValues">
+ <summary>
+ Control Values
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLookupGroups">
+ <summary>
+ Lookup Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventSelectionPages">
+ <summary>
+ Event Selection Pages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventClasses">
+ <summary>
+ Event Classes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventSessionTypes">
+ <summary>
+ Event Session Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSundryCostTypes">
+ <summary>
+ Sundry Cost Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtQPFormTypes">
+ <summary>
+ QP Form Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCPDCategories">
+ <summary>
+ CPD Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventWaitingListControlMethods">
+ <summary>
+ Event Waiting List Control Methods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventResourceTypes">
+ <summary>
+ Event Resource Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventResourceCopyToTypes">
+ <summary>
+ Event Resource Copy To Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventResourceDespatchToTypes">
+ <summary>
+ Event Resource Despatch To Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventResourceIssueBasisTypes">
+ <summary>
+ Event Resource Issue Basis Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventSubmissionResultTypes">
+ <summary>
+ Event Submission Result Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventGradeDataTypes">
+ <summary>
+ Event Grade Data Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCPDApprovalStatuses">
+ <summary>
+ CPDApprovalStatuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtGeographicalRegions">
+ <summary>
+ Geographical Regions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAppealTypes">
+ <summary>
+ Appeal Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCopyCriteria">
+ <summary>
+ Copy Criteria
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPISNumbers">
+ <summary>
+ PIS Numbers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtGenericLookup">
+ <summary>
+ Generic Lookup
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStatusTransitions">
+ <summary>
+ Status Transitions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRouteTypes">
+ <summary>
+ Route Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCollectorStatuses">
+ <summary>
+ Collector Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCollectionBoxReferences">
+ <summary>
+ Collection Box References
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtReadyForConfirmations">
+ <summary>
+ Ready For Confirmations
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtReadyForAcknowledgements">
+ <summary>
+ Ready For Acknowledgements
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCollectionPointTypes">
+ <summary>
+ Collection Point Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSalesContacts">
+ <summary>
+ Sales Contacts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPersonnelContacts">
+ <summary>
+ Personnel Contacts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventBookingStatuses">
+ <summary>
+ Event Booking Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAccomodationBookingStatuses">
+ <summary>
+ Accomodation Booking Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventPersonnelTasks">
+ <summary>
+ Event Personnel Tasks
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExternalResourceTypes">
+ <summary>
+ External Resource Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCollectionTypes">
+ <summary>
+ Collection Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBanks">
+ <summary>
+ Banks
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactAccounts">
+ <summary>
+ Contact Accounts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCreditCustomers">
+ <summary>
+ Credit Customers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStandardLetterBreaks">
+ <summary>
+ Standard Letter Breaks
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtVATRates">
+ <summary>
+ VAT Rates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtQuantityBreaks">
+ <summary>
+ Quantity Breaks
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSpecialPrices">
+ <summary>
+ Special Prices
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCurrencyExchangeRates">
+ <summary>
+ Currency Exchange Rates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtInvoiceDisputeCodes">
+ <summary>
+ Invoice Dispute Codes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPrincipalUsers">
+ <summary>
+ Principal Users
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebSelectionPages">
+ <summary>
+ Web Selection Pages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebPageUserControls">
+ <summary>
+ Web Page User Controls
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebPageItemTypes">
+ <summary>
+ Web Page Item Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebSites">
+ <summary>
+ Web Sites
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebMenuStyles">
+ <summary>
+ Web Menu Styles
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebPageItemStyles">
+ <summary>
+ Web Page Item Styles
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBankNames">
+ <summary>
+ Bank Names
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMandateTypes">
+ <summary>
+ Mandate Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBankAccountClaimDays">
+ <summary>
+ Bank Account Claim Days
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRenewalChangeReasons">
+ <summary>
+ Renewal Change Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCommunicationUsages">
+ <summary>
+ Communication Usages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMembershipPrices">
+ <summary>
+ Membership Prices
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMembershipEntitlements">
+ <summary>
+ MembershipEntitlements
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSurnamePrefixes">
+ <summary>
+ Surname Prefixes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBatchCategories">
+ <summary>
+ Batch Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCurrencyCodes">
+ <summary>
+ Currency Codes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBatchAnalysisCodes">
+ <summary>
+ Batch Analysis Codes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStandardPositions">
+ <summary>
+ Standard Positions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFundraisingStages">
+ <summary>
+ Fundraising Stages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFundraisingStatuses">
+ <summary>
+ Fundraising Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFundraisingTypes">
+ <summary>
+ Fundraising Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBlockBookings">
+ <summary>
+ Block Bookings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCollectionPISNumbers">
+ <summary>
+ Collection PIS Numbers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTopicGroups">
+ <summary>
+ Topic Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTopicDataSheet">
+ <summary>
+ Topic Data Sheet
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActionerSettings">
+ <summary>
+ Actioner Settings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtManagerSettings">
+ <summary>
+ ManagerSettings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStandardMailings">
+ <summary>
+ Standard Mailings
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMailTypes">
+ <summary>
+ MailTypes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMailsortServices">
+ <summary>
+ Mailsort Services
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtJobProcessors">
+ <summary>
+ Job Processors
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtJobNotifyStatuses">
+ <summary>
+ Job Notify Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtJobFrequencies">
+ <summary>
+ Job Frequencies
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLoginRequiredTypes">
+ <summary>
+ Login Required Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtXmlDataItems">
+ <summary>
+ Xml Data Items
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCampaigns">
+ <summary>
+ Campaigns
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAppeals">
+ <summary>
+ Appeals
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSegments">
+ <summary>
+ Segments
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAllViews">
+ <summary>
+ AllViews
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMembershipTypeTransitions">
+ <summary>
+ Membership Type Transitions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPurchaseOrderLineItems">
+ <summary>
+ Purchase Order Line Items
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCPDCycleTypes">
+ <summary>
+ CPD Cycle Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCPDPeriods">
+ <summary>
+ CPD Periods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCPDCategoryTypes">
+ <summary>
+ CPD Category Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtVoucherAgencies">
+ <summary>
+ Voucher Agencies
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSuppressionDataSheet">
+ <summary>
+ Suppression Data Sheet
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTransactionOrigins">
+ <summary>
+ Transaction Origins
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtJobProcessorPrinters">
+ <summary>
+ Job Processor Printers
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtNextMailingNumber">
+ <summary>
+ Next Mailing Number
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLegacyBequestTypes">
+ <summary>
+ Legacy Bequest Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLegacyBequestSubTypes">
+ <summary>
+ Legacy Bequest Sub Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLegacyBequestStatuses">
+ <summary>
+ Legacy Bequest Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLegacyDisputeReasons">
+ <summary>
+ Legacy Dispute Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLegacyIncomeStages">
+ <summary>
+ Legacy Income Stages
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLegacyReviewReasons">
+ <summary>
+ Legacy Review Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTaxRates">
+ <summary>
+ Tax Rates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLegacyBequests">
+ <summary>
+ Legacy Bequests
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtProductNumbers">
+ <summary>
+ Product Numbers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCampaignCostTypes">
+ <summary>
+ Campaign Cost Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCampaignRoles">
+ <summary>
+ Campaign Roles
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDistBoxesReportDates">
+ <summary>
+ Dist Boxes Report Dates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDistributionAffiliates">
+ <summary>
+ Distribution Affiliates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFastDataEntryUserControls">
+ <summary>
+ Fast Data Entry User Controls
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEventPricingMatrices">
+ <summary>
+ Event Pricing Matrices
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDistributionBoxes">
+ <summary>
+ Distribution Boxes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFundraisingPaymentTypes">
+ <summary>
+ Fundraising Payment Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFundraisingIncomePaymentTypes">
+ <summary>
+ FundraisingIncomePaymentTypes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDocumentDefaults">
+ <summary>
+ Document Defaults
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBankSuspenseAccounts">
+ <summary>
+ Bank Suspense Accounts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCollectionRunAudits">
+ <summary>
+ Collection Run Audits
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPrizeDraws">
+ <summary>
+ Prize Draws
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBatches">
+ <summary>
+ Batches
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBankStatements">
+ <summary>
+ Bank Statements
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPISBankStatements">
+ <summary>
+ PIS Bank Statements
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMaintenanceTables">
+ <summary>
+ Maintenance Tables
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPickingListWarehouses">
+ <summary>
+ Picking List Warehouses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDeclarationTaxClaims">
+ <summary>
+ Declaration Tax Claims
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtGaSponsorshipTaxClaims">
+ <summary>
+ Ga Sponsorship Tax Claims
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtProductCosts">
+ <summary>
+ Product Costs
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStockMovementReasons">
+ <summary>
+ Stock Movement Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtGaCertificateTaxClaims">
+ <summary>
+ Ga Certificate Tax Claims
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCriteriaSetDetails">
+ <summary>
+ Criteria Set Details
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtUsageCodes">
+ <summary>
+ Usage Codes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAnnual">
+ <summary>
+ Annual
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAccessLevels">
+ <summary>
+ Access Levels
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAddConditions">
+ <summary>
+ Add Conditions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtApplyIncentiveFreePeriods">
+ <summary>
+ Apply Incentive Free Periods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAppointmentTypes">
+ <summary>
+ Appointment Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtArrivalDays">
+ <summary>
+ Arrival Days
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAutoPayClaimDateMethods">
+ <summary>
+ Auto Pay Claim Date Methods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAutomaticWildcards">
+ <summary>
+ Automatic Wild cards
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBacsSources">
+ <summary>
+ Bacs Sources
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCO">
+ <summary>
+ Contact or Organisation
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtChargeIndividualMembers">
+ <summary>
+ Charge Individual Members
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCharityTaxStatuses">
+ <summary>
+ Charity Tax Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtClaimFileFormats">
+ <summary>
+ Claim File Formats
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtClaimFormats">
+ <summary>
+ Claim Formats
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactSelectionTypes">
+ <summary>
+ Contact Selection Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCopyTo">
+ <summary>
+ Copy To
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDataTypes">
+ <summary>
+ Data Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDepartureDays">
+ <summary>
+ Departure Days
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDepreciationIntervalUnits">
+ <summary>
+ Depreciation Interval Units
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDepreciationStartUnits">
+ <summary>
+ Depreciation Start Units
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDespatchTo">
+ <summary>
+ Despatch To
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDirections">
+ <summary>
+ Directions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDocumentSources">
+ <summary>
+ Document Sources
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEditAccessLevels">
+ <summary>
+ Edit Access Levels
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFeeMultiplierTypes">
+ <summary>
+ Fee Multiplier Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFinderTypes">
+ <summary>
+ Finder Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtForWhom">
+ <summary>
+ For Whom
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtHonorificTypes">
+ <summary>
+ Honorific Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtIE">
+ <summary>
+ IE
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtIncentiveTypes">
+ <summary>
+ Incentive Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtIssueBasis">
+ <summary>
+ Issue Basis
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMainDataTypes">
+ <summary>
+ Main Data Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMemberOrPayers">
+ <summary>
+ Member Or Payers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMembershipLevels">
+ <summary>
+ Membership Levels
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtNameItemTypes">
+ <summary>
+ Name Item Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtOperation1Logs">
+ <summary>
+ Operation 1 Logs
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtOperation2Logs">
+ <summary>
+ Operation 2 Logs
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtOperation3Logs">
+ <summary>
+ Operation 3 Logs
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtParagraphAccessLevels">
+ <summary>
+ Paragraph Access Levels
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPayerRequired">
+ <summary>
+ Payer Required
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPeriods">
+ <summary>
+ Periods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtProRateChargeMethods">
+ <summary>
+ Pro Rate Charge Methods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRateToUse">
+ <summary>
+ Rate To Use
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRecipient1">
+ <summary>
+ Recipient 1
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRecipient2">
+ <summary>
+ Recipient 2
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRecipient3">
+ <summary>
+ Recipient 3
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSex">
+ <summary>
+ Sex
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStartDays">
+ <summary>
+ Start Days
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStorageTypes">
+ <summary>
+ Storage Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSubsequentTriggers">
+ <summary>
+ Subsequent Triggers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSubsidiaryDataTypes">
+ <summary>
+ Subsidiary Data Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTermsFrom">
+ <summary>
+ Terms From
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTermsPeriods">
+ <summary>
+ Terms Periods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTransactionSigns">
+ <summary>
+ Transaction Signs
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtNominalAccounts">
+ <summary>
+ Nominal Accounts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtNominalAccountSuffixes">
+ <summary>
+ Nominal Account Suffixes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSearchAreas">
+ <summary>
+ Search Areas
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSelectionSets">
+ <summary>
+ Selection Sets
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSelectionControls">
+ <summary>
+ Selection Controls
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMailingSelections">
+ <summary>
+ Mailing Selections
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRateNominalAccounts">
+ <summary>
+ Rate Nominal Accounts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMailsortCode">
+ <summary>
+ Mailsort Code
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtConfigGroups">
+ <summary>
+ Config Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtConfigNames">
+ <summary>
+ Config Names
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTypes">
+ <summary>
+ Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCases">
+ <summary>
+ Cases
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtModuleNames">
+ <summary>
+ Module Name
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFieldType">
+ <summary>
+ Field Type
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSectionType">
+ <summary>
+ Section Type
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSuppressOutput">
+ <summary>
+ Suppress Output
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtReportItemType">
+ <summary>
+ Report Item Type
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtItemAlignment">
+ <summary>
+ Item Alignment
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSuppressBlanks">
+ <summary>
+ Suppress Blanks
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtReportNumber">
+ <summary>
+ Report Number
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAccessControlGroups">
+ <summary>
+ Access Control Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAccessControlAreas">
+ <summary>
+ Access Control Areas
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAccessControl">
+ <summary>
+ Access Control
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactTypes">
+ <summary>
+ Contact Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactIncentiveResponses">
+ <summary>
+ Contact Incentive Responses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtIncentiveSchemeProducts">
+ <summary>
+ Incentive Scheme Products
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtOrders">
+ <summary>
+ Orders
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtNewOrders">
+ <summary>
+ New Orders
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDirectDebitSource">
+ <summary>
+ Direct Debit Source
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBankersOrderSource">
+ <summary>
+ Bankers Order Source
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCreditCardAuthoritiesSource">
+ <summary>
+ Credit Card Authorities Source
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTraderMaintenanceApp">
+ <summary>
+ Trader Maintenance App
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTraderApplication">
+ <summary>
+ Trader Application
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTraderAppBank">
+ <summary>
+ Trader App Bank
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLinkToCommunication">
+ <summary>
+ Link To Communication
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMeetingTypes">
+ <summary>
+ Meeting Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMeetingAttendedTypes">
+ <summary>
+ Meeting Attended Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMeetingLinkTypes">
+ <summary>
+ Meeting Link Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMeetingRoles">
+ <summary>
+ Meeting Roles
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtUserContactNames">
+ <summary>
+ User Contact Names
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCMTCalculateProportionalBal">
+ <summary>
+ CMT Calculate Proportional Bal
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtGiftCardStatus">
+ <summary>
+ Gift Card Status
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtServiceProductContacts">
+ <summary>
+ Service Product Contacts
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBunches">
+ <summary>
+ Bunches
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBunchTopics">
+ <summary>
+ Bunch Topics
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBranchMember">
+ <summary>
+ Branch Member
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFixedCycle">
+ <summary>
+ Fixed Cycle
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactMailingDocuments">
+ <summary>
+ Contact Mailing Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStandingOrders">
+ <summary>
+ Standing Orders
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRelationshipStatuses">
+ <summary>
+ Relationship Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtTraderApplicationTypes">
+ <summary>
+ Trader Application Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCurrencyAndUnicode">
+ <summary>
+ Currency And Unicode
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMembershipStatuses">
+ <summary>
+ Membership Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCPDCycleStatuses">
+ <summary>
+ CPD Cycle Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCPDType">
+ <summary>
+ CPD Type
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSurveys">
+ <summary>
+ Surveys
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtSurveyVersions">
+ <summary>
+ Survey Versions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMaintenanceGroups">
+ <summary>
+ Maintenance Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtVATRateHistory">
+ <summary>
+ VAT Rate History
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAnswerDataType">
+ <summary>
+ Answer Data Type
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAnswerType">
+ <summary>
+ Answer Type
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtReportSection">
+ <summary>
+ Report Section
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtRateModifiers">
+ <summary>
+ Rate Modifiers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPriceIsPercentage">
+ <summary>
+ Price Is Percentage
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtViewTypes">
+ <summary>
+ View Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtServiceControl">
+ <summary>
+ Service Control
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactCategories">
+ <summary>
+ Contact Categories
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtProductOffers">
+ <summary>
+ Product Offers
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebItemGroups">
+ <summary>
+ Web Item Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactSurveys">
+ <summary>
+ Contact Surveys
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebDirectory">
+ <summary>
+ Web Directory
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBoxStatus">
+ <summary>
+ Box Status
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFundraisingBusinessTypes">
+ <summary>
+ Fundraising Business Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBankTransactions">
+ <summary>
+ Bank Transactions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebDocuments">
+ <summary>
+ Web Documents
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBankHolidayDays">
+ <summary>
+ Bank Holiday Days
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLabelNameFormatCodes">
+ <summary>
+ Label Name Format Codes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPostcodeValidationInfo">
+ <summary>
+ Postcode Validation Info
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtServiceBookingLabelNames">
+ <summary>
+ Service Booking Label Names
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPurchaseOrderPaymentTypes">
+ <summary>
+ PurchaseOrder Payment Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExpectedReceiptReasons">
+ <summary>
+ Expected Receipt Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtBacsMessagingFileFormats">
+ <summary>
+ Bacs Messaging File Formats
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtGroupDefaultValues">
+ <summary>
+ Group Default Values
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStatusReasons">
+ <summary>
+ Status Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtLoanTypes">
+ <summary>
+ Loan Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWebPublishFlags">
+ <summary>
+ Web Publish Flags
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCPDItemTypes">
+ <summary>
+ CPD Item Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExplorerLocation">
+ <summary>
+ Explorer Location
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtMerchantDetails">
+ <summary>
+ Merchant Details
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamAssessmentTypes">
+ <summary>
+ Exam Assessment Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamCentres">
+ <summary>
+ Exam Centres
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamContactTypes">
+ <summary>
+ Exam Contact Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamExemptions">
+ <summary>
+ Exam Exemptions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamExemptionStatuses">
+ <summary>
+ Exam Exemption Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamExemptionStatusTypes">
+ <summary>
+ Exam Exemption Status Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamExpenseTypes">
+ <summary>
+ Exam Expense Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamGradeConditionTypes">
+ <summary>
+ Exam Grade Condition Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamGradeOperators">
+ <summary>
+ Exam Grade Operators
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamGrades">
+ <summary>
+ Exam Grades
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamMarkerOptions">
+ <summary>
+ Exam Marker Options
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamMarkerStatus">
+ <summary>
+ Exam Marker Status
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamMarkTypes">
+ <summary>
+ Exam Mark Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamPersonnelTypes">
+ <summary>
+ Exam Personnel Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamResultTypes">
+ <summary>
+ Exam Result Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamSessions">
+ <summary>
+ Exam Sessions
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamStudentUnitStatuses">
+ <summary>
+ Exam Student Unit Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamUnits">
+ <summary>
+ Exam Units
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamUnitStatuses">
+ <summary>
+ Exam Unit Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamUnitTypes">
+ <summary>
+ Exam Unit Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamUnitsMarkerAllocation">
+ <summary>
+ Exam Units Marker Allocation
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamTimeLimits">
+ <summary>
+ Exam Time Limits
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtReportParameters">
+ <summary>
+ Report Parameters
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamCentreRateTypes">
+ <summary>
+ Exam Centre Rate Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtResponseChannels">
+ <summary>
+ Response Channels
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtEmailJobs">
+ <summary>
+ Email Jobs
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCMTExcessPayments">
+ <summary>
+ CMT Excess Payments
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCMTProrateCosts">
+ <summary>
+ CMT Prorate Costs
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActivitiesAndValues">
+ <summary>
+ Activities And Values
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPopPaymentMethods">
+ <summary>
+ Pop Payment Methods
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtDDClaimOutputTypes">
+ <summary>
+ DD Claim Output Types
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamAccreditationStatuses">
+ <summary>
+ Exam Accreditation Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtExamGradeChangeReasons">
+ <summary>
+ Exam Grade Change Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtStudyModes">
+ <summary>
+ Study Modes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtFundraisingRequests">
+ <summary>
+ Fundraising Requests
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtUserSchemes">
+ <summary>
+ User Schemes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWorkstreamGroups">
+ <summary>
+ Workstream Groups
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWorkstreamGroupOutcomes">
+ <summary>
+ Workstream Group Outcomes
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtWorkstreamGroupActionTemplates">
+ <summary>
+ Workstream Group Action Templates
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtActionChangeReasons">
+ <summary>
+ Action Change Reasons
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtContactCreditCards">
+ <summary>
+ Contact Credit Cards
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtListManagerEbuViews">
+ <summary>
+ List Manager Ebu Views
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtCreditCardAuthorisations">
+ <summary>
+ Credit Card Authorisations
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtPositionStatuses">
+ <summary>
+ Position Statuses
+ </summary>
+</member>
+<member name="F:CARE.XMLAccess.LookupData.XMLLookupDataTypes.xldtAvailableAlerts">
+ <summary>Available Contact Alerts</summary>
+</member>
+<member name="T:CARE.XMLAccess.LookupData.XMLMaintenanceControlTypes">
+ <summary>
+The enumerations for the Maintenance Control Types used by GetMaintenanceControls and UpdateMaintenanceControls
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLAddData.XMLDocumentHistoryActions">
+ <summary>
+ The enumerations for Document History Actions used by AddCommunicationsLogHistory
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.XMLAddData.AddCategory(System.String)">
+ <summary>
+ Add new category record
+ </summary>
+ <param name="pParams">Parameter to create category</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLAddressDataSelectionTypes">
+ <summary>
+ The enumerations for Address Data Selection Types used by SelectAddressData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLJournalDataSelectionTypes">
+ <summary>
+ The enumerations for Journal Data Selection Types used by SelectJournalData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLTransactionDataSelectionTypes">
+ <summary>
+ The enumerations for Transaction Data Selection Types used by SelectTransactionData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLBankAccountDataSelectionTypes">
+ <summary>
+ The enumerations for Bank Account Data Selection Types used by SelectBankAccountData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLDirectDebitDataSelectionTypes">
+ <summary>
+ The enumerations for Direct Debit Data Selection Types used by SelectDirectDebitData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLCovenantDataSelectionTypes">
+ <summary>
+ Defines the enumerations for Convenant Data Selection Types used by SelectCovenantData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLPaymentPlanDataSelectionTypes">
+ <summary>
+ The enumerations for Payment Plan Data Selection Types used by SelectPaymentPlanData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLGiftAidDataSelectionTypes">
+ <summary>
+ The enumerations for Gift Aid Data Selection Types used by SelectGiftAidData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLPledgeDataSelectionTypes">
+ <summary>
+ The enumerations for Pledge Data Selection Types used by SelectPledgeData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLDataSelection.XMLDelegateDataSelectionTypes">
+ <summary>
+ The enumerations for Delegate Data Selection Types used by SelectDelegateData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLLookupData.XMLActionScheduleTypes">
+ <summary>
+ The enumerations for the Action Schedule Types used by GetActionScheduleDate
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.XMLLookupData.CheckIbanNumber(System.String)">
+ <summary>
+ Validated the IBAN number
+ </summary>
+ <returns>Ture (Y) if valid else Error Message</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.XMLLookupData.GetPotentialClaimDatesForPayment(System.String)">
+ <summary>
+ Get potential claim dates for a payment
+ </summary>
+ <returns>The list of claim dates that are valid for the specified order payment schedule record</returns>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLPaymentPlans.XMLPaymentPlanMenuTypes">
+ <summary>
+ The enumerations for Payment Plan Menu Types used by ProcessPaymentPlanMenu
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLPaymentPlans.XMLPaymentPlanUpdateTypes">
+ <summary>
+ The enumerations for Payment Plan Update Types used by UpdatePaymentPlan
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.XMLPaymentPlans.UpdateClaimDateForPayment(System.String)">
+ <summary>
+ Update claim date for a payment
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLTrader.ProcessStockMovementType">
+ <summary>
+ The enumerations for Process Stock Movement Type used by ProcessStockMovement
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.XMLTrader.CopyTraderApplication(System.String)">
+ <summary>
+ Copy Trader Application
+ </summary>
+ <param name="pParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.XMLTrader.SaveTraderApplicationBank(System.String)">
+ <summary>
+ Saving Trader Application Banks
+ </summary>
+ <param name="pParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.XMLTrader.DeleteTraderApplication(System.String)">
+ <summary>
+ Delete Trader Application
+ Revert Trader Application
+ </summary>
+ <param name="pParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:CARE.XMLAccess.XMLBulkMailer">
+ <summary>
+ The XML interface the bulk mailer system.
+ </summary>
+</member>
+<member name="M:CARE.XMLAccess.XMLBulkMailer.#ctor(System.String)">
+ <summary>
+ Initialize a new instance of the <see cref="T:CARE.XMLAccess.XMLBulkMailer" /> class.
+ </summary>
+ <param name="pParams">The XML parameters passed to the web service.</param>
+</member>
+<member name="M:CARE.XMLAccess.XMLBulkMailer.Mailings(System.String)">
+ <summary>
+ The names of the campaigns available in the bulk mailing system.
+ </summary>
+ <param name="pDummy">A dummy string to satisfy the requirements of the called code.</param>
+</member>
+<member name="M:CARE.XMLAccess.XMLBulkMailer.MailingProperties(System.String)">
+ <summary>
+ Get the properties of a bulk mailer mailing.
+ </summary>
+ <param name="pParams">The web service parameters.</param>
+</member>
+<member name="M:CARE.XMLAccess.XMLBulkMailer.MailToList(System.String,System.String)">
+ <summary>
+ Request the bulk mailer to send a mailing to list of contacts.
+ </summary>
+ <param name="pParams">The XML params.</param>
+ <param name="pFilename">The filename of the CSV file containing the contacts details.</param><returns></returns>
+</member>
+<member name="M:CARE.XMLAccess.XMLBulkMailer.CreateResultsTable(System.String[])">
+ <summary>
+ Creates the results table used to send the response from interactive methods.
+ </summary>
+ <param name="pColumnNames">The names of the columns to appear in the table.</param><returns></returns>
+</member>
+<member name="T:CARE.XMLAccess.XMLDocumentTransporter">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:CARE.XMLAccess.XMLDocumentTransporter.#ctor(System.String,System.Collections.Generic.IList{System.Int32})">
+ <summary>
+ Initializes a new instance of the <see cref="T:CARE.XMLAccess.XMLDocumentTransporter"/> class.
+ </summary>
+ <param name="pXMLParms">The XML parameters.</param>
+ <param name="pDocuments">The list of documents to move.</param>
+</member>
+<member name="M:CARE.XMLAccess.XMLDocumentTransporter.Dispose(System.Boolean)">
+ <summary>
+ Releases unmanaged and - optionally - managed resources.
+ </summary>
+ <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+</member>
+<member name="M:CARE.XMLAccess.XMLDocumentTransporter.Dispose">
+ <summary>
+ Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+ </summary>
+</member>
+<member name="T:CARE.XMLAccess.XMLHelper.CDBDAXMLErrors">
+ <summary>
+ The enumerations for CDBDAXML Errors
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.XMLAccess.XMLHelper.GetXMLStringFromParameters(CARE.Access.CDBParameters,System.String)">
+ <summary>
+ Returns a string containing the XML presentation of the parameters passed, allowing the name of the start element to be set. 
+ </summary>
+ <param name="pParams">The Parameters that are to be represented in XML</param>
+ <param name="pStartElementName">The Name of the containing XML Tag. Parameters for XML received via web services, Result for XML returned by web services, but not restricted.</param>
+ <returns>A string containing the XML presentation of the parameters passed</returns>
+ <remarks>To Do. Change the other GetXMLStringFromParameters to call this.</remarks>
+</member>
+<member name="M:CARE.XMLAccess.XMLHelper.AddProformaAction(CARE.Access.CDBEnvironment,System.Int32,CARE.IActionLink.ActionLinkObjectTypes,System.Int32,System.Int32)">
+ <summary>Add new Actions from a Proforma (Template) <see cref="T:CARE.Access.Action">Action</see>.</summary>
+ <param name="pEnv"></param>
+ <param name="pActionNumber">The Action number of the Proforma (Template) Action.</param>
+ <param name="pLinktype">The link type for an additional link to be created for each Action.</param>
+ <param name="pLinkNumber">The link number for an additional link to be created for each Action.</param>
+ <param name="pRelatedDocument">The number of a Document to be linked to each Action.</param>
+ <returns>Returns an <see cref="T:CARE.Access.ActionSet">ActionSet</see> containing all the new Actions.</returns>
+</member>
+<member name="M:CARE.XMLAccess.XMLHelper.AddProformaAction(CARE.Access.CDBEnvironment,System.Int32,CARE.IActionLink.ActionLinkObjectTypes,System.Int32,System.Int32,System.Int32)">
+ <summary>Add new Actions from a Proforma (Template) <see cref="T:CARE.Access.Action">Action</see>.</summary>
+ <param name="pEnv"></param>
+ <param name="pActionNumber">The Action number of the Proforma (Template) Action.</param>
+ <param name="pLinktype">The link type for an additional link to be created for each Action.</param>
+ <param name="pLinkNumber">The link number for an additional link to be created for each Action.</param>
+ <param name="pRelatedDocument">The number of a Document to be linked to each Action.</param>
+ <param name="pExamCentreId">The number of an Exam Centre to be linked to each Action.</param>
+ <returns>Returns an <see cref="T:CARE.Access.ActionSet">ActionSet</see> containing all the new Actions.</returns>
+</member>
+<member name="M:CARE.XMLAccess.XMLHelper.AddProformaAction(CARE.Access.CDBEnvironment,System.Int32,CARE.IActionLink.ActionLinkObjectTypes,System.Int32,System.Int32,System.Int32,System.DateTime,System.DateTime,System.Boolean)">
+ <summary>Add new Actions from a Proforma (Template) <see cref="T:CARE.Access.Action">Action</see>.</summary>
+ <param name="pEnv"></param>
+ <param name="pActionNumber">The Action number of the Proforma (Template) Action.</param>
+ <param name="pLinktype">The link type for an additional link to be created for each Action.</param>
+ <param name="pLinkNumber">The link number for an additional link to be created for each Action.</param>
+ <param name="pRelatedDocument">The number of a Document to be linked to each Action.</param>
+ <param name="pExamCentreId">The number of an Exam Centre to be linked to each Action.</param>
+ <param name="pStartProcessingDate">The base date to use for calculating the new Action dates when the Proforma Action uses negative offsets or is the main (first) Action in the set.</param>
+ <param name="pEndProcessingDate">The base date to use for calculating the new Action dates when the Proforma Action does not use negative offsets.</param>
+ <param name="pCreateActions">True to save the new Actions and related data in the database, otherwise False to set the Action data without saving.</param>
+ <returns>Returns an <see cref="T:CARE.Access.ActionSet">ActionSet</see> containing all the new Actions.</returns>
+</member>
+<member name="M:CARE.XMLAccess.XMLHelper.PostAddRecord(CARE.Access.CDBUser,CARE.Access.CDBParameters,CARE.Access.CARERecord)">
+ <summary>
+ Runs after a Record has been added
+ </summary>
+ <param name="pUser"></param>
+ <param name="pParms"></param>
+ <param name="pRecord"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.AdminData.CanUpdateTraderApp(CARE.Access.CDBEnvironment,System.String)">
+ <summary>
+ Checks if the trader app is read only. If not returns a boolean value
+ indicating whether its an existing application or a new one
+ </summary>
+ <param name="pFPApp"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

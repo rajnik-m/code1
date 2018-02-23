@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://care.co.uk/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://care.co.uk/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://care.co.uk/webservices/">
+      <s:element name="AddWebInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddWebInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebMenu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebMenuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddWebMenuResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebMenuItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebMenuItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddWebMenuItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddWebPageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebPageItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebPageItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddWebPageItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebPageUserControl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWebPageUserControlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddWebPageUserControlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWebMenu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWebMenuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteWebMenuResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWebMenuItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWebMenuItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteWebMenuItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWebPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWebPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteWebPageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWebPageItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWebPageItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteWebPageItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportWebData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pImportData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportWebDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportWebDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectWebData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSelectDataType" type="tns:XMLWebDataSelectionTypes" />
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="XMLWebDataSelectionTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="wstNone" />
+          <s:enumeration value="wstControl" />
+          <s:enumeration value="wstMenus" />
+          <s:enumeration value="wstMenu" />
+          <s:enumeration value="wstMenuItem" />
+          <s:enumeration value="wstPages" />
+          <s:enumeration value="wstPage" />
+          <s:enumeration value="wstPageItem" />
+          <s:enumeration value="wstPageData" />
+          <s:enumeration value="wstExport" />
+          <s:enumeration value="wstImages" />
+          <s:enumeration value="wstImageItem" />
+          <s:enumeration value="wstDocuments" />
+          <s:enumeration value="wstDocumentItem" />
+          <s:enumeration value="wstPageItemControls" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SelectWebDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectWebDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebMenu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebMenuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateWebMenuResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebMenuItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebMenuItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateWebMenuItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateWebPageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateWebInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPageItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPageItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateWebPageItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPageItemControls">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPageItemControlsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateWebPageItemControlsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPageItemData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPageItemDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateWebPageItemDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPageUserControl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWebPageUserControlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateWebPageUserControlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddWebInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWebInfo" />
+  </wsdl:message>
+  <wsdl:message name="AddWebInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWebInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWebMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWebMenu" />
+  </wsdl:message>
+  <wsdl:message name="AddWebMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWebMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWebMenuItemSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWebMenuItem" />
+  </wsdl:message>
+  <wsdl:message name="AddWebMenuItemSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWebMenuItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWebPageSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWebPage" />
+  </wsdl:message>
+  <wsdl:message name="AddWebPageSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWebPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWebPageItemSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWebPageItem" />
+  </wsdl:message>
+  <wsdl:message name="AddWebPageItemSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWebPageItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWebPageUserControlSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWebPageUserControl" />
+  </wsdl:message>
+  <wsdl:message name="AddWebPageUserControlSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWebPageUserControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWebMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteWebMenu" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWebMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteWebMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWebMenuItemSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteWebMenuItem" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWebMenuItemSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteWebMenuItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWebPageSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteWebPage" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWebPageSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteWebPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWebPageItemSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteWebPageItem" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWebPageItemSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteWebPageItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportWebDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportWebData" />
+  </wsdl:message>
+  <wsdl:message name="ImportWebDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportWebDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectWebDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectWebData" />
+  </wsdl:message>
+  <wsdl:message name="SelectWebDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectWebDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWebMenu" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWebMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebMenuItemSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWebMenuItem" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebMenuItemSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWebMenuItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWebPage" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWebPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWebInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWebInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageItemSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWebPageItem" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageItemSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWebPageItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageItemControlsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWebPageItemControls" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageItemControlsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWebPageItemControlsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageItemDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWebPageItemData" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageItemDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWebPageItemDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageUserControlSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWebPageUserControl" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWebPageUserControlSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWebPageUserControlResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebAccessSoap">
+    <wsdl:operation name="AddWebInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\AddWebInfo.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddWebInfoSoapIn" />
+      <wsdl:output message="tns:AddWebInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWebMenu">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\AddWebMenu.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddWebMenuSoapIn" />
+      <wsdl:output message="tns:AddWebMenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWebMenuItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\AddWebMenuItem.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddWebMenuItemSoapIn" />
+      <wsdl:output message="tns:AddWebMenuItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWebPage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\AddWebPage.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddWebPageSoapIn" />
+      <wsdl:output message="tns:AddWebPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWebPageItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\AddWebPageItem.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddWebPageItemSoapIn" />
+      <wsdl:output message="tns:AddWebPageItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWebPageUserControl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\AddWebPageUserControl.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddWebPageUserControlSoapIn" />
+      <wsdl:output message="tns:AddWebPageUserControlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebMenu">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\DeleteWebMenu.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteWebMenuSoapIn" />
+      <wsdl:output message="tns:DeleteWebMenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebMenuItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\DeleteWebMenuItem.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteWebMenuItemSoapIn" />
+      <wsdl:output message="tns:DeleteWebMenuItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebPage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\DeleteWebPage.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteWebPageSoapIn" />
+      <wsdl:output message="tns:DeleteWebPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebPageItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\DeleteWebPageItem.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteWebPageItemSoapIn" />
+      <wsdl:output message="tns:DeleteWebPageItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportWebData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\ImportWebData.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ImportWebDataSoapIn" />
+      <wsdl:output message="tns:ImportWebDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectWebData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED &lt;A HREF=documentation\SelectWebData.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SelectWebDataSoapIn" />
+      <wsdl:output message="tns:SelectWebDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebMenu">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\UpdateWebMenu.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateWebMenuSoapIn" />
+      <wsdl:output message="tns:UpdateWebMenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebMenuItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\UpdateWebMenuItem.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateWebMenuItemSoapIn" />
+      <wsdl:output message="tns:UpdateWebMenuItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\UpdateWebPage.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateWebPageSoapIn" />
+      <wsdl:output message="tns:UpdateWebPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\UpdateWebInfo.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateWebInfoSoapIn" />
+      <wsdl:output message="tns:UpdateWebInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\UpdateWebPageItem.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateWebPageItemSoapIn" />
+      <wsdl:output message="tns:UpdateWebPageItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageItemControls">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\UpdateWebPageItemControls.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateWebPageItemControlsSoapIn" />
+      <wsdl:output message="tns:UpdateWebPageItemControlsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageItemData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\UpdateWebPageItemData.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateWebPageItemDataSoapIn" />
+      <wsdl:output message="tns:UpdateWebPageItemDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageUserControl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">NOT CURRENTLY SUPPORTED  &lt;A HREF=documentation\UpdateWebPageUserControl.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateWebPageUserControlSoapIn" />
+      <wsdl:output message="tns:UpdateWebPageUserControlSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebAccessSoap" type="tns:WebAccessSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddWebInfo">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddWebInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebMenu">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddWebMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebMenuItem">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddWebMenuItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebPage">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddWebPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebPageItem">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddWebPageItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebPageUserControl">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddWebPageUserControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebMenu">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteWebMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebMenuItem">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteWebMenuItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebPage">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteWebPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebPageItem">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteWebPageItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportWebData">
+      <soap:operation soapAction="http://care.co.uk/webservices/ImportWebData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectWebData">
+      <soap:operation soapAction="http://care.co.uk/webservices/SelectWebData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebMenu">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateWebMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebMenuItem">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateWebMenuItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPage">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateWebPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebInfo">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateWebInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageItem">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateWebPageItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageItemControls">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateWebPageItemControls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageItemData">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateWebPageItemData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageUserControl">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateWebPageUserControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebAccessSoap12" type="tns:WebAccessSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddWebInfo">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddWebInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebMenu">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddWebMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebMenuItem">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddWebMenuItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebPage">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddWebPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebPageItem">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddWebPageItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWebPageUserControl">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddWebPageUserControl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebMenu">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteWebMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebMenuItem">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteWebMenuItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebPage">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteWebPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWebPageItem">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteWebPageItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportWebData">
+      <soap12:operation soapAction="http://care.co.uk/webservices/ImportWebData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectWebData">
+      <soap12:operation soapAction="http://care.co.uk/webservices/SelectWebData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebMenu">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateWebMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebMenuItem">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateWebMenuItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPage">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateWebPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebInfo">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateWebInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageItem">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateWebPageItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageItemControls">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateWebPageItemControls" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageItemData">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateWebPageItemData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWebPageUserControl">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateWebPageUserControl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebAccess">
+    <wsdl:port name="WebAccessSoap" binding="tns:WebAccessSoap">
+      <soap:address location="http://localhost/CareServices/WebAccess.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebAccessSoap12" binding="tns:WebAccessSoap12">
+      <soap12:address location="http://localhost/CareServices/WebAccess.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

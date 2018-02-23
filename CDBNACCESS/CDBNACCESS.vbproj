@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE5082A7-D4C4-4ADB-9E25-B03AE84096D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CARE</RootNamespace>
+    <AssemblyName>CDBNACCESS</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\Web\CareServices\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CDBNACCESS.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CDBNACCESS.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dotMailer.Sdk">
+      <HintPath>..\packages\dotMailerSdk.1.7.7\lib\dotMailer.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CARE.Access" />
+    <Import Include="CARE.Collections" />
+    <Import Include="CARE.Data" />
+    <Import Include="CARE.Resources" />
+    <Import Include="CARE.Utilities" />
+    <Import Include="CARE.Utilities.Common" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Text" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\Action.vb" />
+    <Compile Include="Actions\ActionLink.vb" />
+    <Compile Include="Actions\ActionSubject.vb" />
+    <Compile Include="Actions\ContactPositionAction.vb" />
+    <Compile Include="Actions\IActionLink.vb" />
+    <Compile Include="BulkMailer\BulkMailerActvity.vb" />
+    <Compile Include="BulkMailer\BulkMailerFactory.vb" />
+    <Compile Include="BulkMailer\BulkMailingHistory.vb" />
+    <Compile Include="BulkMailer\BulkMailingStats.vb" />
+    <Compile Include="BulkMailer\BulkMailing.vb" />
+    <Compile Include="BulkMailer\Logger.vb" />
+    <Compile Include="BulkMailer\CsvReader.vb" />
+    <Compile Include="BulkMailer\DotMailer.vb" />
+    <Compile Include="BulkMailer\BulkMailer.vb" />
+    <Compile Include="BulkMailer\BulkMailingProperties.vb" />
+    <Compile Include="BulkMailer\NullBulkMailer.vb" />
+    <Compile Include="Category\Category.vb" />
+    <Compile Include="Category\CategoryLink.vb" />
+    <Compile Include="Config\ConfigNameScope.vb" />
+    <Compile Include="Config\DatabasesCollectionHandler.vb" />
+    <Compile Include="Config\AuthuenticationValuesHandler.vb" />
+    <Compile Include="Config\DbConfig.vb" />
+    <Compile Include="Config\ExtensionAssemblyRegistrar.vb" />
+    <Compile Include="Config\NfpConfigrationManager.vb" />
+    <Compile Include="Config\NfpConfigSection.vb" />
+    <Compile Include="Contacts\Address.vb" />
+    <Compile Include="Contacts\Attachment.vb" />
+    <Compile Include="Contacts\AttachmentLink.vb" />
+    <Compile Include="Contacts\Communication.vb" />
+    <Compile Include="Contacts\ContactAddress.vb" />
+    <Compile Include="Contacts\ContactAlert.vb" />
+    <Compile Include="Contacts\ContactAlertLink.vb" />
+    <Compile Include="Contacts\ContactAppointment.vb" />
+    <Compile Include="Contacts\ContactCategory.vb" />
+    <Compile Include="Contacts\ContactIncentive.vb" />
+    <Compile Include="Contacts\ContactIncentiveResponse.vb" />
+    <Compile Include="Contacts\ContactLink.vb" />
+    <Compile Include="Contacts\ContactPosition.vb" />
+    <Compile Include="Contacts\ContactFundraisingEvent.vb" />
+    <Compile Include="Contacts\ContactPositionTimesheet.vb" />
+    <Compile Include="Contacts\ContactRole.vb" />
+    <Compile Include="Contacts\Country.vb" />
+    <Compile Include="Contacts\DocumentTransporter.vb" />
+    <Compile Include="Contacts\DuplicateContact.vb" />
+    <Compile Include="Contacts\EntityAlert.vb" />
+    <Compile Include="Contacts\EntityAlertItem.vb" />
+    <Compile Include="Contacts\PortalPasswordHistory.vb" />
+    <Compile Include="Contacts\PositionLink.vb" />
+    <Compile Include="Contacts\ContactSuppression.vb" />
+    <Compile Include="CPD\ContactCpdObjective.vb" />
+    <Compile Include="CPD\CpdApprovalStatus.vb" />
+    <Compile Include="CPD\CpdCycleStatus.vb" />
+    <Compile Include="CPD\EventSessionCpd.vb" />
+    <Compile Include="DataSelectionQBE.vb" />
+    <Compile Include="Dedup\DataGeneratorFactory.vb" />
+    <Compile Include="Dedup\DedupDataGeneratorBase.vb" />
+    <Compile Include="Dedup\ContactUniservDedupDataGenerator.vb" />
+    <Compile Include="Dedup\DedupDataSelection.vb" />
+    <Compile Include="Dedup\ContactDedupDataGenerator.vb" />
+    <Compile Include="Dedup\DedupClause.vb" />
+    <Compile Include="Dedup\DedupMatch.vb" />
+    <Compile Include="Dedup\DedupRank.vb" />
+    <Compile Include="Dedup\DedupRule.vb" />
+    <Compile Include="Dedup\IDedupDataGenerator.vb" />
+    <Compile Include="Documents\DocumentLink.vb" />
+    <Compile Include="EntityGroups\ContactGroupUser.vb" />
+    <Compile Include="Events\DelegateActivity.vb" />
+    <Compile Include="Events\DelegateLink.vb" />
+    <Compile Include="Events\SessionCandidateNumber.vb" />
+    <Compile Include="Events\LoanItem.vb" />
+    <Compile Include="Exams\CertificateDataProcessor.vb" />
+    <Compile Include="Exams\ContactExamCert.vb" />
+    <Compile Include="Exams\ContactExamCertReprint.vb" />
+    <Compile Include="Exams\ContactExamMergeData.vb" />
+    <Compile Include="Financial\Reversal.vb" />
+    <Compile Include="Gift Aid\DeclarationLinesUnclaimed.vb" />
+    <Compile Include="Gift Aid\InvalidDeclarationPotentialLine.vb" />
+    <Compile Include="Integration\IPostcodeValidator.vb" />
+    <Compile Include="Integration\PostcoderAddress.vb" />
+    <Compile Include="Integration\PostcodeValidatorFactory.vb" />
+    <Compile Include="Integration\QASProOnDemandPostcodeValidator.vb" />
+    <Compile Include="Interfaces\IAddress.vb" />
+    <Compile Include="Lookup Tables\MaintenanceRelation.vb" />
+    <Compile Include="Lookup Tables\PrizeDraw.vb" />
+    <Compile Include="Pledges\PreTaxPGPaymentHistory.vb" />
+    <Compile Include="Pledges\PreTaxPayrollGivingPayment.vb" />
+    <Compile Include="Pledges\PayrollGivingAgency.vb" />
+    <Compile Include="Support\BulkUpdater.vb" />
+    <Compile Include="Support\CARERecordFactory.vb" />
+    <Compile Include="Support\DateExtensions.vb" />
+    <Compile Include="Validators\AllowHistoricActivityValidator.vb" />
+    <Compile Include="Validators\AllowHistoricActivityValueValidator.vb" />
+    <Compile Include="Validators\AllowHistoricSuppressionValidator.vb" />
+    <Compile Include="Validators\AllowHistoricValidator.vb" />
+    <Compile Include="Integration\IBankAccountValidation.vb" />
+    <Compile Include="Integration\VSeriesAccountValidation.vb" />
+    <Compile Include="Membership\FutureMembershipType.vb" />
+    <Compile Include="Validators\DataDependencyValidator.vb" />
+    <Compile Include="Validators\ValidatorBase.vb" />
+    <Compile Include="Workstream\WorkstreamActionLink.vb" />
+    <Compile Include="Workstream\WorkstreamDataSelection.vb" />
+    <Compile Include="Workstream\WorkstreamLink.vb" />
+    <Compile Include="Exams\ExamAccreditationFilter.vb" />
+    <Compile Include="Exams\ExamAccreditationHistLink.vb" />
+    <Compile Include="Exams\ExamAccreditationHistory.vb" />
+    <Compile Include="Exams\ExamAssessmentLanguage.vb" />
+    <Compile Include="Exams\ExamBookingLine.vb" />
+    <Compile Include="Exams\ExamBooking2.vb" />
+    <Compile Include="Exams\ExamBookingTransaction2.vb" />
+    <Compile Include="Exams\ExamBookingTransaction.vb" />
+    <Compile Include="Exams\ExamBookingUnit2.vb" />
+    <Compile Include="Exams\ExamCandidateCategory.vb" />
+    <Compile Include="Exams\ExamCentreAccreditationFilter.vb" />
+    <Compile Include="Exams\ExamCentreAction.vb" />
+    <Compile Include="Exams\ExamCentreHistory.vb" />
+    <Compile Include="Exams\ExamCertReprintType.vb" />
+    <Compile Include="Exams\ExamCertRun.vb" />
+    <Compile Include="Exams\ExamCertRunType.vb" />
+    <Compile Include="Exams\ExamGradeChangeHistory.vb" />
+    <Compile Include="Exams\ExamGradeChangeReason.vb" />
+    <Compile Include="Exams\ExamMarkingBatchDetail.vb" />
+    <Compile Include="Exams\ExamSessionCentre2.vb" />
+    <Compile Include="Exams\ExamStudyModeFilter.vb" />
+    <Compile Include="Exams\ExamUnit2.vb" />
+    <Compile Include="Exams\ExamBooking.vb" />
+    <Compile Include="Exams\ExamBookingUnit.vb" />
+    <Compile Include="Exams\ExamCentre.vb" />
+    <Compile Include="Exams\ExamCentreAssessmentType.vb" />
+    <Compile Include="Exams\ExamCentreContact.vb" />
+    <Compile Include="Exams\ExamCentreUnit.vb" />
+    <Compile Include="Exams\ExamDataSelection.vb" />
+    <Compile Include="Exams\ExamExemption.vb" />
+    <Compile Include="Exams\ExamExemptionUnit.vb" />
+    <Compile Include="Exams\ExamPersonnel.vb" />
+    <Compile Include="Exams\ExamPersonnelAssessType.vb" />
+    <Compile Include="Exams\ExamPersonnelExpense.vb" />
+    <Compile Include="Exams\ExamSchedule.vb" />
+    <Compile Include="Exams\ExamSchedulePersonnel.vb" />
+    <Compile Include="Exams\ExamSession.vb" />
+    <Compile Include="Exams\ExamSessionCentre.vb" />
+    <Compile Include="Exams\ExamStudentEligibility.vb" />
+    <Compile Include="Exams\ExamStudentExemption.vb" />
+    <Compile Include="Exams\ExamStudentExemptionHistory.vb" />
+    <Compile Include="Exams\ExamStudentHeader.vb" />
+    <Compile Include="Exams\ExamStudentUnitHeader.vb" />
+    <Compile Include="Exams\ExamUnit.vb" />
+    <Compile Include="Exams\ExamUnitAssessmentType.vb" />
+    <Compile Include="Exams\ExamUnitCertRunType.vb" />
+    <Compile Include="Exams\ExamUnitEligibilityCheck.vb" />
+    <Compile Include="Exams\ExamUnitGrade.vb" />
+    <Compile Include="Exams\ExamUnitLink.vb" />
+    <Compile Include="Exams\ExamUnitPersonnel.vb" />
+    <Compile Include="Exams\ExamUnitPrerequisite.vb" />
+    <Compile Include="Exams\ExamUnitProduct.vb" />
+    <Compile Include="Exams\ExamUnitStudyMode.vb" />
+    <Compile Include="Exams\ExamCentreUnitStudyMode.vb" />
+    <Compile Include="Financial\BacsAmendment.vb" />
+    <Compile Include="Financial\BankAccount.vb" />
+    <Compile Include="Financial\DespatchNote.vb" />
+    <Compile Include="Financial\FinancialHistoryDetail.vb" />
+    <Compile Include="Financial\Invoice.vb" />
+    <Compile Include="Financial\Loan.vb" />
+    <Compile Include="Financial\LoanInterestRate.vb" />
+    <Compile Include="Financial\LoanType.vb" />
+    <Compile Include="Financial\PoAuthorisationLevel.vb" />
+    <Compile Include="Financial\PoPaymentType.vb" />
+    <Compile Include="Financial\PopProductDetail.vb" />
+    <Compile Include="Financial\PurchaseInvoice.vb" />
+    <Compile Include="Financial\PurchaseOrder.vb" />
+    <Compile Include="Financial\PurchaseOrderHistory.vb" />
+    <Compile Include="Financial\PurchaseOrderPayment.vb" />
+    <Compile Include="Financial\PurchaseOrderPaymentsReversals.vb" />
+    <Compile Include="Financial\PurchaseOrderType.vb" />
+    <Compile Include="Financial\RateModifier.vb" />
+    <Compile Include="Financial\VatRateHistory.vb" />
+    <Compile Include="Fundraising\FundraisingAction.vb" />
+    <Compile Include="Fundraising\FundraisingPaymentHistory.vb" />
+    <Compile Include="Contacts\PositionCategory.vb" />
+    <Compile Include="Fundraising\FundraisingRequest.vb" />
+    <Compile Include="Fundraising\FundraisingRequestTarget.vb" />
+    <Compile Include="Contacts\Organisation.vb" />
+    <Compile Include="Contacts\OrganisationAddress.vb" />
+    <Compile Include="Contacts\OrganisationCategory.vb" />
+    <Compile Include="Contacts\OrganisationLink.vb" />
+    <Compile Include="Contacts\OrganisationSuppression.vb" />
+    <Compile Include="Contacts\StatusHistory.vb" />
+    <Compile Include="CPD\ContactCpdCycle.vb" />
+    <Compile Include="CPD\ContactCpdPeriod.vb" />
+    <Compile Include="CPD\ContactCpdPoint.vb" />
+    <Compile Include="CPD\CpdCategory.vb" />
+    <Compile Include="CPD\CpdCategoryType.vb" />
+    <Compile Include="CPD\CpdCycleCategoryType.vb" />
+    <Compile Include="CPD\CpdCycleType.vb" />
+    <Compile Include="CustomData\CustomFormControls.vb" />
+    <Compile Include="CustomData\CustomFinder.vb" />
+    <Compile Include="CustomData\CustomForm.vb" />
+    <Compile Include="CustomData\CustomFormControl.vb" />
+    <Compile Include="CustomData\CustomMergeData.vb" />
+    <Compile Include="CustomData\ExternalData.vb" />
+    <Compile Include="DataSelectionFinder.vb" />
+    <Compile Include="DataSelectionTable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DistributionBoxes\DistributionBoxProcess.vb" />
+    <Compile Include="Events\EventAdultFeeLevel.vb" />
+    <Compile Include="Events\EventBooking.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\EventChildDiscountLevel.vb" />
+    <Compile Include="Events\EventContact.vb" />
+    <Compile Include="Events\EventExtraFeeMultiplier.vb" />
+    <Compile Include="Events\EventFee.vb" />
+    <Compile Include="Events\EventFeeBandDate.vb" />
+    <Compile Include="Events\EventFeeBandDiscount.vb" />
+    <Compile Include="Events\EventPersonnel.vb" />
+    <Compile Include="Events\EventPersonnelTask.vb" />
+    <Compile Include="Events\EventPricingMatrix.vb" />
+    <Compile Include="Events\EventResource.vb" />
+    <Compile Include="Events\EventTopic.vb" />
+    <Compile Include="Events\InternalResource.vb" />
+    <Compile Include="FastDataEntry\FDEPage.vb" />
+    <Compile Include="FastDataEntry\FDEPageAccessLevel.vb" />
+    <Compile Include="FastDataEntry\FDEPageItem.vb" />
+    <Compile Include="FastDataEntry\FDEUserControl.vb" />
+    <Compile Include="Financial\Cheque.vb" />
+    <Compile Include="Financial\ChequeHistory.vb" />
+    <Compile Include="Fundraising\FundraisingExpectedAmountHistory.vb" />
+    <Compile Include="Fundraising\FundraisingPaymentSchedule.vb" />
+    <Compile Include="Fundraising\FundraisingRequestStatusHistory.vb" />
+    <Compile Include="Financial\Product.vb" />
+    <Compile Include="Financial\ProductRate.vb" />
+    <Compile Include="Financial\VatRate.vb" />
+    <Compile Include="Integration\ALBACSVerify.vb" />
+    <Compile Include="Financial\InvoicePaymentHistory.vb" />
+    <Compile Include="Integration\CardAuthorisationServiceFactory.vb" />
+    <Compile Include="Integration\CardSettings.vb" />
+    <Compile Include="Integration\ICardAuthorisationService.vb" />
+    <Compile Include="Integration\ProtXRequest.vb" />
+    <Compile Include="Integration\SagePayHostedPayment.vb" />
+    <Compile Include="Integration\SecureCXLRequest.vb" />
+    <Compile Include="Integration\TnsHostedPayment.vb" />
+    <Compile Include="LogFileStream.vb" />
+    <Compile Include="LogFileTraceListener.vb" />
+    <Compile Include="Lookup Tables\BranchPostcode.vb" />
+    <Compile Include="Lookup Tables\CountryIbanNumber.vb" />
+    <Compile Include="Lookup Tables\DepartmentOwnershipDefault.vb" />
+    <Compile Include="Lookup Tables\DistributionCode.vb" />
+    <Compile Include="Events\EventFinancialLink.vb" />
+    <Compile Include="Financial\Batch.vb" />
+    <Compile Include="Financial\BatchTransaction.vb" />
+    <Compile Include="Financial\BatchTransactionAnalysis.vb" />
+    <Compile Include="Financial\CardSale.vb" />
+    <Compile Include="Financial\ConfirmedTransaction.vb" />
+    <Compile Include="Financial\CreditSale.vb" />
+    <Compile Include="Gift Aid\GaAppropriateCertificate.vb" />
+    <Compile Include="Integration\ExternalApplication.vb" />
+    <Compile Include="Legacies\ContactLegacy.vb" />
+    <Compile Include="Legacies\LegacyBequest.vb" />
+    <Compile Include="Legacies\LegacyBequestForecast.vb" />
+    <Compile Include="Legacies\LegacyBequestReceipt.vb" />
+    <Compile Include="Legacies\LegacyExpense.vb" />
+    <Compile Include="Legacies\LegacyIncomeStage.vb" />
+    <Compile Include="Legacies\LegacyStatus.vb" />
+    <Compile Include="Legacies\LegacyTaxCertificate.vb" />
+    <Compile Include="Lookup Tables\Device.vb" />
+    <Compile Include="Lookup Tables\DocumentDefault.vb" />
+    <Compile Include="Lookup Tables\Mailing.vb" />
+    <Compile Include="Lookup Tables\OwnershipGroupUser.vb" />
+    <Compile Include="Lookup Tables\Relationship.vb" />
+    <Compile Include="Lookup Tables\TableMaintenanceData.vb" />
+    <Compile Include="Lookup Tables\TextSearchItem.vb" />
+    <Compile Include="Mailings\ContactEmailing.vb" />
+    <Compile Include="Mailings\ContactEmailingsLink.vb" />
+    <Compile Include="Mailings\ContactMailing.vb" />
+    <Compile Include="Mailings\ContactMailingDocument.vb" />
+    <Compile Include="Mailings\DocumentInfo.vb" />
+    <Compile Include="Mailings\EmailJob.vb" />
+    <Compile Include="Mailings\EmailJobAttachment.vb" />
+    <Compile Include="Mailings\EmailQueueItem.vb" />
+    <Compile Include="Mailings\FulfillmentHelper.vb" />
+    <Compile Include="Mailings\FulfillmentHistory.vb" />
+    <Compile Include="Mailings\MailingHistory.vb" />
+    <Compile Include="Mailings\MailingTemplate.vb" />
+    <Compile Include="Mailings\MailingTemplateDocument.vb" />
+    <Compile Include="Mailings\MailingTemplateParagraph.vb" />
+    <Compile Include="Mailings\MailmergeHeader.vb" />
+    <Compile Include="Mailings\StandardDocument.vb" />
+    <Compile Include="Marketing\Appeal.vb" />
+    <Compile Include="Marketing\AppealCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Marketing\Campaign.vb" />
+    <Compile Include="Marketing\CampaignItemisedCost.vb" />
+    <Compile Include="Marketing\ContactCampaignRole.vb" />
+    <Compile Include="Marketing\TelemarketingContact.vb" />
+    <Compile Include="Membership\CmtExcessPayment.vb" />
+    <Compile Include="Membership\CMTPricing.vb" />
+    <Compile Include="Membership\MembershipEntitlement.vb" />
+    <Compile Include="Membership\MembershipGroup.vb" />
+    <Compile Include="Membership\MembershipGroupHistory.vb" />
+    <Compile Include="Membership\MembershipPrice.vb" />
+    <Compile Include="Membership\MembershipType.vb" />
+    <Compile Include="Membership\PaymentPlanCMT.vb" />
+    <Compile Include="PaymentPlans\PaymentPlanChange.vb" />
+    <Compile Include="PaymentPlans\PaymentPlanChangeDetail.vb" />
+    <Compile Include="PaymentPlans\PaymentPlanDetailPricing.vb" />
+    <Compile Include="PaymentPlans\PaymentPlanHistoryDetail.vb" />
+    <Compile Include="Pledges\PostTaxPledge.vb" />
+    <Compile Include="Pledges\PreTaxPledge.vb" />
+    <Compile Include="Support\AccessControl.vb" />
+    <Compile Include="Support\AddressInformation.vb" />
+    <Compile Include="Support\BooleanQuery.vb" />
+    <Compile Include="Support\CARERecord.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\CDBcontrol.vb" />
+    <Compile Include="Support\CDBControls.vb" />
+    <Compile Include="Support\CDBDataColumn.vb" />
+    <Compile Include="Support\CDBDataRow.vb" />
+    <Compile Include="CDBEnvironment.vb" />
+    <Compile Include="Support\CDBDataTable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\CDBParameter.vb" />
+    <Compile Include="Support\CDBParameters.vb" />
+    <Compile Include="CDBUser.vb" />
+    <Compile Include="Support\ClassField.vb" />
+    <Compile Include="Support\ClassFields.vb" />
+    <Compile Include="Contacts\CommunicationsLog.vb" />
+    <Compile Include="Contacts\Contact.vb" />
+    <Compile Include="DataSelection.vb" />
+    <Compile Include="CustomData\CustomFinderControl.vb" />
+    <Compile Include="CustomData\CustomFinderControls.vb" />
+    <Compile Include="Support\DataMod.vb" />
+    <Compile Include="Support\DataMods.vb" />
+    <Compile Include="Support\DataValue.vb" />
+    <Compile Include="Support\DBSetup.vb" />
+    <Compile Include="Support\DisplayListItem.vb" />
+    <Compile Include="EntityGroups\ContactGroup.vb" />
+    <Compile Include="EntityGroups\ContactOrOrganisationGroup.vb" />
+    <Compile Include="EntityGroups\EntityGroup.vb" />
+    <Compile Include="EntityGroups\EntityGroups.vb" />
+    <Compile Include="EntityGroups\EventGroup.vb" />
+    <Compile Include="EntityGroups\OrganisationGroup.vb" />
+    <Compile Include="Events\Event.vb" />
+    <Compile Include="Integration\Postcoder.vb" />
+    <Compile Include="MaintenanceAttribute.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Contacts\OwnershipGroup.vb" />
+    <Compile Include="Performance.vb" />
+    <Compile Include="Support\CDBEmailAttachment.vb" />
+    <Compile Include="Support\EncryptionProvider.vb" />
+    <Compile Include="Support\EplPage.vb" />
+    <Compile Include="Support\ErrorLog.vb" />
+    <Compile Include="Support\ICARERecord.vb" />
+    <Compile Include="Support\JobProcessor.vb" />
+    <Compile Include="Support\JobSchedule.vb" />
+    <Compile Include="Support\JournalOperation.vb" />
+    <Compile Include="Support\LicenseKey.vb" />
+    <Compile Include="Support\ModuleUser.vb" />
+    <Compile Include="Support\OutputData.vb" />
+    <Compile Include="Support\Postcode.vb" />
+    <Compile Include="Support\UpdateTraderApplications.vb" />
+    <Compile Include="Support\UpgradeAttribute.vb" />
+    <Compile Include="Support\UpgradeAttributes.vb" />
+    <Compile Include="Support\UpgradeChange.vb" />
+    <Compile Include="Support\UpgradeIndex.vb" />
+    <Compile Include="Support\UpgradeIndices.vb" />
+    <Compile Include="Support\UpgradeTable.vb" />
+    <Compile Include="Support\UpgradeTables.vb" />
+    <Compile Include="Support\UserScheme.vb" />
+    <Compile Include="Support\XmlDataItem.vb" />
+    <Compile Include="Surveys\ContactSurvey.vb" />
+    <Compile Include="Surveys\ContactSurveyResponse.vb" />
+    <Compile Include="Surveys\Survey.vb" />
+    <Compile Include="Surveys\SurveyAnswer.vb" />
+    <Compile Include="Surveys\SurveyContactGroup.vb" />
+    <Compile Include="Surveys\SurveyQuestion.vb" />
+    <Compile Include="Surveys\SurveyVersion.vb" />
+    <Compile Include="SystemUser.vb" />
+    <Compile Include="UserHistoryItem.vb" />
+    <Compile Include="DistributionBoxes\DistributionAffiliate.vb" />
+    <Compile Include="DistributionBoxes\DistributionBox.vb" />
+    <Compile Include="VB6MigratedFiles\AccessRights.vb" />
+    <Compile Include="VB6MigratedFiles\ActionSet.vb" />
+    <Compile Include="VB6MigratedFiles\AddressData.vb" />
+    <Compile Include="VB6MigratedFiles\AddressUsage.vb" />
+    <Compile Include="VB6MigratedFiles\AppealBudget.vb" />
+    <Compile Include="VB6MigratedFiles\AppealBudgetDetail.vb" />
+    <Compile Include="VB6MigratedFiles\AppealResource.vb" />
+    <Compile Include="VB6MigratedFiles\BackOrderDetail.vb" />
+    <Compile Include="VB6MigratedFiles\BacsOperation.vb" />
+    <Compile Include="VB6MigratedFiles\Bank.vb" />
+    <Compile Include="VB6MigratedFiles\BankAccountClaimDay.vb" />
+    <Compile Include="VB6MigratedFiles\BankTransaction.vb" />
+    <Compile Include="VB6MigratedFiles\BankTransactionsBankline.vb" />
+    <Compile Include="VB6MigratedFiles\BatchType.vb" />
+    <Compile Include="VB6MigratedFiles\Branch.vb" />
+    <Compile Include="VB6MigratedFiles\CachedControlNumber.vb" />
+    <Compile Include="VB6MigratedFiles\CampaignSupplier.vb" />
+    <Compile Include="VB6MigratedFiles\CancellationFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\CollectionBox.vb" />
+    <Compile Include="VB6MigratedFiles\CollectionPayment.vb" />
+    <Compile Include="VB6MigratedFiles\CollectionPIS.vb" />
+    <Compile Include="VB6MigratedFiles\CollectionPoint.vb" />
+    <Compile Include="VB6MigratedFiles\CollectionRegion.vb" />
+    <Compile Include="VB6MigratedFiles\CollectionResource.vb" />
+    <Compile Include="VB6MigratedFiles\CollectionRunAudit.vb" />
+    <Compile Include="VB6MigratedFiles\Collector.vb" />
+    <Compile Include="VB6MigratedFiles\CollectorShift.vb" />
+    <Compile Include="VB6MigratedFiles\CommunicationsLogHistory.vb" />
+    <Compile Include="VB6MigratedFiles\CommunicationsLogLink.vb" />
+    <Compile Include="VB6MigratedFiles\CommunicationsLogSubject.vb" />
+    <Compile Include="VB6MigratedFiles\CommunicationUsage.vb" />
+    <Compile Include="VB6MigratedFiles\CompanyControl.vb" />
+    <Compile Include="VB6MigratedFiles\ContactAccount.vb" />
+    <Compile Include="VB6MigratedFiles\ContactAccounts.vb" />
+    <Compile Include="VB6MigratedFiles\ContactAddressUsage.vb" />
+    <Compile Include="Contacts\ContactCommunicationUsage.vb" />
+    <Compile Include="VB6MigratedFiles\ContactCreditCard.vb" />
+    <Compile Include="VB6MigratedFiles\ContactExternalLink.vb" />
+    <Compile Include="VB6MigratedFiles\ContactSearchName.vb" />
+    <Compile Include="VB6MigratedFiles\Covenant.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\CreditCardAuthorisation.vb" />
+    <Compile Include="VB6MigratedFiles\CreditCardAuthority.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\CreditCustomer.vb" />
+    <Compile Include="VB6MigratedFiles\CreditSalesTerms.vb" />
+    <Compile Include="VB6MigratedFiles\CriteriaContext.vb" />
+    <Compile Include="VB6MigratedFiles\CriteriaDetails.vb" />
+    <Compile Include="VB6MigratedFiles\CriteriaSet.vb" />
+    <Compile Include="VB6MigratedFiles\CurrencyCode.vb" />
+    <Compile Include="VB6MigratedFiles\CustomDataSet.vb" />
+    <Compile Include="VB6MigratedFiles\CustomDataSetDetail.vb" />
+    <Compile Include="VB6MigratedFiles\DeclarationPotentialLine.vb" />
+    <Compile Include="VB6MigratedFiles\DeclarationTaxClaim.vb" />
+    <Compile Include="VB6MigratedFiles\DeclarationTaxClaimLine.vb" />
+    <Compile Include="VB6MigratedFiles\DelegateActivity.vb" />
+    <Compile Include="VB6MigratedFiles\DelegateLink.vb" />
+    <Compile Include="VB6MigratedFiles\DelegateSession.vb" />
+    <Compile Include="VB6MigratedFiles\DepartmentNote.vb" />
+    <Compile Include="VB6MigratedFiles\DirectDebit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\DiskFile.vb" />
+    <Compile Include="VB6MigratedFiles\Enclosure.vb" />
+    <Compile Include="VB6MigratedFiles\EventAccommodationBooking.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\EventBooking.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\EventBookingOption.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\EventBookingTransaction.vb" />
+    <Compile Include="VB6MigratedFiles\EventDelegate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\EventMailing.vb" />
+    <Compile Include="VB6MigratedFiles\EventOptionSession.vb" />
+    <Compile Include="VB6MigratedFiles\EventOrganiser.vb" />
+    <Compile Include="VB6MigratedFiles\EventOwner.vb" />
+    <Compile Include="VB6MigratedFiles\EventPis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\EventRoomLink.vb" />
+    <Compile Include="VB6MigratedFiles\EventSessionActivity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\EventSource.vb" />
+    <Compile Include="VB6MigratedFiles\EventSubmission.vb" />
+    <Compile Include="VB6MigratedFiles\EventVenueBooking.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\ExternalResource.vb" />
+    <Compile Include="VB6MigratedFiles\FinancialHistory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\CDBEmailContent.vb" />
+    <Compile Include="VB6Support\FinancialHistoryDetail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\FinancialLink.vb" />
+    <Compile Include="VB6MigratedFiles\FpApplication.vb" />
+    <Compile Include="VB6MigratedFiles\FundraisingEventAnalysis.vb" />
+    <Compile Include="VB6MigratedFiles\GaCertificateTaxClaim.vb" />
+    <Compile Include="VB6MigratedFiles\GaSponsorshipLinesUnclaimed.vb" />
+    <Compile Include="VB6MigratedFiles\GaSponsorshipPotentialLine.vb" />
+    <Compile Include="VB6MigratedFiles\GaSponsorshipTaxClaim.vb" />
+    <Compile Include="VB6MigratedFiles\GaSponsorshipTaxClaimLine.vb" />
+    <Compile Include="VB6MigratedFiles\GeographicalRegionPostcode.vb" />
+    <Compile Include="VB6MigratedFiles\GiftAidDeclaration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\H2hCollection.vb" />
+    <Compile Include="VB6MigratedFiles\H2hCollector.vb" />
+    <Compile Include="VB6MigratedFiles\IncentiveSchemeProduct.vb" />
+    <Compile Include="VB6MigratedFiles\Invoice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\Invoicedetail.vb" />
+    <Compile Include="VB6MigratedFiles\IssuedStock.vb" />
+    <Compile Include="VB6MigratedFiles\MailingSelection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\MailMergeInformation.vb" />
+    <Compile Include="VB6MigratedFiles\MaintenanceTable.vb" />
+    <Compile Include="VB6MigratedFiles\MannedCollection.vb" />
+    <Compile Include="VB6MigratedFiles\MannedCollector.vb" />
+    <Compile Include="VB6MigratedFiles\MarketingData.vb" />
+    <Compile Include="VB6MigratedFiles\Member.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\MergeData.vb" />
+    <Compile Include="VB6MigratedFiles\NewOrder.vb" />
+    <Compile Include="VB6MigratedFiles\OrderPaymentHistory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\OrderPaymentSchedule.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\Organiser.vb" />
+    <Compile Include="VB6MigratedFiles\PackedProduct.vb" />
+    <Compile Include="VB6MigratedFiles\PaymentFrequency.vb" />
+    <Compile Include="VB6MigratedFiles\PaymentPlan.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\PaymentPlanDetail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\PISBankStatement.vb" />
+    <Compile Include="VB6MigratedFiles\PISBankTransaction.vb" />
+    <Compile Include="VB6MigratedFiles\PostcodeProximityOrg.vb" />
+    <Compile Include="VB6MigratedFiles\PostcodeProximityOrgs.vb" />
+    <Compile Include="VB6MigratedFiles\PostTaxPgPaymentHistory.vb" />
+    <Compile Include="VB6MigratedFiles\PrincipalUser.vb" />
+    <Compile Include="VB6MigratedFiles\ProductCost.vb" />
+    <Compile Include="VB6MigratedFiles\ProductCosts.vb" />
+    <Compile Include="VB6MigratedFiles\ProductWarehouse.vb" />
+    <Compile Include="VB6MigratedFiles\PurchaseInvoiceDetail.vb" />
+    <Compile Include="VB6MigratedFiles\PurchaseOrderDetail.vb" />
+    <Compile Include="VB6MigratedFiles\RegisteredUser.vb" />
+    <Compile Include="VB6MigratedFiles\RoomBlockBooking.vb" />
+    <Compile Include="VB6MigratedFiles\RoomBookingLink.vb" />
+    <Compile Include="VB6MigratedFiles\ScheduledClaimDate.vb" />
+    <Compile Include="VB6MigratedFiles\Segment.vb" />
+    <Compile Include="VB6MigratedFiles\SegmentCostCentre.vb" />
+    <Compile Include="VB6MigratedFiles\SegmentProductAllocation.vb" />
+    <Compile Include="VB6MigratedFiles\SelectionSet.vb" />
+    <Compile Include="VB6MigratedFiles\SelectionStep.vb" />
+    <Compile Include="VB6MigratedFiles\ServiceBooking.vb" />
+    <Compile Include="VB6MigratedFiles\ServiceControl.vb" />
+    <Compile Include="VB6MigratedFiles\Session.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\SessionTest.vb" />
+    <Compile Include="VB6MigratedFiles\SessionTestResult.vb" />
+    <Compile Include="VB6MigratedFiles\Source.vb" />
+    <Compile Include="VB6MigratedFiles\StandingOrder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\StickyNote.vb" />
+    <Compile Include="VB6MigratedFiles\StockMovement.vb" />
+    <Compile Include="VB6MigratedFiles\Subscription.vb" />
+    <Compile Include="VB6MigratedFiles\SubTopic.vb" />
+    <Compile Include="VB6MigratedFiles\SundryCost.vb" />
+    <Compile Include="Lookup Tables\TableNote.vb" />
+    <Compile Include="VB6MigratedFiles\TableVersionHistory.vb" />
+    <Compile Include="VB6MigratedFiles\TempBanksDataLoad.vb" />
+    <Compile Include="VB6MigratedFiles\TickBox.vb" />
+    <Compile Include="VB6MigratedFiles\Title.vb" />
+    <Compile Include="VB6MigratedFiles\TraderAnalysisLine.vb" />
+    <Compile Include="VB6MigratedFiles\TraderAnalysisLines.vb" />
+    <Compile Include="VB6MigratedFiles\TraderApplication.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\TraderBankDetails.vb" />
+    <Compile Include="VB6MigratedFiles\TraderControl.vb" />
+    <Compile Include="VB6MigratedFiles\TraderControls.vb" />
+    <Compile Include="VB6MigratedFiles\TraderPage.vb" />
+    <Compile Include="VB6MigratedFiles\TraderPages.vb" />
+    <Compile Include="VB6MigratedFiles\TraderPaymentPlanDetails.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\TraderTransaction.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\UniservInterface.vb" />
+    <Compile Include="VB6MigratedFiles\UnmannedCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6MigratedFiles\VariableCriteria.vb" />
+    <Compile Include="VB6MigratedFiles\VatRateIdentification.vb" />
+    <Compile Include="VB6MigratedFiles\ViewName.vb" />
+    <Compile Include="VB6Support\Action.vb" />
+    <Compile Include="VB6Support\ActionLink.vb" />
+    <Compile Include="VB6Support\Address.vb" />
+    <Compile Include="VB6Support\Appeal.vb" />
+    <Compile Include="VB6Support\AppealCollection.vb" />
+    <Compile Include="VB6Support\ApplicationParameterInfo.vb" />
+    <Compile Include="VB6Support\Batch.vb" />
+    <Compile Include="VB6Support\BatchTransaction.vb" />
+    <Compile Include="VB6Support\BatchTransactionAnalysis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6Support\Campaign.vb" />
+    <Compile Include="VB6Support\CardSale.vb" />
+    <Compile Include="VB6Support\CDBDataTable.vb" />
+    <Compile Include="VB6Support\CDBEnvironment.vb" />
+    <Compile Include="VB6Support\CDBEvent.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6Support\CDBParameter.vb" />
+    <Compile Include="VB6Support\CDBUser.vb" />
+    <Compile Include="VB6Support\ClassFields.vb" />
+    <Compile Include="VB6Support\CommunicationsLog.vb" />
+    <Compile Include="VB6Support\CommunicationsLogLink.vb" />
+    <Compile Include="VB6Support\Contact.vb" />
+    <Compile Include="VB6Support\ContactAddress.vb" />
+    <Compile Include="VB6Support\ContactAppointment.vb" />
+    <Compile Include="VB6Support\ContactCategory.vb" />
+    <Compile Include="VB6Support\ContactLink.vb" />
+    <Compile Include="VB6Support\Contacts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6Support\ContactSuppression.vb" />
+    <Compile Include="VB6Support\CreditSale.vb" />
+    <Compile Include="VB6Support\DataFinder.vb" />
+    <Compile Include="VB6Support\EventPersonnel.vb" />
+    <Compile Include="VB6Support\JobSchedule.vb" />
+    <Compile Include="VB6Support\MailingTemplate.vb" />
+    <Compile Include="VB6Support\Meeting.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6Support\MeetingDocument.vb" />
+    <Compile Include="VB6Support\MeetingLink.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VB6Support\MembershipGroup.vb" />
+    <Compile Include="VB6Support\Organisation.vb" />
+    <Compile Include="VB6Support\OtherClassDefinitions.vb" />
+    <Compile Include="VB6Support\Product.vb" />
+    <Compile Include="VB6Support\ProductOffer.vb" />
+    <Compile Include="VB6Support\ProductRate.vb" />
+    <Compile Include="VB6Support\StandardDocument.vb" />
+    <Compile Include="VB6Support\TraderPage.vb" />
+    <Compile Include="VB6Support\VBDataSelection.vb" />
+    <Compile Include="WebData\WebControl.vb" />
+    <Compile Include="WebData\WebDocument.vb" />
+    <Compile Include="WebData\WebMenu.vb" />
+    <Compile Include="WebData\WebMenuItem.vb" />
+    <Compile Include="WebData\WebPage.vb" />
+    <Compile Include="WebData\WebPageData.vb" />
+    <Compile Include="WebData\WebPageItem.vb" />
+    <Compile Include="WebData\WebPageItemLink.vb" />
+    <Compile Include="WebData\WebPageUserControl.vb" />
+    <Compile Include="Workstream\Workstream.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dedup\DedupRule.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dotMailerSdkDocuments\dotmailer SDK Terms and Conditions.pdf" />
+    <None Include="dotMailerSdkDocuments\dotMailerApi.chm" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdvancedFramework\AdvancedFramework.csproj">
+      <Project>{0c87202d-39bf-42ec-9a87-2ee843c9047b}</Project>
+      <Name>AdvancedFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CDBNDATA\CDBNDATA.vbproj">
+      <Project>{FCF0CBB2-E57B-4494-BCDE-AC7B525FE89A}</Project>
+      <Name>CDBNDATA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CDBNServices\CDBNServices.vbproj">
+      <Project>{a0fe9366-891a-4ba9-8000-f2a7f5a655f4}</Project>
+      <Name>CDBNServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CDBNUTILS\CDBNUTILS.vbproj">
+      <Project>{0C285D91-7C4F-436D-8E61-0C0A6F27E6E0}</Project>
+      <Name>CDBNUTILS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Advanced_NFP_schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Dedup\ContactDedupRules.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dedup\ContactUniservDedupRules.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="dotMailerSdkDocuments\Acknowledgements.txt" />
+    <Content Include="dotMailerSdkDocuments\SDK release notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

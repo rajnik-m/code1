@@ -1,0 +1,121 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNDATA
+</name>
+</assembly>
+<members>
+<member name="T:CARE.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CARE.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CARE.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:CARE.Data.CDBConnection.DBDateTimeAttribToDate(System.String)">
+ <summary>
+ Converts a datetime table attribute to a date-only expression.
+ </summary>
+ <remarks>
+ Only use this function if your database attribute is a datetime data type.  To convert a string expression to a date, use <see cref="!:DBToToDate(String)"/>
+ Most DBMSes will use the same SQL to represent DBDateTimeAttribToDate and DbToDate.  Not all though, I'll let you guess which one.
+ Clue: It's not SQL Server.
+ </remarks>
+ <param name="pAttributeName">The name of the datetime database column that you want to convert to a date-only expression</param>
+ <returns></returns>
+</member>
+<member name="M:CARE.Data.CDBConnection.BulkUpdate(CARE.Data.SQLStatement,System.Data.DataTable)">
+ <summary>Bulk Update and Insert Data into a Table.</summary>
+ <param name="pSQLStatement">The SQLStatement used to populate the DataTable.  Used so that the same SQL is used for the original data and for the changed data.</param>
+ <param name="pDataTable">The data to be inserted or updated. This must have the RowState set correctly on each row.</param>
+ <remarks>This has been briefly tested in SQLServer only and will need thorough testing</remarks>
+</member>
+<member name="M:CARE.Data.CDBConnection.AddGUIDColumnToTable(System.String,System.String)">
+ <summary>Add a column to the table that can contain GUID values.
+ </summary>
+ <param name="pTableName">Table requiring the new column</param>
+ <param name="pColumnName">Column to be added.  This must not already exist.</param>
+</member>
+<member name="M:CARE.Data.CDBConnection.PopulateGUIDColumn(System.String,System.String)">
+ <summary>Update the column with a GUID in every row.</summary>
+ <param name="pTableName">Table to be updated.</param>
+ <param name="pColumnName">Column to be populated with a GUID</param>
+</member>
+<member name="M:CARE.Data.CDBFields.#ctor(CARE.Data.CDBField[])">
+ <summary>
+ Create a new collection of fields from the an array of fields.
+ </summary>
+ <param name="pFields">An array containing the <see cref="T:CARE.Data.CDBField"/> objects that should form the
+ initial content of the collection.</param>
+</member>
+<member name="M:CARE.Data.CDBOracleConnection.CopyColumnsToNewTable(System.String,System.String)">
+ <summary>
+ Use Oracle CREATE TABLE AS to copy data from a SELECT Query into a Table
+ </summary>
+ <param name="pSelectionSQL"></param>
+ <param name="pDestinationTableName"></param>
+ <returns></returns>
+ <remarks>If you only want to create a table make sure the SELECT statement has a WHERE clause than </remarks>
+</member>
+<member name="M:CARE.Data.CDBOracleConnection.BulkUpdate(CARE.Data.SQLStatement,System.Data.DataTable)">
+ <summary>Bulk Update and Insert Data into a Table.</summary>
+ <param name="pSQLStatement">The SQLStatement used to populate the DataTable.  Used so that the same SQL is used for the original data and for the changed data.</param>
+ <param name="pDataTable">The data to be inserted or updated. This must have the RowState set correctly on each row.</param>
+</member>
+<member name="M:CARE.Data.CDBSQLServerConnection.BulkUpdate(CARE.Data.SQLStatement,System.Data.DataTable)">
+ <summary>Bulk Update and Insert Data into a Table.</summary>
+ <param name="pSQLStatement">The SQLStatement used to populate the DataTable.  Used so that the same SQL is used for the original data and for the changed data.</param>
+ <param name="pDataTable">The data to be inserted or updated. This must have the RowState set correctly on each row.</param>
+</member>
+<member name="M:CARE.Data.SQLStatement.#ctor(CARE.Data.CDBConnection,System.String)">
+ <summary>
+ DO NOT USE THIS CONSTRUCTOR
+ </summary>
+ <param name="pConn"></param>
+ <param name="pSQL"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Data.SQLStatement.#ctor(CARE.Data.CDBConnection,System.String,CARE.Data.CDBFields)">
+ <summary>
+ DO NOT USE THIS CONSTRUCTOR
+ </summary>
+ <param name="pConn"></param>
+ <param name="pSQL"></param>
+ <remarks></remarks>
+</member>
+<member name="P:CARE.Data.SQLStatement.DEBUG_SQL">
+ <summary>
+ DO NOT USE THIS IN CODE.  Returns the SQL property with carriage returns to make it more readable when pasting into a SQL Query window
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Data.SQLStatement.BuildOverlappingWhere(CARE.Data.CDBConnection,CARE.Data.CDBField,CARE.Data.CDBField,CARE.Data.CDBFields)">
+ <summary>
+ Builds a Where clause to check if two periods of time overlap.  Two periods of time are said to overlap if one period's starting point falls within the other period
+ or the other period's starting point falls within the first period.
+ Note that null or empty values will be considered infinite, i.e. replaced by their minimum value for the period's starting point or maximum value for ending point
+ </summary>
+ <param name="pStartDateField">A CDBField or ClassField that represents the start point.  The ClassField and CDBField class both have widening operators that turn one into the other</param>
+ <param name="pEndDateField">A CDBField or ClassField that represents the end point</param>
+ <returns></returns>
+</member>
+<member name="M:CARE.Data.AnsiJoins.#ctor(CARE.Data.AnsiJoin[])">
+ <summary>
+ Create a new collection of joins from the an array of joins.
+ </summary>
+ <param name="pJoins">An array containing the <see cref="T:CARE.Data.AnsiJoin"/> objects that should form the
+ initial content of the collection.</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

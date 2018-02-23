@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:Access.Dedup="http://tempuri.org/ANFP/Access/Dedup"
+           elementFormDefault="unqualified"
+           xmlns="http://tempuri.org/ANFP/Access/Dedup"
+           targetNamespace="http://tempuri.org/ANFP/Access/Dedup"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           >
+  <xs:element name="ArrayOfDedupRule"
+              nillable="true"
+              type="ArrayOfDedupRule" />
+  <xs:complexType name="ArrayOfDedupRule">
+    <xs:sequence>
+      <xs:element minOccurs="0"
+                  maxOccurs="unbounded"
+                  name="DedupRule"
+                  nillable="true"
+                  xmlns:q1="http://tempuri.org/ANFP/Access/Dedup"
+                  type="q1:DedupRule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DedupRule"
+              nillable="true"
+              type="Access.Dedup:DedupRule" />
+  <xs:complexType name="DedupRule">
+    <xs:sequence>
+      <xs:element minOccurs="0"
+                  maxOccurs="1"
+                  name="Clauses"
+                  type="Access.Dedup:ArrayOfDedupClause" />
+    </xs:sequence>
+    <xs:attribute name="ID"
+                  type="xs:string" />
+    <xs:attribute name="Description"
+                  type="xs:string" />
+    <xs:attribute name="RuleRank"
+                  type="Access.Dedup:DedupRank"
+                  use="required" />
+  </xs:complexType>
+  <xs:complexType name="ArrayOfDedupClause">
+    <xs:sequence>
+      <xs:element minOccurs="0"
+                  maxOccurs="unbounded"
+                  name="DedupClause"
+                  nillable="true"
+                  type="Access.Dedup:DedupClause" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DedupClause">
+    <xs:sequence>
+      <xs:element minOccurs="0"
+                  maxOccurs="1"
+                  name="Joins"
+                  type="Access.Dedup:ArrayOfJoin" />
+    </xs:sequence>
+    <xs:attribute name="Parameter"
+                  type="xs:string" />
+    <xs:attribute name="Attribute"
+                  type="xs:string" />
+    <xs:attribute name="Match"
+                  type="Access.Dedup:DedupMatch"
+                  use="required" />
+    <xs:attribute name="Table"
+                  type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="ArrayOfJoin">
+    <xs:sequence>
+      <xs:element minOccurs="0"
+                  maxOccurs="unbounded"
+                  name="Join"
+                  nillable="true"
+                  type="Access.Dedup:Join" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Join">
+    <xs:attribute name="Table"
+                  type="xs:string" />
+    <xs:attribute name="AnchorPart"
+                  type="xs:string" />
+    <xs:attribute name="JoinPart"
+                  type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="DedupMatch">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Equals" />
+      <xs:enumeration value="IsLike" />
+      <xs:enumeration value="Contains" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DedupRank">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="High" />
+      <xs:enumeration value="Medium" />
+      <xs:enumeration value="Low" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

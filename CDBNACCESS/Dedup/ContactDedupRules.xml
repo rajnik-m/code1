@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"  ?>
+<ArrayOfDedupRule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+  <!--Low rules-->
+  <DedupRule ID ="LO0PC"
+             Description ="PostcodeOnly"
+             RuleRank ="Low"
+             xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="Postcode"
+                    Table="allAddresses"
+                    Attribute="postcode"
+                    Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="contact_addresses"
+                AnchorPart="contact_addresses.contact_number"
+                JoinPart="contacts.contact_number" />
+          <Join Table="addresses allAddresses"
+                AnchorPart="allAddresses.address_number"
+                JoinPart="contact_addresses.address_number" />
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID="LO1SNI"
+             Description="Surname &amp; Initials"
+             RuleRank ="Low"
+             xmlns=""
+             >
+    <Clauses >
+      <DedupClause Parameter="Initials"
+                    Table=""
+                    Attribute="initials"
+                    Match="IsLike" />
+      <DedupClause Parameter="Surname"
+                    Table=""
+                    Attribute="surname"
+                    Match="Equals" />
+    </Clauses>
+  </DedupRule>
+  
+  <!--Medium rules-->
+  <DedupRule ID="MED0SNFN"
+             Description="Forename &amp; Surname"
+             RuleRank ="Medium"
+             xmlns=""
+             >
+    <Clauses >
+      <DedupClause Parameter="Forenames"
+                    Table=""
+                    Attribute="forenames"
+                    Match="IsLike" />
+      <DedupClause Parameter="Surname"
+                    Table=""
+                    Attribute="surname"
+                    Match="Equals" />
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="MED1ORG"
+           Description ="Surname &amp; Organisation"
+           RuleRank ="Medium"
+           xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table=""
+                   Attribute="surname"
+                   Match="Equals" />
+      <DedupClause Parameter="Name"
+                   Table="organisations"
+                   Attribute="name"
+                   Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="contact_positions"
+                AnchorPart="contact_positions.contact_number"
+                JoinPart="contacts.contact_number"/>
+          <Join Table="organisations"
+                AnchorPart="organisations.organisation_number"
+                JoinPart="contact_positions.organisation_number"/>
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="MED2SNPO"
+           Description ="Surname &amp; Postcode"
+           RuleRank ="Medium"
+           xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table=""
+                   Attribute="surname"
+                   Match="Equals" />
+      <DedupClause Parameter="Postcode"
+                    Table="allAddresses"
+                    Attribute="postcode"
+                    Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="contact_addresses"
+                AnchorPart="contact_addresses.contact_number"
+                JoinPart="contacts.contact_number" />
+          <Join Table="addresses allAddresses"
+                AnchorPart="allAddresses.address_number"
+                JoinPart="contact_addresses.address_number" />
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  
+  <!--High rules-->
+  <DedupRule ID ="HI0SWI"
+             Description ="Personal Details &amp; Switchboard"
+             RuleRank ="High"
+             xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="Initials"
+                    Table=""
+                    Attribute="initials"
+                    Match="IsLike" />
+      <DedupClause Parameter="Surname"
+                    Table=""
+                    Attribute="surname"
+                    Match="Equals" />
+      <DedupClause Parameter="SwitchboardNumber"
+                    Table="communications"
+                    Attribute="cli_number"
+                    Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="communications"
+                AnchorPart="communications.contact_number"
+                JoinPart="contacts.contact_number"/>
+          <Join Table="contact_controls"
+                AnchorPart="contact_controls.switchboard_device"
+                JoinPart="communications.device"/>
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="HI0FAX"
+             Description ="Personal Details &amp; Fax"
+             RuleRank ="High"
+             xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="Initials"
+                   Table=""
+                   Attribute="initials"
+                   Match="IsLike" />
+      <DedupClause Parameter="Surname"
+                   Table=""
+                   Attribute="surname"
+                   Match="Equals" />
+      <DedupClause Parameter="FaxNumber"
+                   Table="communications"
+                   Attribute="cli_number"
+                   Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="communications"
+                AnchorPart="communications.contact_number"
+                JoinPart="contacts.contact_number"/>
+          <Join Table="contact_controls"
+                AnchorPart="contact_controls.fax_device"
+                JoinPart="communications.device"/>
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="HI0WEB"
+             Description ="PersonalDetails &amp; Web"
+             RuleRank ="High"
+             xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="Initials"
+                   Table=""
+                   Attribute="initials"
+                   Match="IsLike" />
+      <DedupClause Parameter="Surname"
+                   Table=""
+                   Attribute="surname"
+                   Match="Equals" />
+      <DedupClause Parameter="WebAddress"
+                   Table="communications"
+                   Attribute="number"
+                   Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="communications"
+                AnchorPart="communications.contact_number"
+                JoinPart="contacts.contact_number"/>
+          <Join Table="contact_controls"
+                AnchorPart="contact_controls.web_device"
+                JoinPart="communications.device"/>
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="HI2FON"
+             Description ="Personal Details &amp; Phone"
+             RuleRank ="High"
+             xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="Initials"
+                    Table=""
+                    Attribute="initials"
+                    Match="IsLike" />
+      <DedupClause Parameter="Surname"
+                    Table=""
+                    Attribute="surname"
+                    Match="Equals" />
+      <DedupClause Parameter="DirectNumber"
+                    Table="communications"
+                    Attribute="cli_number"
+                    Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="communications"
+                AnchorPart="communications.contact_number"
+                JoinPart="contacts.contact_number"/>
+          <Join Table="contact_controls"
+                AnchorPart="contact_controls.direct_device"
+                JoinPart="communications.device"/>
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="HI8EML"
+             Description ="EmailAddress"
+             RuleRank ="High"
+             xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="EMailAddress"
+                    Table="communications"
+                    Attribute="number"
+                    Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="communications"
+                AnchorPart="communications.contact_number"
+                JoinPart="contacts.contact_number"/>
+          <Join Table="devices"
+                AnchorPart="devices.device"
+                JoinPart="communications.device"/>
+          <Join Table="devices"
+                AnchorPart="devices.email"
+                JoinPart="'Y'"/>
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="HI8MOBI"
+             Description ="MobileNumber"
+             RuleRank ="High"
+             xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="MobileNumber"
+                    Table="communications"
+                    Attribute="cli_number"
+                    Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="communications"
+                AnchorPart="communications.contact_number"
+                JoinPart="contacts.contact_number"/>
+          <Join Table="contact_controls"
+                AnchorPart="contact_controls.mobile_device"
+                JoinPart="communications.device"/>
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="HI9PC"
+             Description ="Personal Details &amp; Postcode"
+             RuleRank ="High"
+             xmlns=""
+             >
+    <Clauses>
+      <DedupClause Parameter="Initials"
+                    Table=""
+                    Attribute="initials"
+                    Match="IsLike" />
+      <DedupClause Parameter="Surname"
+                    Table=""
+                    Attribute="surname"
+                    Match="Equals" />
+      <DedupClause Parameter="Postcode"
+                    Table="allAddresses"
+                    Attribute="postcode"
+                    Match="Equals">
+        <Joins xmlns="http://tempuri.org/ANFP/Access/Dedup" >
+          <Join Table="contact_addresses"
+                AnchorPart="contact_addresses.contact_number"
+                JoinPart="contacts.contact_number" />
+          <Join Table="addresses allAddresses"
+                AnchorPart="allAddresses.address_number"
+                JoinPart="contact_addresses.address_number" />
+        </Joins>
+      </DedupClause>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID="HI0CON"
+             Description="ContactNumber"
+             RuleRank ="High"
+             xmlns=""
+             >
+    <Clauses >
+      <DedupClause Parameter="ContactNumber"
+                    Table=""
+                    Attribute="contact_number"
+                    Match="Equals" />
+    </Clauses>
+  </DedupRule>
+</ArrayOfDedupRule>

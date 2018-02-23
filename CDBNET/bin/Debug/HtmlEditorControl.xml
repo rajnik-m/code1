@@ -1,0 +1,922 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HtmlEditorControl
+</name>
+</assembly>
+<members>
+<member name="T:HtmlEditorControl.My.Resources.HTMLEditorText">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.Culture">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.ChkBold">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.ChkItalic">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.ChkMatchExact">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.ChkMatchWhole">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.ChkStrikeout">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.ChkSubscript">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.ChkSuperscript">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.ChkUnderline">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdApply">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdCancel">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdClose">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdFindNext">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdInsert">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdInsertHref">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdInsertImage">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdLessOptions">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdMoreOptions">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdOK">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdOptions">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdRemoveHref">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdReplace">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.CmdReplaceAll">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.FrmEditHTML">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.FrmEnterHref">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.FrmEnterImage">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.FrmFindReplace">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.FrmFontAttributes">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.FrmTableProperties">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblAlign">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblAlignment">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblBorder">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblCaption">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblCaptionProperties">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblCellPadding">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblCellProperties">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblCellSpacing">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblDocuments">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblFindWhat">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblFontName">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblFontSize">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblHref">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblImage">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblLocation">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblPages">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblReplaceWith">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblRowsAndColumns">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblSample">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblTableProperties">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblTarget">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblText">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.LblWidth">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuBold">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuCenter">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuCopy">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuCut">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuDelete">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuDeleteRow">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuDocument">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuEdit">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuEditSource">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuFindandReplace">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuFontColor">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuFontDecrease">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuFontDialog">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuFontIncrease">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuFormat">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuFormatting">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuHtml">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuImage">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuInsert">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuInsertIndent">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuInsertRow">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuItalic">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuJustify">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuLeft">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuLine">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuNormal">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuOpen">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuOrderedList">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuOverwrite">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuPaste">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuPrint">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuProperties">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuRedoTyping">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuRemoveIndent">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuRight">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuSaveAs">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuScrollbar">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuSelectAll">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuStrikeout">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuSubscript">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuSuperscript">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuTable">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuText">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuToolbar">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuUnderline">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuUndoTyping">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuUnorderedList">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuUnselect">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuWebDelegate">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuWebEventBooking">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuWebLink">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuWebPayer">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.MnuWordWrap">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.OptPercent">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.OptPixels">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.TbpFind">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.TbpReplace">
+<summary>
+</summary>
+</member>
+<member name="T:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.resourceManager">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText._culture">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.ChkBold">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.ChkItalic">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.ChkMatchExact">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.ChkMatchWhole">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.ChkStrikeout">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.ChkSubscript">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.ChkSuperscript">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.ChkUnderline">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdApply">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdCancel">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdClose">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdFindNext">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdInsert">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdInsertHref">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdInsertImage">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdLessOptions">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdMoreOptions">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdOK">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdOptions">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdRemoveHref">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdReplace">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.CmdReplaceAll">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.FrmEditHTML">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.FrmEnterHref">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.FrmEnterImage">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.FrmFindReplace">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.FrmFontAttributes">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.FrmTableProperties">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblAlign">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblAlignment">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblBorder">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblCaption">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblCaptionProperties">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblCellPadding">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblCellProperties">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblCellSpacing">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblDocuments">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblFindWhat">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblFontName">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblFontSize">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblHref">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblImage">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblLocation">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblPages">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblReplaceWith">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblRowsAndColumns">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblSample">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblTableProperties">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblTarget">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblText">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.LblWidth">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuBold">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuCenter">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuCopy">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuCut">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuDelete">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuDeleteRow">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuDocument">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuEdit">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuEditSource">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuFindandReplace">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuFontColor">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuFontDecrease">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuFontDialog">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuFontIncrease">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuFormat">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuFormatting">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuHtml">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuImage">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuInsert">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuInsertIndent">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuInsertRow">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuItalic">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuJustify">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuLeft">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuLine">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuNormal">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuOpen">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuOrderedList">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuOverwrite">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuPaste">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuPrint">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuProperties">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuRedoTyping">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuRemoveIndent">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuRight">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuSaveAs">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuScrollbar">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuSelectAll">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuStrikeout">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuSubscript">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuSuperscript">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuTable">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuText">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuToolbar">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuUnderline">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuUndoTyping">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuUnorderedList">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuUnselect">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuWebDelegate">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuWebEventBooking">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuWebLink">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuWebPayer">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.MnuWordWrap">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.OptPercent">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.OptPixels">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.TbpFind">
+<summary>
+</summary>
+</member>
+<member name="F:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.TbpReplace">
+<summary>
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.Culture">
+<summary>
+</summary>
+</member>
+<member name="M:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.GetString(System.String)">
+<summary>
+</summary>
+</member>
+<member name="M:HtmlEditorControl.My.Resources.HTMLEditorText.Keys_HTMLEditorText.GetString(System.String,System.Object[])">
+<summary>
+</summary>
+</member>
+<member name="T:HtmlEditorControl.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:HtmlEditorControl.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

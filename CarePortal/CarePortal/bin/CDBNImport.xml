@@ -1,0 +1,108 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNImport
+</name>
+</assembly>
+<members>
+<member name="T:CDBNImport.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CDBNImport.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CDBNImport.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:CDBNImport.Import.DataImportBase.ProductUsedInCompanyControls(System.String)">
+ <summary>
+ Check to see if the Product is used in Company Controls. No tranactions using these products should be allowed
+ </summary>
+ <param name="pProduct"></param>
+ <returns>True is product is used on company controls, otherwise false</returns>
+ <remarks>We do not want any tranasctions where this returns true</remarks>
+</member>
+<member name="M:CDBNImport.Import.DataImportBase.IsActivityValueValid(System.String,System.String)">
+ <summary>
+ Validate Activity and ActivityValue
+ </summary>
+ <param name="pActivity"></param>
+ <param name="pActivityValue"></param>
+ <returns>True if valid, False if invalid</returns>
+ <remarks>Values from database are cached, the cache is checked first</remarks>
+</member>
+<member name="M:CDBNImport.Import.DataImport.GetWriteOffMissedPaymentsValue(System.Int32,System.Nullable{System.Boolean})">
+ <summary>Get boolean value for WriteOffMissedPayments.</summary>
+ <param name="pIndex">Enum index for WriteOffMissedPayments</param>
+ <param name="pCurrentValue">The last value used for this Payment Plan. If not set it is defauled to the configuration option.</param>
+ <returns>True to write-off any missed payments, otherwise False.</returns>
+</member>
+<member name="M:CDBNImport.Import.DataImportContactOrg.AddressesAreSimilar(System.String,System.String)">
+ <summary>
+ Compares two address strings for similarity
+ </summary>
+ <param name="pAddress1"></param>
+ <param name="pAddress2"></param>
+ <returns>true if one address appears at the beginning of the other</returns>
+ <remarks>Converts carriage returns to space before comparison. BR17815</remarks>
+</member>
+<member name="M:CDBNImport.Import.DataImportContactOrg.GetContactDedupRecordset(System.Boolean,System.Boolean,System.Int32)">
+ <summary>Gets a CDBRecordSet object of the deduped Contacts or Organisations.</summary>
+ <param name="pJointContacts">True to dedup Joints Contacts, otherwise False</param>
+ <param name="pOrganisations">True to dedup Organisations, otherwise False to dedup Contacts</param>
+ <param name="pAddressNumber">The AddressNumber to dedup against</param>
+ <returns>CDBRecordSet object</returns>
+</member>
+<member name="M:CDBNImport.Import.DataImportContactOrg.GetContactDedupRecordset(System.Boolean,System.Boolean,CARE.Data.CDBFields)">
+ <summary>Gets a CDBRecordSet object of the deduped Contacts or Organisations using E-Mail addresses.</summary>
+ <param name="pJointContacts">True to dedup Joints Contacts, otherwise False</param>
+ <param name="pOrganisations">True to dedup Organisations, otherwise False to dedup Contacts</param>
+ <param name="pDeviceWhereFields">A <see cref="T:CARE.Data.CDBFields">CDBFields</see> collection of imported E-Mail addresses</param>
+ <returns>CDBRecordSet object</returns>
+</member>
+<member name="M:CDBNImport.Import.DataImportContactOrg.DedupOnGroupCode(System.Boolean,CARE.Data.CDBFields@)">
+ <summary>If Contact or Organisation Group code has been defined, add to the dedup fields.</summary>
+ <param name="pOrganisations">True to dedup Organisations, otherwise False to dedup Contacts</param>
+ <param name="pWhereFields">The CDBFields collection containing the SQL where clause</param>
+</member>
+<member name="M:CDBNImport.Import.DataImportContactOrg.BankDetailsDedupGroupMatched(System.String,System.String,System.Boolean)">
+ <summary>When de-duplicating using Bank Details, checks if Contact / Organisation Group for an existing record matches imported values.</summary>
+ <param name="pBankDetailsGroupCode">Group code of existing Contact or Organisation</param>
+ <param name="pImportedGroupCode">Imported group code</param>
+ <param name="pImportedDefaultGroup">True if the imported group code the default group, otherwise False</param>
+ <returns>True if the groups match, otherwise False</returns>
+</member>
+<member name="M:CDBNImport.Import.DataImportFinancialHistory.IsProductRateValid(System.String,System.String)">
+ <summary>
+ Validate Product and Rate BR17252
+ </summary>
+ <param name="pProduct"></param>
+ <param name="pRate"></param>
+ <returns>True if valid, False if invalid</returns>
+ <remarks>Values from database are cached, the cache is checked first</remarks>
+</member>
+<member name="M:CDBNImport.Import.DataImportFinancialHistory.CheckIfReversal(System.String,System.Int32,System.String,System.Double,System.String,System.String,System.Boolean)">
+ <summary>
+ Create appropriate warning messages when an adjustment with a negative value is imported.
+ Wil check to see if the adjustment looks like a reversal and warn, more importantly will warn if it will generate a Gift Aid Claim.
+ Only applies to -ve Adjustments. 
+ </summary>
+ <param name="pTransactionType"></param>
+ <param name="pContactNumber"></param>
+ <param name="pTransactionDate"></param>
+ <param name="pAmount"></param>
+ <param name="pProduct"></param>
+ <param name="pRate"></param>
+ <param name="pEligibleForGA"></param>
+ <remarks>BR18297</remarks>
+</member>
+</members>
+</doc>

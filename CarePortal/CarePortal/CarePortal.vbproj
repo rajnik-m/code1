@@ -1,0 +1,1561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FC9A69C-4CEF-4EA1-B73A-31D48C163CBB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CarePortal</RootNamespace>
+    <AssemblyName>CarePortal</AssemblyName>
+    <OptionStrict>On</OptionStrict>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CarePortal.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <PublishDatabases>false</PublishDatabases>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <DeployIisAppPath>Default Web Site/Mobile</DeployIisAppPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CarePortal.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="obout_EasyMenu_Pro, Version=3.11.3.4, Culture=neutral, PublicKeyToken=b76d93635057b0c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty\obout_EasyMenu_Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Threading" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\AddMemberCS.ascx" />
+    <Content Include="Controls\AddMemberDD.ascx" />
+    <Content Include="Controls\AddOrganisation.ascx" />
+    <Content Include="Controls\AddPaymentPlanDD.ascx" />
+    <Content Include="Controls\AddPosition.ascx" />
+    <Content Include="Controls\BookEvent.ascx" />
+    <Content Include="Controls\BookingOptionSelection.ascx" />
+    <Content Include="Controls\CareWebControl.ascx" />
+    <Content Include="Controls\AddNetworkContact.ascx" />
+    <Content Include="Controls\AddDefaultAddress.ascx" />
+    <Content Include="Controls\AddSubscriptionDD.ascx" />
+    <Content Include="Controls\BookEventCC.ascx" />
+    <Content Include="Controls\AddMemberCC.ascx" />
+    <Content Include="Controls\ContactCPDCycle.ascx" />
+    <Content Include="Controls\BookExam.ascx" />
+    <Content Include="Controls\AddMemberCI.ascx" />
+    <Content Include="Controls\ConvertPayPlanToDD.ascx" />
+    <Content Include="Controls\EventDelegateEntry.ascx" />
+    <Content Include="Controls\PrintButton.ascx" />
+    <Content Include="Controls\SelectPayPlanForDD.ascx" />
+    <Content Include="Controls\InvoicePayment.ascx" />
+    <Content Include="Controls\SetUserOrganisation.ascx" />
+    <Content Include="Controls\ShowExamHistory.ascx" />
+    <Content Include="Controls\ShowExamBookings.ascx" />
+    <Content Include="Controls\ExamSelection.ascx" />
+    <Content Include="Controls\DeDupOrgForRegistration.ascx" />
+    <Content Include="Controls\DisplayRelatedContacts.ascx" />
+    <Content Include="Controls\DisplayRelatedOrganisations.ascx" />
+    <Content Include="Controls\DisplayTransactions.ascx" />
+    <Content Include="Controls\DownloadDocument.ascx" />
+    <Content Include="Controls\DownloadSelection.ascx" />
+    <Content Include="Controls\EMailSelectedContacts.ascx" />
+    <Content Include="Controls\EventDelegateActivities.ascx" />
+    <Content Include="Controls\EventDelegateSelection.ascx" />
+    <Content Include="Controls\EventSelection.ascx" />
+    <Content Include="Controls\EventSelectionCalendar.ascx" />
+    <Content Include="Controls\Logout.ascx" />
+    <Content Include="Controls\MembershipTypeSelection.ascx" />
+    <Content Include="Controls\OptionSessionSelection.ascx" />
+    <Content Include="Controls\PayerSelection.ascx" />
+    <Content Include="Controls\PayMultiplePaymentPlans.ascx" />
+    <Content Include="Controls\ProcessPayment.ascx" />
+    <Content Include="Controls\ProductPurchase.ascx" />
+    <Content Include="Controls\ProductSelection.ascx" />
+    <Content Include="Controls\RegisterCombined.ascx" />
+    <Content Include="Controls\RegisterCorporateMember.ascx" />
+    <Content Include="Controls\RegisterMember.ascx" />
+    <Content Include="Controls\SearchContact.ascx" />
+    <Content Include="Controls\SearchDirectory.ascx" />
+    <Content Include="Controls\SearchOrganisation.ascx" />
+    <Content Include="Controls\ShowDefaultAddress.ascx" />
+    <Content Include="Controls\Register.ascx" />
+    <Content Include="Controls\Login.ascx" />
+    <Content Include="Controls\ShowEventBookings.ascx" />
+    <Content Include="Controls\SubmitEnquiry.ascx" />
+    <Content Include="Controls\ShowNetwork.ascx" />
+    <Content Include="Controls\PaySubscriptionCC.ascx" />
+    <Content Include="Controls\PayMembershipCC.ascx" />
+    <Content Include="Controls\RecordActivity.ascx" />
+    <Content Include="Controls\ProductPurchaseCC.ascx" />
+    <Content Include="Controls\ModifyDD.ascx" />
+    <Content Include="Controls\MakeDonationCC.ascx" />
+    <Content Include="Controls\MaintainNumbers.ascx" />
+    <Content Include="Controls\MaintainActivityGroup.ascx" />
+    <Content Include="Controls\FindLocalGroup.ascx" />
+    <Content Include="Controls\DataDisplay.ascx" />
+    <Content Include="Controls\RecordStandardEmail.ascx" />
+    <Content Include="Controls\SurveyResponses.ascx" />
+    <Content Include="Controls\SurveySelection.ascx" />
+    <Content Include="Controls\UpdateCPDObjectives.ascx" />
+    <Content Include="Controls\UpdateCPDPoints.ascx" />
+    <Content Include="Controls\UpdateDirectoryPreferences.ascx" />
+    <Content Include="Controls\UpdateOrganisation.ascx" />
+    <Content Include="Controls\UpdatePosition.ascx" />
+    <Content Include="Controls\ViewDirectoryDetails.ascx" />
+    <Content Include="Controls\ViewReceiptDetails.ascx" />
+    <Content Include="Controls\ViewTransaction.ascx" />
+    <Content Include="Custom\Readme.txt" />
+    <Content Include="DatePicker.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\CS Group - Banner Image Lge.JPG" />
+    <Content Include="Images\Downloads\Default.png" />
+    <Content Include="Images\Events\Default.png" />
+    <Content Include="Images\Products\Default.png" />
+    <Content Include="MenuStyles\CustomeStyle\margin.gif" />
+    <Content Include="MenuStyles\CustomeStyle\mid.gif" />
+    <Content Include="MenuStyles\CustomeStyle\mid_over.gif" />
+    <Content Include="MenuStyles\CustomeStyle\style.css" />
+    <Content Include="MenuStyles\CustomeStyle\submenu.gif" />
+    <Content Include="MenuStyles\CustomeStyle\submenu_parent.gif" />
+    <Content Include="MenuStyles\CustomeStyle\submenu_white.gif" />
+    <Content Include="MenuStyles\CustomeStyle\s_bg.gif" />
+    <Content Include="MenuStyles\Futura\bg_menuItem.gif" />
+    <Content Include="MenuStyles\Futura\bg_menuItemOver.gif" />
+    <Content Include="MenuStyles\Futura\bg_separator.gif" />
+    <Content Include="MenuStyles\Futura\style.css" />
+    <Content Include="MenuStyles\Futura\submenu.gif" />
+    <Content Include="MenuStyles\Futura\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontal1\margin.gif" />
+    <Content Include="MenuStyles\Horizontal1\mid.gif" />
+    <Content Include="MenuStyles\Horizontal1\mid_over.gif" />
+    <Content Include="MenuStyles\Horizontal1\style.css" />
+    <Content Include="MenuStyles\Horizontal1\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal1\submenu_parent.gif" />
+    <Content Include="MenuStyles\Horizontal1\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontal1\s_bg.gif" />
+    <Content Include="MenuStyles\Horizontal2\diagonal_bw.gif" />
+    <Content Include="MenuStyles\Horizontal2\diagonal_wb.gif" />
+    <Content Include="MenuStyles\Horizontal2\style.css" />
+    <Content Include="MenuStyles\Horizontal2\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal2\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontal3\style.css" />
+    <Content Include="MenuStyles\Horizontal3\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal3\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontal4\style.css" />
+    <Content Include="MenuStyles\Horizontal4\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal5\bg.gif" />
+    <Content Include="MenuStyles\Horizontal5\bg_a.gif" />
+    <Content Include="MenuStyles\Horizontal5\gag.gif" />
+    <Content Include="MenuStyles\Horizontal5\sep.gif" />
+    <Content Include="MenuStyles\Horizontal5\style.css" />
+    <Content Include="MenuStyles\Horizontal5\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal5\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontal5\s_bg.gif" />
+    <Content Include="MenuStyles\Horizontal6\arrow.gif" />
+    <Content Include="MenuStyles\Horizontal6\arrow_a.gif" />
+    <Content Include="MenuStyles\Horizontal6\bg.gif" />
+    <Content Include="MenuStyles\Horizontal6\bg_a.gif" />
+    <Content Include="MenuStyles\Horizontal6\gag.gif" />
+    <Content Include="MenuStyles\Horizontal6\gagf.gif" />
+    <Content Include="MenuStyles\Horizontal6\gagl.gif" />
+    <Content Include="MenuStyles\Horizontal6\gagl_a.gif" />
+    <Content Include="MenuStyles\Horizontal6\il.gif" />
+    <Content Include="MenuStyles\Horizontal6\ir.gif" />
+    <Content Include="MenuStyles\Horizontal6\sep.gif" />
+    <Content Include="MenuStyles\Horizontal6\style.css" />
+    <Content Include="MenuStyles\Horizontal6\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal6\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontal6\s_bg.gif" />
+    <Content Include="MenuStyles\Horizontal7\bg.gif" />
+    <Content Include="MenuStyles\Horizontal7\bg_a.gif" />
+    <Content Include="MenuStyles\Horizontal7\gagf.gif" />
+    <Content Include="MenuStyles\Horizontal7\gagl.gif" />
+    <Content Include="MenuStyles\Horizontal7\il.gif" />
+    <Content Include="MenuStyles\Horizontal7\sep.gif" />
+    <Content Include="MenuStyles\Horizontal7\style.css" />
+    <Content Include="MenuStyles\Horizontal7\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal7\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontal7\s_bg.gif" />
+    <Content Include="MenuStyles\Horizontal8\bg.gif" />
+    <Content Include="MenuStyles\Horizontal8\bg_a.gif" />
+    <Content Include="MenuStyles\Horizontal8\gagf.gif" />
+    <Content Include="MenuStyles\Horizontal8\gagl.gif" />
+    <Content Include="MenuStyles\Horizontal8\sep.gif" />
+    <Content Include="MenuStyles\Horizontal8\style.css" />
+    <Content Include="MenuStyles\Horizontal8\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal8\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontal8\s_bg.gif" />
+    <Content Include="MenuStyles\Horizontal8\s_bg_a.gif" />
+    <Content Include="MenuStyles\Horizontal9\le_1\bg_em_1.jpg" />
+    <Content Include="MenuStyles\Horizontal9\le_1\style.css" />
+    <Content Include="MenuStyles\Horizontal9\le_1\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal9\le_2\bg_em_2.JPG" />
+    <Content Include="MenuStyles\Horizontal9\le_2\style.css" />
+    <Content Include="MenuStyles\Horizontal9\le_2\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal9\le_3\bg_em_3.JPG" />
+    <Content Include="MenuStyles\Horizontal9\le_3\style.css" />
+    <Content Include="MenuStyles\Horizontal9\le_3\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal9\le_4\bg_em_4.JPG" />
+    <Content Include="MenuStyles\Horizontal9\le_4\style.css" />
+    <Content Include="MenuStyles\Horizontal9\le_4\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal9\le_5\bg_em_5.JPG" />
+    <Content Include="MenuStyles\Horizontal9\le_5\style.css" />
+    <Content Include="MenuStyles\Horizontal9\le_5\submenu.gif" />
+    <Content Include="MenuStyles\Horizontal9\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontalrtl\margin.gif" />
+    <Content Include="MenuStyles\Horizontalrtl\mid.gif" />
+    <Content Include="MenuStyles\Horizontalrtl\mid_over.gif" />
+    <Content Include="MenuStyles\Horizontalrtl\style.css" />
+    <Content Include="MenuStyles\Horizontalrtl\submenu.gif" />
+    <Content Include="MenuStyles\Horizontalrtl\submenu_white.gif" />
+    <Content Include="MenuStyles\Horizontalrtl\s_bg.gif" />
+    <Content Include="MenuStyles\MSDN2\style.css" />
+    <Content Include="MenuStyles\MSDN\style.css" />
+    <Content Include="MenuStyles\Multiple\bg_separator_5.gif" />
+    <Content Include="MenuStyles\Multiple\margin.gif" />
+    <Content Include="MenuStyles\Multiple\mid.gif" />
+    <Content Include="MenuStyles\Multiple\mid_over.gif" />
+    <Content Include="MenuStyles\Multiple\style.css" />
+    <Content Include="MenuStyles\Multiple\submenu.gif" />
+    <Content Include="MenuStyles\Multiple\submenu_4.gif" />
+    <Content Include="MenuStyles\Multiple\submenu_5.gif" />
+    <Content Include="MenuStyles\Multiple\submenu_parent.gif" />
+    <Content Include="MenuStyles\Multiple\submenu_white.gif" />
+    <Content Include="MenuStyles\Multiple\submenu_white_4.gif" />
+    <Content Include="MenuStyles\Multiple\submenu_white_5.gif" />
+    <Content Include="MenuStyles\Multiple\s_bg.gif" />
+    <Content Include="MenuStyles\Multiple\s_bg_4.gif" />
+    <Content Include="MenuStyles\RightToLeft\style.css" />
+    <Content Include="MenuStyles\RightToLeft\submenu.gif" />
+    <Content Include="MenuStyles\Script\easy_menu_events_1101.js" />
+    <Content Include="MenuStyles\Script\easy_menu_events_612.js" />
+    <Content Include="MenuStyles\Script\easy_menu_events_701.js" />
+    <Content Include="MenuStyles\Script\easy_menu_events_902.js" />
+    <Content Include="MenuStyles\Script\easy_menu_script_612.js" />
+    <Content Include="MenuStyles\Script\easy_menu_script_701.js" />
+    <Content Include="MenuStyles\Script\ob_cr_612.js" />
+    <Content Include="MenuStyles\Script\ob_cr_701.js" />
+    <Content Include="MenuStyles\style.css" />
+    <Content Include="MenuStyles\Style10\style.css" />
+    <Content Include="MenuStyles\Style10\submenu.gif" />
+    <Content Include="MenuStyles\Style10\submenu_white.gif" />
+    <Content Include="MenuStyles\Style13\style.css" />
+    <Content Include="MenuStyles\Style13\submenu.gif" />
+    <Content Include="MenuStyles\Style13\submenu_white.gif" />
+    <Content Include="MenuStyles\Style1\style.css" />
+    <Content Include="MenuStyles\Style1\submenu.gif" />
+    <Content Include="MenuStyles\Style1\submenu_white.gif" />
+    <Content Include="MenuStyles\style1_multiple_menus\margin.gif" />
+    <Content Include="MenuStyles\style1_multiple_menus\mid.gif" />
+    <Content Include="MenuStyles\style1_multiple_menus\mid_over.gif" />
+    <Content Include="MenuStyles\style1_multiple_menus\style.css" />
+    <Content Include="MenuStyles\style1_multiple_menus\submenu.gif" />
+    <Content Include="MenuStyles\style1_multiple_menus\submenu_white.gif" />
+    <Content Include="MenuStyles\style1_multiple_menus\s_bg.gif" />
+    <Content Include="MenuStyles\Style2\style.css" />
+    <Content Include="MenuStyles\Style2\submenu.gif" />
+    <Content Include="MenuStyles\Style2\submenu_white.gif" />
+    <Content Include="MenuStyles\style2_multiple_menus\margin.gif" />
+    <Content Include="MenuStyles\style2_multiple_menus\mid.gif" />
+    <Content Include="MenuStyles\style2_multiple_menus\mid_over.gif" />
+    <Content Include="MenuStyles\style2_multiple_menus\style.css" />
+    <Content Include="MenuStyles\style2_multiple_menus\submenu.gif" />
+    <Content Include="MenuStyles\style2_multiple_menus\submenu_parent.gif" />
+    <Content Include="MenuStyles\style2_multiple_menus\submenu_white.gif" />
+    <Content Include="MenuStyles\style2_multiple_menus\s_bg.gif" />
+    <Content Include="MenuStyles\Style3\style.css" />
+    <Content Include="MenuStyles\Style3\submenu.gif" />
+    <Content Include="MenuStyles\Style3\submenu_white.gif" />
+    <Content Include="MenuStyles\Style9\style.css" />
+    <Content Include="MenuStyles\Style9\submenu.gif" />
+    <Content Include="MenuStyles\Style9\submenu_white.gif" />
+    <Content Include="MenuStyles\submenu.gif" />
+    <Content Include="MenuStyles\TabStrip10\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip10\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip10\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip10\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip10\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip10\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip10\style.css" />
+    <Content Include="MenuStyles\TabStrip11\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip11\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip11\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip11\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip11\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip11\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip11\style.css" />
+    <Content Include="MenuStyles\TabStrip12\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip12\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip12\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip12\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip12\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip12\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip12\separator.gif" />
+    <Content Include="MenuStyles\TabStrip12\style.css" />
+    <Content Include="MenuStyles\TabStrip1\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip1\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip1\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip1\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip1\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip1\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip1\style.css" />
+    <Content Include="MenuStyles\TabStrip1\submenu.gif" />
+    <Content Include="MenuStyles\TabStrip2\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip2\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip2\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip2\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip2\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip2\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip2\style.css" />
+    <Content Include="MenuStyles\TabStrip3\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip3\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip3\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip3\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip3\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip3\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip3\style.css" />
+    <Content Include="MenuStyles\TabStrip4\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip4\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip4\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip4\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip4\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip4\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip4\style.css" />
+    <Content Include="MenuStyles\TabStrip5\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip5\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip5\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip5\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip5\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip5\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip5\style.css" />
+    <Content Include="MenuStyles\TabStrip6\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip6\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip6\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip6\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip6\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip6\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip6\style.css" />
+    <Content Include="MenuStyles\TabStrip7\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip7\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip7\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip7\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip7\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip7\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip7\style.css" />
+    <Content Include="MenuStyles\TabStrip8\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip8\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip8\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip8\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip8\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip8\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip8\style.css" />
+    <Content Include="MenuStyles\TabStrip9\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStrip9\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStrip9\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStrip9\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStrip9\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStrip9\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStrip9\style.css" />
+    <Content Include="MenuStyles\TabStrip9\Untitled-1 copy.gif" />
+    <Content Include="MenuStyles\TabStripHorizontal\roundcorner_left.jpg" />
+    <Content Include="MenuStyles\TabStripHorizontal\roundcorner_left_over.jpg" />
+    <Content Include="MenuStyles\TabStripHorizontal\roundcorner_mid.jpg" />
+    <Content Include="MenuStyles\TabStripHorizontal\roundcorner_mid_over.jpg" />
+    <Content Include="MenuStyles\TabStripHorizontal\roundcorner_right.jpg" />
+    <Content Include="MenuStyles\TabStripHorizontal\roundcorner_right_over.jpg" />
+    <Content Include="MenuStyles\TabStripHorizontal\style.css" />
+    <Content Include="MenuStyles\TabStripHorizontal\submenu.gif" />
+    <Content Include="MenuStyles\TabStripYahoo\roundcorner_left.gif" />
+    <Content Include="MenuStyles\TabStripYahoo\roundcorner_left_over.gif" />
+    <Content Include="MenuStyles\TabStripYahoo\roundcorner_mid.gif" />
+    <Content Include="MenuStyles\TabStripYahoo\roundcorner_mid_over.gif" />
+    <Content Include="MenuStyles\TabStripYahoo\roundcorner_right.gif" />
+    <Content Include="MenuStyles\TabStripYahoo\roundcorner_right_over.gif" />
+    <Content Include="MenuStyles\TabStripYahoo\style.css" />
+    <Content Include="MenuStyles\Transparent\bg.gif" />
+    <Content Include="MenuStyles\Transparent\bg_a.gif" />
+    <Content Include="MenuStyles\Transparent\gag.gif" />
+    <Content Include="MenuStyles\Transparent\sep.gif" />
+    <Content Include="MenuStyles\Transparent\style.css" />
+    <Content Include="MenuStyles\Transparent\submenu.gif" />
+    <Content Include="MenuStyles\Transparent\submenu_white.gif" />
+    <Content Include="MenuStyles\Transparent\s_bg.gif" />
+    <Content Include="MenuStyles\TSH_Horizontal\margin.gif" />
+    <Content Include="MenuStyles\TSH_Horizontal\mid.gif" />
+    <Content Include="MenuStyles\TSH_Horizontal\mid_over.gif" />
+    <Content Include="MenuStyles\TSH_Horizontal\style.css" />
+    <Content Include="MenuStyles\TSH_Horizontal\submenu.gif" />
+    <Content Include="MenuStyles\TSH_Horizontal\submenu_parent.gif" />
+    <Content Include="MenuStyles\TSH_Horizontal\submenu_white.gif" />
+    <Content Include="MenuStyles\TSH_Horizontal\s_bg.gif" />
+    <Content Include="MenuStyles\TSH_TabStrip\roundcorner_left.jpg" />
+    <Content Include="MenuStyles\TSH_TabStrip\roundcorner_left_over.jpg" />
+    <Content Include="MenuStyles\TSH_TabStrip\roundcorner_mid.jpg" />
+    <Content Include="MenuStyles\TSH_TabStrip\roundcorner_mid_over.jpg" />
+    <Content Include="MenuStyles\TSH_TabStrip\roundcorner_right.jpg" />
+    <Content Include="MenuStyles\TSH_TabStrip\roundcorner_right_over.jpg" />
+    <Content Include="MenuStyles\TSH_TabStrip\style.css" />
+    <Content Include="MenuStyles\TSH_TabStrip\submenu.gif" />
+    <Content Include="MenuStyles\Vertical1\style.css" />
+    <Content Include="MenuStyles\Vertical1\submenu.gif" />
+    <Content Include="MenuStyles\Verticalrtl\style.css" />
+    <Content Include="MenuStyles\Verticalrtl\submenu.gif" />
+    <Content Include="MenuStyles\Vertical_Multiple\margin.gif" />
+    <Content Include="MenuStyles\Vertical_Multiple\mid.gif" />
+    <Content Include="MenuStyles\Vertical_Multiple\mid_over.gif" />
+    <Content Include="MenuStyles\Vertical_Multiple\style.css" />
+    <Content Include="MenuStyles\Vertical_Multiple\submenu.gif" />
+    <Content Include="MenuStyles\Vertical_Multiple\submenu_parent.gif" />
+    <Content Include="MenuStyles\Vertical_Multiple\submenu_white.gif" />
+    <Content Include="MenuStyles\Vertical_Multiple\s_bg.gif" />
+    <Content Include="MenuStyles\Vsnet\bg_menu.gif" />
+    <Content Include="MenuStyles\Vsnet\bg_separator.gif" />
+    <Content Include="MenuStyles\Vsnet\style.css" />
+    <Content Include="MenuStyles\Vsnet\submenu.gif" />
+    <Content Include="MenuStyles\Vsnet\submenu_white.gif" />
+    <Content Include="MenuStyles\WindowsXP\bg_separator.gif" />
+    <Content Include="MenuStyles\WindowsXP\style.css" />
+    <Content Include="MenuStyles\WindowsXP\submenu.gif" />
+    <Content Include="MenuStyles\WindowsXP\submenu_white.gif" />
+    <Content Include="MenuStyles\windowsXP_Window\bg_separator.gif" />
+    <Content Include="MenuStyles\windowsXP_Window\style.css" />
+    <Content Include="MenuStyles\windowsXP_Window\submenu.gif" />
+    <Content Include="MenuStyles\windowsXP_Window\submenu_white.gif" />
+    <Content Include="MenuStyles\Windows\bg_separator.gif" />
+    <Content Include="MenuStyles\Windows\style.css" />
+    <Content Include="MenuStyles\Windows\submenu.gif" />
+    <Content Include="MenuStyles\Windows\submenu_white.gif" />
+    <Content Include="ReturnPage.aspx" />
+    <Content Include="SagePayNotification.aspx" />
+    <Content Include="Scripts\ClientScript.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Services\PortalAdmin.asmx" />
+    <Content Include="ShowErrors.aspx" />
+    <Content Include="Styles.css" />
+    <Content Include="MenuStyles\CustomeStyle\Thumbs.db" />
+    <Content Include="Web References\CareNetServices\CDBEmailContent.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CareNetServices\FDEControlTypes.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\CareNetServices\NDataAccess.wsdl" />
+    <Content Include="Web References\CareNetServices\ppAutoPayMethods.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\CareNetServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\CareNetServices\NDataAccess.disco" />
+    <None Include="Web References\ExamsAccess\ExamsDataAccess.wsdl" />
+    <Content Include="Web References\ExamsAccess\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web.config.Release">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ExamsAccess\ExamsDataAccess.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AFDInterface.vb" />
+    <Compile Include="Classes\AppValues.vb" />
+    <Compile Include="Classes\ArrayListEx.vb" />
+    <Compile Include="Classes\ContactInfo.vb" />
+    <Compile Include="CollectionList.vb" />
+    <Compile Include="Controls\EmailAddressValidator.vb" />
+    <Compile Include="Controls\TelephoneNumberValidator.vb" />
+    <Compile Include="DataHelperDirect.vb" />
+    <Compile Include="Integration\AuthorisationServiceAttribute.vb" />
+    <Compile Include="Integration\AutorisationServiceFactory.vb" />
+    <Compile Include="Integration\ExtensionMethods.vb" />
+    <Compile Include="Integration\IAuthorisationService .vb" />
+    <Compile Include="Controls\AddBankAccount.ascx.designer.vb">
+      <DependentUpon>AddBankAccount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddBankAccount.ascx.vb">
+      <DependentUpon>AddBankAccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddCategory.ascx.designer.vb">
+      <DependentUpon>AddCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddCategory.ascx.vb">
+      <DependentUpon>AddCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddCategoryCheckboxes.ascx.designer.vb">
+      <DependentUpon>AddCategoryCheckboxes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddCategoryCheckboxes.ascx.vb">
+      <DependentUpon>AddCategoryCheckboxes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddCategoryOptions.ascx.designer.vb">
+      <DependentUpon>AddCategoryOptions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddCategoryOptions.ascx.vb">
+      <DependentUpon>AddCategoryOptions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddCategoryValue.ascx.designer.vb">
+      <DependentUpon>AddCategoryValue.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddCategoryValue.ascx.vb">
+      <DependentUpon>AddCategoryValue.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddContact.ascx.designer.vb">
+      <DependentUpon>AddContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddContact.ascx.vb">
+      <DependentUpon>AddContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddExternalReference.ascx.designer.vb">
+      <DependentUpon>AddExternalReference.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddExternalReference.ascx.vb">
+      <DependentUpon>AddExternalReference.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddLink.ascx.designer.vb">
+      <DependentUpon>AddLink.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddLink.ascx.vb">
+      <DependentUpon>AddLink.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddMemberCS.ascx.designer.vb">
+      <DependentUpon>AddMemberCS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddMemberCS.ascx.vb">
+      <DependentUpon>AddMemberCS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddMemberDD.ascx.designer.vb">
+      <DependentUpon>AddMemberDD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddMemberDD.ascx.vb">
+      <DependentUpon>AddMemberDD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddOrganisation.ascx.designer.vb">
+      <DependentUpon>AddOrganisation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddOrganisation.ascx.vb">
+      <DependentUpon>AddOrganisation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddPaymentPlanDD.ascx.designer.vb">
+      <DependentUpon>AddPaymentPlanDD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddPaymentPlanDD.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddPaymentPlanDD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddPosition.ascx.designer.vb">
+      <DependentUpon>AddPosition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddPosition.ascx.vb">
+      <DependentUpon>AddPosition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddRelatedContact.ascx.designer.vb">
+      <DependentUpon>AddRelatedContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddRelatedContact.ascx.vb">
+      <DependentUpon>AddRelatedContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BookEvent.ascx.designer.vb">
+      <DependentUpon>BookEvent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BookEvent.ascx.vb">
+      <DependentUpon>BookEvent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BookingOptionSelection.ascx.designer.vb">
+      <DependentUpon>BookingOptionSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BookingOptionSelection.ascx.vb">
+      <DependentUpon>BookingOptionSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CareWebControl.ascx.designer.vb">
+      <DependentUpon>CareWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CareWebControl.ascx.vb">
+      <DependentUpon>CareWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddNetworkContact.ascx.designer.vb">
+      <DependentUpon>AddNetworkContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddNetworkContact.ascx.vb">
+      <DependentUpon>AddNetworkContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddDefaultAddress.ascx.designer.vb">
+      <DependentUpon>AddDefaultAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddDefaultAddress.ascx.vb">
+      <DependentUpon>AddDefaultAddress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddSubscriptionDD.ascx.designer.vb">
+      <DependentUpon>AddSubscriptionDD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddSubscriptionDD.ascx.vb">
+      <DependentUpon>AddSubscriptionDD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BookEventCC.ascx.designer.vb">
+      <DependentUpon>BookEventCC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BookEventCC.ascx.vb">
+      <DependentUpon>BookEventCC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddMemberCC.ascx.designer.vb">
+      <DependentUpon>AddMemberCC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddMemberCC.ascx.vb">
+      <DependentUpon>AddMemberCC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ConfirmRegistration.ascx.designer.vb">
+      <DependentUpon>ConfirmRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ConfirmRegistration.ascx.vb">
+      <DependentUpon>ConfirmRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddSuppression.ascx.designer.vb">
+      <DependentUpon>AddSuppression.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddSuppression.ascx.vb">
+      <DependentUpon>AddSuppression.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ContactCPDCycle.ascx.designer.vb">
+      <DependentUpon>ContactCPDCycle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactCPDCycle.ascx.vb">
+      <DependentUpon>ContactCPDCycle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ContactSelection.ascx.designer.vb">
+      <DependentUpon>ContactSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactSelection.ascx.vb">
+      <DependentUpon>ContactSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddCategoryNotes.ascx.designer.vb">
+      <DependentUpon>AddCategoryNotes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddCategoryNotes.ascx.vb">
+      <DependentUpon>AddCategoryNotes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddCommunicationNote.ascx.designer.vb">
+      <DependentUpon>AddCommunicationNote.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddCommunicationNote.ascx.vb">
+      <DependentUpon>AddCommunicationNote.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddAction.ascx.designer.vb">
+      <DependentUpon>AddAction.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddAction.ascx.vb">
+      <DependentUpon>AddAction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddFundraisingPage.ascx.designer.vb">
+      <DependentUpon>AddFundraisingPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddFundraisingPage.ascx.vb">
+      <DependentUpon>AddFundraisingPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ContactSelectionExternalRef.ascx.designer.vb">
+      <DependentUpon>ContactSelectionExternalRef.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactSelectionExternalRef.ascx.vb">
+      <DependentUpon>ContactSelectionExternalRef.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BookExam.ascx.designer.vb">
+      <DependentUpon>BookExam.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BookExam.ascx.vb">
+      <DependentUpon>BookExam.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AddMemberCI.ascx.designer.vb">
+      <DependentUpon>AddMemberCI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddMemberCI.ascx.vb">
+      <DependentUpon>AddMemberCI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ConvertPayPlanToDD.ascx.designer.vb">
+      <DependentUpon>ConvertPayPlanToDD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ConvertPayPlanToDD.ascx.vb">
+      <DependentUpon>ConvertPayPlanToDD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventDelegateEntry.ascx.designer.vb">
+      <DependentUpon>EventDelegateEntry.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventDelegateEntry.ascx.vb">
+      <DependentUpon>EventDelegateEntry.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PrintButton.ascx.designer.vb">
+      <DependentUpon>PrintButton.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PrintButton.ascx.vb">
+      <DependentUpon>PrintButton.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SelectPayPlanForDD.ascx.designer.vb">
+      <DependentUpon>SelectPayPlanForDD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectPayPlanForDD.ascx.vb">
+      <DependentUpon>SelectPayPlanForDD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\InvoicePayment.ascx.designer.vb">
+      <DependentUpon>InvoicePayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InvoicePayment.ascx.vb">
+      <DependentUpon>InvoicePayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUserOrganisation.ascx.designer.vb">
+      <DependentUpon>SetUserOrganisation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUserOrganisation.ascx.vb">
+      <DependentUpon>SetUserOrganisation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ShowExamHistory.ascx.designer.vb">
+      <DependentUpon>ShowExamHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShowExamHistory.ascx.vb">
+      <DependentUpon>ShowExamHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ShowExamBookings.ascx.designer.vb">
+      <DependentUpon>ShowExamBookings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShowExamBookings.ascx.vb">
+      <DependentUpon>ShowExamBookings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ExamSelection.ascx.designer.vb">
+      <DependentUpon>ExamSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExamSelection.ascx.vb">
+      <DependentUpon>ExamSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DeDupOrgForRegistration.ascx.designer.vb">
+      <DependentUpon>DeDupOrgForRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DeDupOrgForRegistration.ascx.vb">
+      <DependentUpon>DeDupOrgForRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayRelatedContacts.ascx.designer.vb">
+      <DependentUpon>DisplayRelatedContacts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DisplayRelatedContacts.ascx.vb">
+      <DependentUpon>DisplayRelatedContacts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayRelatedOrganisations.ascx.designer.vb">
+      <DependentUpon>DisplayRelatedOrganisations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DisplayRelatedOrganisations.ascx.vb">
+      <DependentUpon>DisplayRelatedOrganisations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayTransactions.ascx.designer.vb">
+      <DependentUpon>DisplayTransactions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DisplayTransactions.ascx.vb">
+      <DependentUpon>DisplayTransactions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DownloadDocument.ascx.designer.vb">
+      <DependentUpon>DownloadDocument.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DownloadDocument.ascx.vb">
+      <DependentUpon>DownloadDocument.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DownloadSelection.ascx.designer.vb">
+      <DependentUpon>DownloadSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DownloadSelection.ascx.vb">
+      <DependentUpon>DownloadSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EMailSelectedContacts.ascx.designer.vb">
+      <DependentUpon>EMailSelectedContacts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EMailSelectedContacts.ascx.vb">
+      <DependentUpon>EMailSelectedContacts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventDelegateActivities.ascx.designer.vb">
+      <DependentUpon>EventDelegateActivities.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventDelegateActivities.ascx.vb">
+      <DependentUpon>EventDelegateActivities.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventDelegateSelection.ascx.designer.vb">
+      <DependentUpon>EventDelegateSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventDelegateSelection.ascx.vb">
+      <DependentUpon>EventDelegateSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventSelection.ascx.designer.vb">
+      <DependentUpon>EventSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventSelection.ascx.vb">
+      <DependentUpon>EventSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventSelectionCalendar.ascx.designer.vb">
+      <DependentUpon>EventSelectionCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventSelectionCalendar.ascx.vb">
+      <DependentUpon>EventSelectionCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FundraiserDonations.ascx.designer.vb">
+      <DependentUpon>FundraiserDonations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FundraiserDonations.ascx.vb">
+      <DependentUpon>FundraiserDonations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FundraiserPageInformation.ascx.designer.vb">
+      <DependentUpon>FundraiserPageInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FundraiserPageInformation.ascx.vb">
+      <DependentUpon>FundraiserPageInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FindFundraiser.ascx.designer.vb">
+      <DependentUpon>FindFundraiser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FindFundraiser.ascx.vb">
+      <DependentUpon>FindFundraiser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayContactData.ascx.designer.vb">
+      <DependentUpon>DisplayContactData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DisplayContactData.ascx.vb">
+      <DependentUpon>DisplayContactData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Logout.ascx.designer.vb">
+      <DependentUpon>Logout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Logout.ascx.vb">
+      <DependentUpon>Logout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MembershipTypeSelection.ascx.designer.vb">
+      <DependentUpon>MembershipTypeSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MembershipTypeSelection.ascx.vb">
+      <DependentUpon>MembershipTypeSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OptionSessionSelection.ascx.designer.vb">
+      <DependentUpon>OptionSessionSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OptionSessionSelection.ascx.vb">
+      <DependentUpon>OptionSessionSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PayerSelection.ascx.designer.vb">
+      <DependentUpon>PayerSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PayerSelection.ascx.vb">
+      <DependentUpon>PayerSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PayMultiplePaymentPlans.ascx.designer.vb">
+      <DependentUpon>PayMultiplePaymentPlans.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PayMultiplePaymentPlans.ascx.vb">
+      <DependentUpon>PayMultiplePaymentPlans.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProcessPayment.ascx.designer.vb">
+      <DependentUpon>ProcessPayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProcessPayment.ascx.vb">
+      <DependentUpon>ProcessPayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductPurchase.ascx.designer.vb">
+      <DependentUpon>ProductPurchase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductPurchase.ascx.vb">
+      <DependentUpon>ProductPurchase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductSelection.ascx.designer.vb">
+      <DependentUpon>ProductSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductSelection.ascx.vb">
+      <DependentUpon>ProductSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RegisterCombined.ascx.designer.vb">
+      <DependentUpon>RegisterCombined.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RegisterCombined.ascx.vb">
+      <DependentUpon>RegisterCombined.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RegisterCorporateMember.ascx.designer.vb">
+      <DependentUpon>RegisterCorporateMember.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RegisterCorporateMember.ascx.vb">
+      <DependentUpon>RegisterCorporateMember.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RegisterMember.ascx.designer.vb">
+      <DependentUpon>RegisterMember.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RegisterMember.ascx.vb">
+      <DependentUpon>RegisterMember.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SearchContact.ascx.designer.vb">
+      <DependentUpon>SearchContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchContact.ascx.vb">
+      <DependentUpon>SearchContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SearchDirectory.ascx.designer.vb">
+      <DependentUpon>SearchDirectory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchDirectory.ascx.vb">
+      <DependentUpon>SearchDirectory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SearchOrganisation.ascx.designer.vb">
+      <DependentUpon>SearchOrganisation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchOrganisation.ascx.vb">
+      <DependentUpon>SearchOrganisation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ShowEventBookings.ascx.designer.vb">
+      <DependentUpon>ShowEventBookings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShowEventBookings.ascx.vb">
+      <DependentUpon>ShowEventBookings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SubmitAll.ascx.designer.vb">
+      <DependentUpon>SubmitAll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SubmitAll.ascx.vb">
+      <DependentUpon>SubmitAll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EMailPassword.ascx.designer.vb">
+      <DependentUpon>EMailPassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EMailPassword.ascx.vb">
+      <DependentUpon>EMailPassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RapidProductPurchase.ascx.designer.vb">
+      <DependentUpon>RapidProductPurchase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RapidProductPurchase.ascx.vb">
+      <DependentUpon>RapidProductPurchase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ShowDefaultAddress.ascx.designer.vb">
+      <DependentUpon>ShowDefaultAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShowDefaultAddress.ascx.vb">
+      <DependentUpon>ShowDefaultAddress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Register.ascx.designer.vb">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Register.ascx.vb">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Login.ascx.designer.vb">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Login.ascx.vb">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SubmitEnquiry.ascx.designer.vb">
+      <DependentUpon>SubmitEnquiry.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SubmitEnquiry.ascx.vb">
+      <DependentUpon>SubmitEnquiry.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ShowNetwork.ascx.designer.vb">
+      <DependentUpon>ShowNetwork.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShowNetwork.ascx.vb">
+      <DependentUpon>ShowNetwork.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PaySubscriptionCC.ascx.designer.vb">
+      <DependentUpon>PaySubscriptionCC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PaySubscriptionCC.ascx.vb">
+      <DependentUpon>PaySubscriptionCC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PayMembershipCC.ascx.designer.vb">
+      <DependentUpon>PayMembershipCC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PayMembershipCC.ascx.vb">
+      <DependentUpon>PayMembershipCC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RecordActivity.ascx.designer.vb">
+      <DependentUpon>RecordActivity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecordActivity.ascx.vb">
+      <DependentUpon>RecordActivity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductPurchaseCC.ascx.designer.vb">
+      <DependentUpon>ProductPurchaseCC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductPurchaseCC.ascx.vb">
+      <DependentUpon>ProductPurchaseCC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ModifyDD.ascx.designer.vb">
+      <DependentUpon>ModifyDD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ModifyDD.ascx.vb">
+      <DependentUpon>ModifyDD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MakeDonationCC.ascx.designer.vb">
+      <DependentUpon>MakeDonationCC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MakeDonationCC.ascx.vb">
+      <DependentUpon>MakeDonationCC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MaintainNumbers.ascx.designer.vb">
+      <DependentUpon>MaintainNumbers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MaintainNumbers.ascx.vb">
+      <DependentUpon>MaintainNumbers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MaintainActivityGroup.ascx.designer.vb">
+      <DependentUpon>MaintainActivityGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MaintainActivityGroup.ascx.vb">
+      <DependentUpon>MaintainActivityGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FindLocalGroup.ascx.designer.vb">
+      <DependentUpon>FindLocalGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FindLocalGroup.ascx.vb">
+      <DependentUpon>FindLocalGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DataDisplay.ascx.designer.vb">
+      <DependentUpon>DataDisplay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataDisplay.ascx.vb">
+      <DependentUpon>DataDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RecordStandardEmail.ascx.designer.vb">
+      <DependentUpon>RecordStandardEmail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecordStandardEmail.ascx.vb">
+      <DependentUpon>RecordStandardEmail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SurveyResponses.ascx.designer.vb">
+      <DependentUpon>SurveyResponses.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SurveyResponses.ascx.vb">
+      <DependentUpon>SurveyResponses.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SurveySelection.ascx.designer.vb">
+      <DependentUpon>SurveySelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SurveySelection.ascx.vb">
+      <DependentUpon>SurveySelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateAddress.ascx.designer.vb">
+      <DependentUpon>UpdateAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateAddress.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>UpdateAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateContact.ascx.designer.vb">
+      <DependentUpon>UpdateContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateContact.ascx.vb">
+      <DependentUpon>UpdateContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateCPDObjectives.ascx.designer.vb">
+      <DependentUpon>UpdateCPDObjectives.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateCPDObjectives.ascx.vb">
+      <DependentUpon>UpdateCPDObjectives.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateCPDPoints.ascx.designer.vb">
+      <DependentUpon>UpdateCPDPoints.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateCPDPoints.ascx.vb">
+      <DependentUpon>UpdateCPDPoints.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateDirectoryPreferences.ascx.designer.vb">
+      <DependentUpon>UpdateDirectoryPreferences.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateDirectoryPreferences.ascx.vb">
+      <DependentUpon>UpdateDirectoryPreferences.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateEmailAddress.ascx.designer.vb">
+      <DependentUpon>UpdateEmailAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateEmailAddress.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>UpdateEmailAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateOrganisation.ascx.designer.vb">
+      <DependentUpon>UpdateOrganisation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateOrganisation.ascx.vb">
+      <DependentUpon>UpdateOrganisation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdatePassword.ascx.designer.vb">
+      <DependentUpon>UpdatePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdatePassword.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>UpdatePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdatePosition.ascx.designer.vb">
+      <DependentUpon>UpdatePosition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdatePosition.ascx.vb">
+      <DependentUpon>UpdatePosition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateTelephoneNumber.ascx.designer.vb">
+      <DependentUpon>UpdateTelephoneNumber.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateTelephoneNumber.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>UpdateTelephoneNumber.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewDirectoryDetails.ascx.designer.vb">
+      <DependentUpon>ViewDirectoryDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewDirectoryDetails.ascx.vb">
+      <DependentUpon>ViewDirectoryDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ViewReceiptDetails.ascx.designer.vb">
+      <DependentUpon>ViewReceiptDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewReceiptDetails.ascx.vb">
+      <DependentUpon>ViewReceiptDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ViewTransaction.ascx.designer.vb">
+      <DependentUpon>ViewTransaction.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewTransaction.ascx.vb">
+      <DependentUpon>ViewTransaction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataHelper.vb" />
+    <Compile Include="DatePicker.aspx.designer.vb">
+      <DependentUpon>DatePicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatePicker.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>DatePicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DateValidator.vb" />
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptionProvider.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Integration\SagePayHostedService.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controls\NavigateButton.ascx.designer.vb">
+      <DependentUpon>NavigateButton.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NavigateButton.ascx.vb">
+      <DependentUpon>NavigateButton.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParameterList.vb" />
+    <Compile Include="QASInterface.vb" />
+    <Compile Include="ReturnPage.aspx.designer.vb">
+      <DependentUpon>ReturnPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnPage.aspx.vb">
+      <DependentUpon>ReturnPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SagePayNotification.aspx.designer.vb">
+      <DependentUpon>SagePayNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SagePayNotification.aspx.vb">
+      <DependentUpon>SagePayNotification.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Services\PortalAdmin.asmx.vb">
+      <DependentUpon>PortalAdmin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShowErrors.aspx.designer.vb">
+      <DependentUpon>ShowErrors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowErrors.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>ShowErrors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StringList.vb" />
+    <Compile Include="UrlRewrite.vb" />
+    <Compile Include="Utilities.vb" />
+    <Compile Include="Web References\CareNetServices\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ExamsAccess\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\QASProWeb\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\AddBankAccount.ascx" />
+    <Content Include="Controls\AddCategory.ascx" />
+    <Content Include="Controls\AddCategoryCheckboxes.ascx" />
+    <Content Include="Controls\AddCategoryOptions.ascx" />
+    <Content Include="Controls\AddCategoryValue.ascx" />
+    <Content Include="Controls\AddContact.ascx" />
+    <Content Include="Controls\AddExternalReference.ascx" />
+    <Content Include="Controls\AddLink.ascx" />
+    <Content Include="Controls\AddRelatedContact.ascx" />
+    <Content Include="Controls\ConfirmRegistration.ascx" />
+    <Content Include="Controls\AddSuppression.ascx" />
+    <Content Include="Controls\ContactSelection.ascx" />
+    <Content Include="Controls\AddCategoryNotes.ascx" />
+    <Content Include="Controls\AddCommunicationNote.ascx" />
+    <Content Include="Controls\AddAction.ascx" />
+    <Content Include="Controls\AddFundraisingPage.ascx" />
+    <Content Include="Controls\ContactSelectionExternalRef.ascx" />
+    <Content Include="Controls\FundraiserDonations.ascx" />
+    <Content Include="Controls\FundraiserPageInformation.ascx" />
+    <Content Include="Controls\FindFundraiser.ascx" />
+    <Content Include="Controls\DisplayContactData.ascx" />
+    <Content Include="Controls\SubmitAll.ascx" />
+    <Content Include="Controls\EMailPassword.ascx" />
+    <Content Include="Controls\RapidProductPurchase.ascx" />
+    <Content Include="Controls\UpdateAddress.ascx" />
+    <Content Include="Controls\UpdateContact.ascx" />
+    <Content Include="Controls\UpdateEmailAddress.ascx" />
+    <Content Include="Controls\UpdatePassword.ascx" />
+    <Content Include="Controls\UpdateTelephoneNumber.ascx" />
+    <Content Include="Documents\Computer Software Group.doc" />
+    <Content Include="Documents\Computer Software Group.pdf" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\meter.jpg" />
+    <Content Include="Controls\NavigateButton.ascx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\QASProWeb\Address.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\Picklist.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\QABulkSearchResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\QADataMapDetail.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\QADataSet.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\QAExampleAddress.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\QALayout.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\QALicenceInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\QAPromptSet.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\QAS.wsdl" />
+    <None Include="Web References\QASProWeb\QASearchOk.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\QASearchResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\QASProWeb\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CDBNACCESS\CDBNACCESS.vbproj">
+      <Project>{de5082a7-d4c4-4adb-9e25-b03ae84096d1}</Project>
+      <Name>CDBNACCESS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CDBNDATA\CDBNDATA.vbproj">
+      <Project>{FCF0CBB2-E57B-4494-BCDE-AC7B525FE89A}</Project>
+      <Name>CDBNDATA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CDBNUTILS\CDBNUTILS.vbproj">
+      <Project>{0C285D91-7C4F-436D-8E61-0C0A6F27E6E0}</Project>
+      <Name>CDBNUTILS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CDBNXML\CDBNXML.vbproj">
+      <Project>{59e8b2f7-31f4-4e3a-8b3f-e7fda9f4d58c}</Project>
+      <Name>CDBNXML</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:2360/ExamsDataAccess.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ExamsAccess\</RelPath>
+      <UpdateFromURL>http://localhost:2360/ExamsDataAccess.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CarePortal_ExamsAccess_ExamsDataAccess</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2360/NDataAccess.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CareNetServices\</RelPath>
+      <UpdateFromURL>http://localhost:2360/NDataAccess.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CarePortal_CareNetServices_NDataAccess</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://ntdev4:2021/proweb.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\QASProWeb\</RelPath>
+      <UpdateFromURL>http://ntdev4:2021/proweb.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CarePortal_QASProWeb_ProWeb</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1234</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/CarePortal</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

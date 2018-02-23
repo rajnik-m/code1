@@ -1,0 +1,187 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CareWPD
+</name>
+</assembly>
+<members>
+<member name="T:CareWPD.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CareWPD.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CareWPD.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:CareWPD.My.Resources.Resources.NG_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="T:CareWPD.CarePortal.PortalAdmin">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.#ctor">
+<remarks/>
+</member>
+<member name="E:CareWPD.CarePortal.PortalAdmin.SetWebInfoCompleted">
+<remarks/>
+</member>
+<member name="E:CareWPD.CarePortal.PortalAdmin.GetDocumentsCompleted">
+<remarks/>
+</member>
+<member name="E:CareWPD.CarePortal.PortalAdmin.GetImagesCompleted">
+<remarks/>
+</member>
+<member name="E:CareWPD.CarePortal.PortalAdmin.DeleteDocumentCompleted">
+<remarks/>
+</member>
+<member name="E:CareWPD.CarePortal.PortalAdmin.DeleteImageCompleted">
+<remarks/>
+</member>
+<member name="E:CareWPD.CarePortal.PortalAdmin.UploadDocumentCompleted">
+<remarks/>
+</member>
+<member name="E:CareWPD.CarePortal.PortalAdmin.UploadImageCompleted">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.SetWebInfo(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.SetWebInfoAsync(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.SetWebInfoAsync(System.Int32,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.GetDocuments">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.GetDocumentsAsync">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.GetDocumentsAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.GetImages">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.GetImagesAsync">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.GetImagesAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.DeleteDocument(System.String)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.DeleteDocumentAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.DeleteDocumentAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.DeleteImage(System.String)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.DeleteImageAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.DeleteImageAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.UploadDocument(System.String,System.Byte[])">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.UploadDocumentAsync(System.String,System.Byte[])">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.UploadDocumentAsync(System.String,System.Byte[],System.Object)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.UploadImage(System.String,System.Byte[])">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.UploadImageAsync(System.String,System.Byte[])">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.UploadImageAsync(System.String,System.Byte[],System.Object)">
+<remarks/>
+</member>
+<member name="M:CareWPD.CarePortal.PortalAdmin.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.SetWebInfoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.SetWebInfoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:CareWPD.CarePortal.SetWebInfoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.GetDocumentsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.GetDocumentsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:CareWPD.CarePortal.GetDocumentsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.GetImagesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.GetImagesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:CareWPD.CarePortal.GetImagesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.DeleteDocumentCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.DeleteDocumentCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:CareWPD.CarePortal.DeleteDocumentCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.DeleteImageCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.DeleteImageCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:CareWPD.CarePortal.DeleteImageCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.UploadDocumentCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.UploadDocumentCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:CareWPD.CarePortal.UploadDocumentCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.UploadImageCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:CareWPD.CarePortal.UploadImageCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:CareWPD.CarePortal.UploadImageCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

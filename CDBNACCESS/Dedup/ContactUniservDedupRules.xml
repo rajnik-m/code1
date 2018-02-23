@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"  ?>
+<ArrayOfDedupRule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+  <!--Low rules-->
+  <DedupRule ID ="LO0S"
+             Description ="Surname"
+             RuleRank ="Low"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="LO0P"
+             Description ="Postcode"
+             RuleRank ="Low"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="LO0T"
+             Description ="Town"
+             RuleRank ="Low"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0ST"
+               Description ="Surname &amp; Town"
+               RuleRank ="Low"
+               xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="LO0TP"
+             Description ="Town &amp; Postcode"
+             RuleRank ="Low"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0A"
+           Description ="Address"
+           RuleRank ="Medium"
+           xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+  <!--Medium rules-->
+  <DedupRule ID ="MO0SP"
+           Description ="Surname &amp; Postcode"
+           RuleRank ="Medium"
+           xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table=""
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0FST"
+             Description ="ForeName &amp; Surname &amp; Town"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Forename"
+                   Table="Contacts"
+                   Attribute="forename"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0AP"
+             Description ="Address &amp; Postcode"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+
+  <DedupRule ID ="MO0AT"
+             Description ="Address &amp; Town"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0ATP"
+             Description ="Address &amp; Town &amp; Postcode"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+
+  <DedupRule ID ="MO0STP"
+             Description ="Surname &amp; Town &amp; Postcode"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0SA"
+             Description ="Surname &amp; Address"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0SAT"
+             Description ="Surname &amp; Address &amp; Town"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0FS"
+             Description ="ForeName &amp; Surname"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Forename"
+                   Table="Contacts"
+                   Attribute="forename"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0FSP"
+             Description ="ForeName &amp; Surname &amp; Postcode"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Forename"
+                   Table="Contacts"
+                   Attribute="forename"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0FSA"
+             Description ="ForeName &amp; Surname &amp; Address"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Forename"
+                   Table="Contacts"
+                   Attribute="forename"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="MO0FSAT"
+             Description ="ForeName &amp; Surname &amp; Address &amp; Town"
+             RuleRank ="Medium"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Forename"
+                   Table="Contacts"
+                   Attribute="forename"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+  <!--High rules-->
+  <DedupRule ID ="HO0SAT"
+             Description ="Surname &amp; Address &amp; Postcode"
+             RuleRank ="High"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="HO0FSATP"
+             Description ="Surname &amp; Address &amp; Town &amp; Postcode"
+             RuleRank ="High"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="HO0FSTP"
+             Description ="ForeName &amp; Surname &amp; Town &amp; Postcode"
+             RuleRank ="High"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Forename"
+                   Table="Contacts"
+                   Attribute="forename"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+
+  <DedupRule ID ="HO0FSAP"
+             Description ="ForeName &amp; Surname &amp; Address &amp; Postcode"
+             RuleRank ="High"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Forename"
+                   Table="Contacts"
+                   Attribute="forename"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID ="HO0FSATP"
+             Description ="ForeName &amp; Surname &amp; Address &amp; Town &amp; Postcode"
+             RuleRank ="High"
+             xmlns="">
+    <Clauses>
+      <DedupClause Parameter="Forename"
+                   Table="Contacts"
+                   Attribute="forename"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Surname"
+                   Table="Contacts"
+                   Attribute="surname"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Address"
+                   Table="Addresses"
+                   Attribute="address_line1"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Town"
+                   Table="Addresses"
+                   Attribute="town"
+                   Match="IsLike"/>
+      <DedupClause Parameter="Postcode"
+                   Table="Addresses"
+                   Attribute="postcode"
+                   Match="Equals"/>
+      <DedupClause Parameter="Country"
+                   Table="Addresses"
+                   Attribute="country"
+                   Match="Equals"/>
+    </Clauses>
+  </DedupRule>
+  <DedupRule ID="HI0CON"
+           Description="ContactNumber"
+           RuleRank ="High"
+           xmlns=""
+             >
+    <Clauses >
+      <DedupClause Parameter="ContactNumber"
+                    Table=""
+                    Attribute="contact_number"
+                    Match="Equals" />
+    </Clauses>
+  </DedupRule>
+</ArrayOfDedupRule>

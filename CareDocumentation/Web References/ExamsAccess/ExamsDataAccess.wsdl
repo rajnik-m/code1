@@ -1,0 +1,3830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://care.co.uk/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://care.co.uk/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://care.co.uk/webservices/">
+      <s:element name="UpdateCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateCategoryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteCategoryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamBookingUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamBookingUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamBookingUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamBooking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamBookingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamBookingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentreAssessmentType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentreAssessmentTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamCentreAssessmentTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCentreAssessmentType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCentreAssessmentTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamCentreAssessmentTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCentreAssessmentType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCentreAssessmentTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamCentreAssessmentTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentreAction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentreActionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamCentreActionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentreContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentreContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamCentreContactResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCentreContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCentreContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamCentreContactResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCentreContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCentreContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamCentreContactResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentreUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentreUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamCentreUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCentreUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCentreUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamCentreUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCentreUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCentreUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamCentreUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCentreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamCentreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCentre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCentreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamCentreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCentre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCentreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamCentreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamExemptionUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamExemptionUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamExemptionUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamExemptionUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamExemptionUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamExemptionUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamExemptionUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamExemptionUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamExemptionUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamExemption">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamExemptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamExemptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamExemption">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamExemptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamExemptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamExemption">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamExemptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamExemptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamPersonnel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamPersonnelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamPersonnelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamPersonnel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamPersonnelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamPersonnelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamPersonnel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamPersonnelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamPersonnelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamPersonnelAssessType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamPersonnelAssessTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamPersonnelAssessTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamPersonnelAssessType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamPersonnelAssessTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamPersonnelAssessTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamPersonnelAssessType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamPersonnelAssessTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamPersonnelAssessTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamPersonnelExpense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamPersonnelExpenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamPersonnelExpenseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamPersonnelExpense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamPersonnelExpenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamPersonnelExpenseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamPersonnelExpense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamPersonnelExpenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamPersonnelExpenseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamSchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamScheduleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamScheduleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamSchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamScheduleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamScheduleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamSchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamScheduleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamScheduleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamSessionCentre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamSessionCentreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamSessionCentreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamSessionCentre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamSessionCentreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamSessionCentreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamSessionCentre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamSessionCentreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamSessionCentreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamStudentExemption">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamStudentExemptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamStudentExemptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamStudentExemption">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamStudentExemptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamStudentExemptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamStudentExemption">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamStudentExemptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamStudentExemptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamStudentUnitHeader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamStudentUnitHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamStudentUnitHeaderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitAssessmentType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitAssessmentTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamUnitAssessmentTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitAssessmentType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitAssessmentTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamUnitAssessmentTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitAssessmentType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitAssessmentTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamUnitAssessmentTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitEligibilityCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitEligibilityCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamUnitEligibilityCheckResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitEligibilityCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitEligibilityCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamUnitEligibilityCheckResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitEligibilityCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitEligibilityCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamUnitEligibilityCheckResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitGrade">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitGradeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamUnitGradeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitGrade">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitGradeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamUnitGradeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitGrade">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitGradeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamUnitGradeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitLinkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamUnitLinkResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShareExamUnitLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShareExamUnitLinkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShareExamUnitLinkResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitLinkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamUnitLinkResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitPersonnel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitPersonnelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamUnitPersonnelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitPersonnel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitPersonnelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamUnitPersonnelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitPersonnel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitPersonnelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamUnitPersonnelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitPrerequisite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitPrerequisiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamUnitPrerequisiteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitPrerequisite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitPrerequisiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamUnitPrerequisiteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitPrerequisite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitPrerequisiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamUnitPrerequisiteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamUnitProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamUnitProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamUnitProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectExamData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSelectDataType" type="tns:XMLExamDataSelectionTypes" />
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="XMLExamDataSelectionTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="ExamHeaderInformation" />
+          <s:enumeration value="ExamBookingUnits" />
+          <s:enumeration value="ExamCandidateActivites" />
+          <s:enumeration value="ExamCentreAssessmentTypes" />
+          <s:enumeration value="ExamCentreContacts" />
+          <s:enumeration value="ExamCentreUnits" />
+          <s:enumeration value="ExamCentreUnitSelection" />
+          <s:enumeration value="ExamCentres" />
+          <s:enumeration value="ExamExemptions" />
+          <s:enumeration value="ExamExemptionUnits" />
+          <s:enumeration value="ExamExemptionUnitSelection" />
+          <s:enumeration value="ExamPersonnel" />
+          <s:enumeration value="ExamPersonnelAssessmentTypes" />
+          <s:enumeration value="ExamPersonnelExpenses" />
+          <s:enumeration value="ExamSchedule" />
+          <s:enumeration value="ExamSchedulePersonnel" />
+          <s:enumeration value="ExamSessionCentres" />
+          <s:enumeration value="ExamSessionCentreSelection" />
+          <s:enumeration value="ExamSessions" />
+          <s:enumeration value="ExamStudentEligibility" />
+          <s:enumeration value="ExamStudentExemptionHistory" />
+          <s:enumeration value="ExamStudentExemptions" />
+          <s:enumeration value="ExamStudentComponentResults" />
+          <s:enumeration value="ExamStudentHeader" />
+          <s:enumeration value="ExamStudentResults" />
+          <s:enumeration value="ExamStudentUnit" />
+          <s:enumeration value="ExamStudentUnitHeader" />
+          <s:enumeration value="ExamUnitAssessmentTypes" />
+          <s:enumeration value="ExamUnitEligibilityChecks" />
+          <s:enumeration value="ExamUnitLinks" />
+          <s:enumeration value="ExamUnitGrades" />
+          <s:enumeration value="ExamUnitPersonnel" />
+          <s:enumeration value="ExamUnitPrerequisites" />
+          <s:enumeration value="ExamUnitResources" />
+          <s:enumeration value="ExamUnits" />
+          <s:enumeration value="ExamStudentBookingUnits" />
+          <s:enumeration value="ExamScheduleAllCentres" />
+          <s:enumeration value="ExamPersonnelMarkerInfo" />
+          <s:enumeration value="ExamUnitCandidates" />
+          <s:enumeration value="ExamUnitMarkerAllocation" />
+          <s:enumeration value="ExamUnitMarkerAllocationList" />
+          <s:enumeration value="ExamMarkerList" />
+          <s:enumeration value="ExamMaintenanceButtons" />
+          <s:enumeration value="ExamMaintenanceCourses" />
+          <s:enumeration value="ExamMaintenanceCentres" />
+          <s:enumeration value="ExamMaintenancePersonnel" />
+          <s:enumeration value="ExamMaintenanceSessions" />
+          <s:enumeration value="ExamMaintenanceExemptions" />
+          <s:enumeration value="ExamCentreActions" />
+          <s:enumeration value="ExamCentreActionLinks" />
+          <s:enumeration value="ExamCentreActionAnalysis" />
+          <s:enumeration value="ExamCentreHistory" />
+          <s:enumeration value="ExamCentreCategories" />
+          <s:enumeration value="ExamUnitLinkCategories" />
+          <s:enumeration value="ExamCentreUnitLinkCategories" />
+          <s:enumeration value="ExamAccreditationHistory" />
+          <s:enumeration value="ExamCentreUnitDetails" />
+          <s:enumeration value="ExamUnitGradeHistory" />
+          <s:enumeration value="ExamCentreDocuments" />
+          <s:enumeration value="ExamUnitLinkDocuments" />
+          <s:enumeration value="ExamCentreUnitLinkDocuments" />
+          <s:enumeration value="ExamUnitStudyModes" />
+          <s:enumeration value="ExamCentreUnitStudyModes" />
+          <s:enumeration value="ExamUnitCertRunTypes" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SelectExamDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectExamDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExamMaintenanceControls">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pMaintenanceType" type="tns:XMLExamMaintenanceTypes" />
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="XMLExamMaintenanceTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="ExamBookingUnit" />
+          <s:enumeration value="ExamCentreAssessmentTypes" />
+          <s:enumeration value="ExamCentres" />
+          <s:enumeration value="ExamCentreContacts" />
+          <s:enumeration value="ExamExemptions" />
+          <s:enumeration value="ExamPersonnel" />
+          <s:enumeration value="ExamPersonnelAssessmentTypes" />
+          <s:enumeration value="ExamPersonnelExpenses" />
+          <s:enumeration value="ExamSchedule" />
+          <s:enumeration value="ExamSessions" />
+          <s:enumeration value="ExamUnit" />
+          <s:enumeration value="ExamUnitAssessmentTypes" />
+          <s:enumeration value="ExamUnitGrades" />
+          <s:enumeration value="ExamUnitPersonnel" />
+          <s:enumeration value="ExamUnitPrerequisites" />
+          <s:enumeration value="ExamUnitRequirements" />
+          <s:enumeration value="ExamUnitResources" />
+          <s:enumeration value="ExamMultipleSchedule" />
+          <s:enumeration value="ExamCandidateActivities" />
+          <s:enumeration value="ExamUnitMarkerAllocation" />
+          <s:enumeration value="ExamCentreActions" />
+          <s:enumeration value="ExamCentreActionAnalysis" />
+          <s:enumeration value="ExamCentreActionLinks" />
+          <s:enumeration value="ExamCentreCategories" />
+          <s:enumeration value="ExamUnitLinkCategories" />
+          <s:enumeration value="ExamCentreUnitLinkCategories" />
+          <s:enumeration value="ExamCentreUnitDetails" />
+          <s:enumeration value="ExamUnitLinkDocuments" />
+          <s:enumeration value="ExamCentreDocuments" />
+          <s:enumeration value="ExamCentreUnitLinkDocuments" />
+          <s:enumeration value="ExamUnitStudyModes" />
+          <s:enumeration value="ExamUnitCertRunTypes" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetExamMaintenanceControlsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExamMaintenanceControlsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamMaintenanceControls">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pMaintenanceType" type="tns:XMLExamMaintenanceTypes" />
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamMaintenanceControlsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamMaintenanceControlsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateExamProgramme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateExamProgrammeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateExamProgrammeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateExamCentreUnits">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateExamCentreUnitsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateExamCentreUnitsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateExamSessionCentres">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateExamSessionCentresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateExamSessionCentresResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExamEligibilityChecks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExamEligibilityChecksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExamEligibilityChecksResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateExamBookingPrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateExamBookingPriceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalculateExamBookingPriceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindExamPersonnel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindExamPersonnelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindExamPersonnelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelExamBooking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelExamBookingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelExamBookingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeExamBookingCentre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeExamBookingCentreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangeExamBookingCentreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCandidateActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamCandidateActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamCandidateActivityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCandidateActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateExamCandidateActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateExamCandidateActivityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCandidateActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamCandidateActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamCandidateActivityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamMarkerAllocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteExamMarkerAllocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteExamMarkerAllocationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamMarkerAllocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExamMarkerAllocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExamMarkerAllocationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pXMLParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddCategoryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UpdateCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCategory" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCategory" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamBookingUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamBookingUnit" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamBookingUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamBookingUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamBookingSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamBooking" />
+  </wsdl:message>
+  <wsdl:message name="AddExamBookingSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreAssessmentTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamCentreAssessmentType" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreAssessmentTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamCentreAssessmentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCentreAssessmentTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamCentreAssessmentType" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCentreAssessmentTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamCentreAssessmentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCentreAssessmentTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamCentreAssessmentType" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCentreAssessmentTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamCentreAssessmentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreActionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamCentreAction" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreActionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamCentreActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreContactSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamCentreContact" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreContactSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamCentreContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCentreContactSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamCentreContact" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCentreContactSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamCentreContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCentreContactSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamCentreContact" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCentreContactSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamCentreContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamCentreUnit" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamCentreUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCentreUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamCentreUnit" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCentreUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamCentreUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCentreUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamCentreUnit" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCentreUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamCentreUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamCentre" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCentreSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamCentreResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCentreSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamCentre" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCentreSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamCentreResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCentreSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamCentre" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCentreSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamCentreResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamExemptionUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamExemptionUnit" />
+  </wsdl:message>
+  <wsdl:message name="AddExamExemptionUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamExemptionUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamExemptionUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamExemptionUnit" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamExemptionUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamExemptionUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamExemptionUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamExemptionUnit" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamExemptionUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamExemptionUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamExemptionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamExemption" />
+  </wsdl:message>
+  <wsdl:message name="AddExamExemptionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamExemptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamExemptionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamExemption" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamExemptionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamExemptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamExemptionSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamExemption" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamExemptionSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamExemptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamPersonnelSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamPersonnel" />
+  </wsdl:message>
+  <wsdl:message name="AddExamPersonnelSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamPersonnelResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamPersonnelSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamPersonnel" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamPersonnelSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamPersonnelResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamPersonnelSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamPersonnel" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamPersonnelSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamPersonnelResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamPersonnelAssessTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamPersonnelAssessType" />
+  </wsdl:message>
+  <wsdl:message name="AddExamPersonnelAssessTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamPersonnelAssessTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamPersonnelAssessTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamPersonnelAssessType" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamPersonnelAssessTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamPersonnelAssessTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamPersonnelAssessTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamPersonnelAssessType" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamPersonnelAssessTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamPersonnelAssessTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamPersonnelExpenseSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamPersonnelExpense" />
+  </wsdl:message>
+  <wsdl:message name="AddExamPersonnelExpenseSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamPersonnelExpenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamPersonnelExpenseSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamPersonnelExpense" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamPersonnelExpenseSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamPersonnelExpenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamPersonnelExpenseSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamPersonnelExpense" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamPersonnelExpenseSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamPersonnelExpenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamSchedule" />
+  </wsdl:message>
+  <wsdl:message name="AddExamScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamSchedule" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamSchedule" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamSessionCentreSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamSessionCentre" />
+  </wsdl:message>
+  <wsdl:message name="AddExamSessionCentreSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamSessionCentreResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamSessionCentreSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamSessionCentre" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamSessionCentreSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamSessionCentreResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamSessionCentreSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamSessionCentre" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamSessionCentreSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamSessionCentreResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamSession" />
+  </wsdl:message>
+  <wsdl:message name="AddExamSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamSession" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamSession" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamStudentExemptionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamStudentExemption" />
+  </wsdl:message>
+  <wsdl:message name="AddExamStudentExemptionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamStudentExemptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamStudentExemptionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamStudentExemption" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamStudentExemptionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamStudentExemptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamStudentExemptionSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamStudentExemption" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamStudentExemptionSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamStudentExemptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamStudentUnitHeaderSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamStudentUnitHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamStudentUnitHeaderSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamStudentUnitHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitAssessmentTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamUnitAssessmentType" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitAssessmentTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamUnitAssessmentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitAssessmentTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitAssessmentType" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitAssessmentTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitAssessmentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitAssessmentTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitAssessmentType" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitAssessmentTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitAssessmentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitEligibilityCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamUnitEligibilityCheck" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitEligibilityCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamUnitEligibilityCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitEligibilityCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitEligibilityCheck" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitEligibilityCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitEligibilityCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitEligibilityCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitEligibilityCheck" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitEligibilityCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitEligibilityCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitGradeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamUnitGrade" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitGradeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamUnitGradeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitGradeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitGrade" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitGradeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitGradeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitGradeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitGrade" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitGradeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitGradeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitLinkSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamUnitLink" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitLinkSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamUnitLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShareExamUnitLinkSoapIn">
+    <wsdl:part name="parameters" element="tns:ShareExamUnitLink" />
+  </wsdl:message>
+  <wsdl:message name="ShareExamUnitLinkSoapOut">
+    <wsdl:part name="parameters" element="tns:ShareExamUnitLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitLinkSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitLink" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitLinkSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitPersonnelSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamUnitPersonnel" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitPersonnelSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamUnitPersonnelResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitPersonnelSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitPersonnel" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitPersonnelSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitPersonnelResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitPersonnelSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitPersonnel" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitPersonnelSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitPersonnelResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitPrerequisiteSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamUnitPrerequisite" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitPrerequisiteSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamUnitPrerequisiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitPrerequisiteSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitPrerequisite" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitPrerequisiteSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitPrerequisiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitPrerequisiteSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitPrerequisite" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitPrerequisiteSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitPrerequisiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitProductSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamUnitProduct" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitProductSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamUnitProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitProductSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitProduct" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitProductSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitProductSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitProduct" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitProductSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamUnit" />
+  </wsdl:message>
+  <wsdl:message name="AddExamUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnit" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnit" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectExamDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectExamData" />
+  </wsdl:message>
+  <wsdl:message name="SelectExamDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectExamDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExamMaintenanceControlsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExamMaintenanceControls" />
+  </wsdl:message>
+  <wsdl:message name="GetExamMaintenanceControlsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExamMaintenanceControlsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamMaintenanceControlsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamMaintenanceControls" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamMaintenanceControlsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamMaintenanceControlsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateExamProgrammeSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateExamProgramme" />
+  </wsdl:message>
+  <wsdl:message name="CreateExamProgrammeSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateExamProgrammeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateExamCentreUnitsSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateExamCentreUnits" />
+  </wsdl:message>
+  <wsdl:message name="CreateExamCentreUnitsSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateExamCentreUnitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateExamSessionCentresSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateExamSessionCentres" />
+  </wsdl:message>
+  <wsdl:message name="CreateExamSessionCentresSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateExamSessionCentresResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExamEligibilityChecksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExamEligibilityChecks" />
+  </wsdl:message>
+  <wsdl:message name="GetExamEligibilityChecksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExamEligibilityChecksResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalculateExamBookingPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateExamBookingPrice" />
+  </wsdl:message>
+  <wsdl:message name="CalculateExamBookingPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateExamBookingPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindExamPersonnelSoapIn">
+    <wsdl:part name="parameters" element="tns:FindExamPersonnel" />
+  </wsdl:message>
+  <wsdl:message name="FindExamPersonnelSoapOut">
+    <wsdl:part name="parameters" element="tns:FindExamPersonnelResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelExamBookingSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelExamBooking" />
+  </wsdl:message>
+  <wsdl:message name="CancelExamBookingSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelExamBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeExamBookingCentreSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeExamBookingCentre" />
+  </wsdl:message>
+  <wsdl:message name="ChangeExamBookingCentreSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeExamBookingCentreResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCandidateActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamCandidateActivity" />
+  </wsdl:message>
+  <wsdl:message name="AddExamCandidateActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamCandidateActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCandidateActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateExamCandidateActivity" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExamCandidateActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateExamCandidateActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCandidateActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamCandidateActivity" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamCandidateActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamCandidateActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamMarkerAllocationSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteExamMarkerAllocation" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExamMarkerAllocationSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteExamMarkerAllocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExamMarkerAllocationSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExamMarkerAllocation" />
+  </wsdl:message>
+  <wsdl:message name="AddExamMarkerAllocationSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExamMarkerAllocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:AddCategory" />
+  </wsdl:message>
+  <wsdl:message name="AddCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:AddCategoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ExamsDataAccessSoap">
+    <wsdl:operation name="UpdateCategory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update an Category &lt;A HREF=documentation\UpdateCategory.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateCategorySoapIn" />
+      <wsdl:output message="tns:UpdateCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete an Category &lt;A HREF=documentation\DeleteCategory.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteCategorySoapIn" />
+      <wsdl:output message="tns:DeleteCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamBookingUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamBookingUnit &lt;A HREF=documentation\UpdateExamBookingUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamBookingUnitSoapIn" />
+      <wsdl:output message="tns:UpdateExamBookingUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamBooking">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds an Exam Booking &lt;A HREF=documentation\AddExamBooking.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamBookingSoapIn" />
+      <wsdl:output message="tns:AddExamBookingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreAssessmentType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamCentreAssessmentType &lt;A HREF=documentation\AddExamCentreAssessmentType.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamCentreAssessmentTypeSoapIn" />
+      <wsdl:output message="tns:AddExamCentreAssessmentTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentreAssessmentType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamCentreAssessmentType &lt;A HREF=documentation\UpdateExamCentreAssessmentType.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamCentreAssessmentTypeSoapIn" />
+      <wsdl:output message="tns:UpdateExamCentreAssessmentTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentreAssessmentType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamCentreAssessmentType &lt;A HREF=documentation\DeleteExamCentreAssessmentType.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamCentreAssessmentTypeSoapIn" />
+      <wsdl:output message="tns:DeleteExamCentreAssessmentTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreAction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamCentreContact &lt;A HREF=documentation\AddExamCentreAction.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamCentreActionSoapIn" />
+      <wsdl:output message="tns:AddExamCentreActionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamCentreContact &lt;A HREF=documentation\AddExamCentreContact.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamCentreContactSoapIn" />
+      <wsdl:output message="tns:AddExamCentreContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentreContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamCentreContact &lt;A HREF=documentation\UpdateExamCentreContact.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamCentreContactSoapIn" />
+      <wsdl:output message="tns:UpdateExamCentreContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentreContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamCentreContact &lt;A HREF=documentation\DeleteExamCentreContact.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamCentreContactSoapIn" />
+      <wsdl:output message="tns:DeleteExamCentreContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamCentreUnit &lt;A HREF=documentation\AddExamCentreUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamCentreUnitSoapIn" />
+      <wsdl:output message="tns:AddExamCentreUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentreUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamCentreUnit &lt;A HREF=documentation\UpdateExamCentreUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamCentreUnitSoapIn" />
+      <wsdl:output message="tns:UpdateExamCentreUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentreUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamCentreUnit &lt;A HREF=documentation\DeleteExamCentreUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamCentreUnitSoapIn" />
+      <wsdl:output message="tns:DeleteExamCentreUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamCentre &lt;A HREF=documentation\AddExamCentre.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamCentreSoapIn" />
+      <wsdl:output message="tns:AddExamCentreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamCentre &lt;A HREF=documentation\UpdateExamCentre.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamCentreSoapIn" />
+      <wsdl:output message="tns:UpdateExamCentreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamCentre &lt;A HREF=documentation\DeleteExamCentre.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamCentreSoapIn" />
+      <wsdl:output message="tns:DeleteExamCentreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamExemptionUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamExemptionUnit &lt;A HREF=documentation\AddExamExemptionUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamExemptionUnitSoapIn" />
+      <wsdl:output message="tns:AddExamExemptionUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamExemptionUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamExemptionUnit &lt;A HREF=documentation\UpdateExamExemptionUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamExemptionUnitSoapIn" />
+      <wsdl:output message="tns:UpdateExamExemptionUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamExemptionUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamExemptionUnit &lt;A HREF=documentation\DeleteExamExemptionUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamExemptionUnitSoapIn" />
+      <wsdl:output message="tns:DeleteExamExemptionUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamExemption">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamExemption &lt;A HREF=documentation\AddExamExemption.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamExemptionSoapIn" />
+      <wsdl:output message="tns:AddExamExemptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamExemption">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamExemption &lt;A HREF=documentation\UpdateExamExemption.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamExemptionSoapIn" />
+      <wsdl:output message="tns:UpdateExamExemptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamExemption">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamExemption &lt;A HREF=documentation\DeleteExamExemption.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamExemptionSoapIn" />
+      <wsdl:output message="tns:DeleteExamExemptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamPersonnel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamPersonnel &lt;A HREF=documentation\AddExamPersonnel.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamPersonnelSoapIn" />
+      <wsdl:output message="tns:AddExamPersonnelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamPersonnel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamPersonnel &lt;A HREF=documentation\UpdateExamPersonnel.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamPersonnelSoapIn" />
+      <wsdl:output message="tns:UpdateExamPersonnelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamPersonnel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamPersonnel &lt;A HREF=documentation\DeleteExamPersonnel.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamPersonnelSoapIn" />
+      <wsdl:output message="tns:DeleteExamPersonnelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamPersonnelAssessType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamPersonnelAssessType &lt;A HREF=documentation\AddExamPersonnelAssessType.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamPersonnelAssessTypeSoapIn" />
+      <wsdl:output message="tns:AddExamPersonnelAssessTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamPersonnelAssessType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamPersonnelAssessType &lt;A HREF=documentation\UpdateExamPersonnelAssessType.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamPersonnelAssessTypeSoapIn" />
+      <wsdl:output message="tns:UpdateExamPersonnelAssessTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamPersonnelAssessType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamPersonnelAssessType &lt;A HREF=documentation\DeleteExamPersonnelAssessType.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamPersonnelAssessTypeSoapIn" />
+      <wsdl:output message="tns:DeleteExamPersonnelAssessTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamPersonnelExpense">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamPersonnelExpense &lt;A HREF=documentation\AddExamPersonnelExpense.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamPersonnelExpenseSoapIn" />
+      <wsdl:output message="tns:AddExamPersonnelExpenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamPersonnelExpense">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamPersonnelExpense &lt;A HREF=documentation\UpdateExamPersonnelExpense.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamPersonnelExpenseSoapIn" />
+      <wsdl:output message="tns:UpdateExamPersonnelExpenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamPersonnelExpense">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamPersonnelExpense &lt;A HREF=documentation\DeleteExamPersonnelExpense.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamPersonnelExpenseSoapIn" />
+      <wsdl:output message="tns:DeleteExamPersonnelExpenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamSchedule">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamSchedule &lt;A HREF=documentation\AddExamSchedule.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamScheduleSoapIn" />
+      <wsdl:output message="tns:AddExamScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamSchedule">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamSchedule &lt;A HREF=documentation\UpdateExamSchedule.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamScheduleSoapIn" />
+      <wsdl:output message="tns:UpdateExamScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamSchedule">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamSchedule &lt;A HREF=documentation\DeleteExamSchedule.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamScheduleSoapIn" />
+      <wsdl:output message="tns:DeleteExamScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamSessionCentre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamSessionCentre &lt;A HREF=documentation\AddExamSessionCentre.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamSessionCentreSoapIn" />
+      <wsdl:output message="tns:AddExamSessionCentreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamSessionCentre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamSessionCentre &lt;A HREF=documentation\UpdateExamSessionCentre.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamSessionCentreSoapIn" />
+      <wsdl:output message="tns:UpdateExamSessionCentreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamSessionCentre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamSessionCentre &lt;A HREF=documentation\DeleteExamSessionCentre.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamSessionCentreSoapIn" />
+      <wsdl:output message="tns:DeleteExamSessionCentreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamSession">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamSession &lt;A HREF=documentation\AddExamSession.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamSessionSoapIn" />
+      <wsdl:output message="tns:AddExamSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamSession">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamSession &lt;A HREF=documentation\UpdateExamSession.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamSessionSoapIn" />
+      <wsdl:output message="tns:UpdateExamSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamSession">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamSession &lt;A HREF=documentation\DeleteExamSession.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamSessionSoapIn" />
+      <wsdl:output message="tns:DeleteExamSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamStudentExemption">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamStudentExemption &lt;A HREF=documentation\AddExamStudentExemption.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamStudentExemptionSoapIn" />
+      <wsdl:output message="tns:AddExamStudentExemptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamStudentExemption">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamStudentExemption &lt;A HREF=documentation\UpdateExamStudentExemption.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamStudentExemptionSoapIn" />
+      <wsdl:output message="tns:UpdateExamStudentExemptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamStudentExemption">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamStudentExemption &lt;A HREF=documentation\DeleteExamStudentExemption.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamStudentExemptionSoapIn" />
+      <wsdl:output message="tns:DeleteExamStudentExemptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamStudentUnitHeader">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamStudentUnitHeader &lt;A HREF=documentation\UpdateExamStudentUnitHeader.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamStudentUnitHeaderSoapIn" />
+      <wsdl:output message="tns:UpdateExamStudentUnitHeaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitAssessmentType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamUnitAssessmentType &lt;A HREF=documentation\AddExamUnitAssessmentType.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamUnitAssessmentTypeSoapIn" />
+      <wsdl:output message="tns:AddExamUnitAssessmentTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitAssessmentType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamUnitAssessmentType &lt;A HREF=documentation\UpdateExamUnitAssessmentType.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamUnitAssessmentTypeSoapIn" />
+      <wsdl:output message="tns:UpdateExamUnitAssessmentTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitAssessmentType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamUnitAssessmentType &lt;A HREF=documentation\DeleteExamUnitAssessmentType.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamUnitAssessmentTypeSoapIn" />
+      <wsdl:output message="tns:DeleteExamUnitAssessmentTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitEligibilityCheck">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamUnitEligibilityCheck &lt;A HREF=documentation\AddExamUnitEligibilityCheck.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamUnitEligibilityCheckSoapIn" />
+      <wsdl:output message="tns:AddExamUnitEligibilityCheckSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitEligibilityCheck">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamUnitEligibilityCheck &lt;A HREF=documentation\UpdateExamUnitEligibilityCheck.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamUnitEligibilityCheckSoapIn" />
+      <wsdl:output message="tns:UpdateExamUnitEligibilityCheckSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitEligibilityCheck">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamUnitEligibilityCheck &lt;A HREF=documentation\DeleteExamUnitEligibilityCheck.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamUnitEligibilityCheckSoapIn" />
+      <wsdl:output message="tns:DeleteExamUnitEligibilityCheckSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitGrade">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamUnitGrade &lt;A HREF=documentation\AddExamUnitGrade.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamUnitGradeSoapIn" />
+      <wsdl:output message="tns:AddExamUnitGradeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitGrade">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamUnitGrade &lt;A HREF=documentation\UpdateExamUnitGrade.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamUnitGradeSoapIn" />
+      <wsdl:output message="tns:UpdateExamUnitGradeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitGrade">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamUnitGrade &lt;A HREF=documentation\DeleteExamUnitGrade.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamUnitGradeSoapIn" />
+      <wsdl:output message="tns:DeleteExamUnitGradeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitLink">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamUnitLink &lt;A HREF=documentation\AddExamUnitLink.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamUnitLinkSoapIn" />
+      <wsdl:output message="tns:AddExamUnitLinkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShareExamUnitLink">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Makes an existing Exam Unit a child of another parent&lt;A HREF=documentation\ShareExamUnitLink.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ShareExamUnitLinkSoapIn" />
+      <wsdl:output message="tns:ShareExamUnitLinkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitLink">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamUnitLink &lt;A HREF=documentation\DeleteExamUnitLink.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamUnitLinkSoapIn" />
+      <wsdl:output message="tns:DeleteExamUnitLinkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitPersonnel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamUnitPersonnel &lt;A HREF=documentation\AddExamUnitPersonnel.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamUnitPersonnelSoapIn" />
+      <wsdl:output message="tns:AddExamUnitPersonnelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitPersonnel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamUnitPersonnel &lt;A HREF=documentation\UpdateExamUnitPersonnel.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamUnitPersonnelSoapIn" />
+      <wsdl:output message="tns:UpdateExamUnitPersonnelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitPersonnel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamUnitPersonnel &lt;A HREF=documentation\DeleteExamUnitPersonnel.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamUnitPersonnelSoapIn" />
+      <wsdl:output message="tns:DeleteExamUnitPersonnelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitPrerequisite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamUnitPrerequisite &lt;A HREF=documentation\AddExamUnitPrerequisite.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamUnitPrerequisiteSoapIn" />
+      <wsdl:output message="tns:AddExamUnitPrerequisiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitPrerequisite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamUnitPrerequisite &lt;A HREF=documentation\UpdateExamUnitPrerequisite.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamUnitPrerequisiteSoapIn" />
+      <wsdl:output message="tns:UpdateExamUnitPrerequisiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitPrerequisite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamUnitPrerequisite &lt;A HREF=documentation\DeleteExamUnitPrerequisite.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamUnitPrerequisiteSoapIn" />
+      <wsdl:output message="tns:DeleteExamUnitPrerequisiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitProduct">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamUnitProduct &lt;A HREF=documentation\AddExamUnitProduct.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamUnitProductSoapIn" />
+      <wsdl:output message="tns:AddExamUnitProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitProduct">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamUnitProduct &lt;A HREF=documentation\UpdateExamUnitProduct.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamUnitProductSoapIn" />
+      <wsdl:output message="tns:UpdateExamUnitProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitProduct">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamUnitProduct &lt;A HREF=documentation\DeleteExamUnitProduct.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamUnitProductSoapIn" />
+      <wsdl:output message="tns:DeleteExamUnitProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new ExamUnit &lt;A HREF=documentation\AddExamUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamUnitSoapIn" />
+      <wsdl:output message="tns:AddExamUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing ExamUnit &lt;A HREF=documentation\UpdateExamUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamUnitSoapIn" />
+      <wsdl:output message="tns:UpdateExamUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing ExamUnit &lt;A HREF=documentation\DeleteExamUnit.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamUnitSoapIn" />
+      <wsdl:output message="tns:DeleteExamUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectExamData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a set of records relating to the specified Exam Item &lt;A HREF=documentation\SelectExamData.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SelectExamDataSoapIn" />
+      <wsdl:output message="tns:SelectExamDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExamMaintenanceControls">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns information about the controls for a specified type of maintenance &lt;A HREF=documentation\GetExamMaintenanceControls.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetExamMaintenanceControlsSoapIn" />
+      <wsdl:output message="tns:GetExamMaintenanceControlsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamMaintenanceControls">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates the controls for a specified type of maintenance &lt;A HREF=documentation\UpdateExamMaintenanceControls.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamMaintenanceControlsSoapIn" />
+      <wsdl:output message="tns:UpdateExamMaintenanceControlsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateExamProgramme">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Creates an Exam Session Programme &lt;A HREF=documentation\CreateExamProgramme.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:CreateExamProgrammeSoapIn" />
+      <wsdl:output message="tns:CreateExamProgrammeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateExamCentreUnits">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Creates a set of links from an Exam Centre to the valid set of Units &lt;A HREF=documentation\CreateExamCentreUnits.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:CreateExamCentreUnitsSoapIn" />
+      <wsdl:output message="tns:CreateExamCentreUnitsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateExamSessionCentres">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Creates a set of links from an Exam Session to teh valid set of centres &lt;A HREF=documentation\CreateExamSessionCentres.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:CreateExamSessionCentresSoapIn" />
+      <wsdl:output message="tns:CreateExamSessionCentresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExamEligibilityChecks">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a set of eligibility check text for an Exam Booking &lt;A HREF=documentation\GetExamEligibilityChecks.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetExamEligibilityChecksSoapIn" />
+      <wsdl:output message="tns:GetExamEligibilityChecksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateExamBookingPrice">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Calculates the price for an Exam Booking &lt;A HREF=documentation\CalculateExamBookingPrice.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:CalculateExamBookingPriceSoapIn" />
+      <wsdl:output message="tns:CalculateExamBookingPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindExamPersonnel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a set of exam personnel based on given search criteria &lt;A HREF=documentation\FindExamPersonnel.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:FindExamPersonnelSoapIn" />
+      <wsdl:output message="tns:FindExamPersonnelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelExamBooking">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cancels an existing Exam Booking &lt;A HREF=documentation\CancelExamBooking.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:CancelExamBookingSoapIn" />
+      <wsdl:output message="tns:CancelExamBookingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeExamBookingCentre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Change an Exam Booking Centre &lt;A HREF=documentation\ChangeExamBookingCentre.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ChangeExamBookingCentreSoapIn" />
+      <wsdl:output message="tns:ChangeExamBookingCentreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCandidateActivity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new Exam Candidate Activity to an existing Candidate &lt;A HREF=documentation\AddExamCandidateActivity.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamCandidateActivitySoapIn" />
+      <wsdl:output message="tns:AddExamCandidateActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCandidateActivity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing Exam Candidate Activity &lt;A HREF=documentation\UpdateExamCandidateActivity.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UpdateExamCandidateActivitySoapIn" />
+      <wsdl:output message="tns:UpdateExamCandidateActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCandidateActivity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an existing Exam Candidate Position Activity &lt;A HREF=documentation\DeleteExamCandidateActivity.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamCandidateActivitySoapIn" />
+      <wsdl:output message="tns:DeleteExamCandidateActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamMarkerAllocation">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Deletes an Exam Markers Allocation &lt;A HREF=documentation\DeleteExamMarkerAllocation.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DeleteExamMarkerAllocationSoapIn" />
+      <wsdl:output message="tns:DeleteExamMarkerAllocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamMarkerAllocation">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add an Exam Markers Allocation &lt;A HREF=documentation\AddExamMarkerAllocation.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddExamMarkerAllocationSoapIn" />
+      <wsdl:output message="tns:AddExamMarkerAllocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCategory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add an Category &lt;A HREF=documentation\AddCategory.htm&gt;details&lt;/A&gt;</wsdl:documentation>
+      <wsdl:input message="tns:AddCategorySoapIn" />
+      <wsdl:output message="tns:AddCategorySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExamsDataAccessSoap" type="tns:ExamsDataAccessSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateCategory">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamBookingUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamBookingUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamBooking">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreAssessmentType">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamCentreAssessmentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentreAssessmentType">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamCentreAssessmentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentreAssessmentType">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamCentreAssessmentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreAction">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamCentreAction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreContact">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamCentreContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentreContact">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamCentreContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentreContact">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamCentreContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamCentreUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentreUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamCentreUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentreUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamCentreUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentre">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamCentre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentre">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamCentre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentre">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamCentre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamExemptionUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamExemptionUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamExemptionUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamExemptionUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamExemptionUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamExemptionUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamExemption">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamExemption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamExemption">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamExemption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamExemption">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamExemption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamPersonnel">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamPersonnel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamPersonnel">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamPersonnel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamPersonnel">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamPersonnel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamPersonnelAssessType">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamPersonnelAssessType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamPersonnelAssessType">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamPersonnelAssessType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamPersonnelAssessType">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamPersonnelAssessType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamPersonnelExpense">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamPersonnelExpense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamPersonnelExpense">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamPersonnelExpense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamPersonnelExpense">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamPersonnelExpense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamSchedule">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamSchedule">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamSchedule">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamSessionCentre">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamSessionCentre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamSessionCentre">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamSessionCentre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamSessionCentre">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamSessionCentre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamSession">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamSession">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamSession">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamStudentExemption">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamStudentExemption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamStudentExemption">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamStudentExemption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamStudentExemption">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamStudentExemption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamStudentUnitHeader">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamStudentUnitHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitAssessmentType">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamUnitAssessmentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitAssessmentType">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitAssessmentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitAssessmentType">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitAssessmentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitEligibilityCheck">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamUnitEligibilityCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitEligibilityCheck">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitEligibilityCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitEligibilityCheck">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitEligibilityCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitGrade">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamUnitGrade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitGrade">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitGrade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitGrade">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitGrade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitLink">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamUnitLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShareExamUnitLink">
+      <soap:operation soapAction="http://care.co.uk/webservices/ShareExamUnitLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitLink">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitPersonnel">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamUnitPersonnel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitPersonnel">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitPersonnel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitPersonnel">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitPersonnel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitPrerequisite">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamUnitPrerequisite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitPrerequisite">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitPrerequisite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitPrerequisite">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitPrerequisite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitProduct">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamUnitProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitProduct">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitProduct">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnit">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectExamData">
+      <soap:operation soapAction="http://care.co.uk/webservices/SelectExamData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamMaintenanceControls">
+      <soap:operation soapAction="http://care.co.uk/webservices/GetExamMaintenanceControls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamMaintenanceControls">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamMaintenanceControls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateExamProgramme">
+      <soap:operation soapAction="http://care.co.uk/webservices/CreateExamProgramme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateExamCentreUnits">
+      <soap:operation soapAction="http://care.co.uk/webservices/CreateExamCentreUnits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateExamSessionCentres">
+      <soap:operation soapAction="http://care.co.uk/webservices/CreateExamSessionCentres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamEligibilityChecks">
+      <soap:operation soapAction="http://care.co.uk/webservices/GetExamEligibilityChecks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateExamBookingPrice">
+      <soap:operation soapAction="http://care.co.uk/webservices/CalculateExamBookingPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindExamPersonnel">
+      <soap:operation soapAction="http://care.co.uk/webservices/FindExamPersonnel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelExamBooking">
+      <soap:operation soapAction="http://care.co.uk/webservices/CancelExamBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeExamBookingCentre">
+      <soap:operation soapAction="http://care.co.uk/webservices/ChangeExamBookingCentre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCandidateActivity">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamCandidateActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCandidateActivity">
+      <soap:operation soapAction="http://care.co.uk/webservices/UpdateExamCandidateActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCandidateActivity">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamCandidateActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamMarkerAllocation">
+      <soap:operation soapAction="http://care.co.uk/webservices/DeleteExamMarkerAllocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamMarkerAllocation">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddExamMarkerAllocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCategory">
+      <soap:operation soapAction="http://care.co.uk/webservices/AddCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExamsDataAccessSoap12" type="tns:ExamsDataAccessSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateCategory">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamBookingUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamBookingUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamBooking">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamBooking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreAssessmentType">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamCentreAssessmentType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentreAssessmentType">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamCentreAssessmentType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentreAssessmentType">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamCentreAssessmentType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreAction">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamCentreAction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreContact">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamCentreContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentreContact">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamCentreContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentreContact">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamCentreContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentreUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamCentreUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentreUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamCentreUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentreUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamCentreUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCentre">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamCentre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCentre">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamCentre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCentre">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamCentre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamExemptionUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamExemptionUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamExemptionUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamExemptionUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamExemptionUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamExemptionUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamExemption">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamExemption" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamExemption">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamExemption" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamExemption">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamExemption" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamPersonnel">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamPersonnel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamPersonnel">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamPersonnel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamPersonnel">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamPersonnel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamPersonnelAssessType">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamPersonnelAssessType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamPersonnelAssessType">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamPersonnelAssessType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamPersonnelAssessType">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamPersonnelAssessType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamPersonnelExpense">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamPersonnelExpense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamPersonnelExpense">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamPersonnelExpense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamPersonnelExpense">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamPersonnelExpense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamSchedule">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamSchedule">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamSchedule">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamSessionCentre">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamSessionCentre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamSessionCentre">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamSessionCentre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamSessionCentre">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamSessionCentre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamSession">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamSession">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamSession">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamStudentExemption">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamStudentExemption" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamStudentExemption">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamStudentExemption" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamStudentExemption">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamStudentExemption" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamStudentUnitHeader">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamStudentUnitHeader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitAssessmentType">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamUnitAssessmentType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitAssessmentType">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitAssessmentType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitAssessmentType">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitAssessmentType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitEligibilityCheck">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamUnitEligibilityCheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitEligibilityCheck">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitEligibilityCheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitEligibilityCheck">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitEligibilityCheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitGrade">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamUnitGrade" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitGrade">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitGrade" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitGrade">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitGrade" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitLink">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamUnitLink" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShareExamUnitLink">
+      <soap12:operation soapAction="http://care.co.uk/webservices/ShareExamUnitLink" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitLink">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitLink" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitPersonnel">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamUnitPersonnel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitPersonnel">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitPersonnel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitPersonnel">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitPersonnel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitPrerequisite">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamUnitPrerequisite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitPrerequisite">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitPrerequisite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitPrerequisite">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitPrerequisite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnitProduct">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamUnitProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnitProduct">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamUnitProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnitProduct">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamUnitProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamUnit">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectExamData">
+      <soap12:operation soapAction="http://care.co.uk/webservices/SelectExamData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamMaintenanceControls">
+      <soap12:operation soapAction="http://care.co.uk/webservices/GetExamMaintenanceControls" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamMaintenanceControls">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamMaintenanceControls" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateExamProgramme">
+      <soap12:operation soapAction="http://care.co.uk/webservices/CreateExamProgramme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateExamCentreUnits">
+      <soap12:operation soapAction="http://care.co.uk/webservices/CreateExamCentreUnits" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateExamSessionCentres">
+      <soap12:operation soapAction="http://care.co.uk/webservices/CreateExamSessionCentres" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamEligibilityChecks">
+      <soap12:operation soapAction="http://care.co.uk/webservices/GetExamEligibilityChecks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateExamBookingPrice">
+      <soap12:operation soapAction="http://care.co.uk/webservices/CalculateExamBookingPrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindExamPersonnel">
+      <soap12:operation soapAction="http://care.co.uk/webservices/FindExamPersonnel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelExamBooking">
+      <soap12:operation soapAction="http://care.co.uk/webservices/CancelExamBooking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeExamBookingCentre">
+      <soap12:operation soapAction="http://care.co.uk/webservices/ChangeExamBookingCentre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamCandidateActivity">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamCandidateActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamCandidateActivity">
+      <soap12:operation soapAction="http://care.co.uk/webservices/UpdateExamCandidateActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamCandidateActivity">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamCandidateActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamMarkerAllocation">
+      <soap12:operation soapAction="http://care.co.uk/webservices/DeleteExamMarkerAllocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExamMarkerAllocation">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddExamMarkerAllocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCategory">
+      <soap12:operation soapAction="http://care.co.uk/webservices/AddCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExamsDataAccess">
+    <wsdl:port name="ExamsDataAccessSoap" binding="tns:ExamsDataAccessSoap">
+      <soap:address location="http://localhost/CareServices/ExamsDataAccess.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExamsDataAccessSoap12" binding="tns:ExamsDataAccessSoap12">
+      <soap12:address location="http://localhost/CareServices/ExamsDataAccess.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

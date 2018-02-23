@@ -1,0 +1,1172 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNET
+</name>
+</assembly>
+<members>
+<member name="T:CDBNET.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.advanced_background">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.advanced_banner">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.Attachment">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.Contacts">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.Events">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.iconNoNotifications">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.iconNotifications">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.MyOrganisation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.NG_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:CDBNET.My.Resources.Resources.Organisations">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="M:CDBNET.AuthorisationMethodAttribute.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the <see cref="T:CDBNET.AuthorisationMethodAttribute"/> class.
+ </summary>
+ <param name="authMethod">The p task.</param>
+</member>
+<member name="P:CDBNET.AuthorisationMethodAttribute.AuthorisationMethod">
+ <summary>
+ Gets the authorisation method associated with the task.
+ </summary>
+ <value>
+ The type of the task.
+ </value>
+</member>
+<member name="M:CDBNET.frmHtmlSettings.#ctor(CDBNET.frmHtmlSettings.HtmlSettingsOptions)">
+ <summary>
+ Initialises a new instance of the Settings dialog for the specifed Html.  When the users presses Ok, a JavaScript command is invoked on the Web page and the return value of the Javascript command is passed back in the pReturnValue object
+ </summary>
+ <param name="pHtmlSettingsOption">An instance of the frmHtmlSettings.HtmlSettingsOptions</param>
+ <remarks></remarks>
+ 
+</member>
+<member name="T:CDBNET.frmHtmlSettings.HtmlSettingsOptions">
+ <summary>
+ A class that is passed to the constructor of frmHtmlSettings.  This class contains various data elements that define the behaviour of the frmHtmlSettings dialog
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:CDBNET.frmHtmlSettings.HtmlSettingsOptions.Html">
+ <summary>
+ The Html that will be displayed by frmHtmlSettings in its WebBrowser control
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:CDBNET.frmHtmlSettings.HtmlSettingsOptions.SaveSettingsCommand">
+ <summary>
+ The Javascript command that will  be called when the users selects Ok in frmHtmlSettings.  This must be a parameterless function that can be called on the page rendered by the Html property
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>The return of the Javascript function will be stored in the HtmlSettingsOptions.SettingsObject</remarks>
+</member>
+<member name="P:CDBNET.frmHtmlSettings.HtmlSettingsOptions.Settings">
+ <summary>
+ The object that contains all the settings required by the Html page.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>This object is passed as a parameter when the function detailed in the LoadSettingsCommand is invoked</remarks>
+</member>
+<member name="P:CDBNET.frmHtmlSettings.HtmlSettingsOptions.LoadSettingsCommand">
+ <summary>
+ The Javascript function that will  be invoked to pass the settings to the Html page.  This function take a single parameter and must be callable on the page rendered by the Html property
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:CDBNET.CsvReader">
+ <summary>
+ A data reader that is backed by a CSV file.
+ </summary>
+ <remarks>Column names are taken from the mandatory header record.  All column types are 
+ string.  The Microsoft specific extension where dates are surrounded with hash marks ('#' 
+ characters) is not supported.</remarks>
+</member>
+<member name="M:CDBNET.CsvReader.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the <see cref="T:CDBNET.CsvReader" /> class.
+ </summary>
+ <param name="path">The path.</param>
+</member>
+<member name="M:CDBNET.CsvReader.Close">
+ <summary>
+ Closes the input file.
+ </summary>
+</member>
+<member name="P:CDBNET.CsvReader.Depth">
+ <summary>
+ Gets a value indicating the depth of nesting for the current row.
+ </summary>
+ <returns>The level of nesting.</returns>
+ <remarks>Nesting is not supported and so 0 is always returned.  This is in line with Microsoft recommendations.</remarks>
+</member>
+<member name="M:CDBNET.CsvReader.GetReferenceTable">
+ <summary>
+ Returns a <see cref="T:System.Data.DataTable" /> that has the same schema as the CSV file being read <see cref="T:System.Data.IDataReader" />.
+ </summary><returns>
+ A <see cref="T:System.Data.DataTable" /> that has the same schema as the CSV file.
+ </returns>
+ <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.IDataReader" /> is closed. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetSchemaTable">
+ <summary>
+ Returns a <see cref="T:System.Data.DataTable" /> that describes the column metadata of the <see cref="T:System.Data.IDataReader" />.
+ </summary><returns>
+ A <see cref="T:System.Data.DataTable" /> that describes the column metadata.
+ </returns>
+ <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.IDataReader" /> is closed. </exception>
+</member>
+<member name="P:CDBNET.CsvReader.IsClosed">
+ <summary>
+ Gets a value indicating whether the data reader is closed.
+ </summary>
+ <returns>true if the data reader is closed; otherwise, false.</returns>
+</member>
+<member name="M:CDBNET.CsvReader.NextResult">
+ <summary>
+ Advances the data reader to the next result, when reading the results of batch SQL statements.
+ </summary>
+ <returns>true if there are more rows; otherwise, false.</returns>
+ <remarks>Multiple result sets are not supported and so this always returns false.</remarks>
+</member>
+<member name="M:CDBNET.CsvReader.Read">
+ <summary>
+ Advances the <see cref="T:System.Data.IDataReader" /> to the next record.
+ </summary>
+ <returns> true if there are more rows; otherwise, false.</returns>
+</member>
+<member name="P:CDBNET.CsvReader.RecordsAffected">
+ <summary>
+ Gets the number of rows changed, inserted, or deleted by execution of the SQL statement.
+ </summary>
+ <returns>The number of rows changed, inserted, or deleted; 0 if no rows were affected or the 
+ statement failed; and -1 for SELECT statements.</returns>
+ <remarks>Only select statements are suported and so this always returns -1.</remarks>
+</member>
+<member name="P:CDBNET.CsvReader.FieldCount">
+ <summary>
+ Gets the number of columns in the current row.
+ </summary>
+ <returns>When not positioned in a valid recordset, 0; otherwise, the number of columns in the current 
+ record. The default is -1.</returns>
+</member>
+<member name="M:CDBNET.CsvReader.GetBoolean(System.Int32)">
+ <summary>
+ Gets the value of the specified column as a Boolean.
+ </summary>
+ <param name="i">The zero-based column ordinal.</param>
+ <returns>The value of the column.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetByte(System.Int32)">
+ <summary>
+ Gets the 8-bit unsigned integer value of the specified column.
+ </summary>
+ <param name="i">The zero-based column ordinal.</param>
+ <returns>The 8-bit unsigned integer value of the specified column.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)">
+ <summary>
+ Reads a stream of bytes from the specified column offset into the buffer as an array, starting at the given buffer offset.
+ </summary>
+ <param name="i">The zero-based column ordinal.</param>
+ <param name="fieldOffset">The index within the field from which to start the read operation.</param>
+ <param name="buffer">The buffer into which to read the stream of bytes.</param>
+ <param name="bufferoffset">The index for <paramref name="buffer" /> to start the read operation.</param>
+ <param name="length">The number of bytes to read.</param>
+ <returns>The actual number of bytes read.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetChar(System.Int32)">
+ <summary>
+ Gets the character value of the specified column.
+ </summary>
+ <param name="i">The zero-based column ordinal.</param>
+ <returns>The character value of the specified column.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)">
+ <summary>
+ Reads a stream of characters from the specified column offset into the buffer as an array, starting at the given buffer offset.
+ </summary>
+ <param name="i">The zero-based column ordinal.</param>
+ <param name="fieldoffset">The index within the row from which to start the read operation.</param>
+ <param name="buffer">The buffer into which to read the stream of bytes.</param>
+ <param name="bufferoffset">The index for <paramref name="buffer" /> to start the read operation.</param>
+ <param name="length">The number of bytes to read.</param>
+ <returns>The actual number of characters read.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetData(System.Int32)">
+ <summary>
+ Returns an <see cref="T:System.Data.IDataReader" /> for the specified column ordinal.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>An <see cref="T:System.Data.IDataReader" />.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+ <remarks>We do not suport embedded data and so this always returns nothing.</remarks>
+</member>
+<member name="M:CDBNET.CsvReader.GetDataTypeName(System.Int32)">
+ <summary>
+ Gets the data type information for the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The data type information for the specified field.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetDateTime(System.Int32)">
+ <summary>
+ Gets the date and time data value of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The date and time data value of the specified field.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetDecimal(System.Int32)">
+ <summary>
+ Gets the fixed-position numeric value of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The fixed-position numeric value of the specified field.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetDouble(System.Int32)">
+ <summary>
+ Gets the double-precision floating point number of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns> The double-precision floating point number of the specified field.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetFieldType(System.Int32)">
+ <summary>
+ Gets the <see cref="T:System.Type" /> information corresponding to the type of <see cref="T:System.Object" /> 
+ that would be returned from <see cref="M:System.Data.IDataRecord.GetValue(System.Int32)" />.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The <see cref="T:System.Type" /> information corresponding to the type of <see cref="T:System.Object" /> 
+ that would be returned from <see cref="M:System.Data.IDataRecord.GetValue(System.Int32)" />.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetFloat(System.Int32)">
+ <summary>
+ Gets the single-precision floating point number of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The single-precision floating point number of the specified field.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetGuid(System.Int32)">
+ <summary>
+ Returns the GUID value of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param><returns>
+ The GUID value of the specified field.
+ </returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetInt16(System.Int32)">
+ <summary>
+ Gets the 16-bit signed integer value of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The 16-bit signed integer value of the specified field.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetInt32(System.Int32)">
+ <summary>
+ Gets the 32-bit signed integer value of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The 32-bit signed integer value of the specified field.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetInt64(System.Int32)">
+ <summary>
+ Gets the 64-bit signed integer value of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The 64-bit signed integer value of the specified field.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetName(System.Int32)">
+ <summary>
+ Gets the name for the field to find.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The name of the field or the empty string (""), if there is no value to return.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetOrdinal(System.String)">
+ <summary>
+ Return the index of the named field.
+ </summary>
+ <param name="name">The name of the field to find.</param>
+ <returns>The index of the named field.</returns>
+</member>
+<member name="M:CDBNET.CsvReader.GetString(System.Int32)">
+ <summary>
+ Gets the string value of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The string value of the specified field.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetValue(System.Int32)">
+ <summary>
+ Return the value of the specified field.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>The <see cref="T:System.Object" /> which will contain the field value upon return.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.GetValues(System.Object[])">
+ <summary>
+ Populates an array of objects with the column values of the current record.
+ </summary>
+ <param name="values">An array of <see cref="T:System.Object" /> to copy the attribute fields into.</param>
+ <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
+</member>
+<member name="M:CDBNET.CsvReader.IsDBNull(System.Int32)">
+ <summary>
+ Return whether the specified field is set to null.
+ </summary>
+ <param name="i">The index of the field to find.</param>
+ <returns>true if the specified field is set to null; otherwise, false.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="P:CDBNET.CsvReader.Item(System.Int32)">
+ <summary>
+ Gets the column located at the specified index.
+ </summary>
+ <returns>The column located at the specified index as an <see cref="T:System.Object" />.</returns>
+   <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="P:CDBNET.CsvReader.Item(System.String)">
+ <summary>
+ Gets the column located at the specified index.
+ </summary>
+ <returns>The column located at the specified index as an <see cref="T:System.Object" />.</returns>
+ <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />. </exception>
+</member>
+<member name="M:CDBNET.CsvReader.ReadRecord">
+ <summary>
+ Reads the record.
+ </summary>
+ <returns>a single <see cref="T:System.Data.DataRow" /> representing the next data record in the file.</returns>
+</member>
+<member name="M:CDBNET.CsvReader.Dispose(System.Boolean)">
+ <summary>
+ Releases unmanaged and - optionally - managed resources
+ </summary>
+ <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> 
+ to release only unmanaged resources.</param>
+</member>
+<member name="M:CDBNET.CsvReader.Dispose">
+ <summary>
+ Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+ </summary>
+</member>
+<member name="M:CDBNET.GeneralMailing.mvFrmEditCriteria_ProcessSelection(System.String,CDBNETCL.ParameterList)">
+ <summary>
+ 
+ </summary>
+ <param name="pRunPhase"></param>
+ <param name="pList"></param>
+ <remarks>BR19394 - If you change this event handler, check corresponding event handler in frmTableMaintenance, it is a copy of this event handler </remarks>
+</member>
+<member name="M:CDBNET.GeneralMailing.mvFrmEditCriteria_ProcessMailingCriteria(CDBNET.MailingInfo,System.Int32,System.Boolean@)">
+ <summary>
+ 
+ </summary>
+ <param name="pMailingSelection"></param>
+ <param name="pCriteriaSet"></param>
+ <param name="pSuccess"></param>
+ <remarks>BR19394 - If you change this event handler, check corresponding event handler in frmTableMaintenance, it is a copy of this event handler</remarks>
+</member>
+<member name="M:CDBNET.GeneralMailing.mvFrmEditCriteria_ProcessMailingCriteriaWithOptional(CDBNET.MailingInfo,System.Int32,System.Boolean,System.Boolean,CDBNETCL.ParameterList@,System.Boolean@)">
+ <summary>
+ 
+ </summary>
+ <param name="pMailingSelection"></param>
+ <param name="pCriteriaSet"></param>
+ <param name="pProcessVariables"></param>
+ <param name="pEditSegmentCriteria"></param>
+ <param name="pList"></param>
+ <param name="pSuccess"></param>
+ <remarks>BR19394 - If you change this event handler, check corresponding event handler in frmTableMaintenance, it is a copy of this event handler</remarks>
+</member>
+<member name="M:CDBNET.MailingDocument.IsFileInUse(System.String)">
+ <summary>
+ This method will check if the file is in use by trying to open it.
+ </summary>
+ <param name="pPath">File Path</param>
+ <returns>True if the file is in use else False</returns>
+ <remarks></remarks>
+</member>
+<member name="P:CDBNET.TraderApplication.OriginalOPS">
+ <summary>
+ For Transaction History, Analysis followed by Edit or Delete will change the Order Payment Schedule, when Edit or Delete are clicked. This is the original order payment history before the change.
+ It is used to restore the Order Payment Schedule if Analysis is Cancelled.
+ </summary>
+ <value>The order payment schedule record for the tranascation being analysed, as it was before analysis started.</value>
+ <returns></returns>
+ <remarks>BR19606 On no account change the contents of this datatable, it presence indicates the database in in an unstable state, and is required to be return to the server unchanged to restore stability</remarks>
+</member>
+<member name="M:CDBNET.TraderApplication.SetDeliveryContactAndAddress(System.Int32,System.Int32)">
+ <summary>Sets the Delivery Contact and Address for Product Sale lines in order to default subsequent lines correctly</summary>
+</member>
+<member name="M:CDBNET.CareFDEControl.SetDDStartDate(System.DateTime,System.String)">
+ <summary>Set the Direct Debit start date using the appropriate auto pay delay days.</summary>
+ <param name="pBaseDate">Base start date for the DD. Start date is calculated from this date.</param>
+ <param name="pParameterName">Name of DD start date control that will be updated with the calculated date.</param>
+</member>
+<member name="M:CDBNET.CareFDEControl.ResetDataChanged">
+ <summary>Reset the controls DataChanged to be False.</summary>
+</member>
+<member name="M:CDBNET.frmExamResults.SetGridColumns">
+ <summary>
+ Set Grid Columns
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmExamResults.DisableInvalidCells">
+ <summary>
+ This method will go through each column and disable all the cells where contacts do not have any bookings
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmExams.SetImageButton(CDBNETCL.ImageButton,System.String,System.Int32,System.Boolean,System.Boolean)">
+ <summary>Set ImageButton properties based upon AccessControl and DisplayListMaintenance.</summary>
+</member>
+<member name="M:CDBNET.frmExams.GetImageButtonVisibility(System.Data.DataTable,System.String)">
+ <summary>Get visibility of image Button from user's access control items.</summary>
+ <param name="pAccessControlDT">The UserMenuAccess DataTable</param>
+ <param name="pCode">Image button code.</param>
+ <returns>True if button is visible, otherwise False.</returns>
+</member>
+<member name="M:CDBNET.frmTaskInfo.StopTimer">
+ <summary>
+ This method will stop the timer.Public methods so that it can be called from outside classes (DataImport) 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTaskInfo.StartTimer">
+ <summary>
+ Start timer. Public methods so that it can be called from outside classes (DataImport)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmAccessControl.GetAccessControlTree">
+ <summary>
+ This function loads the AccessControlGroups in tree
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmAccessControl.BuildAreaNodes(System.Windows.Forms.TreeNode)">
+ <summary>
+ This function loads the Area Nodes
+ </summary>
+ <param name="pNode"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmAccessControl.BuildMenuNodes(System.Windows.Forms.TreeNode)">
+ <summary>
+ This function loads the Menu Nodes
+ </summary>
+ <param name="pNode"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmAccessControl.BuildSubMenuNodes(System.Windows.Forms.TreeNode)">
+ <summary>
+ This function loads Sub-Menu Nodes
+ </summary>
+ <param name="pNode"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmAccessControl.BuildItemNodes(System.Windows.Forms.TreeNode)">
+ <summary>
+ This function loads Item Nodes
+ </summary>
+ <param name="pNode"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmConfigurationMaintenance.DisplayAllConfigs(System.Windows.Forms.TreeNode)">
+ <summary>
+ Displays all the cofiguration options under the current node
+ </summary>
+ <param name="pNode"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmConfigurationMaintenance.DisplayConfigAndNotes(System.String)">
+ <summary>
+ Displays the name of the config and the notes
+ </summary>
+ <param name="pKey"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmDespatchTracking.SetDespatchNoteDetails(System.Data.DataRow)">
+ <summary>
+ Setting Details for Each Despatch Note for edit
+ </summary>
+ <param name="vRow"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmDespatchTracking.GetDespachNote">
+ <summary>
+ Get Despatch details based on Picking List value.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmDespatchTracking.SaveDespatchNote">
+ <summary>
+ Saving Despatch details
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmCardSet.dgr0MenuStripBuilder">
+ <summary>Add and remove additional menu items to <see cref="P:CDBNET.frmCardSet.dgr0MenuStrip">dgr0MenuStrip</see> depending upon the Data Selection Type.</summary>
+</member>
+<member name="M:CDBNET.frmFPApplication.AdjustTabs(System.String)">
+ <summary>
+ This function is created to add the removed tabs again when transaction
+ type is changed from GAYEP or POTPG
+ </summary>
+ <param name="pTransType"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmFPApplication.GetLinkedAlerts">
+ <summary>Get the Contact Alerts that are linked to this Trader Application</summary>
+</member>
+<member name="M:CDBNET.frmFPApplication.AddContactAlertLink(System.String)">
+ <summary>Add a ContactAlertLink record to link this Trader Application with a Contact Alert</summary>
+</member>
+<member name="M:CDBNET.frmGenMGen.CommitOmits">
+ <summary>
+ Delete items Omitted. 
+ </summary>
+ <remarks>Passes a CSV to the server</remarks>
+</member>
+<member name="M:CDBNET.frmGenMLists.SetSelectionSetDetails(System.Data.DataRow,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="vRow"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmGenMLists.cmdUpdate_Click(System.Object,System.EventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.SetValue(System.String,System.String,System.Object,System.String)">
+ <summary>
+ Updates the value in the dataset and adds an entry in the Changed values collection
+ to indicate that the value has changed since the first time it was loaded
+ </summary>
+ <param name="pTableName"></param>
+ <param name="pField"></param>
+ <param name="pValue"></param>
+ <param name="pDataSet"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.RefreshDefaults">
+ <summary>
+ Keeps the defaults dataset in sync with the data import dataset and rebinds the grid
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.ClearMappingTables(System.Boolean)">
+ <summary>
+ Clear attribtues,defaults,map attributes
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.GetParameterList(System.String,System.String)">
+ <summary>
+ Creates a parameter list of the changed values for the mentioned tables
+ </summary>
+ <param name="pTables">Comma seperated list of tables</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.CopyTablesFromDataSet(System.Data.DataSet)">
+ <summary>
+ Adds the tables from the dataset into mvDataImportDataSet that is copy of the
+ Data Import class on the server. Will replace existing tables and add the new ones.
+ </summary>
+ <param name="pDataSet"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.CopyTable(System.Data.DataSet,System.Data.DataSet,System.String,System.String)">
+ <summary>
+ Copies a table from one dataset to another.
+ </summary>
+ <param name="pSource"></param>
+ <param name="pDest"></param>
+ <param name="pTable"></param>
+ <param name="pNewName"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.AddAttributeMapping">
+ <summary>
+ Adds a mapping between the attributes and the columns in the file
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.SetColumnHeader(System.String,System.String)">
+ <summary>
+ Sets the column header to the attribute desc. Also adds the date format if required.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.FindRestrictionRow">
+ <summary>
+ Checks if the defaults grid contains a value for the restriction attribute
+ </summary>
+ <returns>The row number at which the restriction value is found. -1 = Not found</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.AddDefaultAttribute(System.String)">
+ <summary>
+ Adds a default value for a field and binds the grid
+ </summary>
+ <param name="pValue"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.RemoveDefaultAttribute(System.String,System.String)">
+ <summary>
+ Removes a default value for a field and binds the grid
+ </summary>
+ <param name="pIndex"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.DeleteMap">
+ <summary>
+ Deletes the mapped attribute for the active column in the grid
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.RefreshDateFormat(System.String,System.Data.DataRow)">
+ <summary>
+ Changes the date format for the mapped column
+ </summary>
+ <param name="pDateFormat">The new date format</param>
+ <param name="pRow">The row containing the prev date format</param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.CheckSingleImportFile(System.String)">
+ <summary>
+ Checks if the import type that the user is trying to save is already defined
+ in the selected file. The check is not performed for multiple data import runs.
+ </summary>
+ <param name="pNewDefFileName"></param>
+ <returns>
+ vbYes:    Append to existing file
+ vbNo:     Over-write the file
+ vbCancel: Cancel the Save
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.SaveMultipleImportFile(System.String,System.Boolean)">
+ <summary>
+ Save the current import definition into the selected file
+ </summary>
+ <param name="pNewDefFileName">The file to save to</param>
+ <param name="pSaveMainDefFile">
+ True : Save the changes to the original file
+ False: Save the changes to a temp file
+ </param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.ReorderMultipleImportDefinitionFile">
+ <summary>
+ Set the import types in the same order as the list
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.IsSet(System.Int32)">
+ <summary>
+ Checks if the attribtue is mapped or if a default value is specified
+ </summary>
+ <param name="pIndex">Attribute ID</param>
+ <returns>True : if the attribute is in use</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.CountCompleted">
+ <summary>
+ Resets the controls once the count operation has completed or aborted
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.GetUniqueJobId">
+ <summary>
+ This function should be used to generate a unique id for a job that is started
+ asynchronously. This id should be used to abort the job if necessary.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmImport.FileNameInQuotes(System.String)">
+ <summary>
+ Encloses a string in Quotes
+ </summary>
+ <param name="pFileName">String to Enclose</param>
+ <returns>Enclosed string</returns>
+ <remarks>If the string is already enclosed in quotes it is returned unchanged</remarks>
+</member>
+<member name="M:CDBNET.frmJobProcessor.GetJobNumber">
+ <summary>
+ Get the selected job number from the job history grid
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmJobProcessor.ValidateOptions">
+ <summary>
+ Validate the controls on the Options Tab
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmJobProcessor.SetOption(System.String,System.String)">
+ <summary>
+ Save user settings
+ </summary>
+ <param name="pOption">The key for the options</param>
+ <param name="pValue">The value</param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmJobProcessor.LoadJobs">
+ <summary>
+ Fetch the job history and processor data based on the options
+ and populatet the grids
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmJobProcessor.SetJobColours(System.Data.DataSet)">
+ <summary>
+ Set the colour for the jobs that are not polling or inactive
+ </summary>
+ <param name="pDataSet"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmJobProcessor.GetOption(System.String,System.String)">
+ <summary>
+ Retrive a settings value 
+ </summary>
+ <param name="pOption">The key</param>
+ <param name="pDefault">default value</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmOwnershipMaintenance.GetOwnershipTree">
+ <summary>
+ Function to build initial ownership nodes
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmOwnershipMaintenance.DisplayChildNode(System.Windows.Forms.TreeNode)">
+ <summary>
+ Displaying child node of currently selected node
+ </summary>
+ <param name="pNode"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmOwnershipMaintenance.ShowOwnershipData(System.Windows.Forms.TreeNode)">
+ <summary>
+ Show corrosponding grid data
+ </summary>
+ <param name="pnode"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmOwnershipMaintenance.mvOwnershipGroupMenu_MenuActionCompleted(CDBNET.OwnershipMenu.OwnershipMenuItems)">
+ <summary>
+ This is an event method which fires after menu action completed
+ </summary>
+ <param name="pItem"></param>
+ <remarks></remarks>
+</member>
+<member name="T:CDBNET.OwnershipNodeType">
+ <summary>
+ Enum representing node type
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:CDBNET.OwnershipNodeInfo">
+ <summary>
+ Class to store tag level information
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmReportMaintenance.BuildNode(System.Windows.Forms.TreeNode,System.Int32,System.Int32)">
+ <summary>
+ This function will build child node for each report type
+ </summary>
+ <param name="pNode"></param>
+ <param name="pReportType"></param>
+ <param name="pReportNumber"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmReportMaintenance.mvReportMenu_ItemSelected(CDBNET.ReportMenu.ReportMenuItems)">
+ <summary>
+ This event will be fired when menu process will get completed
+ This will refresh current node
+ </summary>
+ <param name="pMenuItem"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmSurveyResponses.PopulateControls">
+ <summary>
+ Populates the controls depending on the answer types and other related values.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableEntry.SetDefaults">
+ <summary>
+ Set the default values and disable the controls that have been passed in as criteria from the parent form
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableEntry.ProcessSave">
+ <summary>
+ Validates the controls and displays saves the values in the DB
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableEntry.GetFormattedValue(System.String,System.String)">
+ <summary>
+ Get the formatted date/time value
+ </summary>
+ <param name="pParamName"></param>
+ <param name="pFormat"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.SelectTable">
+ <summary>
+ Display table notes and reset the buttons on the form. 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.DisplaySpreadsheet(System.String)">
+ <summary>
+ Initialise the spreadsheet according to the selected table
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.ResetParameterList">
+ <summary>
+ Creates a ParameterList that contains only the ConnectionData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.ShowTable(System.String,System.Boolean)">
+ <summary>
+ Set the displayed details on the frmTableMaint form, either
+ at their initial values, or to re/display the current table, prior to or after modification
+ </summary>
+ <param name="pTable"></param>
+ <param name="pReadData"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.FillSpreadsheet(System.String)">
+ <summary>
+ Displays the data in the grid
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.GetAccessRights(System.String)">
+ <summary>
+ Enable/disable New/Amend/Delete based on the user permissions
+ </summary>
+ <param name="pTable"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.SetCommands">
+ <summary>
+ Toggles the buttons on the form
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.DisplayCaption(System.Boolean,System.String,System.Int32)">
+ <summary>
+ Display the appropriate caption based on the data that is currently displayed
+ </summary>
+ <param name="pGridVisible"></param>
+ <param name="pCriteria"></param>
+ <param name="pRecCount"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.GetMaintenanceTables(System.String)">
+ <summary>
+ Populates the combo box with a list of tables that the user has access to
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.AmendData">
+ <summary>
+ Display Table Entry form to edit the data and refresh the grid
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.GetGridValues(CDBNETCL.ParameterList,System.Boolean)">
+ <summary>
+ Add the values for the current row to the parameter list
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.DisplayTableEntry(CDBNETCL.CareNetServices.XMLTableMaintenanceMode,System.String,CDBNETCL.ParameterList,System.Boolean)">
+ <summary>
+ Displays the table entry form in Select/Add/Edit mode and sets the caption
+ </summary>
+ <param name="pEditMode"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.CheckAdministratorNotesSaved">
+ <summary>
+ Check if admin notes are entered/modified and prompt to save
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.DeleteRow(System.Boolean)">
+ <summary>
+ Delete a data row
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.BuildSelectWhere">
+ <summary>
+ Builds the where clause to be displayed above the grid
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.GetGridValue(System.String)">
+ <summary>
+ Gets column value for the currently selected row
+ </summary>
+ <param name="pColumn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.MakeBranchHistorical">
+ <summary>
+ Makes a branch historical. If the branch was previously used a new branch needs to be selected
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.AddParameter(CDBNETCL.ParameterList,System.String)">
+ <summary>
+ Reads the current values from the grid and adds them to the parameter list
+ </summary>
+ <param name="pParams"></param>
+ <param name="pAttr"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.DuplicateSurvey">
+ <summary>
+ Duplicates the survey
+ </summary>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:CDBNET.frmTableMaintenance.mvFrmEditCriteria_ProcessMailingCriteria(CDBNET.MailingInfo,System.Int32,System.Boolean@)">
+ <summary>
+ 
+ </summary>
+ <param name="pMailingSelection"></param>
+ <param name="pCriteriaSet"></param>
+ <param name="pSuccess"></param>
+ <remarks>BR19394 - If you change this event handler, check corresponding eventshandler in GeneralMailing, this is a copy of that event handler</remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.mvFrmEditCriteria_ProcessMailingCriteriaWithOptional(CDBNET.MailingInfo,System.Int32,System.Boolean,System.Boolean,CDBNETCL.ParameterList@,System.Boolean@)">
+ <summary>
+ 
+ </summary>
+ <param name="pMailingSelection"></param>
+ <param name="pCriteriaSet"></param>
+ <param name="pProcessVariables"></param>
+ <param name="pEditSegmentCriteria"></param>
+ <param name="pList"></param>
+ <param name="pSuccess"></param>
+ <remarks>BR19394 - If you change this event handler, check corresponding eventshandler in GeneralMailing, this is a copy of that event handler</remarks>
+</member>
+<member name="M:CDBNET.frmTableMaintenance.mvFrmEditCriteria_ProcessSelection(System.String,CDBNETCL.ParameterList)">
+ <summary>
+ 
+ </summary>
+ <param name="pRunPhase"></param>
+ <param name="pList"></param>
+ <remarks>BR19394 - If you change this event handler, check corresponding eventshandler in GeneralMailing, this is a copy of that event handler</remarks>
+</member>
+<member name="M:CDBNET.frmTraderTransactions.RunTraderForNewBatch">
+ <summary>Display Trader form if a new Batch was created.</summary>
+</member>
+<member name="M:CDBNET.frmTrader.SetOriginalOPSLine(System.Data.DataSet)">
+ <summary>
+ BR19606 For Transaction History, Analysis followed by Edit or Delete will change the Order Payment Schedule, when Edit or Delete are clicked. This is the original order payment history before the change.
+ It is used to restore the Order Payment Schedule if Analysis is Cancelled. Using Samrt Client as a temporary store for ther stateless web services.
+ This receives the OPSS from the server and saves it. Inly saves on the first call, as Edit Analysis can be executed within Edit Analysis.
+ </summary>
+ <param name="pDataSet">A dataset that may or may not contain a datatable called OriginalOPSLine</param>
+ <remarks>Called from ProcessData. Datatable is only passed to Smart Client so that it can be passed back to the server.</remarks>
+</member>
+<member name="M:CDBNET.frmTrader.GetTraderPage(CDBNETCL.CareNetServices.TraderPageType)">
+ <summary>Gets the required Trader Page. Throws a Page Not Found Exception if Trader has not been configured to use that page.</summary>
+</member>
+<member name="M:CDBNET.frmTrader.AddSelectedAnalysisLine(CDBNETCL.ParameterList)">
+ <summary>
+ Adds the Currently selected row on Trader Form TAS to the Parameter List. If no data exists this does nothing.
+ </summary>
+ <param name="plist">List of Parameters to be sent to the server</param>
+ <remarks>Originally intended for Cash Batch Maintenance where this data is passed back and forth between the Analysis form and Transactions form, via the Analysis Summary form 
+ so that Source can be synchronised. The Analysis Data needs to be passed to the server to facilitate this, but normal Trader operation doesn't want to do this, as ther cannot be any 
+ Analysis data present when the Transaction is being created.
+ </remarks>
+</member>
+<member name="M:CDBNET.frmTrader.AddOriginalOPSLines(CDBNETCL.ParameterList)">
+ <summary>
+ BR19606 For Transaction History, Analysis followed by Edit or Delete will change the Order Payment Schedule, when Edit or Delete are clicked. This is the original order payment history before the change.
+ It is used to restore the Order Payment Schedule if Analysis is Cancelled. Using Samrt Client as a temporary store for the stateless web services.
+ This takes the stored OPS and sends it to the server
+ </summary>
+ <param name="pList">List of Parameters being passed to the server, the OPS is added to the list.</param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTrader.AddAdditionalCMTData(CDBNETCL.ParameterList)">
+ <summary>Perform any additional processing required for CMT.</summary>
+</member>
+<member name="M:CDBNET.frmTrader.PreProcessPage">
+ <summary>
+ The last point before a page is displayed.
+ </summary>
+ <remarks>If you need to make changes to the data on the first page of a trader application as a result of navigating backwards do it here</remarks>
+</member>
+<member name="M:CDBNET.frmTrader.ShowMemberInfo(System.String,System.String)">
+ <summary>Populate Membership information on the <see cref="F:CDBNETCL.CareNetServices.TraderPageType.tpTransactionDetails">Transaction Details</see> page when the Member Number has been set.</summary>
+ <param name="pParameterName">Name of control being processed.</param>
+ <param name="pValue">Value of control being processed.</param>
+</member>
+<member name="M:CDBNET.frmTrader.GetInvoicePrintRunType(CDBNETCL.EditPanel,System.String@)">
+ <summary>Get the RunType for Invoice printing</summary>
+ <param name="pEPL">The EditPanel the controls are on</param>
+ <param name="pValue">The value currently set</param>
+ <returns>True if the control is visible, otherwise False</returns>
+</member>
+<member name="M:CDBNET.frmTransferStockToPack.ProcessProducts">
+ <summary>
+ This function will create dataset of distinct product and display it on grid.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTransferStockToPack.PopulateWarehouse">
+ <summary>
+ Create combo box of warehouse
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.frmTransferStockToPack.dgr_ValueChanged(System.Object,System.Int32,System.Int32,System.String,System.String)">
+ <summary>
+ Displaying corrosponding LastStockCount based on Warehouse
+ </summary>
+ <param name="sender"></param>
+ <param name="pRow"></param>
+ <param name="pCol"></param>
+ <param name="pValue"></param>
+ <param name="pOldValue"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.MainMenu.RunClaimReport(CDBNETCL.ParameterList@)">
+ <summary>Runs report for Reprint Claim details, Claim Analysis, Sponsorship Event details  and Irish Gift Aid Claim details</summary>
+ <param name="pReportList"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNET.ExamUnitSelector.ObscureNonContextBooking">
+ <summary>
+ Blanks out all booking-related controls.  Should be called if the selected Unit is not part of the selected Booking.
+ </summary>
+ <remarks>
+ This is only relevant when split bookings are present:  when a Booking is made for an Exam Unit, all parent units for the booking are created as Exam Booking Units.  If a subsequent booking is then made for additional units (before Grading is run) i.e. the units are split over two bookings, the Parent Units are not created again as that would duplicate the parents
+ over the two bookings.  Instead, the tree displays the parent regardless of what original booking was, and then displays only the children that applies to the booking.
+ This is problematic when viewing data as the user might expect the parent units to be duplicated, and for example have two possible different grades.
+ To make this more visible, we hide the booking-related units when the 
+ </remarks>
+</member>
+<member name="M:CDBNET.ExamUnitSelector.IsCurrentUnitInBooking">
+ <summary>
+ Returns True if the unit that is selected in the tree is part of the booking that was passed in the initialiser
+ </summary>
+ <returns>True if the booking Id for the Unit is the same at the Booking Id that was given to the Exam Unit Selector, False if not.</returns>
+ <remarks>In a tree with multiple children, it is possible to book each child in a separate booking.  When this occurs, the units required to build the tree are booked 
+ as part of the first booking.  Subsequent bookings only own the additional units.  This can lead to confusion because when a Booking is selected in the grid, the Exam 
+ tree can display parent units that actually belong to a different booking.  To remedy this, the control displays warning messages, hides data and tabs and prevents edits.
+ All of this happens when the method below returns False</remarks>
+</member>
+</members>
+</doc>

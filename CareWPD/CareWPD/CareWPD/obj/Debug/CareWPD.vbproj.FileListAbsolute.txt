@@ -1,0 +1,78 @@
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CareWPD.exe.config
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CareWPD.exe
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CareWPD.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CareWPD.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CDBNETCL.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\HtmlEditorControl.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\AdvancedFramework.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\ZedGraph.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Win.Spread.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\IMAP4.Net.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\SMTP.Net.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\Parse.Net.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Win.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Excel.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\Microsoft.mshtml.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\AxInterop.SHDocVw.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.CalcEngine.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\Interop.SHDocVw.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CDBNETCL.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CDBNETCL.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\HtmlEditorControl.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\HtmlEditorControl.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\AdvancedFramework.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Win.Spread.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Win.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Excel.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.CalcEngine.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\de\CDBNETCL.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\de\HtmlEditorControl.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.vbprojResolveAssemblyReference.cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.frmHTMLEditor.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.frmMain.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.Resources.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.vbproj.GenerateResource.Cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.exe
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.pdb
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CareWPD.exe.config
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CareWPD.exe
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CareWPD.pdb
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CareWPD.xml
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CDBNETCL.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\HtmlEditorControl.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\AdvancedFramework.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\ZedGraph.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Win.Spread.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\IMAP4.Net.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\SMTP.Net.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\Parse.Net.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Win.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Excel.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\Microsoft.mshtml.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\AxInterop.SHDocVw.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.CalcEngine.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\Interop.SHDocVw.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CDBNETCL.pdb
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\CDBNETCL.xml
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\HtmlEditorControl.pdb
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\HtmlEditorControl.xml
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\AdvancedFramework.pdb
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Win.Spread.xml
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Win.xml
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.Excel.xml
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\FarPoint.CalcEngine.xml
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\de\CDBNETCL.resources.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\de\HtmlEditorControl.resources.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.vbprojResolveAssemblyReference.cache
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.frmHTMLEditor.resources
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.frmMain.resources
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.Resources.resources
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.vbproj.GenerateResource.Cache
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.exe
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.xml
+D:\Version 16.2\CareWPD\CareWPD\CareWPD\obj\Debug\CareWPD.pdb

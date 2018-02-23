@@ -1,0 +1,743 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNServices
+</name>
+</assembly>
+<members>
+<member name="T:CDBNServices.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CDBNServices.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CDBNServices.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAQueryHeader">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAQueryHeader.QAAuthentication">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAQueryHeader.Security">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAAuthentication">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAAuthentication.Username">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAAuthentication.Password">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.PromptLine">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PromptLine.Prompt">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PromptLine.SuggestedInputLength">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PromptLine.Example">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QALayout">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALayout.Name">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALayout.Comment">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAExampleAddress">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAExampleAddress.Address">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAExampleAddress.Comment">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAAddressType">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAAddressType.AddressLine">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAAddressType.Overflow">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAAddressType.Truncated">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAAddressType.DPVStatus">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAAddressType.DPVStatusSpecified">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAAddressType.MissingSubPremise">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.AddressLineType">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.AddressLineType.Label">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.AddressLineType.Line">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.AddressLineType.DataplusGroup">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.AddressLineType.LineContent">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.AddressLineType.Overflow">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.AddressLineType.Truncated">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.DataplusGroupType">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.DataplusGroupType.DataplusGroupItem">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.DataplusGroupType.GroupName">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.LineContentType">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LineContentType.None">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LineContentType.Address">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LineContentType.Name">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LineContentType.Ancillary">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LineContentType.DataPlus">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.DPVStatusType">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.DPVStatusType.DPVNotConfigured">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.DPVStatusType.DPVConfigured">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.DPVStatusType.DPVConfirmed">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.DPVStatusType.DPVConfirmedMissingSec">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.DPVStatusType.DPVNotConfirmed">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.DPVStatusType.DPVLocked">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.DPVStatusType.DPVSeedHit">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QALicensedSet">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.ID">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.Description">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.Copyright">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.Version">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.BaseCountry">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.Status">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.Server">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.WarningLevel">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.DaysLeft">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.DataDaysLeft">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicensedSet.LicenceDaysLeft">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.LicenceWarningLevel">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.None">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.DataExpiring">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.LicenceExpiring">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.ClicksLow">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.Evaluation">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.NoClicks">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.DataExpired">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.EvalLicenceExpired">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.FullLicenceExpired">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.LicenceNotFound">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.LicenceWarningLevel.DataUnreadable">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QADataSet">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QADataSet.ID">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QADataSet.Name">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAInformation">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAInformation.StateTransition">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAInformation.CreditsUsed">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.SecurityHeaderType">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.SecurityHeaderType.Any">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.SecurityHeaderType.AnyAttr">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.VerificationFlagsType">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.BldgFirmNameChanged">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.PrimaryNumberChanged">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.StreetCorrected">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.RuralRteHighwayContractMatched">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.CityNameChanged">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.CityAliasMatched">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.StateProvinceChanged">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.PostCodeCorrected">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.SecondaryNumRetained">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.IdenPreStInfoRetained">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.GenPreStInfoRetained">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.VerificationFlagsType.PostStInfoRetained">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.PicklistEntryType">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.Moniker">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.PartialAddress">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.Picklist">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.Postcode">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.Score">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.QAAddress">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.FullAddress">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.Multiples">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.CanStep">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.AliasMatch">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.PostcodeRecoded">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.CrossBorderMatch">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.DummyPOBox">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.Name">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.Information">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.WarnInformation">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.IncompleteAddr">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.UnresolvableRange">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.PhantomPrimaryPoint">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.SubsidiaryData">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.ExtendedData">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.PicklistEntryType.EnhancedData">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAPicklistType">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.FullPicklistMoniker">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.PicklistEntry">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.Prompt">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.Total">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.AutoFormatSafe">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.AutoFormatPastClose">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.AutoStepinSafe">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.AutoStepinPastClose">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.LargePotential">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.MaxMatches">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.MoreOtherMatches">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.OverThreshold">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPicklistType.Timeout">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.EngineType">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.EngineType.Flatten">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.EngineType.FlattenSpecified">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.EngineType.Intensity">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.EngineType.IntensitySpecified">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.EngineType.PromptSet">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.EngineType.PromptSetSpecified">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.EngineType.Threshold">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.EngineType.Timeout">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.EngineType.Value">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.EngineIntensityType">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.EngineIntensityType.Exact">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.EngineIntensityType.Close">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.EngineIntensityType.Extensive">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.PromptSetType">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.PromptSetType.OneLine">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.PromptSetType.Default">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.PromptSetType.Generic">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.PromptSetType.Optimal">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.PromptSetType.Alternate">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.PromptSetType.Alternate2">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.PromptSetType.Alternate3">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.EngineEnumType">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.EngineEnumType.Singleline">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.EngineEnumType.Typedown">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.EngineEnumType.Verification">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.EngineEnumType.Keyfinder">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.EngineEnumType.Intuitive">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QASearch">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearch.Country">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearch.Engine">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearch.Layout">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearch.Search">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearch.FormattedAddressInPicklist">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearch.Localisation">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearch.RequestTag">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QASearchResult">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearchResult.QAPicklist">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearchResult.QAAddress">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearchResult.VerificationFlags">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearchResult.VerifyLevel">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.VerifyLevelType">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.VerifyLevelType.None">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.VerifyLevelType.Verified">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.VerifyLevelType.InteractionRequired">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.VerifyLevelType.PremisesPartial">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.VerifyLevelType.StreetPartial">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.VerifyLevelType.Multiple">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.VerifyLevelType.VerifiedPlace">
+<remarks/>
+</member>
+<member name="F:CDBNServices.QASProOnDemand.VerifyLevelType.VerifiedStreet">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QARefine">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QARefine.Moniker">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QARefine.Refinement">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QARefine.Layout">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QARefine.FormattedAddressInPicklist">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QARefine.Threshold">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QARefine.Timeout">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QARefine.Localisation">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QARefine.RequestTag">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.Picklist">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.Picklist.QAPicklist">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAGetAddress">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetAddress.Layout">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetAddress.Moniker">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetAddress.Localisation">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetAddress.RequestTag">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.Address">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.Address.QAAddress">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAGetData">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetData.Localisation">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAGetDataMapDetail">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetDataMapDetail.DataMap">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetDataMapDetail.Localisation">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QADataMapDetail">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QADataMapDetail.WarningLevel">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QADataMapDetail.LicensedSet">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAGetLicenseInfo">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetLicenseInfo.Localisation">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QALicenceInfo">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicenceInfo.WarningLevel">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QALicenceInfo.LicensedSet">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAGetSystemInfo">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetSystemInfo.Localisation">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAGetExampleAddresses">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetExampleAddresses.Country">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetExampleAddresses.Layout">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetExampleAddresses.Localisation">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetExampleAddresses.RequestTag">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAGetLayouts">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetLayouts.Country">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetLayouts.Localisation">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAGetPromptSet">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetPromptSet.Country">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetPromptSet.Engine">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetPromptSet.PromptSet">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAGetPromptSet.Localisation">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QAPromptSet">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPromptSet.Line">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QAPromptSet.Dynamic">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QACanSearch">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QACanSearch.Country">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QACanSearch.Engine">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QACanSearch.Layout">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QACanSearch.Localisation">
+<remarks/>
+</member>
+<member name="T:CDBNServices.QASProOnDemand.QASearchOk">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearchOk.IsOk">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearchOk.ErrorCode">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearchOk.ErrorMessage">
+<remarks/>
+</member>
+<member name="P:CDBNServices.QASProOnDemand.QASearchOk.ErrorDetail">
+<remarks/>
+</member>
+</members>
+</doc>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNETXAMLPages
+</name>
+</assembly>
+<members>
+<member name="T:CDBNETXAMLPages.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CDBNETXAMLPages.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CDBNETXAMLPages.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.HomeScreen">
+<summary>
+HomeScreen
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.HomeScreen.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.CustomizableHomeToolbar">
+<summary>
+CustomizableHomeToolbar
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.CustomizableHomeToolbar.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.History">
+<summary>
+History
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.History.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.Search">
+<summary>
+Search
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.Search.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.MenuHeader">
+<summary>
+MenuHeader
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.MenuHeader.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.MenuStrip">
+<summary>
+MenuStrip
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.MenuStrip.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.MenuViewer">
+<summary>
+MenuViewer
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.MenuViewer.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.QuickMenu">
+<summary>
+QuickMenu
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.QuickMenu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.HomeToolbar">
+<summary>
+HomeToolbar
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.HomeToolbar.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.HomeToolbarStyle">
+<summary>
+HomeToolbarStyle
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.HomeToolbarStyle.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.MDIExplorer">
+<summary>
+MDIExplorer
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.MDIExplorer.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAMLPages.OpenFormsStrip">
+<summary>
+OpenFormsStrip
+</summary>
+</member>
+<member name="M:CDBNETXAMLPages.OpenFormsStrip.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

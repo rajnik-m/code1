@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ShowToolbar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LargeToolbarIcons" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowNavPanel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LargeNavPanelIcons" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NavPanelWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">192</Value>
+    </Setting>
+    <Setting Name="NavPanelPinned" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NavPanelHistoryMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="NotificationPollingMinutes" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="NotifyActions" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NotifyDocuments" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NotifyDeadlines" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BackgroundImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BackgroundImageLayout" Type="System.Windows.Forms.ImageLayout" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="MainToolbarItems" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="HistoryDays" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="WindowSizes" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UpgradeSettings" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="WebServiceTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="MainToolBarTipText" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PlainEditPanel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DebugMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowDashboard" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DashboardSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">151</Value>
+    </Setting>
+    <Setting Name="MainToolBarText" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MainToolBarTextPosition" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FontThemeID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="AppearanceThemeID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ShowHeaderPanel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowSelectionPanel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowStatusBar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TabIntoDisplayPanel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TabIntoHeaderPanel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DisplayDashboardAtLogin" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ConfirmCancel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ConfirmInsert" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ConfirmUpdate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ConfirmDelete" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowErrorsAsMsgBox" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LargeGridToolbarIcons" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NotifyMeetings" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+        <Setting Name="TaskNotificationPollingSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="KnowledgebaseUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://www.advancednfp.com/customer-support/supporthome.aspx</Value>
+    </Setting>
+    <Setting Name="HideHistoricNetwork" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FinderResultsMsgBox" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SupportForumUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://www.advancednfp.com/customer-support/supporthome.aspx</Value>
+    </Setting>
+    <Setting Name="AllowDatabaseSelection" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DATABASE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CDBWEBSERVER</Value>
+    </Setting>
+    <Setting Name="HomeToolbar" Type="System.Xml.XmlDocument" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;HomeToolbar&gt;
+  &lt;Section Name="Favourites"&gt;
+    &lt;Category Name="Finders"&gt;
+      &lt;MenuItem CommandIndex="cbiContactFinder" ButtonSize="Large" Text="Find Contacts" Tooltip="Search for a Contact in the Database" /&gt;
+      &lt;MenuItem CommandIndex="cbiOrganisationFinder" ButtonSize="Medium" /&gt;
+      &lt;MenuItem CommandIndex="cbiEventFinder" ButtonSize="Medium" /&gt;
+    &lt;/Category&gt;
+    &lt;Category Name="Queries"&gt;
+      &lt;MenuItem CommandIndex="cbiQueryByExampleContacts" ButtonSize="Small" /&gt;
+      &lt;MenuItem CommandIndex="cbiQueryByExampleOrganisations" ButtonSize="Small" /&gt;
+      &lt;MenuItem CommandIndex="cbiQueryByExampleEvents" ButtonSize="Small" /&gt;
+    &lt;/Category&gt;
+    &lt;Category Name="Config"&gt;
+      &lt;MenuItem CommandIndex="cbiPreferences" ButtonSize="Large" /&gt;
+      &lt;MenuItem CommandIndex="cbiTableMaintenance" ButtonSize="Medium" /&gt;
+      &lt;MenuItem CommandIndex="mnuAdminDatabaseUpgrade" ButtonSize="Medium" /&gt;
+      &lt;MenuItem CommandIndex="cbiMyDetails" ButtonSize="Small" /&gt;
+      &lt;MenuItem CommandIndex="cbiMyOrganisation" ButtonSize="Small" /&gt;
+      &lt;MenuItem CommandIndex="cbiMyDocuments" ButtonSize="Small" /&gt;
+      &lt;MenuItem CommandIndex="cbiMyJournal" ButtonSize="Small" /&gt;
+    &lt;/Category&gt;
+    &lt;Category Name="Close"&gt;
+      &lt;MenuItem CommandIndex="cbiExit" ButtonSize="Small" /&gt;
+    &lt;/Category&gt;
+  &lt;/Section&gt;
+  &lt;Section Name="Exams"&gt;
+    &lt;Category Name="Exams"&gt;
+      &lt;MenuItem CommandIndex="mnuExamsMaintenance" ButtonSize="Large" /&gt;
+      &lt;MenuItem CommandIndex="mnuExamApplyGrading" ButtonSize="Large" /&gt;
+      &lt;MenuItem CommandIndex="mnuExamEnterResults" ButtonSize="Large" /&gt;
+    &lt;/Category&gt;
+  &lt;/Section&gt;
+&lt;/HomeToolbar&gt;</Value>
+    </Setting>
+    <Setting Name="SchemeID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FavouriteCommands" Type="System.Xml.XmlDocument" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;FavouriteCommands&gt;
+  &lt;MenuItem CommandIndex="cbiContactFinder" /&gt;
+  &lt;MenuItem CommandIndex="cbiOrganisationFinder" /&gt;
+  &lt;MenuItem CommandIndex="cbiEventFinder" /&gt;
+  &lt;MenuItem CommandIndex="cbiPreferences" /&gt;
+  &lt;MenuItem CommandIndex="mnuExamsMaintenance" /&gt;
+  &lt;MenuItem CommandIndex="mnuExamApplyGrading" /&gt;
+  &lt;MenuItem CommandIndex="mnuExamEnterResults" /&gt;
+&lt;/FavouriteCommands&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

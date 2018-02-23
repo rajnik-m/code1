@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CarePortal", "CarePortal\CarePortal.vbproj", "{8FC9A69C-4CEF-4EA1-B73A-31D48C163CBB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{B481E68A-E284-415A-AE8C-7FDD5B244F46}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CDBNXML", "..\CDBNXML\CDBNXML.vbproj", "{59E8B2F7-31F4-4E3A-8B3F-E7FDA9F4D58C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CDBNACCESS", "..\CDBNACCESS\CDBNACCESS.vbproj", "{DE5082A7-D4C4-4ADB-9E25-B03AE84096D1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CDBNDATA", "..\CDBNDATA\CDBNDATA.vbproj", "{FCF0CBB2-E57B-4494-BCDE-AC7B525FE89A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CDBNUTILS", "..\CDBNUTILS\CDBNUTILS.vbproj", "{0C285D91-7C4F-436D-8E61-0C0A6F27E6E0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CDBNTasks", "..\CDBNTASKS\CDBNTasks.vbproj", "{10943BAD-89AD-4B59-81EC-7AE141DFFA15}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CDBNReports", "..\CDBNREPORTS\CDBNReports.vbproj", "{94027980-3C29-4C56-99C4-860FDA79F17F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CDBNImport", "..\CDBNImport\CDBNImport.vbproj", "{A76D57B3-D63E-4343-AF5C-18A6ECD4B4B7}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CDBNEVAL", "..\CDBNEVAL\CDBNEVAL.vbproj", "{99F92D60-379B-4B9D-8E0F-82417301A4BC}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://madison:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CarePortal\\CarePortal.vbproj
+		SccProjectName1 = CarePortal
+		SccLocalPath1 = CarePortal
+		SccProjectUniqueName2 = Setup\\Setup.vdproj
+		SccProjectName2 = Setup
+		SccLocalPath2 = Setup
+		SccProjectUniqueName3 = ..\\CDBNXML\\CDBNXML.vbproj
+		SccProjectName3 = ../CDBNXML
+		SccLocalPath3 = ..\\CDBNXML
+		SccProjectUniqueName4 = ..\\CDBNACCESS\\CDBNACCESS.vbproj
+		SccProjectName4 = ../CDBNACCESS
+		SccLocalPath4 = ..\\CDBNACCESS
+		SccProjectUniqueName5 = ..\\CDBNDATA\\CDBNDATA.vbproj
+		SccProjectName5 = ../CDBNDATA
+		SccLocalPath5 = ..\\CDBNDATA
+		SccProjectUniqueName6 = ..\\CDBNUTILS\\CDBNUTILS.vbproj
+		SccProjectName6 = ../CDBNUTILS
+		SccLocalPath6 = ..\\CDBNUTILS
+		SccProjectUniqueName7 = ..\\CDBNTASKS\\CDBNTasks.vbproj
+		SccProjectName7 = ../CDBNTASKS
+		SccLocalPath7 = ..\\CDBNTASKS
+		SccProjectUniqueName8 = ..\\CDBNREPORTS\\CDBNReports.vbproj
+		SccProjectName8 = ../CDBNREPORTS
+		SccLocalPath8 = ..\\CDBNREPORTS
+		SccProjectUniqueName9 = ..\\CDBNImport\\CDBNImport.vbproj
+		SccProjectName9 = ../CDBNImport
+		SccLocalPath9 = ..\\CDBNImport
+		SccProjectUniqueName10 = ..\\CDBNEVAL\\CDBNEVAL.vbproj
+		SccProjectName10 = ../CDBNEVAL
+		SccLocalPath10 = ..\\CDBNEVAL
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FC9A69C-4CEF-4EA1-B73A-31D48C163CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC9A69C-4CEF-4EA1-B73A-31D48C163CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC9A69C-4CEF-4EA1-B73A-31D48C163CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC9A69C-4CEF-4EA1-B73A-31D48C163CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B481E68A-E284-415A-AE8C-7FDD5B244F46}.Debug|Any CPU.ActiveCfg = Debug
+		{B481E68A-E284-415A-AE8C-7FDD5B244F46}.Release|Any CPU.ActiveCfg = Release
+		{B481E68A-E284-415A-AE8C-7FDD5B244F46}.Release|Any CPU.Build.0 = Release
+		{59E8B2F7-31F4-4E3A-8B3F-E7FDA9F4D58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E8B2F7-31F4-4E3A-8B3F-E7FDA9F4D58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E8B2F7-31F4-4E3A-8B3F-E7FDA9F4D58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E8B2F7-31F4-4E3A-8B3F-E7FDA9F4D58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5082A7-D4C4-4ADB-9E25-B03AE84096D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5082A7-D4C4-4ADB-9E25-B03AE84096D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5082A7-D4C4-4ADB-9E25-B03AE84096D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5082A7-D4C4-4ADB-9E25-B03AE84096D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF0CBB2-E57B-4494-BCDE-AC7B525FE89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF0CBB2-E57B-4494-BCDE-AC7B525FE89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF0CBB2-E57B-4494-BCDE-AC7B525FE89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF0CBB2-E57B-4494-BCDE-AC7B525FE89A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C285D91-7C4F-436D-8E61-0C0A6F27E6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C285D91-7C4F-436D-8E61-0C0A6F27E6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C285D91-7C4F-436D-8E61-0C0A6F27E6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C285D91-7C4F-436D-8E61-0C0A6F27E6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10943BAD-89AD-4B59-81EC-7AE141DFFA15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10943BAD-89AD-4B59-81EC-7AE141DFFA15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10943BAD-89AD-4B59-81EC-7AE141DFFA15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10943BAD-89AD-4B59-81EC-7AE141DFFA15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94027980-3C29-4C56-99C4-860FDA79F17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94027980-3C29-4C56-99C4-860FDA79F17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94027980-3C29-4C56-99C4-860FDA79F17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94027980-3C29-4C56-99C4-860FDA79F17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76D57B3-D63E-4343-AF5C-18A6ECD4B4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76D57B3-D63E-4343-AF5C-18A6ECD4B4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76D57B3-D63E-4343-AF5C-18A6ECD4B4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76D57B3-D63E-4343-AF5C-18A6ECD4B4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F92D60-379B-4B9D-8E0F-82417301A4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F92D60-379B-4B9D-8E0F-82417301A4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F92D60-379B-4B9D-8E0F-82417301A4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F92D60-379B-4B9D-8E0F-82417301A4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

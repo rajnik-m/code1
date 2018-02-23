@@ -1,0 +1,48 @@
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\CDBNDATA.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\CDBNDATA.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\CDBNDATA.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\AdvancedFramework.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\CDBNUTILS.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\AdvancedFramework.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\CDBNUTILS.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\CDBNUTILS.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\bin\Debug\de\CDBNUTILS.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.vbprojResolveAssemblyReference.cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\obj\Debug\CARE.Resources.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.vbproj.GenerateResource.Cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.pdb
+D:\Version 16.2\CDBNDATA\bin\Debug\CDBNDATA.dll
+D:\Version 16.2\CDBNDATA\bin\Debug\CDBNDATA.pdb
+D:\Version 16.2\CDBNDATA\bin\Debug\CDBNDATA.xml
+D:\Version 16.2\CDBNDATA\bin\Debug\AdvancedFramework.dll
+D:\Version 16.2\CDBNDATA\bin\Debug\CDBNUTILS.dll
+D:\Version 16.2\CDBNDATA\bin\Debug\AdvancedFramework.pdb
+D:\Version 16.2\CDBNDATA\bin\Debug\CDBNUTILS.pdb
+D:\Version 16.2\CDBNDATA\bin\Debug\CDBNUTILS.xml
+D:\Version 16.2\CDBNDATA\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Version 16.2\CDBNDATA\bin\Debug\de\CDBNUTILS.resources.dll
+D:\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.vbprojResolveAssemblyReference.cache
+D:\Version 16.2\CDBNDATA\obj\Debug\CARE.Resources.resources
+D:\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.vbproj.GenerateResource.Cache
+D:\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.dll
+D:\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.xml
+D:\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\CDBNDATA.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\CDBNDATA.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\CDBNDATA.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\AdvancedFramework.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\CDBNUTILS.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\AdvancedFramework.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\CDBNUTILS.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\CDBNUTILS.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\bin\Debug\de\CDBNUTILS.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.vbprojResolveAssemblyReference.cache
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\obj\Debug\CARE.Resources.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.vbproj.GenerateResource.Cache
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNDATA\obj\Debug\CDBNDATA.pdb

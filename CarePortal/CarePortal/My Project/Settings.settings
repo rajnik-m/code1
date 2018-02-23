@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="CarePortal_QASProWeb_ProWeb" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://Ntdev4:2021/</Value>
+    </Setting>
+    <Setting Name="CarePortal_CareNetServices_NDataAccess" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2360/NDataAccess.asmx</Value>
+    </Setting>
+    <Setting Name="CarePortal_ExamsAccess_ExamsDataAccess" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2360/ExamsDataAccess.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

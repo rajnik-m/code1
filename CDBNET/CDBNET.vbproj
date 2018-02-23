@@ -1,0 +1,1298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0716159A-7653-4799-BD12-2F7DDF7F9EAB}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\NG-icon.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CDBNET</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>CDBNET</RootNamespace>
+    <StartupObject>Sub Main</StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>08421A0E7521DB205BFE75934A53A9923C1A0438</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Authenticode Certificate.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <SccAuxPath>SAK</SccAuxPath>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\inetpub\wwwroot\CDBNET\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://localhost/CDBNET/</InstallUrl>
+    <SupportUrl>https://www.advancednfp.com/customer-support/supporthome.aspx</SupportUrl>
+    <ErrorReportUrl>https://www.advancednfp.com/customer-support/supporthome.aspx</ErrorReportUrl>
+    <ProductName>NG Smart Client</ProductName>
+    <PublisherName>Advanced NFP</PublisherName>
+    <SuiteName>Advanced NFP NG</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>117</ApplicationRevision>
+    <ApplicationVersion>14.3.8329.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CDBNET.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CDBNET.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>http://timestamp.verisign.com/scripts/timstamp.dll</ManifestTimestampUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug%28Modern%29|AnyCPU'">
+    <OutputPath>bin\Debug%28Modern%29\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>
+    </DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <WarningLevel>1</WarningLevel>
+    <DocumentationFile>CDBNET.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>CDBNET.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>CDBNET.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug%28Modern%29|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug%28Modern%29\</OutputPath>
+    <DefineConstants>MODERN_VIEW</DefineConstants>
+    <DocumentationFile>CDBNET.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>CDBNET.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>CDBNET.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug%28Modern%29|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug%28Modern%29\</OutputPath>
+    <DefineConstants>MODERN_VIEW</DefineConstants>
+    <DocumentationFile>CDBNET.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.Win">
+      <Name>FarPoint.Win</Name>
+      <HintPath>..\..\Program Files\FarPoint Technologies\Spread.WinForms.v2\v2.0.0.0\Bin\FarPoint.Win.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\farpoint spread for windows forms 2.0.0.0</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread">
+      <Name>FarPoint.Win.Spread</Name>
+      <HintPath>..\..\Program Files\FarPoint Technologies\Spread.WinForms.v2\v2.0.0.0\Bin\FarPoint.Win.Spread.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\farpoint spread for windows forms 2.0.0.0</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files (x86)\Microsoft SDKs\Expression\Blend\.NETFramework\v4.0\Libraries\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files (x86)\Microsoft SDKs\Expression\Blend\.NETFramework\v4.0\Libraries\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CareServices = CDBNETCL.CareNETServices" />
+    <Import Include="CDBNETCL" />
+    <Import Include="CDBNETCL.AppHelper" />
+    <Import Include="CDBNETCL.My" />
+    <Import Include="CDBNETCL.My.Resources" />
+    <Import Include="CDBNETCL.Utilities" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.IO" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Linq.Expressions" />
+    <Import Include="System.Text" />
+    <Import Include="System.Threading" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Authenticode Certificate.pfx" />
+    <None Include="Resources\NG-icon.ico" />
+    <None Include="Resources\advanced-banner.jpg" />
+    <None Include="Resources\advanced-background.jpg" />
+    <None Include="app.config" />
+    <None Include="app.Debug.config">
+      <DependentUpon>app.config</DependentUpon>
+    </None>
+    <None Include="app.Release.config">
+      <DependentUpon>app.config</DependentUpon>
+    </None>
+    <BaseApplicationManifest Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </BaseApplicationManifest>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="Classes\SagePayHostedAuthoriser.vb" />
+    <Compile Include="Classes\TnsHostedAuthoriser.vb" />
+    <Compile Include="Classes\WebBasedCardAuthoriser.vb" />
+    <Compile Include="Forms\frmCardAuthorisation.Designer.vb">
+      <DependentUpon>frmCardAuthorisation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCardAuthorisation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHtmlSettings.Designer.vb">
+      <DependentUpon>frmHtmlSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHtmlSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPagedTreeView.Designer.vb">
+      <DependentUpon>frmPagedTreeView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPagedTreeView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThemes.Designer.vb">
+      <DependentUpon>frmThemes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmThemes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\CampaignCopyInfo.vb" />
+    <Compile Include="Classes\CsvReader.vb" />
+    <Compile Include="Classes\ExamCertificateMergeEngine.vb" />
+    <Compile Include="Classes\FormHelper.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\GeneralMailing.vb" />
+    <Compile Include="Classes\ListManager.vb" />
+    <Compile Include="Classes\MailingDocument.vb" />
+    <Compile Include="Classes\MailingInfo.vb" />
+    <Compile Include="Classes\MainHelper.vb" />
+    <Compile Include="Classes\MyApplicationContext.vb" />
+    <Compile Include="Classes\TraderApplication.vb" />
+    <Compile Include="FastDataEntry\CareFDEControl.Designer.vb">
+      <DependentUpon>CareFDEControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FastDataEntry\CareFDEControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FastDataEntryMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEActivityDisplay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEAddDonationCC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEAddMemberDD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEAddRegularDonation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEAddressDisplay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEAddTransactionDetails.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDECommunicationsDisplay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEContactSelection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEControlMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEDisplayLabel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDEGiftAidDisplay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDESuppressionDisplay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FastDataEntry\FDETelemarketing.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCertificateReprint.Designer.vb">
+      <DependentUpon>frmCertificateReprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCertificateReprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCLIBrowser.designer.vb">
+      <DependentUpon>frmCLIBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCLIBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmExamResults.Designer.vb">
+      <DependentUpon>frmExamResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmExamResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmExams.Designer.vb">
+      <DependentUpon>frmExams.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmExams.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmModernMenuViewer.Designer.vb">
+      <DependentUpon>frmModernMenuViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmModernMenuViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTaskInfo.Designer.vb">
+      <DependentUpon>frmTaskInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTaskInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAccessControl.Designer.vb">
+      <DependentUpon>frmAccessControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAccessControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmActionSchedule.Designer.vb">
+      <DependentUpon>frmActionSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmActionSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddCriteria.Designer.vb">
+      <DependentUpon>frmAddCriteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddCriteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAuthoriseExpenses.Designer.vb">
+      <DependentUpon>frmAuthoriseExpenses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAuthoriseExpenses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBatchProcessing.Designer.vb">
+      <DependentUpon>frmBatchProcessing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBatchProcessing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCheckSetup.Designer.vb">
+      <DependentUpon>frmCheckSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCheckSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConfigurationMaintenance .Designer.vb">
+      <DependentUpon>frmConfigurationMaintenance .vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmConfigurationMaintenance .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCriteriaLists.Designer.vb">
+      <DependentUpon>frmCriteriaLists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCriteriaLists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomiseToolBar.Designer.vb">
+      <DependentUpon>frmCustomiseToolBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCustomiseToolBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.Designer.vb">
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDateFormat.Designer.vb">
+      <DependentUpon>frmDateFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDateFormat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDesignTraderApp.Designer.vb">
+      <DependentUpon>frmDesignTraderApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDesignTraderApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDespatchTracking.Designer.vb">
+      <DependentUpon>frmDespatchTracking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDespatchTracking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDisplayList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDocumentDistributor.Designer.vb">
+      <DependentUpon>frmDocumentDistributor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDocumentDistributor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditCriteria.designer.vb">
+      <DependentUpon>frmEditCriteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditCriteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEventEligibility.designer.vb">
+      <DependentUpon>frmEventEligibility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEventEligibility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEventLoanItems.designer.vb">
+      <DependentUpon>frmEventLoanItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEventLoanItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEventSet.Designer.vb">
+      <DependentUpon>frmEventSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEventSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAboutBox.Designer.vb">
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCampaignSet.Designer.vb">
+      <DependentUpon>frmCampaignSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCampaignSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCardDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCardSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomise.Designer.vb">
+      <DependentUpon>frmCustomise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCustomise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmExport.Designer.vb">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFastDataEntry.Designer.vb">
+      <DependentUpon>frmFastDataEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFastDataEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFinder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFPApplication.Designer.vb">
+      <DependentUpon>frmFPApplication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFPApplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGenMAddress.Designer.vb">
+      <DependentUpon>frmGenMAddress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGenMAddress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGenMGen.Designer.vb">
+      <DependentUpon>frmGenMGen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGenMGen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGenMLists.Designer.vb">
+      <DependentUpon>frmGenMLists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGenMLists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGenMMerge.Designer.vb">
+      <DependentUpon>frmGenMMerge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGenMMerge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmImport.Designer.vb">
+      <DependentUpon>frmImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIncentiveMaintenance.Designer.vb">
+      <DependentUpon>frmIncentiveMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmIncentiveMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoicePayment.Designer.vb">
+      <DependentUpon>frmInvoicePayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvoicePayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmJobProcessor.Designer.vb">
+      <DependentUpon>frmJobProcessor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmJobProcessor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLicenceMaintenance.Designer.vb">
+      <DependentUpon>frmLicenceMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLicenceMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNetWork.Designer.vb">
+      <DependentUpon>frmNetWork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNetWork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNetworkNew.Designer.vb">
+      <DependentUpon>frmNetworkNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNetworkNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNewMember.Designer.vb">
+      <DependentUpon>frmNewMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNewMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNotify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOwnershipMaintenance.Designer.vb">
+      <DependentUpon>frmOwnershipMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOwnershipMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPreferences.Designer.vb">
+      <DependentUpon>frmPreferences.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPreferences.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReportMaintenance.Designer.vb">
+      <DependentUpon>frmReportMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReportMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelectionSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStockMovement.Designer.vb">
+      <DependentUpon>frmStockMovement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStockMovement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStockShortfall.Designer.vb">
+      <DependentUpon>frmStockShortfall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStockShortfall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSurveyResponses.Designer.vb">
+      <DependentUpon>frmSurveyResponses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSurveyResponses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTableEntry.Designer.vb">
+      <DependentUpon>frmTableEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTableEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTableMaintenance.Designer.vb">
+      <DependentUpon>frmTableMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTableMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTaskStatus.Designer.vb">
+      <DependentUpon>frmTaskStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTaskStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTraderTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTrader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTransactionDocument.Designer.vb">
+      <DependentUpon>frmTransactionDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTransactionDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTransferStockToPack.Designer.vb">
+      <DependentUpon>frmTransferStockToPack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTransferStockToPack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWaitingList.Designer.vb">
+      <DependentUpon>frmWaitingList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWaitingList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTraderValidation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InheritedControls\LabelEx.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InheritedControls\ToolbarEx.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Integration\IMAPEMail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Menus\AccessControlMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\ActionMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\BrowserMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\CampaignMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\ContactExamCertificatesMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\ExamsMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\FinancialMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\DocumentMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\EventMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\FinancialSubMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\MainMenu.vb" />
+    <Compile Include="Menus\MeetingMenu.Designer.vb">
+      <DependentUpon>MeetingMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MeetingMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\OwnershipMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\ReportMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\ReprintSelectedEventArgs.vb" />
+    <Compile Include="Menus\SelectionSetMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\ServiceBookingMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\TaskBarIconMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\ContextCommandHelper.vb" />
+    <Compile Include="Service Locator\ConfirmActionService.vb" />
+    <Compile Include="Service Locator\CustomiseService.vb" />
+    <Compile Include="Service Locator\DialogService.vb" />
+    <Compile Include="Service Locator\MessageBoxService.vb" />
+    <Compile Include="UserControls\ExamUnitSelector.Designer.vb">
+      <DependentUpon>ExamUnitSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ExamUnitSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FontSelector.Designer.vb">
+      <DependentUpon>FontSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FontSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelThemeEditor.Designer.vb">
+      <DependentUpon>PanelThemeEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PanelThemeEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="FastDataEntry\CareFDEControl.resx">
+      <DependentUpon>CareFDEControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCardAuthorisation.resx">
+      <DependentUpon>frmCardAuthorisation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHtmlSettings.resx">
+      <DependentUpon>frmHtmlSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPagedTreeView.resx">
+      <DependentUpon>frmPagedTreeView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThemes.resx">
+      <DependentUpon>frmThemes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCertificateReprint.resx">
+      <DependentUpon>frmCertificateReprint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCLIBrowser.resx">
+      <DependentUpon>frmCLIBrowser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExamResults.resx">
+      <DependentUpon>frmExamResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExams.resx">
+      <DependentUpon>frmExams.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmModernMenuViewer.resx">
+      <DependentUpon>frmModernMenuViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTaskInfo.resx">
+      <DependentUpon>frmTaskInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAccessControl.resx">
+      <DependentUpon>frmAccessControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmActionSchedule.resx">
+      <DependentUpon>frmActionSchedule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddCriteria.resx">
+      <DependentUpon>frmAddCriteria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAuthoriseExpenses.resx">
+      <DependentUpon>frmAuthoriseExpenses.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBatchProcessing.resx">
+      <DependentUpon>frmBatchProcessing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCampaignSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCampaignSet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCheckSetup.resx">
+      <DependentUpon>frmCheckSetup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConfigurationMaintenance .resx">
+      <DependentUpon>frmConfigurationMaintenance .vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCriteriaLists.resx">
+      <DependentUpon>frmCriteriaLists.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomise.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCustomise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomiseToolBar.resx">
+      <DependentUpon>frmCustomiseToolBar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDashboard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDateFormat.resx">
+      <DependentUpon>frmDateFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDesignTraderApp.resx">
+      <DependentUpon>frmDesignTraderApp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDespatchTracking.resx">
+      <DependentUpon>frmDespatchTracking.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDocumentDistributor.resx">
+      <DependentUpon>frmDocumentDistributor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditCriteria.resx">
+      <DependentUpon>frmEditCriteria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEventEligibility.resx">
+      <DependentUpon>frmEventEligibility.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEventLoanItems.resx">
+      <DependentUpon>frmEventLoanItems.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEventSet.resx">
+      <DependentUpon>frmEventSet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFastDataEntry.resx">
+      <DependentUpon>frmFastDataEntry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFinder.resx">
+      <DependentUpon>frmFinder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFPApplication.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFPApplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGenMAddress.resx">
+      <DependentUpon>frmGenMAddress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGenMGen.resx">
+      <DependentUpon>frmGenMGen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGenMLists.resx">
+      <DependentUpon>frmGenMLists.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGenMMerge.resx">
+      <DependentUpon>frmGenMMerge.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmImport.resx">
+      <DependentUpon>frmImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmIncentiveMaintenance.resx">
+      <DependentUpon>frmIncentiveMaintenance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoicePayment.resx">
+      <DependentUpon>frmInvoicePayment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmJobProcessor.resx">
+      <DependentUpon>frmJobProcessor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLicenceMaintenance.resx">
+      <DependentUpon>frmLicenceMaintenance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNewMember.resx">
+      <DependentUpon>frmNewMember.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOwnershipMaintenance.resx">
+      <DependentUpon>frmOwnershipMaintenance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPreferences.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPreferences.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCardDisplay.resx">
+      <DependentUpon>frmCardDisplay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCardSet.resx">
+      <DependentUpon>frmCardSet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInBox.resx">
+      <DependentUpon>frmInBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNetWork.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNetWork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNotify.resx">
+      <DependentUpon>frmNotify.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReportMaintenance.resx">
+      <DependentUpon>frmReportMaintenance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelectionSet.resx">
+      <DependentUpon>frmSelectionSet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStockMovement.resx">
+      <DependentUpon>frmStockMovement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStockShortfall.resx">
+      <DependentUpon>frmStockShortfall.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSurveyResponses.resx">
+      <DependentUpon>frmSurveyResponses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTableEntry.resx">
+      <DependentUpon>frmTableEntry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTableMaintenance.resx">
+      <DependentUpon>frmTableMaintenance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTaskStatus.resx">
+      <DependentUpon>frmTaskStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTraderTransactions.resx">
+      <DependentUpon>frmTraderTransactions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTrader.resx">
+      <DependentUpon>frmTrader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTransactionDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTransactionDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTransferStockToPack.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTransferStockToPack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWaitingList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWaitingList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InheritedControls\LabelEx.resx">
+      <DependentUpon>LabelEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InheritedControls\ToolbarEx.resx">
+      <DependentUpon>ToolbarEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="Menus\ActionMenu.resx">
+      <DependentUpon>ActionMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\BrowserMenu.resx">
+      <DependentUpon>BrowserMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\FinancialMenu.resx">
+      <DependentUpon>FinancialMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ExamUnitSelector.resx">
+      <DependentUpon>ExamUnitSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FontSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FontSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PanelThemeEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PanelThemeEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <None Include="Resources\calendar.ico" />
+    <None Include="Resources\factory.ico" />
+    <None Include="Resources\users3.ico" />
+    <None Include="Resources\Contacts.ico" />
+    <None Include="Resources\MyOrganisation.ico" />
+    <None Include="Resources\Attachment.ico" />
+    <None Include="Resources\document_text.ico" />
+    <None Include="Resources\form_red.ico" />
+    <None Include="Resources\iconNotifications.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="FarPoint.CalcEngine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FarPoint.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FarPoint.PluginCalendar.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FarPoint.Win">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FarPoint.Win.Spread">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdvancedFramework.Client\AdvancedFramework.Client.csproj">
+      <Project>{9fd91430-9c39-431f-9762-b68561a36ad7}</Project>
+      <Name>AdvancedFramework.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdvancedFramework\AdvancedFramework.csproj">
+      <Project>{0c87202d-39bf-42ec-9a87-2ee843c9047b}</Project>
+      <Name>AdvancedFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CDBNETBIZ\CDBNETBiz.vbproj">
+      <Project>{60863814-e738-4a2d-aa46-8a6e5aca0c9b}</Project>
+      <Name>CDBNETBiz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CDBNETCLPAGES\CDBNETCLPages.vbproj">
+      <Project>{efdfadcd-728e-4e74-aead-7a5efa93368b}</Project>
+      <Name>CDBNETCLPages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CDBNETCL\CDBNETCL.vbproj">
+      <Project>{6bfd1c82-7f8b-4117-8305-88e6ecde1cc8}</Project>
+      <Name>CDBNETCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CDBNETXAMLPages\CDBNETXAMLPages.vbproj">
+      <Project>{ceb9c2c1-9928-4f49-8c83-199968655f03}</Project>
+      <Name>CDBNETXAMLPages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CDBNETXAML\CDBNETXAML.vbproj">
+      <Project>{62739A01-E4A9-4A70-8ED3-54E740DC97A8}</Project>
+      <Name>CDBNETXAML</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HtmlEditorControl\HtmlEditorControl.vbproj">
+      <Project>{EBC31846-19E5-4921-93C5-5AA580CDFCB7}</Project>
+      <Name>HtmlEditorControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\Web\Microsoft.Web.Publishing.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Target Name="SignAssembly" AfterTargets="CoreCompile">
+    <SignFile CertificateThumbprint="$(ManifestCertificateThumbprint)" TimestampUrl="http://timestamp.verisign.com/scripts/timstamp.dll" SigningTarget="$(IntermediateOutputPath)$(TargetFileName)" Condition=" '$(Configuration)' == 'Release' " />
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v12.0\Web\Microsoft.Web.Publishing.Tasks.dll" />
+  <Target Name="TransformAppConfig" BeforeTargets="PrepareForBuild" Condition="exists('app.$(Configuration).config')">
+    <TransformXml Source="app.config" Destination="transformed.config" Transform="app.$(Configuration).config" />
+    <PropertyGroup>
+      <AppConfig>transformed.config</AppConfig>
+    </PropertyGroup>
+  </Target>
+</Project>

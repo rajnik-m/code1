@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="DATABASE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CDBWEBSERVER</Value>
+    </Setting>
+    <Setting Name="WebServiceTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="AllowDatabaseSelection" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CareWPD_CarePortal_PortalAdmin" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/CarePortal/Services/PortalAdmin.asmx</Value>
+    </Setting>
+    <Setting Name="ConfirmDelete" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

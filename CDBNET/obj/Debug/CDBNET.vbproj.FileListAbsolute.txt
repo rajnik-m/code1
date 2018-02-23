@@ -1,0 +1,450 @@
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNET.exe.config
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.vbprojResolveAssemblyReference.cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.CareFDEControl.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCardAuthorisation.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmHtmlSettings.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmPagedTreeView.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmThemes.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCertificateReprint.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCLIBrowser.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmExamResults.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmExams.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmModernMenuViewer.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTaskInfo.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAccessControl.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmActionSchedule.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAddCriteria.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAuthoriseExpenses.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmBatchProcessing.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCampaignSet.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCheckSetup.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmConfigurationMaintenance.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCriteriaLists.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCustomise.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCustomiseToolBar.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDashboard.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDateFormat.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDesignTraderApp.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDespatchTracking.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDocumentDistributor.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEditCriteria.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEventEligibility.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEventLoanItems.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEventSet.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmExport.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmFastDataEntry.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmFinder.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmFPApplication.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMAddress.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMGen.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMLists.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMMerge.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmImport.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmIncentiveMaintenance.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmInvoicePayment.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmJobProcessor.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmLicenceMaintenance.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmNewMember.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmOwnershipMaintenance.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmPreferences.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAboutBox.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCardDisplay.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCardSet.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmInbox.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmMain.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmNetWork.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmNotify.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmReportMaintenance.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmSelectionSet.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmStockMovement.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmStockShortfall.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmSurveyResponses.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTableEntry.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTableMaintenance.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTaskStatus.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTraderTransactions.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTrader.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTransactionDocument.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTransferStockToPack.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.frmWaitingList.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.LabelEx.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.ToolbarEx.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.ActionMenu.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.BrowserMenu.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.BaseFinancialMenu.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.Resources.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.ExamUnitSelector.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.FontSelector.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.PanelThemeEditor.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.vbproj.GenerateResource.Cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.exe.licenses
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.TrustInfo.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.exe
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNET.exe.manifest
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNET.application
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNET.exe
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNET.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNET.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.Client.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETBiz.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETCL.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETCLPages.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\System.Windows.Interactivity.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\ZedGraph.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\IMAP4.Net.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\SMTP.Net.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\Parse.Net.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\FarPoint.Excel.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\Microsoft.mshtml.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\AxInterop.SHDocVw.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\FarPoint.CalcEngine.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\Interop.SHDocVw.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.Client.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETBiz.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETBiz.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETCLPages.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETCLPages.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETCL.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETCL.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\FarPoint.Excel.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\FarPoint.CalcEngine.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\de\CDBNETCL.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\de\HtmlEditorControl.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.exe.manifest
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNET\obj\Debug\CDBNET.application
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.exe
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.xml
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.pdb
+D:\Version 16.2\CDBNET\bin\Debug\CDBNET.exe.config
+D:\Version 16.2\CDBNET\bin\Debug\CDBNET.exe.manifest
+D:\Version 16.2\CDBNET\bin\Debug\CDBNET.application
+D:\Version 16.2\CDBNET\bin\Debug\CDBNET.exe
+D:\Version 16.2\CDBNET\bin\Debug\CDBNET.pdb
+D:\Version 16.2\CDBNET\bin\Debug\CDBNET.xml
+D:\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.Client.dll
+D:\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.dll
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETBiz.dll
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETCL.dll
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETCLPages.dll
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.dll
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.dll
+D:\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.dll
+D:\Version 16.2\CDBNET\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Version 16.2\CDBNET\bin\Debug\System.Windows.Interactivity.dll
+D:\Version 16.2\CDBNET\bin\Debug\ZedGraph.dll
+D:\Version 16.2\CDBNET\bin\Debug\IMAP4.Net.dll
+D:\Version 16.2\CDBNET\bin\Debug\SMTP.Net.dll
+D:\Version 16.2\CDBNET\bin\Debug\Parse.Net.dll
+D:\Version 16.2\CDBNET\bin\Debug\FarPoint.Excel.dll
+D:\Version 16.2\CDBNET\bin\Debug\Microsoft.mshtml.dll
+D:\Version 16.2\CDBNET\bin\Debug\AxInterop.SHDocVw.dll
+D:\Version 16.2\CDBNET\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+D:\Version 16.2\CDBNET\bin\Debug\FarPoint.CalcEngine.dll
+D:\Version 16.2\CDBNET\bin\Debug\Interop.SHDocVw.dll
+D:\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.Client.pdb
+D:\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.pdb
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETBiz.pdb
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETBiz.xml
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETCLPages.pdb
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETCLPages.xml
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETCL.pdb
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETCL.xml
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.pdb
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.xml
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.pdb
+D:\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.xml
+D:\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.pdb
+D:\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.xml
+D:\Version 16.2\CDBNET\bin\Debug\FarPoint.Excel.xml
+D:\Version 16.2\CDBNET\bin\Debug\FarPoint.CalcEngine.xml
+D:\Version 16.2\CDBNET\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\de\CDBNETCL.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\de\HtmlEditorControl.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.vbprojResolveAssemblyReference.cache
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.CareFDEControl.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCardAuthorisation.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmHtmlSettings.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmPagedTreeView.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmThemes.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCertificateReprint.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCLIBrowser.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmExamResults.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmExams.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmModernMenuViewer.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTaskInfo.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAccessControl.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmActionSchedule.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAddCriteria.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAuthoriseExpenses.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmBatchProcessing.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCampaignSet.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCheckSetup.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmConfigurationMaintenance.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCriteriaLists.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCustomise.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCustomiseToolBar.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDashboard.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDateFormat.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDesignTraderApp.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDespatchTracking.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDocumentDistributor.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEditCriteria.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEventEligibility.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEventLoanItems.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEventSet.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmExport.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmFastDataEntry.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmFinder.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmFPApplication.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMAddress.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMGen.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMLists.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMMerge.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmImport.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmIncentiveMaintenance.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmInvoicePayment.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmJobProcessor.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmLicenceMaintenance.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmNewMember.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmOwnershipMaintenance.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmPreferences.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAboutBox.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCardDisplay.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCardSet.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmInbox.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmMain.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmNetWork.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmNotify.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmReportMaintenance.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmSelectionSet.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmStockMovement.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmStockShortfall.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmSurveyResponses.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTableEntry.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTableMaintenance.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTaskStatus.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTraderTransactions.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTrader.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTransactionDocument.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTransferStockToPack.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.frmWaitingList.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.LabelEx.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.ToolbarEx.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.ActionMenu.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.BrowserMenu.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.BaseFinancialMenu.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.Resources.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.ExamUnitSelector.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.FontSelector.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.PanelThemeEditor.resources
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.vbproj.GenerateResource.Cache
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.exe.licenses
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.TrustInfo.xml
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.exe.manifest
+D:\Version 16.2\CDBNET\obj\Debug\CDBNET.application
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNET.exe.config
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNET.exe.manifest
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNET.application
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNET.exe
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNET.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNET.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.Client.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETBiz.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETCL.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETCLPages.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\System.Windows.Interactivity.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\ZedGraph.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\IMAP4.Net.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\SMTP.Net.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\Parse.Net.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\FarPoint.Excel.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\Microsoft.mshtml.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\AxInterop.SHDocVw.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\FarPoint.CalcEngine.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\Interop.SHDocVw.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.Client.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\AdvancedFramework.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETBiz.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETCLPages.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETCL.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\FarPoint.Excel.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\FarPoint.CalcEngine.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\de\CDBNETCL.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\de\HtmlEditorControl.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.vbprojResolveAssemblyReference.cache
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.CareFDEControl.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCardAuthorisation.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmHtmlSettings.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmPagedTreeView.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmThemes.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCertificateReprint.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCLIBrowser.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmExamResults.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmExams.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmModernMenuViewer.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTaskInfo.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAccessControl.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmActionSchedule.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAddCriteria.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAuthoriseExpenses.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmBatchProcessing.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCampaignSet.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCheckSetup.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmConfigurationMaintenance.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCriteriaLists.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCustomise.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCustomiseToolBar.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDashboard.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDateFormat.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDesignTraderApp.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDespatchTracking.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmDocumentDistributor.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEditCriteria.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEventEligibility.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEventLoanItems.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmEventSet.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmExport.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmFastDataEntry.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmFinder.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmFPApplication.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMAddress.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMGen.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMLists.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmGenMMerge.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmImport.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmIncentiveMaintenance.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmInvoicePayment.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmJobProcessor.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmLicenceMaintenance.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmNewMember.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmOwnershipMaintenance.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmPreferences.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmAboutBox.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCardDisplay.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmCardSet.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmInbox.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmMain.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmNetWork.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmNotify.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmReportMaintenance.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmSelectionSet.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmStockMovement.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmStockShortfall.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmSurveyResponses.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTableEntry.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTableMaintenance.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTaskStatus.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTraderTransactions.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTrader.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTransactionDocument.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmTransferStockToPack.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.frmWaitingList.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.LabelEx.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.ToolbarEx.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.ActionMenu.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.BrowserMenu.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.BaseFinancialMenu.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.Resources.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.ExamUnitSelector.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.FontSelector.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.PanelThemeEditor.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.vbproj.GenerateResource.Cache
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.exe.licenses
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.TrustInfo.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.exe.manifest
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.application
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.exe
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\obj\Debug\CDBNET.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETBiz.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETCLPages.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETCL.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETXAMLPages.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\CDBNETXAML.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNET\bin\Debug\HtmlEditorControl.xml

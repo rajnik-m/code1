@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNETCLPages
+</name>
+</assembly>
+<members>
+<member name="T:CDBNETCLPages.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CDBNETCLPages.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CDBNETCLPages.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:CDBNETCLPages.IEntitySelector">
+ <summary>
+ An interface to be implemented by a form that can launch other forms to display an instance of an entity selected with in implementing form
+ </summary>
+</member>
+<member name="E:CDBNETCLPages.IEntitySelector.EntitySelected">
+ <summary>
+ Occurs when entity the user selects an entity.
+ </summary>
+</member>
+<member name="M:CDBNETCLPages.PagedTreeView.ActivateCurrentContext">
+ <summary>
+ Sets the IsActive flag on the current ContentPanel's DataContext
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

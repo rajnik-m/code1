@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configSchema >
+  <sectionSchema name="nfpConfig">
+    <element name="databases">
+      <collection addElement="database" allowDuplicates="false">
+        <attribute name="name"  
+                   type="string"
+                   validationType="nonEmptyString" 
+                   required="true" 
+                   isUniqueKey="true" />
+        <attribute name="description" 
+                   required="true" 
+                   type="string" 
+                   validationType="nonEmptyString"/>
+        <attribute name="clientCode" 
+                   type="string" 
+                   required="true" 
+                   validationType="nonEmptyString"/>
+        <attribute name="connectionStringName" 
+                   type="string" 
+                   required="true" 
+                   validationType="nonEmptyString"/>
+        <attribute name="initialiseDatabaseFrom"
+                   type="string"
+                   required="false" />
+        <attribute name="sqlLogQueueName"
+                   type="string"
+                   required="false" />
+        <attribute name="sqlLogging"
+                   type="flags" 
+                   defaultValue="None">
+          <flag name="None" value="0" />
+          <flag name="Insert" value="1" />
+          <flag name="Update" value="2" />
+          <flag name="Delete" value="4" />
+          <flag name="Select" value="8" />
+          <flag name="Configs" value="16" />
+          <flag name="Timed" value="32" />
+          <flag name="Mail" value="64" />
+        </attribute>
+      </collection>
+    </element>
+    <element name="extensionAssemblies">
+      <collection addElement="extensionAssembly" allowDuplicates="false">
+        <attribute name="Description"
+                   type="string"
+                   validationType="nonEmptyString"
+                   required="true"
+                   isUniqueKey="true" />
+        <attribute name="FilePath"
+                   type="string"
+                   validationType="nonEmptyString"
+                   required="true" />
+      </collection>
+    </element>
+    <element name="QAAuthenticationValues">
+      <attribute name="username"
+                 type="string"
+                 validationType="nonEmptyString" />
+      <attribute name="password"
+                 type="string"
+                 validationType="nonEmptyString" />      
+    </element>
+  </sectionSchema>
+</configSchema>

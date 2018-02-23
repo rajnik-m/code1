@@ -1,0 +1,153 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNETXAML
+</name>
+</assembly>
+<members>
+<member name="T:CDBNETXAML.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CDBNETXAML.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CDBNETXAML.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:CDBNETXAML.My.Resources.Resources.CSHIcon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:CDBNETXAML.ActivityIcon">
+<summary>
+ActivityIcon
+</summary>
+</member>
+<member name="M:CDBNETXAML.ActivityIcon.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAML.CommandListView">
+<summary>
+CommandListView
+</summary>
+</member>
+<member name="M:CDBNETXAML.CommandListView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAML.ContextCommandControl">
+<summary>
+ContextCommandControl
+</summary>
+</member>
+<member name="M:CDBNETXAML.ContextCommandControl.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAML.DynamicBackground">
+<summary>
+DynamicBackground
+</summary>
+</member>
+<member name="M:CDBNETXAML.DynamicBackground.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAML.RelayCommand`2">
+ <summary>
+ A command whose sole purpose is to relay its functionality to other objects by invoking delegates. The default return value for the CanExecute method is 'true'.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNETXAML.ExplorerViewOptionAttribute.GetOption(CDBNETXAML.ExplorerViewOptions,System.Type)">
+ <summary>
+ Returns the Option if it is set on the Type, otherwise returns ExplorerViewOptions.Undefined
+ </summary>
+ <param name="requiredOption"></param>
+ <param name="t"></param>
+ <returns></returns>
+</member>
+<member name="T:CDBNETXAML.PropertyGrid">
+<summary>
+PropertyGrid
+</summary>
+</member>
+<member name="M:CDBNETXAML.PropertyGrid.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:CDBNETXAML.RGBToHSLConverter.Convert(System.Windows.Media.Color,System.Single@,System.Single@,System.Single@)">
+ <summary>
+ Converts a color from RGB to HSL and returns the values in out-parameters
+ </summary>
+ <param name="color"></param>
+ <param name="hue">If the function succeeds, this parameter will be initialised with the color's hue</param>
+ <param name="saturation">As for hue</param>
+ <param name="luminosity">As for hue</param>
+ <returns>True if the conversion succeeds</returns>
+ <remarks>Source:https://code.google.com/p/wpfwaltz/wiki/SimpleColorPicker </remarks>
+</member>
+<member name="T:CDBNETXAML.CollectionViewSearch">
+<summary>
+CollectionViewSearch
+</summary>
+</member>
+<member name="M:CDBNETXAML.CollectionViewSearch.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAML.MatchFunction">
+ <summary>
+ When a match rank for an item is calculated, all the functions below are evaluated.  
+ A total is made up of all the values and this is used to order the items
+ The number of items specified by the developer is then displayed to the user
+ </summary>
+</member>
+<member name="T:CDBNETXAML.FilterTreeView">
+<summary>
+FilterTreeView
+</summary>
+</member>
+<member name="M:CDBNETXAML.FilterTreeView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAML.PageSelector">
+<summary>
+PageSelector
+</summary>
+</member>
+<member name="M:CDBNETXAML.PageSelector.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CDBNETXAML.PopupToggle">
+<summary>
+PopupToggle
+</summary>
+</member>
+<member name="M:CDBNETXAML.PopupToggle.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

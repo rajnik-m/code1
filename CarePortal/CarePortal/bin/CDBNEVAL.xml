@@ -1,0 +1,64 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNEVAL
+</name>
+</assembly>
+<members>
+<member name="T:CARE.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CARE.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CARE.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:CARE.Scripting.VBSFunctions.LCase(System.String)">
+ <summary>
+ Convert a string to lower case.
+ </summary>
+ <param name="pString">The string.</param>
+ <returns>The lower case representation of the supplied string</returns>
+</member>
+<member name="M:CARE.Scripting.VBSFunctions.UCase(System.String)">
+ <summary>
+ Convert a string to upper case.
+ </summary>
+ <param name="pString">The string.</param>
+ <returns>The upper case representation of the supplied string</returns>
+</member>
+<member name="M:CARE.Scripting.VBSFunctions.Split(System.String)">
+ <summary>
+ Splits the specified expression.
+ </summary>
+ <param name="expression">The expression.</param>
+ <returns>An array of strings containing the spit items</returns>
+</member>
+<member name="M:CARE.Scripting.VBSFunctions.Split(System.String,System.String)">
+ <summary>
+ Splits the specified expression.
+ </summary>
+ <param name="expression">The expression.</param>
+ <param name="delimiter">The delimiter.</param>
+ <returns>An array of strings containing the spit items</returns>
+</member>
+<member name="M:CARE.Scripting.VBSFunctions.Split(System.String,System.String,System.Int32)">
+ <summary>
+ Splits the specified expression.
+ </summary>
+ <param name="expression">The expression.</param>
+ <param name="delimiter">The delimiter.</param>
+ <param name="count">The number of entries to return.</param>
+ <returns>An array of strings containing the spit items</returns>
+</member>
+</members>
+</doc>

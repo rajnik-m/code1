@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Define vars   REMEMBER  HARD Coding of D:  for Build Server (Madison)  -->
+<?define WIPath = "D:\DEV32\WiX\InstallerFiles"?>
+<?define SRCPATH = "$(var.CarePortal.ProjectDir)"?>
+<?define Bin = "$(var.CarePortal.ProjectDir)Bin\"?>
+<?define Doc = "$(var.CarePortal.ProjectDir)Documents\"?>
+<?define Custom = "$(var.CarePortal.ProjectDir)Custom\"?>
+<?define Controls = "$(var.CarePortal.ProjectDir)Controls\"?>
+<?define MenuStyles = "$(var.CarePortal.ProjectDir)MenuStyles\"?>
+<?define CDBNEVAL = "$(var.CDBNEVAL.TargetDir)"?>
+<?define CDBNImport = "$(var.CDBNImport.TargetDir)"?>
+<?define CDBNReports = "$(var.CDBNReports.TargetDir)"?>
+<?define CDBNDATA = "$(var.CDBNDATA.TargetDir)"?>
+<?define CDBNTASKS = "$(var.CDBNTasks.TargetDir)"?>
+<?define VERSION = "11.2.5223"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Product Id="{CD3D8F90-A3B9-4249-8A0D-1593591E6D53}" Name="IRIS Portal" Language="1033" Version="$(var.VERSION)" Manufacturer="IRIS" UpgradeCode="43D49915-CDD9-43DA-BD91-93430D76BAAF">
+    <Package InstallerVersion="200" Comments="IRIS Portal" Compressed="yes" />
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+    <!-- Set which bitmaps we want to use -->
+    <WixVariable Id="WixUIBannerBmp" Value="$(var.WIPath)\IrisBannerBitmap" />
+    <!--<WixVariable Id="WixUIDialogBmp" Value="$(var.WIPath)\SideBanner.bmp" /> -->
+    <!--Define Website values in registry In order to have access to these values during e.g. repair or uninstall we need to store them in the registry for later use-->
+    <Property Id="WEBSITE_DESCRIPTION">
+      <RegistrySearch Id="WebSiteDescription" Name="WebSiteDescription" Root="HKLM" Key="SOFTWARE\Iris\Portal\Install" Type="raw" />
+    </Property>
+    <Property Id="WEBSITE_PORT">
+      <RegistrySearch Id="WebSitePort" Name="WebSitePort" Root="HKLM" Key="SOFTWARE\Iris\Portal\Install" Type="raw" />
+    </Property>
+    <Property Id="WEBSITE_IP">
+      <RegistrySearch Id="WebSiteIP" Name="WebSiteIP" Root="HKLM" Key="SOFTWARE\Iris\Portal\Install" Type="raw" />
+    </Property>
+    <Property Id="WEBSITE_HEADER">
+      <RegistrySearch Id="WebSiteHeader" Name="WebSiteHeader" Root="HKLM" Key="SOFTWARE\Iris\Portal\Install" Type="raw" />
+    </Property>
+    <!-- Reference Our Custom Actions -->
+    <CustomAction Id="GetIISWebSites" BinaryKey="IISCA" DllEntry="GetWebSites" Execute="immediate" Return="check" />
+    <CustomAction Id="GetIISAppPools" BinaryKey="IISCA" DllEntry="GetAppPools" Execute="immediate" Return="check" />
+    <!-- Reference Custom Actions dll-->
+    <!-- NB: HARD CODING  of RELEASE  in the path  -->
+    <Binary Id="IISCA" SourceFile="D:\dev32\web\IISCustomAction\bin\Release\IISCustomAction.CA.dll" />
+    <InstallUISequence>
+      <Custom Action="GetIISWebSites" After="CostFinalize" Overridable="yes">NOT Installed</Custom>
+      <!-- Attempted below to make creation of APP Pools conditional   BUT it does not work * have made the CA not select APp Pools unless IIS 6 and above -->
+      <!--<Custom Action="GetIISAppPools" After="CostFinalize" Overridable="yes">NOT (Installed) AND NOT (<![CDATA[(IIS_MAJOR_VERSION < 6)]]>) AND NOT (REMOVE="ALL")</Custom>-->
+      <Custom Action="GetIISAppPools" After="CostFinalize" Overridable="yes">NOT (Installed)</Custom>
+    </InstallUISequence>
+    <!--We set the default for out Virtual Dir whichis also the Web App Name  here -->
+    <Property Id="TARGETVDIR" Secure="yes" Value="CarePortal" />
+    <!-- Need to change INSTALLLOCATION to inetpub as if INSTALLLOCATION is removed we get error o2343-->
+    <Property Id="INSTALLLOCATION" Secure="yes">
+      <DirectorySearch Id="DirectorySearch1" Path="C:\inetpub\wwwroot\CarePortal" />
+      <!-- this search will place C:\inetpub\wwwroot\CareServices as ther default IF the dir currently exists -->
+    </Property>
+    <!--If we have a CareSErvices website then we probably had CarePortal Virtual Dir  NB:  we run this at CostInitialize which is BEFORE the set below fills install location -->
+    <SetProperty Before="CostInitialize" Sequence="both" Id="TARGETVDIR" Value="IrisPortal">NOT INSTALLLOCATION</SetProperty>
+    <!-- The set below will set the install location default to C:\inetpub\wwwroot\IrisServices if install location empty from directory search above -->
+    <SetProperty Before="CostFinalize" Sequence="both" Id="INSTALLLOCATION" Value="C:\inetpub\wwwroot\IrisPortal">NOT INSTALLLOCATION</SetProperty>
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+    <!-- Main Install -->
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="INSTALLLOCATION" Name="Iris Portal">
+        <Component Id="IrisPortal" Guid="113DE351-F1BC-4850-9E4F-2F8C9F444F22">
+          <CreateFolder Directory="TARGETDIR" />
+          <!--<File Id="care.bmp" Name="care.bmp" Source="$(var.SolutionDir)care.bmp" />-->
+          <File Id="iris_nfp.ico" Name="iris_nfp.ico" Source="$(var.WIPath)\iris_nfp.ico" />
+          <File Id="ShowErrors.aspx" Name="ShowErrors.aspx" Source="$(var.SRCPATH)ShowErrors.aspx" />
+          <File Id="Global.asax" Name="Global.asax" Source="$(var.SRCPATH)Global.asax" />
+          <File Id="Styles.css" Name="Styles.css" Source="$(var.SRCPATH)Styles.css" />
+          <File Id="Default.aspx" Name="Default.aspx" Source="$(var.SRCPATH)Default.aspx" />
+          <File Id="Web.config" Name="Web.config" Source="$(var.SRCPATH)Web.config" />
+          <File Id="DatePicker.aspx" Name="DatePicker.aspx" Source="$(var.SRCPATH)DatePicker.aspx" />
+        </Component>
+        <Directory Id="Bin" Name="bin">
+          <Component Id="BinComponent" Guid="1815105A-3EA6-4FBF-9B4D-9DC34B685B2A">
+            <CreateFolder Directory="Bin" />
+            <File Id="CDBNImport.dll" Name="CDBNImport.dll" Source="$(var.CDBNImport)CDBNImport.dll" />
+            <File Id="CDBNACCESS.DLL" Name="CDBNACCESS.DLL" Source="$(var.Bin)CDBNACCESS.DLL" />
+            <File Id="CDBReports.dll" Name="CDBReports.dll" Source="$(var.CDBNReports)CDBReports.dll" />
+            <File Id="obout_EasyMenu_Pro.dll" Name="obout_EasyMenu_Pro.dll" Source="$(var.Bin)obout_EasyMenu_Pro.dll" />
+            <File Id="CDBNDATA.DLL" Name="CDBNDATA.DLL" Source="$(var.CDBNDATA)CDBNDATA.DLL" />
+            <File Id="CDBNEVAL.DLL" Name="CDBNEVAL.DLL" Source="$(var.CDBNEVAL)CDBNEVAL.DLL" />
+            <File Id="CDBNTasks.DLL" Name="CDBNTasks.DLL" Source="$(var.CDBNTASKS)CDBNTasks.DLL" />
+            <File Id="CDBNXML.dll" Name="CDBNXML.dll" Source="$(var.Bin)CDBNXML.dll" />
+            <File Id="CDBNUTILS.DLL" Name="CDBNUTILS.DLL" Source="$(var.Bin)CDBNUTILS.DLL" />
+            <File Id="CarePortal.dll" Name="CarePortal.dll" Source="$(var.Bin)CarePortal.dll" />
+            <File Id="System.Web.Extensions.dll" Name="System.Web.Extensions.dll" Source="C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET 2.0 AJAX Extensions\v1.0.61025\System.Web.Extensions.dll" />
+          </Component>
+        </Directory>
+        <Directory Id="Custom" Name="Custom">
+          <Component Id="CustomComponent" Guid="BF229517-527B-4B45-BBC5-2AA75CF36503">
+            <CreateFolder Directory="Custom" />
+            <File Id="Readme.txt" Name="Readme.txt" Source="$(var.Custom)Readme.txt" />
+          </Component>
+        </Directory>
+        <Directory Id="Documents" Name="Documents">
+          <Component Id="DocComponent" Guid="D45B275D-A91C-4D6B-B6E5-AB0AFD922B6D">
+            <CreateFolder Directory="Documents" />
+            <File Id="ComputerSoftwareGroup.pdf" Name="Computer Software Group.pdf" Source="$(var.Doc)Computer Software Group.pdf" />
+            <File Id="ComputerSoftwareGroup.doc" Name="Computer Software Group.doc" Source="$(var.Doc)Computer Software Group.doc" />
+          </Component>
+        </Directory>
+        <Directory Id="Controls" Name="Controls">
+          <Component Id="Controls" Guid="FD44C585-EDDC-4169-83AF-A50302A803F4">
+            <CreateFolder Directory="Controls" />
+            <File Id="CareWebControl.ascx" Name="CareWebControl.ascx" Source="$(var.Controls)CareWebControl.ascx" />
+            <File Id="ShowEventBookings.ascx" Name="ShowEventBookings.ascx" Source="$(var.Controls)ShowEventBookings.ascx" />
+            <File Id="DownloadSelection.ascx" Name="DownloadSelection.ascx" Source="$(var.Controls)DownloadSelection.ascx" />
+            <File Id="AddCategoryNotes.ascx" Name="AddCategoryNotes.ascx" Source="$(var.Controls)AddCategoryNotes.ascx" />
+            <File Id="OptionSessionSelection.ascx" Name="OptionSessionSelection.ascx" Source="$(var.Controls)OptionSessionSelection.ascx" />
+            <File Id="UpdatePosition.ascx" Name="UpdatePosition.ascx" Source="$(var.Controls)UpdatePosition.ascx" />
+            <File Id="AddSubscriptionDD.ascx" Name="AddSubscriptionDD.ascx" Source="$(var.Controls)AddSubscriptionDD.ascx" />
+            <File Id="AddCategory.ascx" Name="AddCategory.ascx" Source="$(var.Controls)AddCategory.ascx" />
+            <File Id="AddOrganisation.ascx" Name="AddOrganisation.ascx" Source="$(var.Controls)AddOrganisation.ascx" />
+            <File Id="MaintainNumbers.ascx" Name="MaintainNumbers.ascx" Source="$(var.Controls)MaintainNumbers.ascx" />
+            <File Id="AddExternalReference.ascx" Name="AddExternalReference.ascx" Source="$(var.Controls)AddExternalReference.ascx" />
+            <File Id="SearchContact.ascx" Name="SearchContact.ascx" Source="$(var.Controls)SearchContact.ascx" />
+            <File Id="ViewTransaction.ascx" Name="ViewTransaction.ascx" Source="$(var.Controls)ViewTransaction.ascx" />
+            <File Id="EventSelection.ascx" Name="EventSelection.ascx" Source="$(var.Controls)EventSelection.ascx" />
+            <File Id="DisplayTransactions.ascx" Name="DisplayTransactions.ascx" Source="$(var.Controls)DisplayTransactions.ascx" />
+            <File Id="RegisterMember.ascx" Name="RegisterMember.ascx" Source="$(var.Controls)RegisterMember.ascx" />
+            <File Id="SubmitAll.ascx" Name="SubmitAll.ascx" Source="$(var.Controls)SubmitAll.ascx" />
+            <File Id="AddPosition.ascx" Name="AddPosition.ascx" Source="$(var.Controls)AddPosition.ascx" />
+            <File Id="Login.ascx" Name="Login.ascx" Source="$(var.Controls)Login.ascx" />
+            <File Id="UpdateCPDObjectives.ascx" Name="UpdateCPDObjectives.ascx" Source="$(var.Controls)UpdateCPDObjectives.ascx" />
+            <File Id="ShowNetwork.ascx" Name="ShowNetwork.ascx" Source="$(var.Controls)ShowNetwork.ascx" />
+            <File Id="EMailPassword.ascx" Name="EMailPassword.ascx" Source="$(var.Controls)EMailPassword.ascx" />
+            <File Id="BookEventCC.ascx" Name="BookEventCC.ascx" Source="$(var.Controls)BookEventCC.ascx" />
+            <File Id="AddLink.ascx" Name="AddLink.ascx" Source="$(var.Controls)AddLink.ascx" />
+            <File Id="FindFundraiser.ascx" Name="FindFundraiser.ascx" Source="$(var.Controls)FindFundraiser.ascx" />
+            <File Id="DownloadDocument.ascx" Name="DownloadDocument.ascx" Source="$(var.Controls)DownloadDocument.ascx" />
+            <File Id="ViewDirectoryDetails.ascx" Name="ViewDirectoryDetails.ascx" Source="$(var.Controls)ViewDirectoryDetails.ascx" />
+            <File Id="ProcessPayment.ascx" Name="ProcessPayment.ascx" Source="$(var.Controls)ProcessPayment.ascx" />
+            <File Id="ShowDefaultAddress.ascx" Name="ShowDefaultAddress.ascx" Source="$(var.Controls)ShowDefaultAddress.ascx" />
+            <File Id="AddNetworkContact.ascx" Name="AddNetworkContact.ascx" Source="$(var.Controls)AddNetworkContact.ascx" />
+            <File Id="SurveyResponses.ascx" Name="SurveyResponses.ascx" Source="$(var.Controls)SurveyResponses.ascx" />
+            <File Id="RapidProductPurchase.ascx" Name="RapidProductPurchase.ascx" Source="$(var.Controls)RapidProductPurchase.ascx" />
+            <File Id="DisplayRelatedOrganisations.ascx" Name="DisplayRelatedOrganisations.ascx" Source="$(var.Controls)DisplayRelatedOrganisations.ascx" />
+            <File Id="RecordActivity.ascx" Name="RecordActivity.ascx" Source="$(var.Controls)RecordActivity.ascx" />
+            <File Id="AddFundraisingPage.ascx" Name="AddFundraisingPage.ascx" Source="$(var.Controls)AddFundraisingPage.ascx" />
+            <File Id="AddAction.ascx" Name="AddAction.ascx" Source="$(var.Controls)AddAction.ascx" />
+            <File Id="AddDefaultAddress.ascx" Name="AddDefaultAddress.ascx" Source="$(var.Controls)AddDefaultAddress.ascx" />
+            <File Id="ProductPurchaseCC.ascx" Name="ProductPurchaseCC.ascx" Source="$(var.Controls)ProductPurchaseCC.ascx" />
+            <File Id="ContactSelection.ascx" Name="ContactSelection.ascx" Source="$(var.Controls)ContactSelection.ascx" />
+            <File Id="SurveySelection.ascx" Name="SurveySelection.ascx" Source="$(var.Controls)SurveySelection.ascx" />
+            <File Id="AddCategoryCheckboxes.ascx" Name="AddCategoryCheckboxes.ascx" Source="$(var.Controls)AddCategoryCheckboxes.ascx" />
+            <File Id="AddCommunicationNote.ascx" Name="AddCommunicationNote.ascx" Source="$(var.Controls)AddCommunicationNote.ascx" />
+            <File Id="DisplayContactData.ascx" Name="DisplayContactData.ascx" Source="$(var.Controls)DisplayContactData.ascx" />
+            <File Id="AddCategoryValue.ascx" Name="AddCategoryValue.ascx" Source="$(var.Controls)AddCategoryValue.ascx" />
+            <File Id="SubmitEnquiry.ascx" Name="SubmitEnquiry.ascx" Source="$(var.Controls)SubmitEnquiry.ascx" />
+            <File Id="PayMembershipCC.ascx" Name="PayMembershipCC.ascx" Source="$(var.Controls)PayMembershipCC.ascx" />
+            <File Id="FundraiserDonations.ascx" Name="FundraiserDonations.ascx" Source="$(var.Controls)FundraiserDonations.ascx" />
+            <File Id="ContactSelectionExternalRef.ascx" Name="ContactSelectionExternalRef.ascx" Source="$(var.Controls)ContactSelectionExternalRef.ascx" />
+            <File Id="PaySubscriptionCC.ascx" Name="PaySubscriptionCC.ascx" Source="$(var.Controls)PaySubscriptionCC.ascx" />
+            <File Id="AddSuppression.ascx" Name="AddSuppression.ascx" Source="$(var.Controls)AddSuppression.ascx" />
+            <File Id="AddContact.ascx" Name="AddContact.ascx" Source="$(var.Controls)AddContact.ascx" />
+            <File Id="UpdateContact.ascx" Name="UpdateContact.ascx" Source="$(var.Controls)UpdateContact.ascx" />
+            <File Id="UpdateCPDPoints.ascx" Name="UpdateCPDPoints.ascx" Source="$(var.Controls)UpdateCPDPoints.ascx" />
+            <File Id="AddMemberDD.ascx" Name="AddMemberDD.ascx" Source="$(var.Controls)AddMemberDD.ascx" />
+            <File Id="UpdateTelephoneNumber.ascx" Name="UpdateTelephoneNumber.ascx" Source="$(var.Controls)UpdateTelephoneNumber.ascx" />
+            <File Id="UpdateAddress.ascx" Name="UpdateAddress.ascx" Source="$(var.Controls)UpdateAddress.ascx" />
+            <File Id="DisplayRelatedContacts.ascx" Name="DisplayRelatedContacts.ascx" Source="$(var.Controls)DisplayRelatedContacts.ascx" />
+            <File Id="RegisterCorporateMember.ascx" Name="RegisterCorporateMember.ascx" Source="$(var.Controls)RegisterCorporateMember.ascx" />
+            <File Id="AddRelatedContact.ascx" Name="AddRelatedContact.ascx" Source="$(var.Controls)AddRelatedContact.ascx" />
+            <File Id="EventDelegateSelection.ascx" Name="EventDelegateSelection.ascx" Source="$(var.Controls)EventDelegateSelection.ascx" />
+            <File Id="Register.ascx" Name="Register.ascx" Source="$(var.Controls)Register.ascx" />
+            <File Id="RegisterCombined.ascx" Name="RegisterCombined.ascx" Source="$(var.Controls)RegisterCombined.ascx" />
+            <File Id="FundraiserPageInformation.ascx" Name="FundraiserPageInformation.ascx" Source="$(var.Controls)FundraiserPageInformation.ascx" />
+            <File Id="SearchOrganisation.ascx" Name="SearchOrganisation.ascx" Source="$(var.Controls)SearchOrganisation.ascx" />
+            <File Id="MaintainActivityGroup.ascx" Name="MaintainActivityGroup.ascx" Source="$(var.Controls)MaintainActivityGroup.ascx" />
+            <File Id="ViewReceiptDetails.ascx" Name="ViewReceiptDetails.ascx" Source="$(var.Controls)ViewReceiptDetails.ascx" />
+            <File Id="ModifyDD.ascx" Name="ModifyDD.ascx" Source="$(var.Controls)ModifyDD.ascx" />
+            <File Id="EventDelegateActivities.ascx" Name="EventDelegateActivities.ascx" Source="$(var.Controls)EventDelegateActivities.ascx" />
+            <File Id="AddBankAccount.ascx" Name="AddBankAccount.ascx" Source="$(var.Controls)AddBankAccount.ascx" />
+            <File Id="SearchDirectory.ascx" Name="SearchDirectory.ascx" Source="$(var.Controls)SearchDirectory.ascx" />
+            <File Id="UpdateEmailAddress.ascx" Name="UpdateEmailAddress.ascx" Source="$(var.Controls)UpdateEmailAddress.ascx" />
+            <File Id="UpdatePassword.ascx" Name="UpdatePassword.ascx" Source="$(var.Controls)UpdatePassword.ascx" />
+            <File Id="UpdateDirectoryPreferences.ascx" Name="UpdateDirectoryPreferences.ascx" Source="$(var.Controls)UpdateDirectoryPreferences.ascx" />
+            <File Id="AddMemberCC.ascx" Name="AddMemberCC.ascx" Source="$(var.Controls)AddMemberCC.ascx" />
+            <File Id="BookingOptionSelection.ascx" Name="BookingOptionSelection.ascx" Source="$(var.Controls)BookingOptionSelection.ascx" />
+            <File Id="DataDisplay.ascx" Name="DataDisplay.ascx" Source="$(var.Controls)DataDisplay.ascx" />
+            <File Id="NavigateButton.ascx" Name="NavigateButton.ascx" Source="$(var.Controls)NavigateButton.ascx" />
+            <File Id="RecordStandardEmail.ascx" Name="RecordStandardEmail.ascx" Source="$(var.Controls)RecordStandardEmail.ascx" />
+            <File Id="ProductPurchase.ascx" Name="ProductPurchase.ascx" Source="$(var.Controls)ProductPurchase.ascx" />
+            <File Id="AddCategoryOptions.ascx" Name="AddCategoryOptions.ascx" Source="$(var.Controls)AddCategoryOptions.ascx" />
+            <File Id="ContactCPDCycle.ascx" Name="ContactCPDCycle.ascx" Source="$(var.Controls)ContactCPDCycle.ascx" />
+            <File Id="AddPaymentPlanDD.ascx" Name="AddPaymentPlanDD.ascx" Source="$(var.Controls)AddPaymentPlanDD.ascx" />
+            <File Id="MembershipTypeSelection.ascx" Name="MembershipTypeSelection.ascx" Source="$(var.Controls)MembershipTypeSelection.ascx" />
+            <File Id="ConfirmRegistration.ascx" Name="ConfirmRegistration.ascx" Source="$(var.Controls)ConfirmRegistration.ascx" />
+            <File Id="MakeDonationCC.ascx" Name="MakeDonationCC.ascx" Source="$(var.Controls)MakeDonationCC.ascx" />
+            <File Id="FindLocalGroup.ascx" Name="FindLocalGroup.ascx" Source="$(var.Controls)FindLocalGroup.ascx" />
+            <File Id="BookEvent.ascx" Name="BookEvent.ascx" Source="$(var.Controls)BookEvent.ascx" />
+            <File Id="UpdateOrganisation.ascx" Name="UpdateOrganisation.ascx" Source="$(var.Controls)UpdateOrganisation.ascx" />
+            <File Id="Logout.ascx" Name="Logout.ascx" Source="$(var.Controls)Logout.ascx" />
+            <File Id="ProductSelection.ascx" Name="ProductSelection.ascx" Source="$(var.Controls)ProductSelection.ascx" />
+            <File Id="EMailSelectedContacts.ascx" Name="EMailSelectedContacts.ascx" Source="$(var.Controls)EMailSelectedContacts.ascx" />
+            <File Id="EventSelectionCalendar.ascx" Name="EventSelectionCalendar.ascx" Source="$(var.Controls)EventSelectionCalendar.ascx" />
+          </Component>
+        </Directory>
+        <Directory Id="Services" Name="Services">
+          <Component Id="Services" Guid="75D1AA22-DD54-4E73-86B4-DACE5682CF46">
+            <CreateFolder Directory="Services" />
+            <File Id="PortalAdmin.asmx" Name="PortalAdmin.asmx" Source="$(var.SRCPATH)Services\PortalAdmin.asmx" />
+          </Component>
+        </Directory>
+        <Directory Id="Images" Name="Images">
+          <Component Id="Images" Guid="1ABC52CF-DB9F-4573-B6DB-0AB5EB136030">
+            <CreateFolder Directory="Images" />
+            <File Id="CSGroupBannerImageLge.JPG" Name="CS Group - Banner Image Lge.JPG" Source="$(var.SRCPATH)Images\CS Group - Banner Image Lge.JPG" />
+            <File Id="meter.jpg" Name="meter.jpg" Source="$(var.SRCPATH)Images\meter.jpg" />
+          </Component>
+          <Directory Id="Products" Name="Products">
+            <Component Id="Products" Guid="155E08A3-D23E-4638-8E52-11CF28438262">
+              <CreateFolder Directory="Products" />
+              <File Id="Default.png" Name="Default.png" Source="$(var.SRCPATH)Images\Products\Default.png" />
+            </Component>
+          </Directory>
+          <Directory Id="Events" Name="Events">
+            <Component Id="Events" Guid="D9BACBC0-2CB5-4022-AE96-A214D6ACD682">
+              <CreateFolder Directory="Events" />
+              <File Id="_2Default.png" Name="Default.png" Source="$(var.SRCPATH)Images\Events\Default.png" />
+            </Component>
+          </Directory>
+          <Directory Id="Downloads" Name="Downloads">
+            <Component Id="Downloads" Guid="516E0FDF-EB59-4575-B3B1-44B4BE6D437D">
+              <CreateFolder Directory="Downloads" />
+              <File Id="_3Default.png" Name="Default.png" Source="$(var.SRCPATH)Images\Downloads\Default.png" />
+            </Component>
+          </Directory>
+        </Directory>
+        <Directory Id="Scripts" Name="Scripts">
+          <Component Id="Scripts" Guid="816F0B4B-4E34-417E-AE92-9E236601B838">
+            <CreateFolder Directory="Scripts" />
+            <File Id="ClientScript.js" Name="ClientScript.js" Source="$(var.SRCPATH)Scripts\ClientScript.js" />
+          </Component>
+        </Directory>
+        <Directory Id="MenuStyles" Name="MenuStyles">
+          <Component Id="MenuStyles" Guid="BF0953B9-6D24-4E38-B483-B42CDE359C73">
+            <CreateFolder Directory="MenuStyles" />
+            <File Id="_mstyle.css" Name="style.css" Source="$(var.MenuStyles)style.css" />
+            <File Id="_msubmenu.gif" Name="submenu.gif" Source="$(var.MenuStyles)submenu.gif" />
+          </Component>
+          <Directory Id="Horizontal9" Name="Horizontal9">
+            <Component Id="Horizontal9" Guid="ECB8F93F-DF6D-4E03-AED5-3D63CB8B5E2F">
+              <CreateFolder Directory="Horizontal9" />
+              <File Id="_9submenu_white.gif" Name="submenu_white.gif" Source="$(var.MenuStyles)Horizontal9\submenu_white.gif" />
+            </Component>
+            <Directory Id="le_1" Name="le_1">
+              <Component Id="le_1" Guid="94E29F70-BE57-4038-82C9-5EF01FCE37AC">
+                <CreateFolder Directory="le_1" />
+                <File Id="_1style.css" Name="style.css" Source="$(var.MenuStyles)Horizontal9\le_1\style.css" />
+                <File Id="bg_em_1.jpg" Name="bg_em_1.jpg" Source="$(var.MenuStyles)Horizontal9\le_1\bg_em_1.jpg" />
+                <File Id="_1submenu.gif" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal9\le_1\submenu.gif" />
+              </Component>
+            </Directory>
+            <Directory Id="le_2" Name="le_2">
+              <Component Id="le_2" Guid="6196DC8B-FDF8-4476-A162-DE4F13A1B7E0">
+                <CreateFolder Directory="le_2" />
+                <File Id="_2style.css" Name="style.css" Source="$(var.MenuStyles)Horizontal9\le_2\style.css" />
+                <File Id="bg_em_2.JPG" Name="bg_em_2.JPG" Source="$(var.MenuStyles)Horizontal9\le_2\bg_em_2.JPG" />
+                <File Id="_2submenu.gif" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal9\le_2\submenu.gif" />
+              </Component>
+            </Directory>
+            <Directory Id="le_3" Name="le_3">
+              <Component Id="le_3" Guid="37E7C02B-9A88-4942-B1CE-6BA18DED2DFE">
+                <CreateFolder Directory="le_3" />
+                <File Id="_3submenu.gif" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal9\le_3\submenu.gif" />
+                <File Id="bg_em_3.JPG" Name="bg_em_3.JPG" Source="$(var.MenuStyles)Horizontal9\le_3\bg_em_3.JPG" />
+                <File Id="_3style.css" Name="style.css" Source="$(var.MenuStyles)Horizontal9\le_3\style.css" />
+              </Component>
+            </Directory>
+            <Directory Id="le_4" Name="le_4">
+              <Component Id="le_4" Guid="C4806B2F-1016-47D3-98C3-9002C839B350">
+                <CreateFolder Directory="le_4" />
+                <File Id="bg_em_4.JPG" Name="bg_em_4.JPG" Source="$(var.MenuStyles)Horizontal9\le_4\bg_em_4.JPG" />
+                <File Id="_4submenu.gif" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal9\le_4\submenu.gif" />
+                <File Id="_4style.css" Name="style.css" Source="$(var.MenuStyles)Horizontal9\le_4\style.css" />
+              </Component>
+            </Directory>
+            <Directory Id="le_5" Name="le_5">
+              <Component Id="le_5" Guid="22A94AAA-D08C-4787-8B77-BA2014AD8E44">
+                <CreateFolder Directory="le_5" />
+                <File Id="_5submenu.gif" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal9\le_5\submenu.gif" />
+                <File Id="_5style.css" Name="style.css" Source="$(var.MenuStyles)Horizontal9\le_5\style.css" />
+                <File Id="bg_em_5.JPG" Name="bg_em_5.JPG" Source="$(var.MenuStyles)Horizontal9\le_5\bg_em_5.JPG" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="Style1" Name="Style1">
+            <Component Id="Style1" Guid="80A9E073-F582-4340-893E-564343BEF6B6">
+              <CreateFolder Directory="Style1" />
+              <File Id="_6submenu_white.gif" Name="submenu_white.gif" Source="$(var.MenuStyles)Style1\submenu_white.gif" />
+              <File Id="_6style.css" Name="style.css" Source="$(var.MenuStyles)Style1\style.css" />
+              <File Id="_9DD94CC7C405EEDEE7EEFC45C59378EB" Name="submenu.gif" Source="$(var.MenuStyles)Style1\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Horizontal2" Name="Horizontal2">
+            <Component Id="Horizontal2" Guid="FEC5D4CA-A002-4033-8A7E-B80A4A4BD1B9">
+              <CreateFolder Directory="Horizontal2" />
+              <File Id="_2BC297AC483C355DFFD30F34C402A999" Name="submenu_white.gif" Source="$(var.MenuStyles)Horizontal2\submenu_white.gif" />
+              <File Id="_97A2C26D61E423E4F1254D9EC861910B" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal2\submenu.gif" />
+              <File Id="_D607C15339F1EEAB1756FDEF9D89D5C0" Name="diagonal_bw.gif" Source="$(var.MenuStyles)Horizontal2\diagonal_bw.gif" />
+              <File Id="_E472BE4A9A87270CA76F73912E88BDCC" Name="diagonal_wb.gif" Source="$(var.MenuStyles)Horizontal2\diagonal_wb.gif" />
+              <File Id="_E94EDE5F999297DE05CB8191CCB9078C" Name="style.css" Source="$(var.MenuStyles)Horizontal2\style.css" />
+            </Component>
+          </Directory>
+          <Directory Id="STYLE10" Name="Style10">
+            <Component Id="Style10" Guid="3C63F9F2-2F24-4AF5-868A-9D4BDA4A7A09">
+              <CreateFolder Directory="STYLE10" />
+              <File Id="_21D1DF35DB90B86A0E4949DE149849F2" Name="style.css" Source="$(var.MenuStyles)Style10\style.css" />
+              <File Id="_777EBC241A2E5BCCE9721809EF157C3D" Name="submenu.gif" Source="$(var.MenuStyles)Style10\submenu.gif" />
+              <File Id="_9395A753549206BA34388043B3FB72B9" Name="submenu_white.gif" Source="$(var.MenuStyles)Style10\submenu_white.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Horizontal5" Name="Horizontal5">
+            <Component Id="Horizontal5" Guid="6EF2C4B5-0B60-4ED1-96E0-1325DE3F8E8F">
+              <CreateFolder Directory="Horizontal5" />
+              <File Id="_24B144C79C3B6C6616B1B8827DEAD344" Name="s_bg.gif" Source="$(var.MenuStyles)Horizontal5\s_bg.gif" />
+              <File Id="_83356C5BCA7A655ABDD276F21B933D7F" Name="bg.gif" Source="$(var.MenuStyles)Horizontal5\bg.gif" />
+              <File Id="_85FD9713778DBAE58A6944C7D6C7B33C" Name="sep.gif" Source="$(var.MenuStyles)Horizontal5\sep.gif" />
+              <File Id="_9BB75E45F5BFCD8C56548080BAD25581" Name="style.css" Source="$(var.MenuStyles)Horizontal5\style.css" />
+              <File Id="_A7914E1D6D92E5893BD1D016623A9501" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal5\submenu.gif" />
+              <File Id="_B280919B91B5E0D80BF39A55DF17B581" Name="bg_a.gif" Source="$(var.MenuStyles)Horizontal5\bg_a.gif" />
+              <File Id="_D5613A62B070AE9E03542AACB6932B83" Name="gag.gif" Source="$(var.MenuStyles)Horizontal5\gag.gif" />
+              <File Id="_E6E119740A6D617D2E91216D625A5BD5" Name="submenu_white.gif" Source="$(var.MenuStyles)Horizontal5\submenu_white.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Style9" Name="Style9">
+            <Component Id="Style9" Guid="8872A3F4-3242-48F5-A1D8-367116B658DF">
+              <CreateFolder Directory="Style9" />
+              <File Id="_35B8846C7E0B2E9F6DEA96A7D27D4207" Name="submenu.gif" Source="$(var.MenuStyles)Style9\submenu.gif" />
+              <File Id="_A93E0EB4641F711294055CBADA847FE6" Name="submenu_white.gif" Source="$(var.MenuStyles)Style9\submenu_white.gif" />
+              <File Id="_B11898B813A11CB6BA12DBF7370410D0" Name="style.css" Source="$(var.MenuStyles)Style9\style.css" />
+            </Component>
+          </Directory>
+          <Directory Id="Script" Name="Script">
+            <Component Id="Script" Guid="7B5A6FE4-06DB-4F7B-BD61-788FB93E5A4C">
+              <CreateFolder Directory="Script" />
+              <File Id="_442237E8036C2E39A62FFAD9EA34EA69" Name="easy_menu_events_701.js" Source="$(var.MenuStyles)Script\easy_menu_events_701.js" />
+              <File Id="_BFABDF8D68162EB25C171C1089F02D3C" Name="easy_menu_script_701.js" Source="$(var.MenuStyles)Script\easy_menu_script_701.js" />
+              <File Id="_FE5AF6151DB588AEDC602A91C72DA4AE" Name="ob_cr_701.js" Source="$(var.MenuStyles)Script\ob_cr_701.js" />
+              <!--<File Id="eme612" Name="easy_menu_events_612.js" Source="$(var.MenuStyles)Script\easy_menu_events_612.js" />
+              <File Id="ems612" Name="easy_menu_script_612.js" Source="$(var.MenuStyles)Script\easy_menu_script_612.js" />
+              <File Id="oc6112" Name="ob_cr_612.js" Source="$(var.MenuStyles)Script\ob_cr_612.js" />-->
+            </Component>
+          </Directory>
+          <Directory Id="Transparent" Name="Transparent">
+            <Component Id="Transparent" Guid="D22AEB3D-1476-4BD5-B5ED-E73804707ACA">
+              <CreateFolder Directory="Transparent" />
+              <File Id="_145DC6817A015FA92D8B4BB6EA020F30" Name="submenu.gif" Source="$(var.MenuStyles)Transparent\submenu.gif" />
+              <File Id="_1B12220F31776B394E1F23DAA6F17291" Name="sep.gif" Source="$(var.MenuStyles)Transparent\sep.gif" />
+              <File Id="_3F090AD0AF27EFA052024895C158230E" Name="s_bg.gif" Source="$(var.MenuStyles)Transparent\s_bg.gif" />
+              <File Id="_54CA17E479D1F24DF92AF81345A11B39" Name="gag.gif" Source="$(var.MenuStyles)Transparent\gag.gif" />
+              <File Id="_5B97D270155C3CDB92FD8C479D2A6134" Name="submenu_white.gif" Source="$(var.MenuStyles)Transparent\submenu_white.gif" />
+              <File Id="_70F464079344D8BB3B475CC654004C70" Name="bg.gif" Source="$(var.MenuStyles)Transparent\bg.gif" />
+              <File Id="_E8E2E6F735BEAC667859732B002DC729" Name="style.css" Source="$(var.MenuStyles)Transparent\style.css" />
+              <File Id="_F750C4A77D785725B489A1BE327FF9E4" Name="bg_a.gif" Source="$(var.MenuStyles)Transparent\bg_a.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Style3" Name="Style3">
+            <Component Id="Style3" Guid="1EC24957-0618-4E61-96B0-AF531C14FBCD">
+              <CreateFolder Directory="Style3" />
+              <File Id="_0523631C15674A95E7D3C84F9FC7BDEF" Name="style.css" Source="$(var.MenuStyles)Style3\style.css" />
+              <File Id="_4CD020FA4B0F29487EBC495D080D6169" Name="submenu_white.gif" Source="$(var.MenuStyles)Style3\submenu_white.gif" />
+              <File Id="_7BB7B7A2F4243A2C9B4E979745F0A174" Name="submenu.gif" Source="$(var.MenuStyles)Style3\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Horizontal4" Name="Horizontal4">
+            <Component Id="Horizontal4" Guid="B5163E81-237A-4DC5-9593-F11F373C9DE7">
+              <CreateFolder Directory="Horizontal4" />
+              <File Id="_487148D9FDB101AA109422778E1094E9" Name="style.css" Source="$(var.MenuStyles)Horizontal4\style.css" />
+              <File Id="_DD6E2980438862E706C7A5F8523EBD8B" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal4\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Vsnet" Name="Vsnet">
+            <Component Id="Vsnet" Guid="F690FD21-2127-4EB6-A356-AAA811276294">
+              <CreateFolder Directory="Vsnet" />
+              <File Id="_2D7DEC97C9D3D0B7710235F6B8D98FFD" Name="submenu.gif" Source="$(var.MenuStyles)Vsnet\submenu.gif" />
+              <File Id="_7993AD2EF85F9BDD9D7E1FD736A3BD0B" Name="bg_separator.gif" Source="$(var.MenuStyles)Vsnet\bg_separator.gif" />
+              <File Id="_7D534433B062EFF248BA1EB12CA3A478" Name="bg_menu.gif" Source="$(var.MenuStyles)Vsnet\bg_menu.gif" />
+              <File Id="_7F83708276A548CBF48375D32D29A196" Name="style.css" Source="$(var.MenuStyles)Vsnet\style.css" />
+              <File Id="_AAC0BB9A627BC64CD7493CC56A7D4949" Name="submenu_white.gif" Source="$(var.MenuStyles)Vsnet\submenu_white.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Horizontal3" Name="Horizontal3">
+            <Component Id="Horizontal3" Guid="B102FFE6-E956-4147-B3D8-FA2A99BA9FFA">
+              <CreateFolder Directory="Horizontal3" />
+              <File Id="_4A2A6265E29F2EA7ED4F139336075CFE" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal3\submenu.gif" />
+              <File Id="_825C6F9D4C6D866AC081DE24F3411323" Name="style.css" Source="$(var.MenuStyles)Horizontal3\style.css" />
+              <File Id="_F120A722B5F15ADD5E5B87A4C7DADA5D" Name="submenu_white.gif" Source="$(var.MenuStyles)Horizontal3\submenu_white.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Horizontal1" Name="Horizontal1">
+            <Component Id="Horizontal1" Guid="237C10C5-A114-4659-9A9B-D5BC5E6CE8EB">
+              <CreateFolder Directory="Horizontal1" />
+              <File Id="_1A70DE0927F4773D1EF5D7D4707D4C8A" Name="mid_over.gif" Source="$(var.MenuStyles)Horizontal1\mid_over.gif" />
+              <File Id="_27F80F3A0D61CD4C530829E048645EB3" Name="submenu_parent.gif" Source="$(var.MenuStyles)Horizontal1\submenu_parent.gif" />
+              <File Id="_6FD924611CDDF52D90FB9E4790F6BC19" Name="s_bg.gif" Source="$(var.MenuStyles)Horizontal1\s_bg.gif" />
+              <File Id="_9E1BCB0C90BA904B94229BF625BE11D9" Name="submenu_white.gif" Source="$(var.MenuStyles)Horizontal1\submenu_white.gif" />
+              <File Id="_BB0730D8F957A6DF180BE149CCF45DC6" Name="mid.gif" Source="$(var.MenuStyles)Horizontal1\mid.gif" />
+              <File Id="_C1E37216DBFAB8A2F879735408C3A4AB" Name="margin.gif" Source="$(var.MenuStyles)Horizontal1\margin.gif" />
+              <File Id="_EC30D1FC177EEAB5C95E84A1878BAB17" Name="style.css" Source="$(var.MenuStyles)Horizontal1\style.css" />
+              <File Id="_F808D891706B19C4739FB9BC89E8C50F" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal1\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Vertical1" Name="Vertical1">
+            <Component Id="Vertical1" Guid="5A8AC91C-FEAD-49C9-861B-484931BD58CA">
+              <CreateFolder Directory="Vertical1" />
+              <File Id="_10AADA25CEFB3DB9886FF3D213CC146F" Name="submenu.gif" Source="$(var.MenuStyles)Vertical1\submenu.gif" />
+              <File Id="_3C4415BAF28CD0FC32FD893CDC4EB108" Name="style.css" Source="$(var.MenuStyles)Vertical1\style.css" />
+            </Component>
+          </Directory>
+          <Directory Id="Horizontalrtl" Name="Horizontalrtl">
+            <Component Id="Horizontalrtl" Guid="87025F53-BD41-4C37-BE90-9CFCCE684808">
+              <CreateFolder Directory="Horizontalrtl" />
+              <File Id="_14ADF98269B81E38AEDDE85A9F8E7AC1" Name="s_bg.gif" Source="$(var.MenuStyles)Horizontalrtl\s_bg.gif" />
+              <File Id="_1B5FCB83F7788396C8B668A7380589D5" Name="style.css" Source="$(var.MenuStyles)Horizontalrtl\style.css" />
+              <File Id="_269A00CD225BC517E27F76DFADA701DD" Name="submenu.gif" Source="$(var.MenuStyles)Horizontalrtl\submenu.gif" />
+              <File Id="_57ACF236F0CAFB52937D6E2D8B5581F8" Name="mid_over.gif" Source="$(var.MenuStyles)Horizontalrtl\mid_over.gif" />
+              <File Id="_BF227CE14D5E0854AFE61A0580BC3DEE" Name="mid.gif" Source="$(var.MenuStyles)Horizontalrtl\mid.gif" />
+              <File Id="_CA223AB13ECFAA9BA104404AB288EB9F" Name="submenu_white.gif" Source="$(var.MenuStyles)Horizontalrtl\submenu_white.gif" />
+              <File Id="_F8F3153BDBA0637752DF977670162F6F" Name="margin.gif" Source="$(var.MenuStyles)Horizontalrtl\margin.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="RightToLeft" Name="RightToLeft">
+            <Component Id="RightToLeft" Guid="879843BC-DF86-4C4A-A2DF-181E10A68E1A">
+              <CreateFolder Directory="RightToLeft" />
+              <File Id="_BBCFAABBC33588A615CF696477C04E75" Name="style.css" Source="$(var.MenuStyles)RightToLeft\style.css" />
+              <File Id="_FC918976A6C2D589A2BFAEBE661D57DE" Name="submenu.gif" Source="$(var.MenuStyles)RightToLeft\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="WindowsXP" Name="WindowsXP">
+            <Component Id="WindowsXP" Guid="7FFB8394-EB9D-47AA-AC2C-11E6B679FB4A">
+              <CreateFolder Directory="WindowsXP" />
+              <File Id="_5F8764C582951115FD55DC34162B4CFD" Name="submenu_white.gif" Source="$(var.MenuStyles)WindowsXP\submenu_white.gif" />
+              <File Id="_9EAA962890AA75D52808C258B35C273F" Name="bg_separator.gif" Source="$(var.MenuStyles)WindowsXP\bg_separator.gif" />
+              <File Id="_B8A45105E0EEDD9B2F9E1E096A2512F2" Name="style.css" Source="$(var.MenuStyles)WindowsXP\style.css" />
+              <File Id="_E47D32933080CC42F8DF68EE8A7CE826" Name="submenu.gif" Source="$(var.MenuStyles)WindowsXP\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Horizontal8" Name="Horizontal8">
+            <Component Id="Horizontal8" Guid="1191B0CD-EF81-4F37-9CEA-604E34CD03E2">
+              <CreateFolder Directory="Horizontal8" />
+              <File Id="_202496E132AE634EC48A4CAD3134561D" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal8\submenu.gif" />
+              <File Id="_445030098E42D96E0196EB22CE43A632" Name="gagf.gif" Source="$(var.MenuStyles)Horizontal8\gagf.gif" />
+              <File Id="_48971091978A508A1537018AAE670710" Name="submenu_white.gif" Source="$(var.MenuStyles)Horizontal8\submenu_white.gif" />
+              <File Id="_569DFCCBD03DE6597DDA58CC4FF4EDA3" Name="bg_a.gif" Source="$(var.MenuStyles)Horizontal8\bg_a.gif" />
+              <File Id="_60C0FDE122AD0A6F4579959330656C89" Name="sep.gif" Source="$(var.MenuStyles)Horizontal8\sep.gif" />
+              <File Id="_79FE05311F17A3A5B2DC9E9A2168AA29" Name="style.css" Source="$(var.MenuStyles)Horizontal8\style.css" />
+              <File Id="_97518F146B629DCEF17E51366DBAC3C3" Name="s_bg_a.gif" Source="$(var.MenuStyles)Horizontal8\s_bg_a.gif" />
+              <File Id="_D140AB343E65039633135D321FEB021D" Name="bg.gif" Source="$(var.MenuStyles)Horizontal8\bg.gif" />
+              <File Id="_E02F2F0ED6EFD8C5969C67CD99EFB392" Name="gagl.gif" Source="$(var.MenuStyles)Horizontal8\gagl.gif" />
+              <File Id="_E471A229E9589FECC6037073E1C02E2A" Name="s_bg.gif" Source="$(var.MenuStyles)Horizontal8\s_bg.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Futura" Name="Futura">
+            <Component Id="Futura" Guid="3C53595D-D5C4-4550-8BFD-D50CF54ECB12">
+              <CreateFolder Directory="Futura" />
+              <File Id="_27C0BBCA5CF08FA66C79424B8D435F86" Name="bg_separator.gif" Source="$(var.MenuStyles)Futura\bg_separator.gif" />
+              <File Id="_2C7A7234D949A99B5FE2B6D5F9C3D0C0" Name="bg_menuItem.gif" Source="$(var.MenuStyles)Futura\bg_menuItem.gif" />
+              <File Id="_A2CBB74D8495FF567A89D974D79F5DA4" Name="style.css" Source="$(var.MenuStyles)Futura\style.css" />
+              <File Id="_BD3B1AA36C089EC5B6E823171EB7E664" Name="submenu_white.gif" Source="$(var.MenuStyles)Futura\submenu_white.gif" />
+              <File Id="_D9F8AF6D5F3B80C7129E9061BB8FE2CE" Name="bg_menuItemOver.gif" Source="$(var.MenuStyles)Futura\bg_menuItemOver.gif" />
+              <File Id="_FE36F37ECA6510D538DBC66F1FF43AD3" Name="submenu.gif" Source="$(var.MenuStyles)Futura\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Windows" Name="Windows">
+            <Component Id="Windows" Guid="01064005-2A77-4AF6-9E88-449BBE4B8497">
+              <CreateFolder Directory="Windows" />
+              <File Id="_20620491D69664CF2D80BDCB6EE49414" Name="style.css" Source="$(var.MenuStyles)Windows\style.css" />
+              <File Id="_4A145CF7A8372CFB309AE569ABE5C4FC" Name="bg_separator.gif" Source="$(var.MenuStyles)Windows\bg_separator.gif" />
+              <File Id="_7E506F453AA21D5F8FAAD02FADCE8D32" Name="submenu_white.gif" Source="$(var.MenuStyles)Windows\submenu_white.gif" />
+              <File Id="_A5E954C424CF9118D172AB4FF00F14D0" Name="submenu.gif" Source="$(var.MenuStyles)Windows\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Horizontal6" Name="Horizontal6">
+            <Component Id="Horizontal6" Guid="843CD731-EBAD-4BD2-A8A8-042C9265629A">
+              <CreateFolder Directory="Horizontal6" />
+              <File Id="_0404415B456F7AA971BD5736A5BBC430" Name="arrow.gif" Source="$(var.MenuStyles)Horizontal6\arrow.gif" />
+              <File Id="_2F9997A44A04733F45C399F142F63A39" Name="gag.gif" Source="$(var.MenuStyles)Horizontal6\gag.gif" />
+              <File Id="_3DA70D4A91846218E49DFBFEFA1DFFC5" Name="s_bg.gif" Source="$(var.MenuStyles)Horizontal6\s_bg.gif" />
+              <File Id="_3F1E619AC8D93DA90D32015F182AA279" Name="sep.gif" Source="$(var.MenuStyles)Horizontal6\sep.gif" />
+              <File Id="_4F604FA11A86818C90070484B56991B3" Name="gagl.gif" Source="$(var.MenuStyles)Horizontal6\gagl.gif" />
+              <File Id="_56AFD21825246C9BC3235C4A486E0126" Name="ir.gif" Source="$(var.MenuStyles)Horizontal6\ir.gif" />
+              <File Id="_56BB08D5D4FDFA7E7017A637035B23B1" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal6\submenu.gif" />
+              <File Id="_5A695964767256F81E11AF17634119A9" Name="arrow_a.gif" Source="$(var.MenuStyles)Horizontal6\arrow_a.gif" />
+              <File Id="_608470F2571B0ADA8BE4AD0E5E900F37" Name="submenu_white.gif" Source="$(var.MenuStyles)Horizontal6\submenu_white.gif" />
+              <File Id="_7168BCE28CF392AE016E0ABA5CAE6144" Name="gagf.gif" Source="$(var.MenuStyles)Horizontal6\gagf.gif" />
+              <File Id="_76948BF7F123582395FAD929599D3C21" Name="bg_a.gif" Source="$(var.MenuStyles)Horizontal6\bg_a.gif" />
+              <File Id="_8ACF44D4D64C0970A6B1DA7961B56CAE" Name="gagl_a.gif" Source="$(var.MenuStyles)Horizontal6\gagl_a.gif" />
+              <File Id="_9AEAB50AF17A96A7FB0E69D2B8EC4B32" Name="il.gif" Source="$(var.MenuStyles)Horizontal6\il.gif" />
+              <File Id="_B2AEDCE2A62DC50DDC5A9FE90E773490" Name="style.css" Source="$(var.MenuStyles)Horizontal6\style.css" />
+              <File Id="_D5E43ED8249AAD6ABDAFD5ACBF0800D6" Name="bg.gif" Source="$(var.MenuStyles)Horizontal6\bg.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Horizontal7" Name="Horizontal7">
+            <Component Id="Horizontal7" Guid="56102C86-7E15-401D-8D85-AE8C86A13222">
+              <CreateFolder Directory="Horizontal7" />
+              <File Id="_216BDB5A16985139C00CD874E8AB5982" Name="il.gif" Source="$(var.MenuStyles)Horizontal7\il.gif" />
+              <File Id="_3701B29E764FE8BBBF4F3E1BA97FB96F" Name="bg.gif" Source="$(var.MenuStyles)Horizontal7\bg.gif" />
+              <File Id="_3AE96A70DC266A88038DBACF1B77F794" Name="gagf.gif" Source="$(var.MenuStyles)Horizontal7\gagf.gif" />
+              <File Id="_523F9E78A552E28CDF391C75D400457B" Name="style.css" Source="$(var.MenuStyles)Horizontal7\style.css" />
+              <File Id="_62E063698EFE93AF5088D9E857BDC05C" Name="bg_a.gif" Source="$(var.MenuStyles)Horizontal7\bg_a.gif" />
+              <File Id="_8F16DC97A06D149CA1500EA38EADFC1C" Name="s_bg.gif" Source="$(var.MenuStyles)Horizontal7\s_bg.gif" />
+              <File Id="_C88FF92D6FB0FAD384CD115700C1D359" Name="gagl.gif" Source="$(var.MenuStyles)Horizontal7\gagl.gif" />
+              <File Id="_E852AC80E29A2D201CCE68AB91494098" Name="sep.gif" Source="$(var.MenuStyles)Horizontal7\sep.gif" />
+              <File Id="_F036905463E23DB563B0AC3F4891EA64" Name="submenu_white.gif" Source="$(var.MenuStyles)Horizontal7\submenu_white.gif" />
+              <File Id="_FCC7A0FA15D6ACBE120F25A4F2E5ABA9" Name="submenu.gif" Source="$(var.MenuStyles)Horizontal7\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Style2" Name="Style2">
+            <Component Id="Style2" Guid="DC524879-9814-47FE-A006-8C8EBCD8E2D8">
+              <CreateFolder Directory="Style2" />
+              <File Id="_1A79D6A68EE69E0C42A6B1289680BCAE" Name="style.css" Source="$(var.MenuStyles)Style2\style.css" />
+              <File Id="_797A6D5EEED66D7471848FFFC8166025" Name="submenu_white.gif" Source="$(var.MenuStyles)Style2\submenu_white.gif" />
+              <File Id="_D8C3B609686B97FD93FB32DD95553991" Name="submenu.gif" Source="$(var.MenuStyles)Style2\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Verticalrtl" Name="Verticalrtl">
+            <Component Id="Verticalrtl" Guid="EB5959BA-4248-4D13-9936-5997E646F834">
+              <CreateFolder Directory="Verticalrtl" />
+              <File Id="_29FEFB829296AA2A6BC462605FA0CA4C" Name="style.css" Source="$(var.MenuStyles)Verticalrtl\style.css" />
+              <File Id="_CB7BCA8DEE1AF08E761AF748EA4546EE" Name="submenu.gif" Source="$(var.MenuStyles)Verticalrtl\submenu.gif" />
+            </Component>
+          </Directory>
+          <Directory Id="Style13" Name="Style13">
+            <Component Id="Style13" Guid="5AC30601-DE9F-4A65-B4B6-63F5BDDF06D5">
+              <CreateFolder Directory="Style13" />
+              <File Id="_4546C7B7D92A81F129487FA0DD3A7F1F" Name="submenu_white.gif" Source="$(var.MenuStyles)Style13\submenu_white.gif" />
+              <File Id="_59424CFE33AC6B06CD069A63B60C19BF" Name="style.css" Source="$(var.MenuStyles)Style13\style.css" />
+              <File Id="_B18852DC09F08A7FD2CE99FEA37455CF" Name="submenu.gif" Source="$(var.MenuStyles)Style13\submenu.gif" />
+            </Component>
+          </Directory>
+        </Directory>
+      </Directory>
+      <!-- Set up IISApplication/ WebSite -->
+      <Component Id="IISApplication" Guid="">
+        <!--<iis:WebAppPool Id="IrisAppPool" Name="[APPPOOL]"  />  NB: To Be used if we are selecting from APPPOOL listbox -->
+        <iis:WebAppPool Id="IrisAppPool" Name="IrisAppPool" ManagedPipelineMode="integrated" ManagedRuntimeVersion="v4.0" />
+        <iis:WebVirtualDir Id="VirtualDir" Alias="[TARGETVDIR]" Directory="INSTALLLOCATION" WebSite="SelectedWebSite">
+          <iis:WebApplication Id="IrisWebServs" Name="[TARGETVDIR]" WebAppPool="IrisAppPool" />
+          <!-- NB: IrisAppPool here is linking to iis:WebAppPool Id="IrisAppPool"  -->
+          <iis:WebDirProperties Id="WebVirtualDirProperties" Execute="yes" Script="yes" Read="yes" WindowsAuthentication="no" AnonymousAccess="yes" IIsControlledPassword="yes" />
+        </iis:WebVirtualDir>
+      </Component>
+      <!-- Write Website values to reg-->
+      <Component Id="PersistWebSiteValues" Guid="1A3D2FA2-DB44-4BE1-A5AC-F762F2F2CF4D">
+        <RegistryKey Root="HKLM" Key="SOFTWARE\Iris\IrisWebServices\Install">
+          <RegistryValue Name="WebSiteDescription" Type="string" Value="[WEBSITE_DESCRIPTION]" />
+          <RegistryValue Name="WebSitePort" Type="string" Value="[WEBSITE_PORT]" />
+          <RegistryValue Name="WebSiteIP" Type="string" Value="[WEBSITE_IP]" />
+          <RegistryValue Name="WebSiteHeader" Type="string" Value="[WEBSITE_HEADER]" />
+        </RegistryKey>
+      </Component>
+    </Directory>
+    <!-- Custom Table that stores available websites found by Custom Action-->
+    <CustomTable Id="AvailableWebSites">
+      <Column Id="WebSiteNo" Category="Identifier" PrimaryKey="yes" Type="int" Width="4" />
+      <Column Id="WebSiteDescription" Category="Text" Type="string" PrimaryKey="no" />
+      <Column Id="WebSitePort" Category="Text" Type="string" PrimaryKey="no" />
+      <Column Id="WebSiteIP" Category="Text" Type="string" PrimaryKey="no" Nullable="yes" />
+      <Column Id="WebSiteHeader" Category="Text" Type="string" PrimaryKey="no" Nullable="yes" />
+      <Row>
+        <!-- Without this defaul row table is ignored ? -->
+        <Data Column="WebSiteNo">0</Data>
+        <Data Column="WebSiteDescription">Bogus</Data>
+        <Data Column="WebSitePort">0</Data>
+        <Data Column="WebSiteIP">
+        </Data>
+        <Data Column="WebSiteHeader">
+        </Data>
+      </Row>
+    </CustomTable>
+    <!-- Custom Table that stores availaable App Pools found by Custom Action-->
+    <CustomTable Id="AvailableAppPools">
+      <Column Id="AppPoolID" Category="Identifier" PrimaryKey="yes" Type="string" />
+      <Column Id="AppPoolName" Category="Text" Type="string" />
+      <Row>
+        <!-- Without this defaul row table is ignored ? -->
+        <Data Column="AppPoolID">Bogie</Data>
+        <Data Column="AppPoolName">Bogus</Data>
+      </Row>
+    </CustomTable>
+    <!-- Require for website selection, app pool has only a name value therefore even if we use list box selector the [APPPOOL] property directly links to the Name -->
+    <iis:WebSite Id="SelectedWebSite" Description="[WEBSITE_DESCRIPTION]">
+      <iis:WebAddress Id="AllUnassigned" Port="[WEBSITE_PORT]" IP="[WEBSITE_IP]" Header="[WEBSITE_HEADER]" />
+    </iis:WebSite>
+    <!-- Points to the UI Fragment -->
+    <UIRef Id="CareUI" />
+    <Feature Id="ProductFeature" Title="Iris Portal" Level="1">
+      <ComponentRef Id="IrisPortal" Primary="yes" />
+      <ComponentRef Id="BinComponent" Primary="yes" />
+      <ComponentRef Id="DocComponent" />
+      <ComponentRef Id="CustomComponent" />
+      <ComponentRef Id="Controls" />
+      <ComponentRef Id="Services" />
+      <ComponentRef Id="Images" />
+      <ComponentRef Id="Products" />
+      <ComponentRef Id="Events" />
+      <ComponentRef Id="Downloads" />
+      <ComponentRef Id="Scripts" />
+      <ComponentRef Id="MenuStyles" />
+      <ComponentRef Id="Horizontal1" />
+      <ComponentRef Id="Horizontal2" />
+      <ComponentRef Id="Horizontal3" />
+      <ComponentRef Id="Horizontal4" />
+      <ComponentRef Id="Horizontal5" />
+      <ComponentRef Id="Horizontal6" />
+      <ComponentRef Id="Horizontal7" />
+      <ComponentRef Id="Horizontal8" />
+      <ComponentRef Id="Horizontal9" />
+      <!--<ComponentRef Id="Horizontal10" />-->
+      <ComponentRef Id="Style1" />
+      <ComponentRef Id="Style2" />
+      <ComponentRef Id="Style3" />
+      <!--<ComponentRef Id="Style4" />-->
+      <!--<ComponentRef Id="Style5" />-->
+      <!--<ComponentRef Id="Style6" />-->
+      <!--<ComponentRef Id="Style7" />-->
+      <!--<ComponentRef Id="Style8" />-->
+      <ComponentRef Id="Style9" />
+      <ComponentRef Id="Style10" />
+      <ComponentRef Id="Style13" />
+      <ComponentRef Id="le_1" />
+      <ComponentRef Id="le_2" />
+      <ComponentRef Id="le_3" />
+      <ComponentRef Id="le_4" />
+      <ComponentRef Id="le_5" />
+      <ComponentRef Id="Script" />
+      <ComponentRef Id="Transparent" />
+      <ComponentRef Id="Futura" />
+      <ComponentRef Id="Vsnet" />
+      <ComponentRef Id="Vertical1" />
+      <ComponentRef Id="RightToLeft" />
+      <ComponentRef Id="Windows" />
+      <ComponentRef Id="WindowsXP" />
+      <ComponentRef Id="Horizontalrtl" />
+      <ComponentRef Id="Verticalrtl" />
+      <ComponentRef Id="IISApplication" />
+      <ComponentRef Id="PersistWebSiteValues" />
+      <!-- Note: The following ComponentGroupRef is required to pull in generated authoring from project references. -->
+      <ComponentGroupRef Id="Product.Generated" />
+    </Feature>
+    <!-- Declares Icon-->
+    <Icon Id="IrisIcon.exe" SourceFile="$(var.WIPath)\IrisIcon.exe" />
+    <!-- Adds Icon to Control Panel image-->
+    <Property Id="ARPPRODUCTICON" Value="IrisIcon.exe" />
+    <!-- Support info shown in control panel-->
+    <Property Id="ARPHELPLINK" Value="http://www.iris.co.uk" />
+    <Property Id="ARPURLINFOABOUT" Value="http://www.iris.co.uk" />
+    <Property Id="ARPHELPTELEPHONE" Value="0208 879 6740" />
+    <Property Id="ARPCOMMENTS" Value="IRIS Portal" />
+    <Property Id="ARPCONTACT" Value="IRIS" />
+    <!--
+    <Property Id="PREVIOUSVERSIONSINSTALLED" Secure="yes" />
+    <Property Id="NEWERPRODUCTFOUND" Secure="yes" />
+    
+    <Upgrade Id="{43D49915-CDD9-43DA-BD91-93430D76BAAF}">
+      <UpgradeVersion Maximum="$(var.VERSION)" Property="PREVIOUSVERSIONSINSTALLED" />
+      <UpgradeVersion Minimum="$(var.VERSION)" Property="NEWERPRODUCTFOUND" OnlyDetect="yes" IncludeMinimum="yes" />      
+    </Upgrade>
+    -->
+  </Product>
+</Wix>

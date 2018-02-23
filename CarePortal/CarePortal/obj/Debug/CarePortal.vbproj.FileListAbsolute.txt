@@ -1,0 +1,92 @@
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\Scripts\ClientScript.js
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CarePortal.dll.config
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CarePortal.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CarePortal.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CarePortal.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNACCESS.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNDATA.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNUTILS.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNXML.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\obout_EasyMenu_Pro.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\dotMailer.Sdk.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\AdvancedFramework.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNServices.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBReports.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNImport.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNTasks.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\AdvancedFramework.Data.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNEVAL.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNACCESS.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNACCESS.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNDATA.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNDATA.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNUTILS.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNUTILS.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNXML.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNXML.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\AdvancedFramework.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNServices.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNServices.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBReports.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBReports.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNImport.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNImport.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNTasks.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNTasks.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\AdvancedFramework.Data.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNEVAL.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\CDBNEVAL.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\de\CDBNUTILS.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\bin\de-DE\AdvancedFramework.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.vbprojResolveAssemblyReference.cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.Resources.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.vbproj.GenerateResource.Cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\Scripts\ClientScript.js
+D:\Version 16.2\CarePortal\CarePortal\bin\CarePortal.dll.config
+D:\Version 16.2\CarePortal\CarePortal\bin\CarePortal.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CarePortal.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CarePortal.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNACCESS.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNDATA.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNUTILS.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNXML.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\obout_EasyMenu_Pro.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\dotMailer.Sdk.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\AdvancedFramework.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNServices.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBReports.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNImport.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNTasks.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\AdvancedFramework.Data.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNEVAL.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNACCESS.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNACCESS.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNDATA.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNDATA.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNUTILS.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNUTILS.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNXML.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNXML.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\AdvancedFramework.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNServices.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNServices.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBReports.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBReports.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNImport.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNImport.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNTasks.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNTasks.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\AdvancedFramework.Data.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNEVAL.pdb
+D:\Version 16.2\CarePortal\CarePortal\bin\CDBNEVAL.xml
+D:\Version 16.2\CarePortal\CarePortal\bin\de\CDBNUTILS.resources.dll
+D:\Version 16.2\CarePortal\CarePortal\bin\de-DE\AdvancedFramework.resources.dll
+D:\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.vbprojResolveAssemblyReference.cache
+D:\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.Resources.resources
+D:\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.vbproj.GenerateResource.Cache
+D:\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.dll
+D:\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.xml
+D:\Version 16.2\CarePortal\CarePortal\obj\Debug\CarePortal.pdb

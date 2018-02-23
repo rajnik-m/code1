@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <!-- NB: HARD CODING  of RELEASE  in the path and of D:\ -->
+    <CustomAction Id="UpdatePropsWithSelectedWebSite" BinaryKey="WebSiteCA" DllEntry="UpdatePropsWithSelectedWebSite" Execute="immediate" Return="check" />
+    <Binary Id="WebSiteCA" SourceFile="D:\dev32\web\IISCustomAction\bin\Release\IISCustomAction.CA.dll" />
+  </Fragment>
+  <Fragment>
+    <UI>
+      <Dialog Id="SelectWebSiteDlg" Width="370" Height="270" Title="Select Web Site and Name Virtual Directory">
+        <Control Id="Next" Type="PushButton" X="236" Y="243" Width="56" Height="17" Default="yes" Text="!(loc.WixUINext)">
+          <Condition Action="show">WEBSITE&lt;&gt;"" AND TARGETVDIR&lt;&gt;""</Condition>
+          <Condition Action="hide">WEBSITE=""</Condition>
+        </Control>
+        <Control Id="Back" Type="PushButton" X="180" Y="243" Width="56" Height="17" Text="!(loc.WixUIBack)" />
+        <Control Id="Cancel" Type="PushButton" X="304" Y="243" Width="56" Height="17" Cancel="yes" Text="!(loc.WixUICancel)">
+          <Publish Event="SpawnDialog" Value="CancelDlg">1</Publish>
+        </Control>
+        <Control Id="Description" Type="Text" X="25" Y="23" Width="280" Height="15" Transparent="yes" NoPrefix="yes" NoWrap="no" Text="Select which Web Site to install in; Name the Virtual Directory-Application." />
+        <Control Id="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Transparent="yes" NoPrefix="yes" Text="Select Web Site and Name Virtual Directory" />
+        <Control Id="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="50" TabSkip="no" Text="!(loc.InstallDirDlgBannerBitmap)" />
+        <Control Id="BannerLine" Type="Line" X="0" Y="50" Width="370" Height="0" />
+        <Control Id="BottomLine" Type="Line" X="0" Y="240" Width="370" Height="0" />
+        <Control Id="SelectWebSiteLabel" Type="Text" X="20" Y="60" Width="290" Height="14" NoPrefix="yes" Text="Select web site:" />
+        <Control Id="SelectWebSiteCombo" Type="ListBox" X="20" Y="75" Width="252" Height="50" Property="WEBSITE" Sorted="yes" ToolTip="A Website must be highlighted for the Next button to appear." />
+        <Control Id="VDirLabel" Type="Text" X="18" Y="125" Width="348" Height="12" Text="Virtual directory:" TabSkip="no" />
+        <Control Id="VDirEdit" Type="Edit" Text="IrisServices" X="18" Y="137" Width="252" Height="18" Property="TARGETVDIR" TabSkip="no" ToolTip="Name the Application and Virtual Directory" Sunken="yes" />
+        <!-- NB: Currently hidden -->
+        <Control Id="SelectAppPoolLabel" Hidden="yes" Type="Text" X="20" Y="165" Width="290" Height="14" NoPrefix="yes" Text="Select App Pool:" />
+        <Control Id="SelectAppPoolCombo" Hidden="yes" Type="ListBox" X="20" Y="177" Width="252" Height="50" Property="APPPOOL" Sorted="yes" />
+        <Control Id="AppPoolWarn" Type="Text" X="18" Y="175" Width="348" Height="12" Text="An IIS Application Pool - IrisAppPool - will be auto created and Iris Services allocated to this." />
+      </Dialog>
+    </UI>
+  </Fragment>
+</Wix>

@@ -1,0 +1,534 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNTasks
+</name>
+</assembly>
+<members>
+<member name="T:CARE.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CARE.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CARE.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:CARE.AutoTask.TaskAttribute.#ctor(CARE.Access.JobSchedule.TaskJobTypes)">
+ <summary>
+ Initializes a new instance of the <see cref="T:CARE.AutoTask.TaskAttribute"/> class.
+ </summary>
+ <param name="pTask">The p task.</param>
+</member>
+<member name="P:CARE.AutoTask.TaskAttribute.TaskType">
+ <summary>
+ Gets the <see cref="T:CARE.Access.JobSchedule.TaskJobTypes" /> associated with the task.
+ </summary>
+ <value>
+ The type of the task.
+ </value>
+</member>
+<member name="M:CARE.AutoTask.TaskFactory.GetTask(CARE.Access.JobSchedule)">
+ <summary>
+ Gets a task object for a job.
+ </summary>
+ <param name="pJob">The job for which a task is required.</param>
+ <returns>A <see cref="T:CARE.Tasks.Task" /> object for the <see cref="T:CARE.Access.JobSchedule.TaskJobTypes" /> of the passed job.</returns>
+</member>
+<member name="P:CARE.AutoTask.TaskFactory.TaskClasses">
+ <summary>
+ Gets the available task types.
+ </summary>
+ <value>
+ An <see cref="T:System.Collections.Generic.IDictionary`2" /> containing the available task
+ classes indexed by the <see cref="T:CARE.Access.JobSchedule.TaskJobTypes"/> that they are associated with.
+ </value>
+</member>
+<member name="M:CARE.Tasks.DDClaimFileCreation.GenerateDDClaim(CARE.Access.BankAccount,System.Int32,System.Int32,CDBReports.Report.outDestTypes,System.String)">
+ <summary>Create the Direct Debit claim file.</summary>
+ <param name="pBankAccount">The <see cref="T:CARE.Access.BankAccount"/> for pBatchNumberFrom</param>
+ <param name="pBatchNumberFrom">The number of the first <see cref="T:CARE.Access.Batch"/> to process.</param>
+ <param name="pBatchNumberTo">The number of the last <see cref="T:CARE.Access.Batch"/> to process.</param>
+ <param name="pDestType">Destination type of the claim file.</param>
+ <param name="pReportDestination">File location of the claim file.</param>
+</member>
+<member name="M:CARE.Tasks.DDClaimFileCreation.UpdateDDBatches(CARE.Access.BankAccount,CARE.Data.CDBFields,System.Int32,System.Int32)">
+ <summary>Update the batches to show them as processed.</summary>
+ <param name="pBankAccount">The <see cref="T:CARE.Access.BankAccount"/> for pBatchNumberFrom</param>
+ <param name="pBatchWhereFields"><see cref="T:CARE.Data.CDBFields"/> collection for records to be updated.</param>
+ <param name="pBatchNumberFrom">The number of the first <see cref="T:CARE.Access.Batch"/> to process.</param>
+ <param name="pBatchNumberTo">The number of the last <see cref="T:CARE.Access.Batch"/> to process.</param>
+</member>
+<member name="M:CARE.Tasks.DirectDebitRun.ValidateAccountNumbers(CARE.Data.SQLStatement)">
+ <summary>Validate Dutch Bank Account numbers.</summary>
+</member>
+<member name="M:CARE.Tasks.DirectDebitRun.CreateDDBatches(CARE.Data.SQLStatement,CARE.Tasks.DirectDebitRun.DDRunData)">
+ <summary>Create the Direct Debit batches.</summary>
+ <remarks>This will create the batches and update the DD's etc. as processed.</remarks>
+</member>
+<member name="T:CARE.Tasks.DirectDebitRun.DDRunData">
+ <summary>Class to hold all the data required to process Direct Debits.</summary>
+</member>
+<member name="M:CARE.Tasks.ApplyGradingNG.GetExamUnitLinkAndChildren(System.String)">
+ <summary>
+ Gets all the list of all the Exam Units that are linked (directly - indirectly) with the main exam unit
+ </summary>
+ <param name="pExamUnit">Main Exam Unit</param>
+ <returns>Comma seprated list of all the linked exam unit(s)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.ApplyGradingConcept.GetLinkedExamUnits(System.String)">
+ <summary>
+ Gets all the list of all the Exam Units that are linked (directly - indirectly) with the main exam unit
+ </summary>
+ <param name="pExamUnit">Main Exam Unit</param>
+ <returns>Comma seprated list of all the linked exam unit(s)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.LoadExamCsvResults.GetExamDate(System.String)">
+ <summary>
+ Validate the exam date for a specific Exam Unit. Iterates through all the columns of the CSV file looking
+ for any exam_date column for exam unit (the format of the exam date will be ExamUnitName_Exam_Date), if finds a column then
+ validates it and return the value.
+ </summary>
+ <param name="pExamUnit">Exam Unit Code</param>
+ <returns>Exam Unit's  Exam date </returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.LoadExamCsvResults.GetParentExamUnit(System.String,System.String,System.Int32@)">
+ <summary>
+ Gets all the list of all the Exam Units that are linked (directly - indirectly) with the main exam unit
+ </summary>
+ <param name="pExamUnit">Main Exam Unit</param>
+ <returns>Comma separated list of all the linked exam unit(s)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.LoadExamCsvResults.GetChildExamUnit(System.String)">
+ <summary>
+ Gets all the list of all the Exam Units that are linked (directly - indirectly) with the main exam unit
+ </summary>
+ <param name="pExamUnitLink">Main Exam Unit Link</param>
+ <returns>Comma seprated list of all the linked exam unit(s)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.UploadBACSMessagingData.GetBacsRecordType(CARE.Tasks.UploadBACSMessagingData.BacsFileInfo,System.String@)">
+ <summary>
+ 
+ </summary>
+ <param name="pInputFileInfo">The input file for processing</param>
+ <param name="pBacsRecordType">Not used for Camt.053</param>
+ <returns>True if the file is to be processed, otherwise false</returns>
+</member>
+<member name="M:CARE.Tasks.UploadBACSMessagingData.UploadFileData(CARE.Tasks.UploadBACSMessagingData.BacsFileInfo)">
+ <summary>Reads file and updates Bacs Amendment table.</summary>
+</member>
+<member name="M:CARE.Tasks.UploadBACSMessagingData.UploadCSVFileData(CARE.Tasks.UploadBACSMessagingData.BacsFileInfo)">
+ <summary>Reads CSV file and updates Bacs Amendment table.</summary>
+</member>
+<member name="M:CARE.Tasks.UploadBACSMessagingData.UploadUKXmlFileData(CARE.Tasks.UploadBACSMessagingData.BacsFileInfo)">
+ <summary>Reads UK XML file and updates Bacs Amendment table.</summary>
+</member>
+<member name="M:CARE.Tasks.UploadBACSMessagingData.UploadCamt053FileData(CARE.Tasks.UploadBACSMessagingData.BacsFileInfo)">
+ <summary>Reads Camt053 Bank Statement file and updates Bacs Amendment table.</summary>
+ <remarks>DOES NOT VERIFY THAT THE FILE IS A CAMT.053 FILE. The file type is verified in GetBacsRecordType.</remarks>
+</member>
+<member name="M:CARE.Tasks.UploadBACSMessagingData.UploadSepaPain002FileData(CARE.Tasks.UploadBACSMessagingData.BacsFileInfo)">
+ <summary>Reads SEPA Pain.002 file and updates Bacs Amendment table.</summary>
+</member>
+<member name="P:CARE.Tasks.UploadBACSMessagingData.BacsFileInfo.IsCamt053File">
+ <summary>Is this a SEPA file in CAMT053 format?</summary>
+</member>
+<member name="P:CARE.Tasks.UploadBACSMessagingData.BacsFileInfo.IsXMLFile">
+ <summary>Is this an XML file?</summary>
+</member>
+<member name="P:CARE.Tasks.UploadBACSMessagingData.BacsFileInfo.Extension">
+ <summary>Gets the string representing the extension part of the file.</summary>
+</member>
+<member name="P:CARE.Tasks.UploadBACSMessagingData.BacsFileInfo.FullName">
+ <summary>Gets the full path of the directory or file.</summary>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.UpdateRelationshipsFromConfig(System.IO.StreamWriter)">
+ <summary>
+ Migrates the config cd_comp_relationship_synch if the value is set to 'A', which is deprecated from 16.2.13148 in favour of the auto_create_complementary in the relationships table
+ </summary>
+ <remarks>This code can be deleted in the version released after 17 January 2019 - MPatel
+ </remarks>
+ <param name="pLog"></param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.UpdateMembershipGAFlag(System.IO.StreamWriter)">
+ <summary>
+ For any version upgrade from prior to 16R1, sets the EligibleForGiftAid flag to 'Y' on all products associated with Membership
+ This only applies if the ga_membership_tax_reclaim config is set to 'Y'.
+ From 16R1, posting a transaction for a product that's eligible for gift-aid will generate a Gift Aid claim
+ The batch transaction (and where applicable the payment plan) will also need to be eligible.
+ </summary>
+ <remarks>
+ Note that this method is written to only run on databases that are upgraded from a version prior to 16R1
+ </remarks>
+ <param name="pLog"></param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.BulkEncryptPasswords(System.IO.StreamWriter)">
+ <summary>
+ Encrypt all passwords as a bulk task.
+ </summary>
+ <param name="pLog">The log.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.AddJournalData(CARE.Utilities.LogFile,System.String,CARE.Data.CDBFields)">
+ <summary>Adds journal data to the database with error handling.</summary>
+ <param name="pLogFile">The <see cref="T:CARE.Utilities.LogFile">Log File</see> to which errors will be written.</param>
+ <param name="pTableName">Name of database table.</param>
+ <param name="pInsertFields"><see cref="T:CARE.Data.CDBFields">CDBFields</see> collection of data to be inserted.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.AddSearchAreaData(CARE.Utilities.LogFile,System.String,CARE.Data.CDBFields)">
+ <summary>Add Search Area data to the database with error handling.</summary>
+ <param name="pLogFile">The <see cref="T:CARE.Utilities.LogFile">Log File</see> to which errors will be written.</param>
+ <param name="pTableName">The database table name.</param>
+ <param name="pInsertFields"><see cref="T:CARE.Data.CDBFields">CDBFields</see> collection containing data to be inserted.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.AddApplicationParameters(CARE.Utilities.LogFile,System.String,CARE.Data.CDBFields)">
+ <summary>Add Application Parameters (Controls) data to the database with error handling.</summary>
+ <param name="pLogFile">The <see cref="T:CARE.Utilities.LogFile">Log File</see> to whch errors will be written.</param>
+ <param name="pTableName">The database table name.</param>
+ <param name="pInsertFields"><see cref="T:CARE.Data.CDBFields">CDBFields</see> collection of data to be inserted.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.AddPrimaryKey(CARE.Data.CDBFields,CARE.Utilities.LogFile)">
+ <summary>
+ Add Primary Key to the existing table based on the control number
+ </summary>
+ <param name="pTableFields"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.UpdatePOPaymentPaymentMethods(System.IO.StreamWriter)">
+ <summary>
+ Update the existing records in Purchase Order Payments and Purchase Invoices with the default
+ values for CHQ and BACS depending on pay_by_bacs flag and bank_details_number
+ </summary> 
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.AddReportsData(CARE.Utilities.LogFile,System.String,CARE.Data.CDBFields)">
+ <summary>Adds report data to the database with error handling.</summary>
+ <param name="pLogFile">The <see cref="T:CARE.Utilities.LogFile">Log File</see> to which errors will be written.</param>
+ <param name="pTableName">Name of database table.</param>
+ <param name="pInsertFields"><see cref="T:CARE.Data.CDBFields">CDBFields</see> collection of data to be inserted.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.AddConfigData(CARE.Utilities.LogFile,System.String,CARE.Data.CDBFields)">
+ <summary>Add Configuration Options data with error handling.</summary>
+ <param name="pLogFile">The log file to which errors will be written.</param>
+ <param name="pTableName">The name of the table data is to be added to.</param>
+ <param name="pWhereFields">A CDBFields collection of data to insert.</param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.AddVatRateHistory(System.IO.StreamWriter)">
+ <summary>When VatRateHistory table is first created, add a record for each VatRate</summary>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.AddLoanInterestRates(System.IO.StreamWriter)">
+ <summary>Add a record into the LoanInterestRates table for each Loan</summary>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.DeleteInitialiseData(CARE.Utilities.LogFile,System.String)">
+ <summary>Delete all data in the specified table during initialisation of a clean database with error handling.</summary>
+ <param name="pLogFile">The <see cref="T:CARE.Utilities.LogFile">Log File</see> to which errors will be written.</param>
+ <param name="pTableName">The name of the table to be emptied.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.AddInitialiseData(CARE.Utilities.LogFile,System.String,CARE.Access.CARERecord)">
+ <summary>Add data during initialisation of clean database with error handling.</summary>
+ <param name="pLogFile">The <see cref="T:CARE.Utilities.LogFile">Log File</see> to which errors will be written.</param>
+ <param name="pTableName">The name of the table data is to be added to.</param>
+ <param name="pRecord">The <see cref="T:CARE.Access.CARERecord">Record</see> data to be created.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.ProcessAddControlNumber(System.String,System.String,System.String,System.String)">
+ <summary>Adds a ControlNumber and ControlNumberChecks record.</summary>
+ <param name="pCNType">Control Number Type</param>
+ <param name="pCNDescription">Control Number Type Description</param>
+ <param name="pCNTable">Table the Control Number is for</param>
+ <param name="pCNAttribute">Attribute the Control Number is for</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.ExamDataMigrator.CreateParentUnitLinks">
+ <summary>
+ Insert link record for all the top level exam unit ids with exam_unit_id_1 = 0 and exam_unit_id_2 = (the top level parent)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.ExamDataMigrator.PopulateExamUnitLinks">
+ <summary>
+ 
+ 
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.ExamDataMigrator.PopulateParentUnitLinkValues">
+ <summary>
+ Insert default Parent Exam Unit Id for all the existing records while adding a new column for the same.
+ Parent Unit Link Id will be same as Exam_Unit_LinkId to start with and will change when user will copy  
+ and paste the exam units in the tree structure.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.ExamDataMigrator.GetExamUnitLinkId(System.Int32)">
+ <summary>
+ Get the Exam Unit Link Id for the supplied Exam Unit
+ </summary>
+ <param name="pExamUnitId">Exam Unit Id</param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.ExamDataMigrator.PopulateCentreUnitLinkValues">
+ <summary>
+ Insert Exam Centre Unit id for all the exitng records in the exam centre units table
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.ExamDataMigrator.PopulateUnitLinks(System.String,System.String,System.String)">
+ <summary>
+ Insert Exam Centre Unit id for all the exitng records in the exam centre units table.
+ </summary>
+ <param name="pPrimaryTableName">The Table that contains the exam_unit_link_id that needs to be populated</param>
+ <param name="pPrimaryAttributeName">The Primary Key of the table.  This will be used to generate the WHERE Clause to update the Primary Table</param>
+ <param name="pLinkToExamUnits">The Primary Key of the table.  This will be used to generate the WHERE Clause to update the Primary Table</param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.TerminateUpgrade(System.IO.StreamWriter,System.String)">
+ <summary>Set the <see cref="P:CARE.Tasks.Task.JobSchedule">JobSchedule</see> as complete with pErrorMessage and write that message to pLogFile.</summary>
+ <param name="pLogFile">The <see cref="T:System.IO.StreamWriter">Log File</see> to which errors will be written.</param>
+ <param name="pErrorMessage">Error message to describe the failure.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.TerminateUpgrade(CARE.Utilities.LogFile,System.String)">
+ <summary>Set the <see cref="P:CARE.Tasks.Task.JobSchedule">JobSchedule</see> as complete with pErrorMessage and write that message to <see cref="T:CARE.Utilities.LogFile">pLogFile</see>.</summary>
+ <param name="pLogFile">The <see cref="T:CARE.Utilities.LogFile">Log File</see> to which errors will be written.</param>
+ <param name="pErrorMessage">Error message to describe the failure.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.InitialiseTraderData(CARE.Utilities.LogFile,System.String,System.Int32,System.Int32)">
+ <summary>Initialise Trader</summary>
+ <param name="pLogFile">The <see cref="T:CARE.Utilities.LogFile">Log File</see> to which errors will be written to.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.InitialiseAccessControlData(CARE.Utilities.LogFile)">
+ <summary>Initialise Access Control data during clean database creation.</summary>
+ <param name="pLogFile">The <see cref="T:CARE.Utilities.LogFile">Log File</see> to which errors will be written to.</param>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.ProcessPasswordBulkEncryptionOnSQLServer">
+ <summary>
+ Encrypt all passwords if CDBConnection.RDBMSTypes.rdbmsSqlServer as a bulk task.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.ProcessPasswordBulkEncryptionOnOracle">
+ <summary>
+ Encrypt all passwords if CDBConnection.RDBMSTypes.rdbmsOracle as a bulk task.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.TransferEventSessionCPD(System.IO.StreamWriter)">
+ <summary>When the SessionCPD table has been created, transfer any existing CPD data from the Sessions table to the SessionCPD table.</summary>
+ <remarks>This is a one-off process that only runs when upgrade has just created the SessionCPD table.</remarks>
+</member>
+<member name="M:CARE.Tasks.DatabaseUpgrade.EventSessionMigrator.CreateInstance(CARE.Access.CDBEnvironment,System.IO.StreamWriter)">
+ <summary>Create an instance of the class and perform the migration.</summary>
+</member>
+<member name="M:CARE.Tasks.IssueEventResources.ValidateVenueResource">
+ <summary>
+ This function validates venue resources. Venue should have Contact Number and Address Number defined.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.IssueEventResources.ValidateChairpersonResource">
+ <summary>
+ This function validates Chairperson Resources. If despatch_to is defined as Chairperson then chairperson has to be defined for a resources.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.IssueEventResources.GetResourceSQL(CARE.Tasks.IssueEventResources.EventResourceAllocations,System.Boolean,System.Int32,System.String@,CARE.Data.CDBFields,System.String@,System.String@,CARE.Access.CDBEnvironment)">
+ <summary>
+ Returns the appropriate SQL to retrieve records allowing us to determine the resource requirements for each group of people
+ </summary>
+ <param name="pType"></param>
+ <param name="pLoansOnly"></param>
+ <param name="pEventNumber"></param>
+ <param name="pHeader"></param>
+ <param name="pIssued"></param>
+ <param name="pSQL"></param>
+ <param name="pAddSQL"></param>
+ <param name="pEnv"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.IssueEventResources.UpdateStockLevels(CARE.Data.CDBFields,CARE.Access.CDBEnvironment)">
+ <summary>
+ Updates the Event_Resource table.
+ </summary>
+ <param name="pWhere"></param>
+ <param name="pEnv"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.IssueEventResources.IssueResourceLabels(System.Int32,CARE.Data.CDBFields,System.String,System.String,System.Int32@,System.Int32@,CARE.Data.CDBFields,CDBReports.Report,CARE.Access.CDBEnvironment)">
+ <summary>
+ Generates Report for Issue Resources.
+ </summary>
+ <param name="pEventNumber"></param>
+ <param name="pSessionWhere"></param>
+ <param name="pMailingCode"></param>
+ <param name="pLastDispatch"></param>
+ <param name="pMailingNumber"></param>
+ <param name="pMailingCount"></param>
+ <param name="pIssued"></param>
+ <param name="pReport"></param>
+ <param name="pEnv"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.IssueEventResources.SetResourceParameters(System.Int32,CARE.Data.CDBFields,System.String,CARE.Data.CDBFields,System.String@,System.String@,System.String@,CARE.Data.CDBFields@,System.String@,CARE.Access.CDBEnvironment)">
+ <summary>
+ This function sets the resource parameters which are used in generation of report for Issue Resources
+ </summary>
+ <param name="pEventNumber"></param>
+ <param name="pSessionWhere"></param>
+ <param name="pLastDispatch"></param>
+ <param name="pIssued"></param>
+ <param name="pTable"></param>
+ <param name="pTableAlias"></param>
+ <param name="pStartTable"></param>
+ <param name="pWhere"></param>
+ <param name="pHeader"></param>
+ <param name="pEnv"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.IssueEventResources.AddLoanItems(CARE.Tasks.IssueEventResources.EventResourceAllocations,System.Int32,System.String,CARE.Data.CDBFields,CARE.Access.CDBEnvironment)">
+ <summary>
+ Adds records to the loan items table for all resources issued
+ </summary>
+ <param name="pType"></param>
+ <param name="pEventNumber"></param>
+ <param name="pEndDate"></param>
+ <param name="pIssued"></param>
+ <param name="pEnv"></param>;
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.TaskInterface.EmailNotify(CARE.Access.JobSchedule)">
+ <summary>
+ Send an email notification if required.
+ </summary>
+ <param name="pJob">The <see cref="T:CARE.Access.JobSchedule"/> object that the email is to be sent for</param>
+</member>
+<member name="T:CARE.Tasks.TaskInterface.StatusNotificationEmail">
+ <summary>
+ A <see cref="T:System.Net.Mail.MailMessage"/> object that derives its content from a <see cref="T:CARE.Access.JobSchedule"/> object.
+ </summary> 
+</member>
+<member name="M:CARE.Tasks.TaskInterface.StatusNotificationEmail.#ctor(CARE.Access.JobSchedule)">
+ <summary>
+ Instanciate a new <see cref="T:CARE.Tasks.TaskInterface.StatusNotificationEmail"/> object
+ </summary>
+ <param name="pjob">The <see cref="T:CARE.Access.JobSchedule"/> object that this email is for.</param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.TaskInterface.StatusNotificationEmail.Send">
+ <summary>
+ Send the notification email
+ </summary>
+</member>
+<member name="M:CARE.Tasks.TaskInterface.StatusNotificationEmail.GetStatusText(CARE.Access.JobSchedule)">
+ <summary>
+ Decode the job attributes to a readbale status
+ </summary>
+ <param name="pJob">The <see cref="T:CARE.Access.JobSchedule"/> object who&apos;s status we are trying to determine.</param>
+ <returns></returns>
+</member>
+<member name="M:CARE.Tasks.BACSRejections.ValidateEndToEndID(System.String)">
+ <summary>Validate the EndToEndID to ensure it is in the format batch-number/transaction-number. E.g. 1234/1</summary>
+ <returns>True if the EndToEndID is valid, otherwise False.</returns>
+</member>
+<member name="M:CARE.Tasks.DutchPaymentsLoader.SetBankAccount(System.String,System.String)">
+ <summary>
+ Gets the bank account using the IBAN number. If there are no bank accounts associated with IBAN then 
+ checks the BankAccount using Account Number. 
+ </summary>
+ <param name="pIbanNumber">IbanNumber for the bank account </param>
+ <param name="pAccountNumber">AccountNumber for the bank account</param>
+ <returns>Bank Account</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.DutchPaymentsLoader.ValidateIbanNumber(System.String)">
+ <summary>
+ Validate IbanNumber number
+ </summary>
+ <param name="pIbanNumber"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.Tasks.GiveAsYouEarnReconciliation.AddDonorContactEmail(CARE.Access.PreTaxPayrollGivingPayment)">
+ <summary>Add the Email Address to the Donor Contact when the Donor is not anonymous.</summary>
+ <param name="pPGPayment">The PreTaxPayrollGivingPayment currently being processed.</param>
+</member>
+<member name="M:CARE.Tasks.GiveAsYouEarnReconciliation.AddDonorContactTelephoneNumber(CARE.Access.PreTaxPayrollGivingPayment)">
+ <summary>Add the Telephone Number to the Donor Contact when the Donor is not anonymous.</summary>
+ <param name="pPGPayment">The PreTaxPayrollGivingPayment currently being processed.</param>
+</member>
+<member name="M:CARE.Tasks.GiveAsYouEarnReconciliation.AddDonorContactExternalLink">
+ <summary>Add a <see cref="T:CARE.Access.ContactExternalLink">ContactExternalLink</see> between the Donor Contact and the <see cref="T:CARE.Access.PayrollGivingAgency">PayrollGivingAgency</see>
+  using the Payroll Giving Agency Donor Data Source and the <see cref="T:CARE.Access.PreTaxPledge">Pledge</see> DonorID.</summary>
+</member>
+<member name="M:CARE.Tasks.GiveAsYouEarnReconciliation.AddCharityDonorReference(System.String)">
+ <summary>Add the CharityDonorReference to the Payroll Giving Pledge.</summary>
+ <param name="pCharityDonorReference"></param>
+</member>
+<member name="P:CARE.Tasks.GiveAsYouEarnReconciliation.WriteLogFile">
+ <summary>Write messages to a log file?</summary>
+</member>
+<member name="M:CARE.Tasks.GiveAsYouEarnReconciliation.WriteMessageToLogFile(System.String,System.Boolean)">
+ <summary>Write the supplied message to the <see cref="T:CARE.Utilities.LogFile">LogFile</see>.</summary>
+ <param name="pLogMessage">Message to be written to the LogFile.</param>
+ <param name="pAddBlankLine">Add a blank line before the message is written?</param>
+ <remarks>Any carriage-return line-feeds are replaced with the | (pipe) symbol.</remarks>
+</member>
+<member name="M:CARE.Tasks.MailingRun.DeleteTYLs(CARE.Data.CDBConnection,System.String,System.String,System.String)">
+ <summary>
+ Delete Thank you letters
+ </summary>
+ <param name="pConn"></param>
+ <param name="pCompany">Delete where company= if passed</param>
+ <param name="pMailingCode">Delete where mailing=, mandatory</param>
+ <param name="pMsg"></param>
+ <returns>pMsg with this codes message appended.</returns>
+ <remarks>Only usede by Client CPL where config client_mc_include_TYLs = Y</remarks>
+</member>
+<member name="M:CARE.Tasks.RenewalsAndReminders.ProcessCategories(CARE.Data.CDBRecordSet,CARE.Data.CDBRecordSet,CARE.Access.PaymentPlan,CARE.Access.MembershipType,CARE.Access.Member,System.String)">
+ <summary>Extend Contact and Organisation categories to end of new renewal period.</summary>
+ <param name="pCCRS">Contact Categories Recordset</param>
+ <param name="pOCRS">Organisation categories Recordset</param>
+</member>
+<member name="M:CARE.BulkActivityUpdate.UpdateActivity(CARE.Access.CDBParameters)">
+ <summary>
+ Updates the activity with for the specified contact
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.BulkActivityUpdate.AddActivity(CARE.Access.CDBParameters)">
+ <summary>
+ Add Activity record to the contact(s) in the selection set
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.BulkActivityUpdate.GetParameterList(System.String)">
+ <summary>
+ Converts string to CDBParameters (Should be in Utilities but only used by this module)
+ </summary>
+ <param name="pXMLString"> Parameter string</param>
+ <returns>CDBParamters calls with all the parameter values</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CARE.BulkActivityUpdate.CheckDates(System.String,System.String)">
+ <summary>
+ Compare Valid from and valid to date as user can  either pass one or both.
+ </summary>
+ <param name="pValidFrom">Activity valid from date</param>
+ <param name="pValidTo">Activity valid to date</param>
+ <returns>True if Valid To Date is after Vald To </returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

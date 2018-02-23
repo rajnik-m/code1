@@ -1,0 +1,446 @@
+/* Default CSS Stylesheet for a new Web Application project */
+
+BODY
+{
+	/* FILTER:progid:DXImageTransform.Microsoft.Gradient(endColorstr='#FFFFFF',startColorstr='#C0CFE2',gradientType='0');  */
+	background-color: white;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: .8em;
+	font-weight: normal;
+	letter-spacing: normal;
+	text-transform: none;
+	word-spacing: normal;
+}
+
+A:link
+{
+	text-decoration: none;
+	color: #3333cc;
+}
+
+A:visited
+{
+	text-decoration: none;
+	color: #333399;
+}
+
+A:active
+{
+	text-decoration: none;
+	color: #333399;
+}
+
+A:hover
+{
+	text-decoration: underline;
+	color: #3333cc;
+}
+
+.Form
+{
+	width: 800px;
+	background-color: white;
+}
+
+.PageHeading
+{
+	font-weight: bold;
+	font-size: 10pt;
+	padding-bottom: 8pt;
+	padding-top: 8pt;
+	font-family: Tahoma, sans-serif;
+	background-color: transparent;
+}
+
+.Link
+{
+	text-decoration: none;
+	color: #3333cc;
+}
+
+.MainTable   /* Outer table for all pages - Site Header, Footer, Left and Right panels are in this table as well as the inner table */
+{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: top;
+	font-size: 10pt;
+	font-family: Tahoma;
+	background-color: white;
+}
+
+.MainTableRow
+{
+    Background-color:white; 
+    color: black;
+}
+
+.MenuCell
+{
+	background-color: transparent;
+	vertical-align: top;
+}
+
+.InnerTable     /* Inner table for all pages - HeadingCell, LeftCell, CenterCell, RightCell, FootingCell are all in this table */
+{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: top;
+	font-size: 10pt;
+	font-family: Tahoma;
+	background-color: white;
+}
+
+.InnerTableRow 
+{
+	Background-color: white; 
+    color: black;
+}
+
+.HeadingCell
+{
+    vertical-align: top;
+}
+.LeftCell
+{
+	vertical-align: top;
+}
+.RightCell
+{
+    vertical-align: top;
+}
+.CenterCell
+{
+    vertical-align: top;
+}
+.FootingCell
+{
+    vertical-align: top;
+}
+
+.HeadingItem
+{
+    vertical-align: top;
+}
+.LeftItem
+{
+    vertical-align: top;
+}
+.RightItem
+{
+    vertical-align: top;
+}
+.CenterItem
+{
+    vertical-align: top;
+}
+.FootingItem
+{
+    vertical-align: top;
+}
+.CenterItem
+{
+}
+.SingleLineBorder
+{
+	vertical-align: top;
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+}
+.ThinBorder
+{
+	vertical-align: top;
+	border-right: black thin solid;
+	border-top: black thin solid;
+	border-left: black thin solid;
+	border-bottom: black thin solid;
+}
+.ThickBorder
+{
+	vertical-align: top;
+	border-right: black solid;
+	border-top: black solid;
+	border-left: black solid;
+	border-bottom: black solid;
+}
+
+
+.DataEntryDiv
+{
+	border-right: ridge;
+	border-top: black 1px solid;
+	font-size: 8pt;
+	border-left: black 1px solid;
+	border-bottom: ridge;
+	font-family: Tahoma, sans-serif;
+	background-color: white;
+}
+
+.ResultsDiv
+{
+}
+
+.ResultsTable
+{
+}
+
+.DataEntryTable
+{
+	font-size: 8pt;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.DataEntryLabel
+{
+	font-size: 8pt;
+	font-weight: bold;
+}
+.DataEntryItem
+{
+	font-size: 8pt;
+	background-color: white;
+}
+.DataEntryItemMandatory
+{
+	font-size: 8pt;
+	background-color: yellow;
+}
+.DataEntryCheckBox
+{
+	font-size: 8pt;
+}
+.DataEntryViewItem
+{
+	border-right: 1px solid;
+	padding-right: 1px;
+	border-top: 1px solid;
+	padding-left: 1px;
+	font-size: 8pt;
+	padding-bottom: 1px;
+	border-left: 1px solid;
+	padding-top: 1px;
+	border-bottom: 1px solid;
+	font-family: Tahoma, sans-serif;
+	background-color: gainsboro;
+	text-decoration: none;
+}
+.DataValidator
+{
+	font-size: 8pt;
+	font-weight: bold;
+	color: red;
+	background-color: transparent;
+	margin-left: 5px;
+}
+.DataMessage
+{
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.DatePicker
+{
+	margin: 0px;
+	font-weight:  normal ;
+    font-size: medium; 
+    font-family: arial, san-serif;
+    text-decoration: none;   
+    background-color: white;
+}
+
+.OtherMonthDayStyle
+{
+   background-color:#E0E0E0;
+}
+
+.TodayDayStyle 
+{ 
+    background-color:#E0E0E0;     
+}
+
+.SelectedDayStyle
+{
+    font-size:bold;
+    font-weight:bold;
+}
+
+.DatePickerTitle
+{ 
+    background-color:Gray; 
+    color:White;
+    height:auto;   
+}
+
+.TableData
+{
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	background-color: white;
+	text-decoration: none;
+}
+
+.TableAlternateData
+{
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	background-color: whitesmoke;
+	text-decoration: none;
+}
+.TableSelectedData
+{
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	background-color: khaki;
+	text-decoration: none;
+}
+.TableHeader
+{
+	font-weight: bold;
+	background-color: gainsboro;
+	text-align: center;
+	text-decoration: none;
+}
+
+.Button
+{
+	font-size: 8pt;
+	border-left-color: white;
+	/* width: 90px; */
+	border-top-style: solid;
+	border-top-color: white;
+	font-family: Tahoma, 'Microsoft Sans Serif';
+	border-right-style: ridge;
+	border-left-style: solid;
+	height: 24px;
+	background-color: whitesmoke;
+	border-bottom-style: ridge;
+}
+.FindButton
+{
+	/* Used on forms that call a popup finder */
+	font-weight: normal;
+	font-size: 8pt;
+	border-left-color: white;
+	color: blue;
+	border-top-style: solid;
+	border-top-color: white;
+	font-family: Tahoma, 'Microsoft Sans Serif';
+	border-right-style: ridge;
+	border-left-style: solid;
+	background-color: whitesmoke;
+	border-bottom-style: ridge;
+}
+.NewButton
+{
+	/* Used on forms with a popup to enter new contacts */
+	font-weight: normal;
+	font-size: 8pt;
+	border-left-color: white;
+	color: blue;
+	border-top-style: solid;
+	border-top-color: white;
+	font-family: Tahoma, 'Microsoft Sans Serif';
+	border-right-style: ridge;
+	border-left-style: solid;
+	background-color: whitesmoke;
+	border-bottom-style: ridge;
+}
+.ReadOnlyNumber
+{
+	font-size: 8pt;
+	background-color: white;
+	text-align: right;
+}
+.ReadOnly
+{
+	font-size: 8pt;
+	color: Black;
+	background-color: gainsboro;
+
+}
+.ListboxReadonly
+{
+    font-size: 8pt;
+    color : Black;
+    background-color:gainsboro;
+}
+/* Classes for the showerrors page */
+.ErrorDiv
+{
+    background-color: #E2E2E2;
+}
+.ErrorHeading
+{
+    font-weight: bold;
+    font-size: medium;
+}
+.ErrorTable
+{
+}
+.ErrorLabel
+{
+   font-weight: bold;
+}
+.ErrorItem
+{
+}
+.ErrorHyperLink
+{
+    color: #0000FF;
+}
+.PageError
+{
+    color: Red;
+}
+.WarningMessage
+{
+    color: Blue;
+}
+
+/* Classes for the images */
+.EventImage
+{
+  width:100px;
+  height:70px;
+}
+.ProductImage
+{
+   width:100px;
+  height:70px;
+}
+.DownloadImage
+{
+   width:50px;
+  height:50px;
+}
+
+/* event selection calendar */
+.EventSelectionCalendar
+{
+    width: 750px
+}
+
+/*Class to show Grid Border */
+.Table
+{
+    border: solid 1px black;   
+} 
+
+/*Class to show GridLines and Padding */
+.Table td
+{
+  padding: 1px 1px 1px 1px;
+	border-right: black 1px solid;
+	border-top: black 0px solid;
+	border-left: black 1px solid;
+	border-bottom: black 0px solid;	
+  white-space: pre-line;
+}

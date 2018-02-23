@@ -1,0 +1,69 @@
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNACCESS.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNACCESS.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNACCESS.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\AdvancedFramework.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNDATA.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNServices.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNUTILS.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\dotMailer.Sdk.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\AdvancedFramework.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNDATA.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNDATA.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNServices.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNServices.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNUTILS.pdb
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\CDBNUTILS.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\bin\Debug\de\CDBNUTILS.resources.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.vbprojResolveAssemblyReference.cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\obj\Debug\CARE.Resources.resources
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.vbproj.GenerateResource.Cache
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.dll
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.xml
+D:\Projects\NFP\Source\Patch Release\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.pdb
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNACCESS.dll
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNACCESS.pdb
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNACCESS.xml
+D:\Version 16.2\CDBNACCESS\bin\Debug\AdvancedFramework.dll
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNDATA.dll
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNServices.dll
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNUTILS.dll
+D:\Version 16.2\CDBNACCESS\bin\Debug\dotMailer.Sdk.dll
+D:\Version 16.2\CDBNACCESS\bin\Debug\AdvancedFramework.pdb
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNDATA.pdb
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNDATA.xml
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNServices.pdb
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNServices.xml
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNUTILS.pdb
+D:\Version 16.2\CDBNACCESS\bin\Debug\CDBNUTILS.xml
+D:\Version 16.2\CDBNACCESS\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Version 16.2\CDBNACCESS\bin\Debug\de\CDBNUTILS.resources.dll
+D:\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.vbprojResolveAssemblyReference.cache
+D:\Version 16.2\CDBNACCESS\obj\Debug\CARE.Resources.resources
+D:\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.vbproj.GenerateResource.Cache
+D:\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.dll
+D:\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.xml
+D:\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNACCESS.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNACCESS.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNACCESS.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\AdvancedFramework.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNDATA.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNServices.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNUTILS.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\dotMailer.Sdk.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\AdvancedFramework.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNDATA.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNDATA.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNServices.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNServices.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNUTILS.pdb
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\CDBNUTILS.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\de-DE\AdvancedFramework.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\bin\Debug\de\CDBNUTILS.resources.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.vbprojResolveAssemblyReference.cache
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\obj\Debug\CARE.Resources.resources
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.vbproj.GenerateResource.Cache
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.dll
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.xml
+D:\Projects\NFP\Source\Version 16.2\CDBNACCESS\obj\Debug\CDBNACCESS.pdb

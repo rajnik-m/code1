@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?define SRCPATH = "$(var.CareWPD.TargetDir)"?>
+<?define VERSION = "11.2.5223"?>
+<!-- was originally 7.2.5035.31647 -->
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <DirectoryRef Id="TARGETDIR">
+      <Component Id="HtmlEditorControl.dll" Guid="E8BA7C43-D37A-400B-A6A9-54B784E00876">
+        <Class Id="{034C96E3-8107-391A-8FFA-6D3E87F7CE73}" Context="InprocServer32" Description="HtmlEditorControl.CareHtmlEditor.HtmlFontConversion" ThreadingModel="both" ForeignServer="mscoree.dll">
+          <ProgId Id="HtmlEditorControl.CareHtmlEditor.HtmlFontConversion" Description="HtmlEditorControl.CareHtmlEditor.HtmlFontConversion" />
+        </Class>
+        <Class Id="{09399A87-1D64-3B02-A286-0147E5DF984A}" Context="InprocServer32" Description="HtmlEditorControl.CareHtmlEditor.CommandGroup" ThreadingModel="both" ForeignServer="mscoree.dll">
+          <ProgId Id="HtmlEditorControl.CareHtmlEditor.CommandGroup" Description="HtmlEditorControl.CareHtmlEditor.CommandGroup" />
+        </Class>
+        <Class Id="{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}" Context="InprocServer32" Description="HtmlEditorControl.CareHtmlEditor.HtmlFontPropertyConverter" ThreadingModel="both" ForeignServer="mscoree.dll">
+          <ProgId Id="HtmlEditorControl.CareHtmlEditor.HtmlFontPropertyConverter" Description="HtmlEditorControl.CareHtmlEditor.HtmlFontPropertyConverter" />
+        </Class>
+        <Class Id="{3B512EC2-B076-3B68-BB93-0273320BEA8D}" Context="InprocServer32" Description="HtmlEditorControl.CareHtmlEditor.HtmlEditorException" ThreadingModel="both" ForeignServer="mscoree.dll">
+          <ProgId Id="HtmlEditorControl.CareHtmlEditor.HtmlEditorException" Description="HtmlEditorControl.CareHtmlEditor.HtmlEditorException" />
+        </Class>
+        <Class Id="{72809CDA-AEAF-3EC7-B2C3-628EE530421D}" Context="InprocServer32" Description="HtmlEditorControl.My.Resources.HTMLEditorText" ThreadingModel="both" ForeignServer="mscoree.dll">
+          <ProgId Id="HtmlEditorControl.My.Resources.HTMLEditorText" Description="HtmlEditorControl.My.Resources.HTMLEditorText" />
+        </Class>
+        <Class Id="{985E6552-9274-3419-B362-53C29F1E2BD6}" Context="InprocServer32" Description="HtmlEditorControl.CareHtmlEditor.HtmlEditorControl" ThreadingModel="both" ForeignServer="mscoree.dll">
+          <ProgId Id="HtmlEditorControl.CareHtmlEditor.HtmlEditorControl" Description="HtmlEditorControl.CareHtmlEditor.HtmlEditorControl" />
+        </Class>
+        <File Id="fil3FD32FE6C2D7C5F0B1C8EACFB767B00D" KeyPath="yes" Source="$(var.SRCPATH)HtmlEditorControl.dll" />
+        <ProgId Id="Record" />
+        <RegistryValue Root="HKCR" Key="CLSID\{034C96E3-8107-391A-8FFA-6D3E87F7CE73}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{034C96E3-8107-391A-8FFA-6D3E87F7CE73}\InprocServer32\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlFontConversion" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{034C96E3-8107-391A-8FFA-6D3E87F7CE73}\InprocServer32\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{034C96E3-8107-391A-8FFA-6D3E87F7CE73}\InprocServer32\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{034C96E3-8107-391A-8FFA-6D3E87F7CE73}\InprocServer32\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{034C96E3-8107-391A-8FFA-6D3E87F7CE73}\InprocServer32" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlFontConversion" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{034C96E3-8107-391A-8FFA-6D3E87F7CE73}\InprocServer32" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{034C96E3-8107-391A-8FFA-6D3E87F7CE73}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{034C96E3-8107-391A-8FFA-6D3E87F7CE73}\InprocServer32" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{09399A87-1D64-3B02-A286-0147E5DF984A}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{09399A87-1D64-3B02-A286-0147E5DF984A}\InprocServer32\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.CommandGroup" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{09399A87-1D64-3B02-A286-0147E5DF984A}\InprocServer32\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{09399A87-1D64-3B02-A286-0147E5DF984A}\InprocServer32\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{09399A87-1D64-3B02-A286-0147E5DF984A}\InprocServer32\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{09399A87-1D64-3B02-A286-0147E5DF984A}\InprocServer32" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.CommandGroup" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{09399A87-1D64-3B02-A286-0147E5DF984A}\InprocServer32" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{09399A87-1D64-3B02-A286-0147E5DF984A}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{09399A87-1D64-3B02-A286-0147E5DF984A}\InprocServer32" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}\InprocServer32\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlFontPropertyConverter" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}\InprocServer32\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}\InprocServer32\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}\InprocServer32\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}\InprocServer32" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlFontPropertyConverter" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}\InprocServer32" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{2E8DDD98-0F52-3073-8E61-A3B2EEC59884}\InprocServer32" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{3B512EC2-B076-3B68-BB93-0273320BEA8D}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{3B512EC2-B076-3B68-BB93-0273320BEA8D}\InprocServer32\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlEditorException" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{3B512EC2-B076-3B68-BB93-0273320BEA8D}\InprocServer32\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{3B512EC2-B076-3B68-BB93-0273320BEA8D}\InprocServer32\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{3B512EC2-B076-3B68-BB93-0273320BEA8D}\InprocServer32\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{3B512EC2-B076-3B68-BB93-0273320BEA8D}\InprocServer32" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlEditorException" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{3B512EC2-B076-3B68-BB93-0273320BEA8D}\InprocServer32" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{3B512EC2-B076-3B68-BB93-0273320BEA8D}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{3B512EC2-B076-3B68-BB93-0273320BEA8D}\InprocServer32" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{72809CDA-AEAF-3EC7-B2C3-628EE530421D}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{72809CDA-AEAF-3EC7-B2C3-628EE530421D}\InprocServer32\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.My.Resources.HTMLEditorText" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{72809CDA-AEAF-3EC7-B2C3-628EE530421D}\InprocServer32\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{72809CDA-AEAF-3EC7-B2C3-628EE530421D}\InprocServer32\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{72809CDA-AEAF-3EC7-B2C3-628EE530421D}\InprocServer32\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{72809CDA-AEAF-3EC7-B2C3-628EE530421D}\InprocServer32" Name="Class" Value="HtmlEditorControl.My.Resources.HTMLEditorText" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{72809CDA-AEAF-3EC7-B2C3-628EE530421D}\InprocServer32" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{72809CDA-AEAF-3EC7-B2C3-628EE530421D}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{72809CDA-AEAF-3EC7-B2C3-628EE530421D}\InprocServer32" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{985E6552-9274-3419-B362-53C29F1E2BD6}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{985E6552-9274-3419-B362-53C29F1E2BD6}\InprocServer32\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlEditorControl" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{985E6552-9274-3419-B362-53C29F1E2BD6}\InprocServer32\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{985E6552-9274-3419-B362-53C29F1E2BD6}\InprocServer32\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{985E6552-9274-3419-B362-53C29F1E2BD6}\InprocServer32\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{985E6552-9274-3419-B362-53C29F1E2BD6}\InprocServer32" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlEditorControl" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{985E6552-9274-3419-B362-53C29F1E2BD6}\InprocServer32" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{985E6552-9274-3419-B362-53C29F1E2BD6}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="CLSID\{985E6552-9274-3419-B362-53C29F1E2BD6}\InprocServer32" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{0F78FD02-540F-31F0-BFE7-0D9D7D353980}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlTableProperty" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{0F78FD02-540F-31F0-BFE7-0D9D7D353980}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{0F78FD02-540F-31F0-BFE7-0D9D7D353980}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{0F78FD02-540F-31F0-BFE7-0D9D7D353980}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{3D99F2A1-C290-3F29-AD0C-E78C51CE2A87}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlListType" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{3D99F2A1-C290-3F29-AD0C-E78C51CE2A87}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{3D99F2A1-C290-3F29-AD0C-E78C51CE2A87}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{3D99F2A1-C290-3F29-AD0C-E78C51CE2A87}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{4A8E18C6-6442-3F97-933F-82801DA2D2C4}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HRESULT" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{4A8E18C6-6442-3F97-933F-82801DA2D2C4}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{4A8E18C6-6442-3F97-933F-82801DA2D2C4}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{4A8E18C6-6442-3F97-933F-82801DA2D2C4}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{56429EE0-E991-3A64-BD62-74C507B7179F}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.VerticalAlignOption" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{56429EE0-E991-3A64-BD62-74C507B7179F}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{56429EE0-E991-3A64-BD62-74C507B7179F}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{56429EE0-E991-3A64-BD62-74C507B7179F}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{63978607-AEF7-321B-9E7C-B9DD52F1770B}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlFontProperty" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{63978607-AEF7-321B-9E7C-B9DD52F1770B}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{63978607-AEF7-321B-9E7C-B9DD52F1770B}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{63978607-AEF7-321B-9E7C-B9DD52F1770B}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{6C26409D-F26E-349A-B608-35F9DC59C62E}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HorizontalAlignOption" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{6C26409D-F26E-349A-B608-35F9DC59C62E}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{6C26409D-F26E-349A-B608-35F9DC59C62E}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{6C26409D-F26E-349A-B608-35F9DC59C62E}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{726B720C-FC56-382E-9255-9CBD923D5EE5}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.NavigateActionOption" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{726B720C-FC56-382E-9255-9CBD923D5EE5}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{726B720C-FC56-382E-9255-9CBD923D5EE5}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{726B720C-FC56-382E-9255-9CBD923D5EE5}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{7DAFD55A-C7C0-352E-9E61-0D1CEC74A39D}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.DisplayScrollBarOption" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{7DAFD55A-C7C0-352E-9E61-0D1CEC74A39D}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{7DAFD55A-C7C0-352E-9E61-0D1CEC74A39D}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{7DAFD55A-C7C0-352E-9E61-0D1CEC74A39D}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{86881E68-D0EA-3C76-9193-0BB5DA844399}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.ImageAlignOption" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{86881E68-D0EA-3C76-9193-0BB5DA844399}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{86881E68-D0EA-3C76-9193-0BB5DA844399}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{86881E68-D0EA-3C76-9193-0BB5DA844399}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{8A299527-0AE4-3850-AE02-8FD068DA52C4}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.OLECMD" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{8A299527-0AE4-3850-AE02-8FD068DA52C4}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{8A299527-0AE4-3850-AE02-8FD068DA52C4}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{8A299527-0AE4-3850-AE02-8FD068DA52C4}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A0581A26-CFDB-32F3-8A33-3A75D3D6ED3E}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.CommandOption" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A0581A26-CFDB-32F3-8A33-3A75D3D6ED3E}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A0581A26-CFDB-32F3-8A33-3A75D3D6ED3E}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A0581A26-CFDB-32F3-8A33-3A75D3D6ED3E}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A13E8FFF-4293-3C9B-9061-EF12873D49F4}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.MeasurementOption" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A13E8FFF-4293-3C9B-9061-EF12873D49F4}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A13E8FFF-4293-3C9B-9061-EF12873D49F4}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A13E8FFF-4293-3C9B-9061-EF12873D49F4}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A43D64E4-220A-3BA1-82D0-C300D3C5AEFA}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.CommandId" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A43D64E4-220A-3BA1-82D0-C300D3C5AEFA}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A43D64E4-220A-3BA1-82D0-C300D3C5AEFA}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{A43D64E4-220A-3BA1-82D0-C300D3C5AEFA}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{BBE243B4-B043-3019-8AA7-3820BB3723E2}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlHeadingType" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{BBE243B4-B043-3019-8AA7-3820BB3723E2}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{BBE243B4-B043-3019-8AA7-3820BB3723E2}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{BBE243B4-B043-3019-8AA7-3820BB3723E2}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{F8CCAE07-08BE-39C5-9234-24FB639ABA67}\$(var.VERSION)" Name="Class" Value="HtmlEditorControl.CareHtmlEditor.HtmlFontSize" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{F8CCAE07-08BE-39C5-9234-24FB639ABA67}\$(var.VERSION)" Name="Assembly" Value="HtmlEditorControl, Version=$(var.VERSION), Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{F8CCAE07-08BE-39C5-9234-24FB639ABA67}\$(var.VERSION)" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+        <RegistryValue Root="HKCR" Key="Record\{F8CCAE07-08BE-39C5-9234-24FB639ABA67}\$(var.VERSION)" Name="CodeBase" Value="file:///[#fil3FD32FE6C2D7C5F0B1C8EACFB767B00D]" Type="string" Action="write" />
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+</Wix>

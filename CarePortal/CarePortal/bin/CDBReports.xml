@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBReports
+</name>
+</assembly>
+<members>
+<member name="T:CDBReports.DataTableExtensions">
+ <summary>
+ This module exists in CDBNReports because extension methods can only work from other libraries when Option Infer is on
+ For some reason it isn't in this library, so we have to store our extensions locally.
+ If anyone else needs this method, please don't copy it but add the file as a linked file (Add Existing Item > Add Button drop down > Add as Link
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CDBReports.Report.GenerateDataTableFromOutput">
+ <summary>
+ Re-generates the DataTable representation of the CSV file.  If the CSV file doesn't exist then it clears the DataTable
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:CDBReports.ReportBase.Data">
+ <summary>
+ This property must be overridden at inherited-level to return the data that the report generated in a DataTable format. 
+ If this is not possible then the property must return a null object.
+ If the DataTable cannot be generated because there is no data, then an empty DataTable must be returned.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="E:CDBReports.ReportBase.Generated">
+ <summary>
+ This event notifies consuming classes that the report data generation has been completed and the Data property should not contain data.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>The event is implemented for the IDataGenerator(Of DataTable) interface and is intended for the support of third party Report extensions.</remarks>
+</member>
+<member name="M:CDBReports.ReportBase.OnUpdated">
+ <summary>
+ This method must be called by consuming classes after any data was modified by them, in order for the report to re-persist any data as necessary
+ </summary>
+ <remarks>The method is implemented for the IDataGenerator(Of DataTable) interface and is intended for the support of third party Report extensions.</remarks>
+</member>
+</members>
+</doc>

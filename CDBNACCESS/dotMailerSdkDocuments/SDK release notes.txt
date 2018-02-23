@@ -1,0 +1,111 @@
+﻿Changes in the dotMailer SDK from version 1.7.6 to version 1.7.7
+----------------------------------------------------------------
+
+* New properties added to DmService: AddressBooks, Contacts, Campaigns, Serialisation, Templates, Images.  These replace the now deprecated AddressBookFactory, ContactFactory, CampaignFactory, SerialisationFactory, DocumentFactory, TemplateFactory and ImageFactory properties.
+* CampaignFactory.GetCampaignClicksForContact added.
+
+
+Changes in the dotMailer SDK from version 1.0 to version 1.3
+------------------------------------------------------------
+
+* Connection problems are no longer reported as a problem with log in credentials.
+* Account information is now available from the WsService class's AccountInfo property.
+* Improved handling of disposable resources throughout.
+* DmService class now provides access to instances of the new DocumentFactory, TemplateFactory, ImageFactory classes.
+* Additional overloads of the AddressBookFactory.ListContactsInAddressBook and ListAllContacts methods now offer control over the level of detail initially retrieved for each contact, allowing you to reduce the number of server requests made in some circumstances.
+* New ListPublicAddressBooks method added to AddressBookFactory.
+* The CampaignFactory.ListCampaignClickers method replaces the previous CampaignFactory.ListCampaignOpeners method.
+* The CampaignFactory now offers the following additional methods: ListCampaignActivitiesSinceDate, ListCampaignActivities, GetCampaignSummary, CopyCampaign, AttachDocumentToCampaign, DetachDocumentFromCampaign, ListCampaignAttachments, ListModifiedContacts, UpdateContactsViaImport, RemoveContact, ListAllContacts, ResubscribeContact, GetContactStatusByEmailAddress, ListHardBouncingContactsWithDataFields.
+* The SendOptions class has been renamed to SplitTestSendOptions.
+* The overload of the CampaignFactory.GetCampaign method that accepts a campaign name, now returns a DmCampaignCollection instance containing all matching campaigns, rather than the first matching DmCampaign.
+* A new method named ListContactsModifiedSinceDate has been added to ContactFactory.  It is identical in operation to the ListModifiedContactsBetweenDates method, but has been named to better convey the intended meaning.
+* The CampaignFactory.CreateNewDmContact method now takes a single parameter which provides the contact's email address.
+* IDmObject now includes AccountId and ExternalId properties.  Classes that implement IDmObject therefore also now include those properties as well.
+* Where available, many classes now have a new CampaignId property.
+* DmCampaign has new AttachDocument and DetachDocument methods.
+* Public constructors have been removed from DmCampaignContactActivity, DmCampaignContactForward, DmCampaignContactOpen, DmCampaignContactReply, DmCampaignContactRoiDetail, DmCampaignOpener, DmCampaignRoiDetail.
+* The following classes have new ContactEmail properties: DmCampaignContactPageView, DmCampaignContactRoiDetail, DmCampaignContactSocialBookmark, DmCampaignPageView, DmCampaignRoiDetail.
+* The DmContactPageView class is now replaced by DmCampaignContactPageView.
+* DmAddressBookCollection now offers a Remove method to remove an address book with a specific name.
+* DmCampaignContactActivityCollection now offers ContainsContact,GetContactActivites methods.
+* DmDataFieldDefinitionCollection now offers a Contains method.
+* DmDataFieldValueCollection now offers a ContainsDataField method and an indexer for accessing values by data field name.
+* DmContact now offers GetDataFieldByName, GetDataFieldIsEmpty, CalculatePopulatedCrcHash methods.
+* DmDataFieldValue now offers an IsEmpty property, a Clone method and correctly handles the various different types of data field value available.
+* ImportContactOptions now has a boolean DontUpload property, for use with the save CSV options, and an ImportTimeout property.
+* The calculation of the ExternalId property has been changed for some classes to ensure uniqueness.
+* Problems serialising and deserialising a DmDataFieldDefinitionCollection instance to and from JSON have been rectified.
+* The IsDirty property of the DmDataFieldValue class now operates correctly.
+* When lists of more than a thousand items are requested from the underlying dotMailer API, the requests are now sent correctly, preventing lists being filled with duplicate items.
+* Documentation for classes has been expanded.
+
+Changes in the dotMailer SDK from version 1.3 to version 1.4
+------------------------------------------------------------
+
+* Various problems fixed in the handling of a contact's data fields and their values.
+
+Changes in the dotMailer SDK from version 1.4 to version 1.5
+------------------------------------------------------------
+
+* Handling of contact data fields and their values further improved.
+
+Changes in the dotMailer SDK from version 1.5 to version 1.6
+------------------------------------------------------------
+
+* GetAddressBookByName -> throws an exception instead of returning null if the address book is not found. Brings the behaviour in line with the GetAddressBookById
+
+* GetImportedContacts -> Gets the contacts that were imported from an import set
+
+* Fixed the ListCampaignActivitesSinceDate(), now looks at the time aspect
+
+* Fixed internal server time tracking
+
+* Various improvements.
+
+Changes in the dotMailer SDK from version 1.6 to version 1.6.1
+--------------------------------------------------------------
+
+* Fixed DmContactCollection.Unsubscribe()
+* DmTemplate internal structure has been improved.
+
+Changes in the dotMailer SDK from version 1.6.1 to version 1.7
+--------------------------------------------------------------
+
+* AddressBookFactory.ListContactsInAddressBook now takes a more descriptive ListContactOptions value instead of a boolean value.
+* AddressBookFactory.GetAddressBookById now throws an exception when an address book is not found, rather than returning null.
+* New method: AddressBookFactory.GetEmptyAddressBookCollection
+* ContactFactory.ListModifiedContactsBetweenDates method has been removed.
+* Campaign.ListCampaignAttachments now accepts only a campaign ID, not an IDmCampaign instance.
+* AddressBookFactory.DeleteAddressBook method now only accepts an address book ID, not an IDmAddressBook instance.
+* DocumentFactory.FindFolderInTreeById method has been removed.
+* A more specific API_DISCONNECTED error is now reported when a collection is unable to access the dotMailer API to retrieve required data.
+* Various spelling corrections have been made throughout.
+* A new SortContacts property has been added to the ImportContactOptions class to support a new mode of operation.  Contact importing now offers two modes of operation, the default is identical in the operation to previous releases, where overwriting data field values with empty data is actively avoided.  A new mode of operation is used when the ImportContactOptions' SortContacts property is set to true, this reduces the number of batches sent to dotMailer but always stores empty data field values.
+* An indexer has been added to the DmAccountInfo class.
+* New error codes have been added.
+* The ListContactOptionsEnum, SuppressedCause, AccountInfo enumerations have been added.
+* Contact import contention handling has been improved.
+
+
+Changes in the dotMailer SDK from version 1.7.0 
+--------------------------------------------------------------
+
+* Timeout values have increased
+
+Changes in the dotMailer SDK from 1.7.1 to 1.7.2
+--------------------------------------------------------------
+
+o Added DmLocale
+o Exposed ServiceCalls to the outside world
+
+Changes in the dotMailer SDK from version 1.7.2 to version 1.7.3
+--------------------------------------------------------------
+
+* Timeout options have been introduced
+* Internal handling of paged webservice calls has been changed.
+
+Changes in the dotMailer SDK from version 1.7.3 to 1.7.4
+--------------------------------------------------------------
+
+* Added an event to the DmServiceFactory that makes it possible to monitor what the SDK is doing in realtime.
+* Added retry options to paged calls

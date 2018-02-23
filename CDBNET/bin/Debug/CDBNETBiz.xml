@@ -1,0 +1,256 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDBNETBiz
+</name>
+</assembly>
+<members>
+<member name="T:CDBNETBiz.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CDBNETBiz.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CDBNETBiz.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:CDBNETBiz.ActionsDataContext.ActionType">
+ <summary>The <see cref="T:CDBNETCL.BaseActionMenu.ActionTypes">Action Type</see> to be set on the <see cref="P:CDBNETBiz.ActionsDataContext.actionMenu">Action context menu</see>.</summary>
+</member>
+<member name="P:CDBNETBiz.ActionsDataContext.linkID">
+ <summary>The Action Link ID number.</summary>
+</member>
+<member name="P:CDBNETBiz.ActionsDataContext.linkIdName">
+ <summary>The Action Link attribute name.</summary>
+</member>
+<member name="M:CDBNETBiz.ActionsDataContext.LoadFromID(System.Int32)">
+ <summary>Re-select Actions data when the Action Link ID has changed.</summary>
+ <param name="loadID">The Action Link ID</param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNETBiz.ActionsDataContext.GetActionsDataset(CDBNETCL.ParameterList@)">
+ <summary>Gets the Actions <see cref="P:CDBNETBiz.GridPanelDataContext.DataSet">DataSet</see> specific to the type of Actions to be displayed.</summary>
+</member>
+<member name="P:CDBNETBiz.DocumentsDataContext.linkID">
+ <summary>The Document Link ID number.</summary>
+</member>
+<member name="P:CDBNETBiz.DocumentsDataContext.linkIdName">
+ <summary>The document Link attribute name.</summary>
+</member>
+<member name="M:CDBNETBiz.DocumentsDataContext.LoadFromID(System.Int32)">
+ <summary>Re-select Document data when the document Link ID has changed.</summary>
+ <param name="loadID">The Document Link ID</param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNETBiz.DocumentsDataContext.GetDocumentsDataset(CDBNETCL.ParameterList@)">
+ <summary>Gets the documents <see cref="P:CDBNETBiz.GridPanelDataContext.DataSet">DataSet</see> specific to the type of document to be displayed.</summary>
+</member>
+<member name="E:CDBNETBiz.GridPanelTabDataContext.GetSubGridCustomiseParameters">
+ <summary>Get any additional parameters required for customisation of the grids on the sub-tabs.</summary>
+</member>
+<member name="E:CDBNETBiz.GridPanelTabDataContext.RefreshSubGridRequired">
+ <summary>
+ Occurs when a refresh of the data on a sub-grid is required.
+ </summary>
+</member>
+<member name="P:CDBNETBiz.GridPanelTabDataContext.TabDataSets">
+ <summary>A collection of <see cref="T:CDBNETBiz.TabDisplayData">TabDisplayData</see> items containing <see cref="P:CDBNETBiz.GridPanelDataContext.DataSet">DataSet</see> data for the tab grids.</summary>
+</member>
+<member name="P:CDBNETBiz.GridPanelTabDataContext.TabTextData">
+ <summary>A collection of <see cref="T:CDBNETBiz.TabDisplayData">TabDisplayData</see> items containing text to be displayed on text tabs.</summary>
+</member>
+<member name="M:CDBNETBiz.GridPanelTabDataContext.NotifySubTabGridRefreshRequiried">
+ <summary>
+ Notifies that a refresh of the data is required.
+ </summary>
+</member>
+<member name="P:CDBNETBiz.TabDisplayData.ContextMenuStrip">
+ <summary>Gets or sets the short-cut menu to be shown on the grid.</summary>
+</member>
+<member name="P:CDBNETBiz.TabDisplayData.ShowTabIfEmpty">
+ <summary>Gets or sets boolean flag indicating whether the tab should be displayed if there is no data.</summary>
+</member>
+<member name="P:CDBNETBiz.TabDisplayData.DataSet">
+ <summary>Gets the <see cref="P:CDBNETBiz.TabDisplayData.DataSet">DataSet</see> to be used to populate the tab grid.</summary>
+</member>
+<member name="P:CDBNETBiz.TabDisplayData.MaintenanceType">
+ <summary>Gets the <see cref="T:CDBNETCL.CareNetServices.XMLMaintenanceControlTypes">Maintenance Type</see> for the selected tab.</summary>
+</member>
+<member name="P:CDBNETBiz.TabDisplayData.TextData">
+ <summary>Gets the text data to be displayed on the tab.</summary>
+</member>
+<member name="P:CDBNETBiz.TabDisplayData.TextHeader">
+ <summary>Gets the text data to be displayed on the tab header.</summary>
+</member>
+<member name="T:CDBNETBiz.GridPanelDataContext">
+ <summary>
+ An <see cref="T:CDBNETCL.IDataContext" /> implementation that presents data in the form of a <see cref="T:System.Data.DataTable" />.
+ </summary>
+</member>
+<member name="E:CDBNETBiz.GridPanelDataContext.RefreshRequired">
+ <summary>
+ Occurs when a refresh of the data is required.
+ </summary>
+</member>
+<member name="E:CDBNETBiz.GridPanelDataContext.GetCustomiseParameters">
+ <summary>Get any additional parameters required for grid customisation.</summary>
+</member>
+<member name="P:CDBNETBiz.GridPanelDataContext.DataSet">
+ <summary>
+ Gets or sets the data set.
+ </summary>
+ <value>
+ The data set.
+ </value>
+</member>
+<member name="P:CDBNETBiz.GridPanelDataContext.SelectedIndex">
+ <summary>
+ Gets or sets the index of the selected data row.
+ </summary>
+ <value>
+ The index of the selected data row.
+ </value>
+</member>
+<member name="P:CDBNETBiz.GridPanelDataContext.CanShowGrid">
+ <summary>
+ Gets or sets a value indicating whether this instance can show grid.
+ </summary>
+ <value>
+ <c>true</c> if this instance can show grid; otherwise, <c>false</c>.
+ </value>
+</member>
+<member name="M:CDBNETBiz.GridPanelDataContext.SyncDataRow">
+ <summary>
+ Synchronizes the current data row.
+ </summary>
+</member>
+<member name="M:CDBNETBiz.GridPanelDataContext.NewRow(CDBNETCL.ParameterList)">
+ <summary>
+ Creates a new data row.
+ </summary>
+</member>
+<member name="M:CDBNETBiz.GridPanelDataContext.NotifyRefreshRequiried">
+ <summary>
+ Notifies that a refresh of the data is required.
+ </summary>
+</member>
+<member name="M:CDBNETBiz.GridPanelDataContext.CheckGridVisibility">
+ <summary>
+ Checks that there is data that can be displayed in a grid.
+ </summary>
+</member>
+<member name="P:CDBNETBiz.GridPanelDataContext.ContextMenuStrip">
+ <summary>The short-cut menu to be shown on the grid.</summary>
+</member>
+<member name="M:CDBNETBiz.IDataContextOwnerFactory.GetContextOwner(CDBNETCL.IDataContext)">
+ <summary>
+ Gets <see cref="T:CDBNETCL.IDataContextOwner" /> that can handle the supplied <see cref="T:CDBNETCL.IDataContext" />.
+ </summary>
+ <param name="DataContext">The data context that needs to be handled.</param>
+ <returns></returns>
+</member>
+<member name="P:CDBNETBiz.PagedTreeViewDataContext.ContextMenu">
+ <summary>The right-click menu to be displayed.</summary>
+</member>
+<member name="T:CDBNETBiz.PagedTreeViewDataContext.PageTypes">
+ <summary>
+ This enum should be shadowed at instance level and contain the actual page types that are contained in the DataContext
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:CDBNETBiz.PagedTreeViewDataContext.Nodes">
+ <summary>
+ Returns The hierarchical structure that represents the Tree of Pages.  Nodes contain Pages and other nodes.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:CDBNETBiz.PagedTreeViewDataContext.Pages">
+ <summary>
+ The non-hierarchical list of Pages that are hosted by this class.  The first entry is assumed to represent the Master DataContext that manipulates the main record.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNETBiz.PagedTreeViewDataContext.CreatePagedNode(System.String,System.Func{CDBNETBiz.IChildDataContext},System.Boolean,CDBNETBiz.PagedTreeViewDataContext.PageTypes)">
+ <summary>
+ Adds a PagedNode class to the PagedDictionary property.  If a PageID is not specified then a new PageId will be assigned and returned.
+ </summary>
+ <param name="nodeText">The text that will be displayed in the Container to represent this node</param>
+ <param name="constructor">The function that will be executed to instantiate the DataContext</param>
+ <param name="pageID">The ID by which the Page will be referenced in the future. This is expected to be one of the PageTypes enum.</param>
+ <returns>The PageID assigned to the Page.  If none was passed as a parameter then a new one is assigned.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:CDBNETBiz.PagedTreeViewDataContext.MasterPage">
+ <summary>
+ Returns the PagedNode instance for the top-level record.  The top-level record is the record that all other records are dependent of.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>The MasterPage property relies on the sequence that all PagedNodes were added to the dictionary.  It is assumed that the first node is also added first in the nodes dictionary.
+ The MasterPage will also need to have a valid DataContext property.
+ </remarks>
+</member>
+<member name="P:CDBNETBiz.PagedTreeViewDataContext.SelectedRow">
+ <summary>
+ The row from the DataTable that is currently selected
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNETBiz.PagedTreeViewDataContext.NotifyPages(System.Object,CDBNETCL.ChildPropertyNotifyArgs)">
+ <summary>
+ Sends a message to all PagedNode objects hosted in this TreeViewDataContext to notify them of a property change
+ </summary>
+ <param name="source"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CDBNETBiz.PagedTreeViewDataContext.PagedNode.ConstructDataContext">
+ <summary>
+ If a DataContext constructor has been given then this method executes it and initialises the DataContext property with the return value from the constructor
+ </summary>
+ <returns>True if a DataContext was generated from the Constructor</returns>
+ <remarks></remarks>
+</member>
+<member name="P:CDBNETBiz.PanelPageDataContext.PanelContextMenuStrip">
+ <summary>The short-cut menu to be shown on the edit panel.</summary>
+</member>
+<member name="P:CDBNETBiz.DisplayGridEventArgs.MaintenanceType">
+ <summary>Gets the <see cref="T:CDBNETCL.CareNetServices.XMLMaintenanceControlTypes">Maintenance Type</see> for the selected menu.</summary>
+</member>
+<member name="P:CDBNETBiz.DisplayGridEventArgs.MenuItemType">
+ <summary>The menu item selected.</summary>
+</member>
+<member name="T:CDBNETBiz.WorkstreamActivityDataContext">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:CDBNETBiz.WorkstreamContainerDataContext.IsPageType(System.Enum,CDBNETBiz.WorkstreamContainerDataContext.PageTypes)">
+ <summary>
+ Returns True if the generic Enum value is equal to the specified PageType
+ </summary>
+ <param name="targetType">The PageType that you wish to compare the targetValue to</param>
+ <returns>True if the types are equal, otherwise False.</returns>
+ <remarks>This method is useful when process the OnChildNotifyReceived event as one of its properties is the Enum equivalent of the PageType that sent the notification</remarks>
+</member>
+<member name="T:CDBNETBiz.WorkstreamExamBookingUnitsDataContext">
+ <summary>
+ 
+ </summary>
+</member>
+</members>
+</doc>
