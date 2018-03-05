@@ -15,7 +15,6 @@ Public Class FormHelper
     MailingRunSynchSuccess
     MailingRunSynchFail
     MailingRunAsych
-    'making changes For b2 branch
   End Enum
 
   Public Enum ProcessTaskScheduleType
