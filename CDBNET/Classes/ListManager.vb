@@ -1,6 +1,7 @@
 Public Class ListManager
   Private WithEvents mvListManager As frmListManager
   Private mvBrowserMenu As BrowserMenu
+  'b2 branch
 
   Public Sub New(ByVal pCriteriaSet As Integer, ByVal pCriteriaDesc As String)         'Use from campaign manager
     mvListManager = New frmListManager(True, pCriteriaSet, pCriteriaDesc)
@@ -29,5 +30,6 @@ Public Class ListManager
   Private Sub mvListManager_SetBrowserMenuContext(ByVal sender As Object, ByVal pEntityType As CDBNETCL.HistoryEntityTypes, ByVal pItemNumber As Integer) Handles mvListManager.SetBrowserMenuContext
     mvBrowserMenu.EntityType = pEntityType
     mvBrowserMenu.ItemNumber = pItemNumber
+    'b2 branch
   End Sub
 End Class

@@ -15,6 +15,7 @@ Public Class FormHelper
     MailingRunSynchSuccess
     MailingRunSynchFail
     MailingRunAsych
+    'b2 branch
   End Enum
 
   Public Enum ProcessTaskScheduleType
@@ -41,6 +42,7 @@ Public Class FormHelper
   Public Shared Sub ShowSelectionSet(ByVal pNumber As Integer, ByVal pDesc As String)
     Dim vForm As New frmSelectionSet(pNumber, pDesc)
     vForm.Show()
+    'b2 branch
   End Sub
 
   Public Shared Function AddSelectionSet(ByVal pOwner As Form) As Integer
@@ -97,6 +99,7 @@ Public Class FormHelper
   Public Shared Sub EditMeeting(pNumber As Integer)
     Dim vForm As frmCardMaintenance = New frmCardMaintenance(CType(CareNetServices.XMLMaintenanceControlTypes.xmctMeetings, CareServices.XMLMaintenanceControlTypes), pNumber)
     vForm.Show()
+    'b2 branch
   End Sub
 
   Public Shared Sub EditAction(ByVal pNumber As Integer)
