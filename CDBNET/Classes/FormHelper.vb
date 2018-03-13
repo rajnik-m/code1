@@ -4,7 +4,6 @@ Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Text.RegularExpressions
 Imports CDBNETBiz
-'change has been done here second time
 Public Class FormHelper
 
   Private Shared mvNotifyForm As frmNotify
