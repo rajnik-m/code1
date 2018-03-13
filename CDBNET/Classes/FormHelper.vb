@@ -4,9 +4,7 @@ Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Text.RegularExpressions
 Imports CDBNETBiz
-Public Enum rajnik
 
-End Enum
 Public Class FormHelper
 
   Private Shared mvNotifyForm As frmNotify
