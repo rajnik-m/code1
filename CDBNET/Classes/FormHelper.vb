@@ -17,6 +17,10 @@ Public Class FormHelper
     'b2 branch
   End Enum
 
+  Public Enum Nothing
+
+  End Enum
+
   Public Enum ProcessTaskScheduleType
     ptsNone
     ptsAskToSchedule
