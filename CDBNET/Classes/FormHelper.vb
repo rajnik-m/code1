@@ -21,6 +21,10 @@ Public Class FormHelper
 
   End Enum
 
+  Public Enum Nothing
+
+  End Enum
+
   Public Enum ProcessTaskScheduleType
     ptsNone
     ptsAskToSchedule
